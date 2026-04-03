@@ -1,6 +1,9 @@
 import { useFilterContext } from '../../context/FilterContext.jsx'
 import { PRESETS } from '../../hooks/useFilters.js'
 import FilterChips from './FilterChips.jsx'
+import TamSamSom from '../Dashboard/TamSamSom.jsx'
+import RegionBreakdown from '../Dashboard/RegionBreakdown.jsx'
+import CoolingFitDistribution from '../Dashboard/CoolingFitDistribution.jsx'
 
 const COUNTRIES = [
   { value: 'US', label: 'United States' },
@@ -85,6 +88,10 @@ export default function FilterSidebar() {
       <FilterSection title="Market Tier">
         <ChipSelect options={MARKET_TIERS} selected={filters.marketTiers || []} onChange={(v) => setFilter('marketTiers', v)} labelFn={(t) => t.toUpperCase()} />
       </FilterSection>
+
+      <TamSamSom />
+      <RegionBreakdown />
+      <CoolingFitDistribution />
     </div>
   )
 }
