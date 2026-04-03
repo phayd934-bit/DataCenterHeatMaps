@@ -1,0 +1,8 @@
+{
+  "sources": [
+    { "name": "PeeringDB", "url": "https://www.peeringdb.com", "type": "api", "coverage": "global" },
+    { "name": "datacentermap.com", "url": "https://www.datacentermap.com", "type": "directory", "coverage": "global" },
+    { "name": "Baxtel", "url": "https://baxtel.com", "type": "directory", "coverage": "global" }
+  ],
+  "last_updated": "2026-04-03"
+}

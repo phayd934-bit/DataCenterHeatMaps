@@ -1,0 +1,19 @@
+[
+  {
+    "zone_id": "ca-on",
+    "country": "CA",
+    "region": "Ontario",
+    "regulatory_complexity_score": 55,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Ontario Energy Board Act",
+        "level": "state_provincial",
+        "summary": "Regulates electricity pricing and distribution.",
+        "url": "https://www.ontario.ca/laws/statute/98o15",
+        "effective_date": "1998-01-01",
+        "relevance": "Cooling energy costs governed by OEB rate structures"
+      }
+    ]
+  }
+]

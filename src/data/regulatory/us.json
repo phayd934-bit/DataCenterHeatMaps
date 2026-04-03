@@ -1,0 +1,28 @@
+[
+  {
+    "zone_id": "us-va",
+    "country": "US",
+    "region": "Virginia",
+    "regulatory_complexity_score": 62,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Virginia Clean Economy Act (VCEA)",
+        "level": "state_provincial",
+        "summary": "Requires Virginia utilities to achieve 100% carbon-free electricity by 2045.",
+        "url": "https://law.lis.virginia.gov/vacodefull/title56/chapter23.3/",
+        "effective_date": "2020-04-12",
+        "relevance": "Affects energy sourcing for cooling system power consumption"
+      },
+      {
+        "category": "environmental",
+        "name": "Clean Air Act (Federal)",
+        "level": "federal",
+        "summary": "Regulates air emissions from stationary sources. Backup generators require permits.",
+        "url": "https://www.epa.gov/clean-air-act-overview",
+        "effective_date": "1970-12-31",
+        "relevance": "Backup cooling systems with diesel generators require EPA permits"
+      }
+    ]
+  }
+]

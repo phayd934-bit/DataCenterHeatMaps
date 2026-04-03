@@ -1,0 +1,28 @@
+[
+  {
+    "zone_id": "eu-de",
+    "country": "DE",
+    "region": "Hessen",
+    "regulatory_complexity_score": 78,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Efficiency Act (EnEfG)",
+        "level": "federal",
+        "summary": "Requires data centers >500kW to report PUE annually. New DCs must achieve PUE \u22641.3 by 2030.",
+        "url": "https://www.gesetze-im-internet.de/enefg/",
+        "effective_date": "2023-11-18",
+        "relevance": "Directly regulates cooling efficiency targets and waste heat reuse"
+      },
+      {
+        "category": "water_use",
+        "name": "Federal Water Act (WHG)",
+        "level": "federal",
+        "summary": "Regulates water extraction and discharge. Evaporative cooling requires permits.",
+        "url": "https://www.gesetze-im-internet.de/whg_2009/",
+        "effective_date": "2009-08-01",
+        "relevance": "Liquid cooling with water circuits requires permits under WHG"
+      }
+    ]
+  }
+]
