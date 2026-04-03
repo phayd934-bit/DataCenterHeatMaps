@@ -2,6 +2,7 @@ import { useState } from 'react'
 import MapContainer from './components/Map/MapContainer.jsx'
 import FacilityPanel from './components/Panels/FacilityPanel.jsx'
 import FilterSidebar from './components/Filters/FilterSidebar.jsx'
+import RegionPanel from './components/Panels/RegionPanel.jsx'
 
 export default function App() {
   const [selectedFacility, setSelectedFacility] = useState(null)
@@ -26,6 +27,9 @@ export default function App() {
           onClose={() => setSelectedFacility(null)}
           onViewRegulatory={(zoneId) => { setSelectedRegion(zoneId); setSelectedFacility(null) }}
         />
+      )}
+      {selectedRegion && (
+        <RegionPanel zoneId={selectedRegion} onClose={() => setSelectedRegion(null)} />
       )}
     </div>
   )
