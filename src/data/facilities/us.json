@@ -416,5 +416,33 @@
     "confidence_tier": "verified",
     "notes": "TRIPLE MATCH: PUE 1.1, wall-to-wall liquid, 4MW. Colovore's original facility. Smaller than SJC02.",
     "data_gaps": []
+  },
+  {
+    "id": "us-017",
+    "company": "Texas Advanced Computing Center",
+    "facility_name": "TACC Frontera (GRC Immersion)",
+    "lat": 30.2672,
+    "lng": -97.7431,
+    "address": "Austin, TX",
+    "country": "US",
+    "region": "Texas",
+    "status": "operational",
+    "facility_type": "ai_factory",
+    "capacity_mw": null,
+    "pue": null,
+    "pue_source": null,
+    "pue_source_url": "https://www.grcooling.com/iceraq/",
+    "cooling_method": "immersion",
+    "regulatory_zone": "us-tx",
+    "source": "GRC",
+    "source_url": "https://www.grcooling.com/iceraq/",
+    "source_date": "2026-04-03",
+    "last_verified": "2026-04-03",
+    "confidence_tier": "verified",
+    "notes": "GRC ICEraQ immersion cooling Frontera GPU subsystem. 11+ year relationship. COMPETITOR INTEL — GRC's flagship HPC reference.",
+    "data_gaps": [
+      "pue",
+      "capacity_mw"
+    ]
   }
 ]
