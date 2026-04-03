@@ -1,27 +1,265 @@
 [
   {
-    "zone_id": "eu-de",
-    "country": "DE",
-    "region": "Hessen",
-    "regulatory_complexity_score": 78,
+    "zone_id": "eu-wide",
+    "country": "EU",
+    "region": "European Union",
+    "regulatory_complexity_score": 72,
     "regulations": [
       {
         "category": "energy_efficiency",
-        "name": "Energy Efficiency Act (EnEfG)",
+        "name": "EU Energy Efficiency Directive (EED Recast) — Directive (EU) 2023/1791",
         "level": "federal",
-        "summary": "Requires data centers >500kW to report PUE annually. New DCs must achieve PUE \u22641.3 by 2030.",
-        "url": "https://www.gesetze-im-internet.de/enefg/",
-        "effective_date": "2023-11-18",
-        "relevance": "Directly regulates cooling efficiency targets and waste heat reuse"
+        "summary": "Mandatory annual reporting for all EU data centers with installed IT power demand ≥500 kW. Operators must disclose PUE, WUE, Energy Reuse Factor (ERF), and Renewable Energy Factor (REF) to the EU-wide database. First report covering 2023 was due 15 September 2024; from 2025 deadline is 15 May.",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023L1791",
+        "effective_date": "2023-10-10",
+        "relevance": "Any facility ≥500 kW must report PUE and cooling metrics annually. Cooling technology choices directly affect PUE disclosure and regulatory compliance standing."
       },
       {
-        "category": "water_use",
-        "name": "Federal Water Act (WHG)",
+        "category": "energy_efficiency",
+        "name": "EU Delegated Regulation (EU) 2024/1364 — Data Centre Sustainability Rating Scheme",
         "level": "federal",
-        "summary": "Regulates water extraction and discharge. Evaporative cooling requires permits.",
-        "url": "https://www.gesetze-im-internet.de/whg_2009/",
-        "effective_date": "2009-08-01",
-        "relevance": "Liquid cooling with water circuits requires permits under WHG"
+        "summary": "Sets out the common EU-wide rating scheme for data centre sustainability. Specifies exact KPIs and data formats required under EED Article 12 reporting. Covers energy use, water use, waste heat, grid services contribution, and cooling system details.",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1364",
+        "effective_date": "2024-06-01",
+        "relevance": "Defines how cooling systems must be documented and rated. Liquid cooling deployments may qualify for higher efficiency ratings under the scheme."
+      },
+      {
+        "category": "environmental",
+        "name": "EU Taxonomy Regulation (EU) 2020/852 — Climate Delegated Act (Data Centre Criteria)",
+        "level": "federal",
+        "summary": "Data center operations qualify as environmentally sustainable only if PUE ≤1.3 for existing facilities or ≤1.2 for new builds from 2025, combined with renewable energy and water thresholds. Misclassification exposes investors and operators to greenwashing liability under SFDR and CSRD.",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32021R2139",
+        "effective_date": "2021-01-01",
+        "relevance": "New data centers with liquid cooling are more likely to achieve PUE ≤1.2 and qualify as EU Taxonomy-aligned, enabling access to green financing and lower cost of capital."
+      },
+      {
+        "category": "environmental",
+        "name": "Corporate Sustainability Reporting Directive (CSRD) — Directive (EU) 2022/2464",
+        "level": "federal",
+        "summary": "Large companies and listed SMEs must report environmental, social, and governance data under European Sustainability Reporting Standards (ESRS), including Scope 1, 2, and 3 emissions. Data center operators above applicable thresholds must disclose energy consumption and efficiency metrics under ESRS E1.",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022L2464",
+        "effective_date": "2024-01-01",
+        "relevance": "Operators deploying liquid cooling to lower PUE and carbon intensity must document and report those gains under CSRD. Failure to improve efficiency metrics increases CSRD disclosure risk."
+      },
+      {
+        "category": "building_code",
+        "name": "EU Energy Performance of Buildings Directive (EPBD Recast) — Directive (EU) 2024/1275",
+        "level": "federal",
+        "summary": "Recast 2024 EPBD requires Member States to enforce minimum energy performance standards for technical building systems including cooling. Data centers in buildings subject to EPBD must demonstrate energy performance compliance and obtain energy performance certificates.",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024L1275",
+        "effective_date": "2024-05-28",
+        "relevance": "New data center buildings must meet minimum energy performance standards. Advanced cooling systems (DLC, immersion) contribute to achieving standards and reduce permitting friction."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-de",
+    "country": "DE",
+    "region": "Germany (Federal + Hessen)",
+    "regulatory_complexity_score": 85,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Energieeffizienzgesetz (EnEfG) — Act to Increase Energy Efficiency in Germany",
+        "level": "federal",
+        "summary": "Came into force 18 November 2023. Applies to private data centers ≥1 MW and public data centers ≥300 kW. Requires annual PUE reporting to BAFA by 31 March each year. Mandates 50% renewable energy from 1 January 2024 and 100% from 1 January 2027. Operators must establish energy or environmental management systems by 1 July 2025.",
+        "url": "https://www.gesetze-im-internet.de/enefg/",
+        "effective_date": "2023-11-18",
+        "relevance": "Directly mandates PUE measurement and annual disclosure. Liquid cooling investments that lower PUE demonstrate compliance. BAFA registry data is publicly searchable — a lead source for verified facility PUE data."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "EnEfG Waste Heat Requirements (Abwärmepflicht) — §§ 8–10 EnEfG",
+        "level": "federal",
+        "summary": "New data centers starting operations from 1 July 2026 must document and utilize at least 10% of generated waste heat, increasing to 15% in 2027 and 20% in 2028. Operators must report waste heat quantities and demonstrate utilization plans or techno-economic feasibility assessments to BAFA.",
+        "url": "https://www.twobirds.com/en/insights/2024/germany/rechenzentren-und-abwaerme-ein-ueberblick-ueber-die-gesetzlichen-vorgaben-zur-abwaermenutzung",
+        "effective_date": "2026-07-01",
+        "relevance": "Liquid and immersion cooling systems produce recoverable waste heat at higher and more usable temperatures than air cooling. New German data centers with liquid cooling are better positioned to meet waste heat utilization targets."
+      },
+      {
+        "category": "building_code",
+        "name": "Hessische Bauordnung (HBO) — Hessen State Building Code",
+        "level": "state_provincial",
+        "summary": "Hessen state building regulation governing construction, structural safety, fire protection, and technical building systems for large industrial and commercial buildings including data centers. Permitting authority is the local Bauamt (building authority).",
+        "url": "https://www.rv.hessenrecht.hessen.de/bshe/document/jlr-BauOHE2018pG",
+        "effective_date": "2018-01-01",
+        "relevance": "Data center construction and cooling infrastructure (piping, CDUs, immersion tanks) in Frankfurt/Hessen require HBO compliance including fire protection review for liquid cooling systems."
+      },
+      {
+        "category": "environmental",
+        "name": "Bundes-Immissionsschutzgesetz (BImSchG) — Federal Immission Control Act",
+        "level": "federal",
+        "summary": "Large data center facilities may require immission control permits if they exceed noise or emissions thresholds. Cooling towers and large HVAC equipment are subject to TA Lärm noise emission limits. Evaporative cooling towers also require assessment under VDI 2089.",
+        "url": "https://www.gesetze-im-internet.de/bimschg/",
+        "effective_date": "1974-03-15",
+        "relevance": "Evaporative cooling towers require BImSchG permitting and TA Lärm compliance. Dry closed-loop liquid cooling and immersion systems generate less noise and have a lighter regulatory footprint."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-nl",
+    "country": "NL",
+    "region": "Netherlands (National + North Holland Province)",
+    "regulatory_complexity_score": 90,
+    "regulations": [
+      {
+        "category": "building_code",
+        "name": "Besluit Kwaliteit Leefomgeving (BKL) Amendment — Hyperscale Data Center Ban",
+        "level": "federal",
+        "summary": "Amendment effective 1 January 2024 bans new hyperscale data centers (>10 hectares and >70 MW electrical connected load) throughout most of the Netherlands. Exceptions apply only in Het Hogeland municipality (Eemshaven) and Hollands Kroon municipality (Agriport A7).",
+        "url": "https://wetten.overheid.nl/BWBR0045516/2024-01-01",
+        "effective_date": "2024-01-01",
+        "relevance": "Smaller data centers (<70 MW) or facilities in permitted northern zones are the only viable new-build opportunities. Edge and mid-size facilities with liquid cooling remain the target market."
+      },
+      {
+        "category": "building_code",
+        "name": "Amsterdam Municipality — Data Center Moratorium (Permanent, April 2025)",
+        "level": "local",
+        "summary": "From April 2025, the Municipality of Amsterdam prohibits new data centers and all expansions within city boundaries. New construction is blocked unless specifically benefiting Amsterdam and not causing grid congestion. Facilities below 2,000 sqm and 5 MVA are exempt.",
+        "url": "https://nltimes.nl/2025/04/18/amsterdam-allowing-data-centers-municipality",
+        "effective_date": "2025-04-01",
+        "relevance": "Entirely blocks new cooling deployments or retrofits inside Amsterdam city limits. Operators seeking liquid cooling upgrades in the Amsterdam metro must operate in Aalsmeer, Haarlemmermeer, Almere, or permitted northern zones."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Wet Milieubeheer — Dutch Energy Saving Obligation (Energiebesparingsplicht)",
+        "level": "federal",
+        "summary": "Business locations consuming ≥50,000 kWh electricity or ≥25,000 m³ natural gas annually must implement all energy saving measures with a payback period of five years or less. Data centers are explicitly within scope. Compliance is verified by the Netherlands Enterprise Agency (RVO).",
+        "url": "https://www.infomil.nl/onderwerpen/duurzaamheid-energie/activiteitenbesluit-milieubeheer/energie/energiebesparing/",
+        "effective_date": "2019-07-01",
+        "relevance": "Operators must document and implement energy saving measures. Liquid cooling upgrades clearing the 5-year payback threshold qualify as mandated measures that can be reported to RVO as compliance evidence."
+      },
+      {
+        "category": "environmental",
+        "name": "Omgevingswet — Environmental Act (Cooling Systems and Water Discharge)",
+        "level": "federal",
+        "summary": "Active from 1 January 2024, the Environmental Act consolidates permitting for cooling installations using CO2, hydrocarbons, or ammonia refrigerants. Data centers must file energy saving reports and comply with discharge-of-water rules for cooling systems that produce water effluent.",
+        "url": "https://www.omgevingswetportaal.nl/wet-en-regelgeving/omgevingswet/",
+        "effective_date": "2024-01-01",
+        "relevance": "Liquid cooling systems using regulated refrigerants or producing water discharge require environmental permits. Direct-to-chip with open water loops requires water-discharge compliance assessment."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-ie",
+    "country": "IE",
+    "region": "Ireland",
+    "regulatory_complexity_score": 82,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "CRU Decision CRU2025236 — Large Energy Users Connection Policy (December 2025)",
+        "level": "agency",
+        "summary": "Final CRU policy published December 2025 ends the effective moratorium on new data center grid connections. New facilities with MIC ≥1 MVA must: (1) meet 80% of annual electricity demand via additional Irish renewables with a 6-year glide path; (2) provide dispatchable onsite or proximate generation/storage matching MIC; (3) participate in the Single Electricity Market (SEM). De-minimis threshold <1 MVA MIC is exempt.",
+        "url": "https://www.cru.ie/about-us/news/the-cru-publishes-its-decision-on-new-electricity-connection-policy-for-data-centres/",
+        "effective_date": "2025-12-01",
+        "relevance": "Efficient liquid cooling designs reduce total MIC required for a given IT load (lower PUE = less wasted power), easing compliance with onsite generation matching requirements and improving project economics."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Ireland EED Transposition — Data Centre Energy and Sustainability Performance Reporting",
+        "level": "federal",
+        "summary": "Ireland transposed EU EED Article 12 requiring operators of data centers ≥500 kW IT load to report PUE, WUE, ERF, and REF annually to the EU database. The Department of Climate, Energy and the Environment administers the obligation. First mandatory report was due 15 September 2024 covering calendar year 2023.",
+        "url": "https://www.gov.ie/en/department-of-climate-energy-and-the-environment/publications/data-centre-energy-and-sustainability-performance-reporting-obligations/",
+        "effective_date": "2024-09-15",
+        "relevance": "Irish data centers ≥500 kW must formally measure and disclose PUE. Liquid cooling investments that improve PUE must be reflected in mandatory annual disclosures and affect Taxonomy alignment assessment."
+      },
+      {
+        "category": "environmental",
+        "name": "EirGrid Grid Code — Dublin Constrained Zone Designation",
+        "level": "agency",
+        "summary": "Greater Dublin is designated a constrained zone for new large electricity consumers. All new data center connection requests in Dublin must demonstrate local generation adequacy. EirGrid and ESB Networks assess whether connection reinforces or strains local grid capacity. Cork, Limerick, Galway, and Waterford also identified as areas of concern.",
+        "url": "https://www.eirgridgroup.com/site-files/library/EirGrid/Connect-Business-User-Guide.pdf",
+        "effective_date": "2021-01-01",
+        "relevance": "Dublin data center projects with lower total connected load (enabled by efficient liquid cooling) face less grid impact scrutiny. Smaller-footprint, high-efficiency cooling designs improve connection prospects."
+      },
+      {
+        "category": "building_code",
+        "name": "Planning and Development Act 2000 (as amended) — Strategic Infrastructure Development",
+        "level": "federal",
+        "summary": "Data centers meeting thresholds for Strategic Infrastructure Development (SID) — aggregate floor area >50,000 sqm or connection at 110 kV or higher — are subject to An Bord Pleanála review. Environmental Impact Assessment (EIA) is required for large facilities, covering cooling water consumption and noise impacts.",
+        "url": "https://www.irishstatutebook.ie/eli/2000/act/30/enacted/en/html",
+        "effective_date": "2000-01-01",
+        "relevance": "Large data center projects with substantial cooling plant (CDUs, cooling towers, immersion tanks) undergo SID-level EIA. Closed-loop liquid cooling with minimal water discharge and low noise profile reduces EIA complexity."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-se",
+    "country": "SE",
+    "region": "Sweden",
+    "regulatory_complexity_score": 55,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Lag (2025:570) om uppgiftsskyldighet om energiprestanda i datacenter — Act on Data Centre Energy Performance Disclosure",
+        "level": "federal",
+        "summary": "Entered into force 1 July 2025. Requires owners or operators of data centers with installed IT power demand ≥500 kW to report energy performance data (PUE, WUE, ERF, REF) to the EU-wide database under EED Article 12. Operators must notify the Swedish Energy Agency (Energimyndigheten) by 27 April 2026; EU database reporting due 15 May 2026 covering full year 2025.",
+        "url": "https://www.energimyndigheten.se/en/climate/climate/data-centre-energy-performance-reporting/",
+        "effective_date": "2025-07-01",
+        "relevance": "Swedish data centers ≥500 kW must formally measure and disclose PUE annually. Facilities deploying liquid cooling to achieve lower PUE gain a regulatory compliance advantage and may qualify for Taxonomy-aligned financing."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Swedish Electricity Tax — Data Center Reduced Rate Abolition",
+        "level": "federal",
+        "summary": "Sweden previously offered a reduced electricity tax rate (0.5 öre/kWh) for data centers compared to the standard industrial rate (~36 öre/kWh). This incentive was abolished effective 1 July 2017, significantly increasing operational energy costs for Swedish data centers.",
+        "url": "https://knowledge.sdialliance.org/policies/sweden-abolishes-tax-incentives-for-data-centers",
+        "effective_date": "2017-07-01",
+        "relevance": "Higher electricity costs amplify the financial return of any PUE improvement. Liquid cooling investments with a 5–10% PUE reduction generate larger cost savings in Sweden than in lower-electricity-cost jurisdictions."
+      },
+      {
+        "category": "environmental",
+        "name": "Miljöbalk (Environmental Code) — Chapter 9 Environmentally Hazardous Activities",
+        "level": "federal",
+        "summary": "Large data centers may require environmental permits under the Miljöbalk if classified as environmentally hazardous activities. Cooling systems using ammonia, CO2, or producing significant water discharge require formal permit applications to County Administrative Boards (Länsstyrelser).",
+        "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/miljobalk-1998808_sfs-1998-808/",
+        "effective_date": "1999-01-01",
+        "relevance": "Cooling system choice affects permit complexity. Free-air and closed water loop cooling in Nordic climate have low regulatory burden. Immersion systems using novel or flammable dielectric fluids may require chemical risk assessment."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-fr",
+    "country": "FR",
+    "region": "France",
+    "regulatory_complexity_score": 70,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Code de l'énergie Article L.236-2 — Waste Heat Valorization (Law No. 2025-391 of 30 April 2025)",
+        "level": "federal",
+        "summary": "Enacted 30 April 2025, Law 2025-391 requires data centers with total rated power ≥1 MW to valorize their waste heat through recovery applications unless technically or economically infeasible. Specific conditions, modalities, and exemptions are to be defined by Conseil d'État decree.",
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051699899",
+        "effective_date": "2025-04-30",
+        "relevance": "Liquid cooling systems (especially immersion and DLC with warm water return loops) produce waste heat at higher and more usable temperatures than air cooling. French data centers with liquid cooling are better positioned to comply."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "CRE Deliberation No. 2024-229 (18 December 2024) — Grid Connection Framework for Large Energy Users",
+        "level": "agency",
+        "summary": "From 1 August 2025, CRE's deliberation governs grid connections for new large electricity consumers including data centers. Options: immediate connection at full capacity subject to 5-year reassessment, or progressive ramp-up over up to 10 years. CRE deliberation No. 2025-120 (7 May 2025) adds a fast-track for very large consumers on State-designated favorable sites.",
+        "url": "https://www.cre.fr/content/download/25673/document",
+        "effective_date": "2025-08-01",
+        "relevance": "Lower connected load via efficient cooling enables faster full-capacity connection. Data centers with liquid cooling achieving PUE ≤1.2 require less total grid import capacity for equivalent IT load."
+      },
+      {
+        "category": "environmental",
+        "name": "ICPE (Installations Classées pour la Protection de l'Environnement) — Data Center Environmental Classification",
+        "level": "federal",
+        "summary": "Data centers in France are classified as ICPEs if they exceed electricity consumption or cooling system thresholds. Most large data centers fall under rubric 2925 (transformers) or 4802 (flammable liquids for immersion cooling dielectrics). ICPE status requires declaration, registration, or full authorization depending on thresholds.",
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006834228",
+        "effective_date": "1992-01-01",
+        "relevance": "Immersion cooling with dielectric fluid may trigger ICPE classification under flammable liquid rubrics (4802), adding permitting steps. Operators must classify fluids and file accordingly before deployment."
+      },
+      {
+        "category": "building_code",
+        "name": "PINM (Projet d'Intérêt National Majeur) — Strategic Data Center Fast-Track Designation",
+        "level": "federal",
+        "summary": "France's PINM designation for large strategic data centers accelerates permitting by compressing multi-year planning processes. Data center projects qualifying as PINM benefit from coordinated central government support for planning approvals, grid connection, and environmental authorization.",
+        "url": "https://natlawreview.com/article/building-data-centers-france-navigating-regulatory-hurdles-and-unlocking-growth",
+        "effective_date": "2024-01-01",
+        "relevance": "Large AI-focused data center projects with advanced liquid cooling infrastructure demonstrating energy efficiency targets are well-positioned to seek PINM designation and accelerate deployment timelines."
       }
     ]
   }

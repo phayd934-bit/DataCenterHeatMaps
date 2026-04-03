@@ -3,16 +3,301 @@
     "zone_id": "ca-on",
     "country": "CA",
     "region": "Ontario",
-    "regulatory_complexity_score": 55,
+    "regulatory_complexity_score": 58,
     "regulations": [
       {
         "category": "energy_efficiency",
-        "name": "Ontario Energy Board Act",
+        "name": "National Energy Code of Canada for Buildings (NECB) 2020",
+        "level": "federal",
+        "summary": "Sets minimum energy-performance requirements for new buildings including data centers. Adopted as base code by Ontario for commercial buildings. Requires HVAC and lighting systems to meet defined efficiency thresholds. NECB 2025 edition published by NRC adds tighter envelope and mechanical requirements.",
+        "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/codes-canada-publications/national-energy-code-canada-buildings-2020",
+        "effective_date": "2020-01-01",
+        "relevance": "Governs mechanical cooling system design and energy performance for new data center buildings in Ontario"
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "NRCan Best Practice Guide for Canadian Data Centres (2024)",
+        "level": "federal",
+        "summary": "Natural Resources Canada guidance document outlining best practices for optimizing data center energy use. Recommends PUE, ERE, CUE, WUE as standardized KPIs. Adapted from EU Code of Conduct for Data Centre Energy Efficiency. Not legally binding but heavily referenced by operators and regulators.",
+        "url": "https://oee.nrcan.gc.ca/publications/statistics/dac/2024/index.cfm",
+        "effective_date": "2024-01-01",
+        "relevance": "Defines industry PUE benchmarks and cooling efficiency best practices used as reference standard for Canadian data centers"
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Ontario Energy Board Act, 1998",
         "level": "state_provincial",
-        "summary": "Regulates electricity pricing and distribution.",
+        "summary": "Establishes the Ontario Energy Board (OEB) as the regulator for electricity pricing, distribution, and service in Ontario. OEB sets rate structures for large industrial and commercial customers including data centers connected at distribution or transmission voltages.",
         "url": "https://www.ontario.ca/laws/statute/98o15",
         "effective_date": "1998-01-01",
-        "relevance": "Cooling energy costs governed by OEB rate structures"
+        "relevance": "Governs electricity pricing and large-consumer tariffs that directly affect data center cooling and power costs in Ontario"
+      },
+      {
+        "category": "building_code",
+        "name": "Ontario Building Code (OBC) 2024",
+        "level": "state_provincial",
+        "summary": "Came into force January 1, 2025. Introduces standards for operational greenhouse gas emissions in building design. References ASHRAE 90.1-2016 for commercial energy compliance including HVAC systems. Data centers over threshold size require permit and inspections for mechanical cooling systems.",
+        "url": "https://www.ontario.ca/page/building-code-updates",
+        "effective_date": "2025-01-01",
+        "relevance": "Building permits, HVAC mechanical compliance, and GHG emissions standards apply to new data center construction and major cooling retrofits in Ontario"
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Electricity Act, 1998 (Ontario) — ASHRAE 90.1 reference",
+        "level": "state_provincial",
+        "summary": "Ontario's Electricity Act incorporates ASHRAE Standard 90.1-2016 as a minimum energy efficiency reference for commercial buildings. ASHRAE 90.4 is the data center-specific companion standard covering Mechanical Load Component (MLC) and Electrical Loss Component (ELC) for data center HVAC design.",
+        "url": "https://www.ontario.ca/laws/statute/98e15",
+        "effective_date": "2019-07-01",
+        "relevance": "Establishes ASHRAE-based cooling efficiency baseline; ASHRAE 90.4 MLC methodology applies to data center chiller and cooling tower selection in Ontario"
+      },
+      {
+        "category": "environmental",
+        "name": "Canadian Environmental Protection Act, 1999 (CEPA)",
+        "level": "federal",
+        "summary": "Canada's primary federal environmental legislation. Regulates toxic substances, air emissions, and water quality including cooling water discharge. Bill S-5 (2023) added an explicit right to a healthy environment. Refrigerant and fluorocarbon emissions from data center cooling equipment are regulated under CEPA schedules.",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/c-15.31/",
+        "effective_date": "1999-09-14",
+        "relevance": "Refrigerant handling in cooling systems, cooling tower water discharge, and halon/fluorocarbon emissions all fall under CEPA compliance requirements for data centers"
+      },
+      {
+        "category": "environmental",
+        "name": "Ontario Environmental Assessment Act",
+        "level": "state_provincial",
+        "summary": "Requires environmental assessment for major undertakings including large electrical infrastructure projects. Amended by Regulation 50/24 (February 2024) to update Part II.3 electricity project requirements. Large data center grid connections exceeding 50 MW may trigger EA review.",
+        "url": "https://www.ontario.ca/document/guide-environmental-assessment-requirements-electricity-projects",
+        "effective_date": "2024-02-01",
+        "relevance": "Data centers requiring large grid connections (proposed >50 MW threshold) may require Ontario Minister of Energy approval and EA process"
+      },
+      {
+        "category": "safety",
+        "name": "CSA Z243.19 (Data Centre Standard) — referenced by Ontario Fire Code",
+        "level": "federal",
+        "summary": "CSA standard for data centre design and operations. Referenced in Ontario fire and building code applications. Covers suppression systems, electrical safety, and environmental controls for data center spaces.",
+        "url": "https://www.csagroup.org/store/product/CAN-CSA-Z243.19/",
+        "effective_date": "2019-01-01",
+        "relevance": "Cooling system design and fire suppression for data halls must comply with CSA Z243.19 provisions referenced under Ontario Building and Fire Codes"
+      }
+    ]
+  },
+  {
+    "zone_id": "ca-qc",
+    "country": "CA",
+    "region": "Quebec",
+    "regulatory_complexity_score": 62,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "National Energy Code of Canada for Buildings (NECB) 2020",
+        "level": "federal",
+        "summary": "Federal baseline energy code adopted by Quebec for new commercial construction. Sets minimum efficiency requirements for HVAC systems including cooling. Quebec references NECB for building permit issuance.",
+        "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/codes-canada-publications/national-energy-code-canada-buildings-2020",
+        "effective_date": "2020-01-01",
+        "relevance": "Governs minimum mechanical cooling efficiency for new data center buildings in Quebec"
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "NRCan Best Practice Guide for Canadian Data Centres (2024)",
+        "level": "federal",
+        "summary": "Federal guidance establishing PUE, WUE, ERE, and CUE as recommended KPIs for Canadian data centers. Adapted from EU Code of Conduct. Informs procurement criteria and government funding eligibility.",
+        "url": "https://oee.nrcan.gc.ca/publications/statistics/dac/2024/index.cfm",
+        "effective_date": "2024-01-01",
+        "relevance": "PUE benchmarks and cooling best practices used as reference for Quebec data center operators seeking grants or utility programs"
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Hydro-Québec Data Centre Electricity Tariff (Proposed EM Rate)",
+        "level": "state_provincial",
+        "summary": "Hydro-Québec proposed a new electricity tariff of approximately 13 CAD cents/kWh for data centers exceeding 5 MW (roughly double existing high-power rates). Filed with the Régie de l'énergie. If approved, will apply to new and existing facilities with a five-year transition period for existing customers. Effective date contingent on Régie approval expected H2 2026.",
+        "url": "https://news.hydroquebec.com/news/press-releases/all-quebec/hydro-quebec-proposing-regie-energie-new-rate-large-data-centres-adjustment-rate-cryptographic-use-applied-blockchains.html",
+        "effective_date": "2026-06-01",
+        "relevance": "Directly impacts operating cost model for large (>5 MW) data center cooling and total power consumption in Quebec; incentivizes efficiency improvements to reduce billable consumption"
+      },
+      {
+        "category": "environmental",
+        "name": "Canadian Environmental Protection Act, 1999 (CEPA)",
+        "level": "federal",
+        "summary": "Federal legislation governing toxic substances, refrigerants, and water discharge applicable to data center cooling infrastructure across all provinces including Quebec.",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/c-15.31/",
+        "effective_date": "1999-09-14",
+        "relevance": "Refrigerant emissions, cooling water discharge into municipal systems, and fluorocarbon handling for Quebec data centers"
+      },
+      {
+        "category": "environmental",
+        "name": "Loi sur la qualité de l'environnement (LQE) — Quebec Environment Quality Act",
+        "level": "state_provincial",
+        "summary": "Quebec's primary environmental statute. Requires Certificates of Authorization (C.A.) for activities that could affect the environment, including construction of data centers over certain size thresholds. Water use for cooling towers and thermal discharge into waterways requires authorization.",
+        "url": "https://www.legisquebec.gouv.qc.ca/en/document/cs/Q-2",
+        "effective_date": "1972-01-01",
+        "relevance": "Data centers using cooling towers or discharging thermal waste water in Quebec require environmental authorization; relevant for large liquid-cooled facilities"
+      },
+      {
+        "category": "building_code",
+        "name": "Code de construction du Québec — Chapitre I, Bâtiment (CCQ)",
+        "level": "state_provincial",
+        "summary": "Quebec's building code incorporating National Building Code requirements. Data centers require building permits under CCQ. Mechanical cooling systems must meet design standards for air handling, refrigerant safety, and energy efficiency.",
+        "url": "https://www.rbq.gouv.qc.ca/en/domains-of-intervention/building/building-code.html",
+        "effective_date": "2020-01-01",
+        "relevance": "Building permits, mechanical system design approval, and inspection requirements for cooling infrastructure in Quebec data centers"
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Hydro-Québec Clean Energy Rates (existing large-power tariffs)",
+        "level": "state_provincial",
+        "summary": "Current large-power rate structures (Tariff M and Tariff LP) provide competitive electricity pricing for data centers in Quebec. 99% renewable hydroelectric generation enables low-carbon operations. Existing rate structures support PUE optimization economics.",
+        "url": "https://www.hydroquebec.com/data-center/",
+        "effective_date": "2023-01-01",
+        "relevance": "Low, renewable-backed electricity rates are a primary incentive for data center siting in Quebec; cooling efficiency directly reduces electricity costs under these tariffs"
+      }
+    ]
+  },
+  {
+    "zone_id": "ca-bc",
+    "country": "CA",
+    "region": "British Columbia",
+    "regulatory_complexity_score": 70,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "National Energy Code of Canada for Buildings (NECB) 2020",
+        "level": "federal",
+        "summary": "Federal minimum energy code for buildings adopted by BC. Sets mechanical and HVAC efficiency requirements referenced in BC Building Code for data center construction.",
+        "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/codes-canada-publications/national-energy-code-canada-buildings-2020",
+        "effective_date": "2020-01-01",
+        "relevance": "Minimum energy efficiency baseline for cooling system design in new BC data centers"
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "NRCan Best Practice Guide for Canadian Data Centres (2024)",
+        "level": "federal",
+        "summary": "Federal guidance establishing PUE and related KPIs for data centers in Canada. Referenced for efficiency benchmarking and government incentive eligibility.",
+        "url": "https://oee.nrcan.gc.ca/publications/statistics/dac/2024/index.cfm",
+        "effective_date": "2024-01-01",
+        "relevance": "Defines PUE and cooling efficiency benchmarks applicable to BC data center operators"
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "BC Energy Statutes Amendment Act (Bill 31) — Data Centre Electricity Access",
+        "level": "state_provincial",
+        "summary": "Enacted 2025. Requires data center and AI projects exceeding defined power thresholds to participate in a competitive BC Hydro selection process to obtain grid access. BC Hydro launched competitive call in January 2026 allocating 100 MW for data centers and 300 MW for AI projects in a two-year period. Prioritizes job creation and resource-sector alignment over data centers when power is constrained.",
+        "url": "https://news.gov.bc.ca/releases/2025ECS0044-001032",
+        "effective_date": "2025-11-01",
+        "relevance": "Data centers seeking new BC Hydro connections must compete in the allocation process; energy-efficient designs (lower PUE, optimized cooling) improve competitive scoring"
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "BC Hydro Clean Electricity Call for Power (2024)",
+        "level": "state_provincial",
+        "summary": "BC Hydro's first competitive power procurement in 15 years, launched April 2024. Acquires approximately 3,000 GWh/year of new clean electricity. Relevant to data centers seeking self-supply or co-generation arrangements to complement grid connectivity under the new competitive framework.",
+        "url": "https://news.gov.bc.ca/releases/2024EMLI0018-000470",
+        "effective_date": "2024-04-01",
+        "relevance": "Data centers pursuing on-site generation or energy storage to offset cooling power can participate in BC Hydro procurement; reduces grid dependency under constrained access rules"
+      },
+      {
+        "category": "environmental",
+        "name": "Canadian Environmental Protection Act, 1999 (CEPA)",
+        "level": "federal",
+        "summary": "Federal environmental legislation covering refrigerant emissions, water discharge, and toxic substances. Applies to all data centers in BC.",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/c-15.31/",
+        "effective_date": "1999-09-14",
+        "relevance": "Refrigerant handling and cooling discharge requirements for BC data centers"
+      },
+      {
+        "category": "environmental",
+        "name": "BC Environmental Assessment Act (2018)",
+        "level": "state_provincial",
+        "summary": "Requires environmental assessment for reviewable projects in BC. Large electricity-consuming facilities may be designated as reviewable under regulations if grid impact exceeds thresholds. Data centers above certain MW thresholds triggering transmission upgrades may require EA process.",
+        "url": "https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/environmental-assessments",
+        "effective_date": "2018-12-31",
+        "relevance": "Large data center projects in BC requiring significant new transmission infrastructure may trigger provincial EA review"
+      },
+      {
+        "category": "building_code",
+        "name": "BC Building Code 2024 (BCBC)",
+        "level": "state_provincial",
+        "summary": "Updated BC Building Code referencing NECB and ASHRAE standards for commercial buildings. Mechanical cooling systems, including chillers, cooling towers, and CDUs, must meet design and safety standards for building permits. Data centers require local authority building permits.",
+        "url": "https://www2.gov.bc.ca/gov/content/industry/construction-industry/building-codes-standards/the-bc-building-code",
+        "effective_date": "2024-03-08",
+        "relevance": "Building permits and mechanical system approvals for cooling infrastructure in BC data centers; references ASHRAE 90.4 for data center energy design"
+      }
+    ]
+  },
+  {
+    "zone_id": "ca-ab",
+    "country": "CA",
+    "region": "Alberta",
+    "regulatory_complexity_score": 50,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "National Energy Code of Canada for Buildings (NECB) 2020",
+        "level": "federal",
+        "summary": "Federal minimum energy code adopted by Alberta for new commercial construction. Sets baseline mechanical efficiency requirements for HVAC including cooling systems in data centers.",
+        "url": "https://nrc.canada.ca/en/certifications-evaluations-standards/codes-canada/codes-canada-publications/national-energy-code-canada-buildings-2020",
+        "effective_date": "2020-01-01",
+        "relevance": "Sets minimum cooling system efficiency for new data center construction in Alberta"
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "NRCan Best Practice Guide for Canadian Data Centres (2024)",
+        "level": "federal",
+        "summary": "Federal guidance on data center PUE, cooling best practices, and energy KPIs applicable to Alberta operators.",
+        "url": "https://oee.nrcan.gc.ca/publications/statistics/dac/2024/index.cfm",
+        "effective_date": "2024-01-01",
+        "relevance": "PUE and cooling efficiency benchmarks used as reference standard for Alberta data centers"
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Alberta Utilities Statutes Amendment Act, 2025 (Bill 8) — Data Centre Power Framework",
+        "level": "state_provincial",
+        "summary": "Creates a 'bring your own energy' framework for data centers in Alberta. Data center projects must include on-site power generation to support their grid connection. Data centers (not Alberta ratepayers) bear the cost of required transmission upgrades under a cost-causation framework. Enables data centers to meet power needs without compromising grid reliability for other Albertans.",
+        "url": "https://www.alberta.ca/powering-new-pathways-for-data-centres",
+        "effective_date": "2025-01-01",
+        "relevance": "Data center developers must demonstrate on-site generation capacity; affects total power design including cooling loads when sizing generation assets"
+      },
+      {
+        "category": "environmental",
+        "name": "Alberta Technology Innovation and Emissions Reduction (TIER) Regulation",
+        "level": "state_provincial",
+        "summary": "Alberta's industrial carbon pricing system for large facilities (100,000+ tonnes CO2e/year). Carbon price at CAD 95/tCO2e in 2025, increasing CAD 15/year to CAD 170/tCO2e in 2030. Smaller data centers below the 100,000-tonne threshold are not directly covered but are subject to federal carbon pricing backstop.",
+        "url": "https://www.alberta.ca/technology-innovation-and-emissions-reduction-regulation",
+        "effective_date": "2020-01-01",
+        "relevance": "Very large data centers (100,000+ tCO2e/yr) in Alberta are subject to TIER; carbon cost affects economics of natural-gas-powered cooling versus low-carbon alternatives"
+      },
+      {
+        "category": "environmental",
+        "name": "Canadian Environmental Protection Act, 1999 (CEPA)",
+        "level": "federal",
+        "summary": "Federal environmental legislation covering refrigerants, air emissions, and water discharge. Applies to all data centers in Alberta.",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/c-15.31/",
+        "effective_date": "1999-09-14",
+        "relevance": "Refrigerant management and cooling system emissions compliance for Alberta data centers"
+      },
+      {
+        "category": "environmental",
+        "name": "Alberta Environmental Protection and Enhancement Act (EPEA)",
+        "level": "state_provincial",
+        "summary": "Alberta's principal environmental statute. Requires approvals for activities with significant environmental impact. Large data center cooling systems that discharge water or emit air contaminants from cooling towers may require EPEA approval or registration.",
+        "url": "https://www.alberta.ca/environmental-protection-enhancement-act.aspx",
+        "effective_date": "1993-01-01",
+        "relevance": "Cooling tower water discharge, evaporative cooling systems, and any cooling process with wastewater streams may require EPEA approval in Alberta"
+      },
+      {
+        "category": "building_code",
+        "name": "Alberta Building Code 2019 (ABC)",
+        "level": "state_provincial",
+        "summary": "Alberta's provincial building code governing construction permits, mechanical system design, and fire safety. References NECB for energy performance. Data centers require municipal building permits; cooling systems including CDUs and immersion baths require mechanical design drawings and inspection.",
+        "url": "https://www.alberta.ca/alberta-building-code.aspx",
+        "effective_date": "2019-01-01",
+        "relevance": "Building permits and mechanical cooling system approvals for data center construction in Alberta; relevant to liquid cooling installations at high-density sites like CAL-3"
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Alberta Data Centre Strategy — Investment Attraction Framework",
+        "level": "state_provincial",
+        "summary": "Alberta launched a provincial data centre attraction strategy in 2024 targeting $100 billion in investment. Provides streamlined approvals and investment support for qualifying data center projects. Emphasizes Alberta's deregulated electricity market, coal-free grid (phased out June 2024), and abundant land as advantages for data center development.",
+        "url": "https://www.alberta.ca/powering-new-pathways-for-data-centres",
+        "effective_date": "2024-01-01",
+        "relevance": "Investment incentives and streamlined regulatory processes available for qualifying data center projects in Alberta; reduces regulatory burden for cooling infrastructure approvals"
       }
     ]
   }
