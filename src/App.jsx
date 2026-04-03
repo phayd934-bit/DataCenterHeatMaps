@@ -1,4 +1,10 @@
+import { useState } from 'react'
+import MapContainer from './components/Map/MapContainer.jsx'
+
 export default function App() {
+  const [selectedFacility, setSelectedFacility] = useState(null)
+  const [selectedRegion, setSelectedRegion] = useState(null)
+
   return (
     <div className="flex h-screen bg-[#f8f9fa] font-sans text-[#3c4043]">
       {/* Left sidebar */}
@@ -9,9 +15,10 @@ export default function App() {
 
       {/* Map area */}
       <main className="flex-1 relative">
-        <div className="absolute inset-0 flex items-center justify-center text-[#9aa0a6]">
-          Map loads here
-        </div>
+        <MapContainer
+          onSelectFacility={(f) => { setSelectedFacility(f); setSelectedRegion(null) }}
+          onSelectRegion={(r) => { setSelectedRegion(r); setSelectedFacility(null) }}
+        />
       </main>
     </div>
   )
