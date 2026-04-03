@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import MapContainer from './components/Map/MapContainer.jsx'
+import FacilityPanel from './components/Panels/FacilityPanel.jsx'
+import FilterSidebar from './components/Filters/FilterSidebar.jsx'
 
 export default function App() {
   const [selectedFacility, setSelectedFacility] = useState(null)
@@ -7,19 +9,24 @@ export default function App() {
 
   return (
     <div className="flex h-screen bg-[#f8f9fa] font-sans text-[#3c4043]">
-      {/* Left sidebar */}
       <aside className="w-[280px] flex-shrink-0 border-r border-[#dadce0] bg-white overflow-y-auto p-4">
-        <h1 className="text-lg font-semibold text-[#1a73e8]">Solar Steam</h1>
-        <p className="text-xs text-[#5f6368] mt-1">Data Center Cooling Market Intelligence</p>
+        <FilterSidebar />
       </aside>
 
-      {/* Map area */}
       <main className="flex-1 relative">
         <MapContainer
           onSelectFacility={(f) => { setSelectedFacility(f); setSelectedRegion(null) }}
           onSelectRegion={(r) => { setSelectedRegion(r); setSelectedFacility(null) }}
         />
       </main>
+
+      {selectedFacility && (
+        <FacilityPanel
+          facility={selectedFacility}
+          onClose={() => setSelectedFacility(null)}
+          onViewRegulatory={(zoneId) => { setSelectedRegion(zoneId); setSelectedFacility(null) }}
+        />
+      )}
     </div>
   )
 }
