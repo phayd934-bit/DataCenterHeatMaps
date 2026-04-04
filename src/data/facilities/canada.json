@@ -1897,5 +1897,87 @@
     "data_gaps": [
       "pue"
     ]
+  },
+  {
+    "id": "ca-071",
+    "company": "IREN (formerly Iris Energy)",
+    "facility_name": "IREN Prince George BC -- 10MW Liquid-Cooled AI DC (GB300)",
+    "lat": 53.9171,
+    "lng": -122.7497,
+    "address": "Prince George, British Columbia",
+    "country": "CA",
+    "region": "British Columbia",
+    "status": "under_construction",
+    "facility_type": "colocation",
+    "capacity_mw": null,
+    "pue": null,
+    "pue_source": null,
+    "pue_source_url": "https://irisenergy.gcs-web.com/news-releases/news-release-details/iren-august-2025-monthly-update",
+    "cooling_method": "unknown",
+    "regulatory_zone": "ca-bc",
+    "source": "IREN Investor Relations",
+    "source_url": "https://irisenergy.gcs-web.com/news-releases/news-release-details/iren-august-2025-monthly-update",
+    "source_date": "2026-04-03",
+    "last_verified": "2026-04-04",
+    "confidence_tier": "reported",
+    "notes": "10MW IT load liquid-cooled AI data center at Prince George, BC. New building under construction for NVIDIA GB300 NVL72 systems (4,500+ GB300 GPUs). 12-acre freehold site. 100% renewable energy (BC Hydro, ~98% hydroelectric). Full fiber connectivity. Part of IREN's $9.7B Microsoft AI cloud contract. 50MW total site capacity. Bitcoin mining to AI cloud transition.",
+    "data_gaps": [
+      "pue"
+    ]
+  },
+  {
+    "id": "ca-072",
+    "company": "Bit Digital / Enovum Data Centers (BTBT)",
+    "facility_name": "Bit Digital Enovum MTL1 -- 24MW HPC DC (Montreal)",
+    "lat": 45.5017,
+    "lng": -73.5673,
+    "address": "Montreal, Quebec",
+    "country": "CA",
+    "region": "Quebec",
+    "status": "operational",
+    "facility_type": "colocation",
+    "capacity_mw": null,
+    "pue": null,
+    "pue_source": null,
+    "pue_source_url": "https://bit-digital.com/press-releases/bit-digital-inc-vertically-integrates-acquiring-tier-3-hpc-datacenter-company-280-mw-pipeline-in-major-metropolitan-areas/",
+    "cooling_method": "unknown",
+    "regulatory_zone": "ca-qc",
+    "source": "Bit Digital",
+    "source_url": "https://bit-digital.com/press-releases/bit-digital-inc-vertically-integrates-acquiring-tier-3-hpc-datacenter-company-280-mw-pipeline-in-major-metropolitan-areas/",
+    "source_date": "2026-04-03",
+    "last_verified": "2026-04-04",
+    "confidence_tier": "reported",
+    "notes": "24MW Tier 3 HPC data center at 3195 Chemin Bedford, Montreal. 70,000 sq ft. Enovum acquired by Bit Digital in 2024 as part of vertical integration strategy. 288MW proprietary pipeline across major metro areas. All future Enovum sites designed for DTC liquid cooling. Part of Bit Digital's pivot from crypto mining to HPC infrastructure.",
+    "data_gaps": [
+      "pue"
+    ]
+  },
+  {
+    "id": "ca-073",
+    "company": "University of Waterloo / SHARCNET",
+    "facility_name": "Nibi Supercomputer -- University of Waterloo (SHARCNET)",
+    "lat": 43.4723,
+    "lng": -80.5449,
+    "address": "Waterloo, Ontario",
+    "country": "CA",
+    "region": "Ontario",
+    "status": "operational",
+    "facility_type": "colocation",
+    "capacity_mw": null,
+    "pue": null,
+    "pue_source": null,
+    "pue_source_url": "https://uwaterloo.ca/news/meet-nibi-waterloos-supercomputer-empowering-researchers",
+    "cooling_method": "unknown",
+    "regulatory_zone": "ca-on",
+    "source": "University of Waterloo News",
+    "source_url": "https://uwaterloo.ca/news/meet-nibi-waterloos-supercomputer-empowering-researchers",
+    "source_date": "2026-04-03",
+    "last_verified": "2026-04-04",
+    "confidence_tier": "reported",
+    "notes": "Canada's first immersion-cooled supercomputer. $50M system. 752 nodes, 134,400 Intel Xeon 6 cores (Granite Rapids AP -- first major HPC deployment), 288 NVIDIA H100 GPUs, 25 PB flash storage. 9 single-phase immersion tanks + DLC for GPUs. Heat recovered to warm adjacent Lazaridis Quantum-Nano Centre. Built by Nokia/Hypertec. Replaces Graham system.",
+    "data_gaps": [
+      "pue",
+      "capacity_mw"
+    ]
   }
 ]
