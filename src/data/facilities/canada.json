@@ -1842,5 +1842,33 @@
       "pue",
       "capacity_mw"
     ]
+  },
+  {
+    "id": "ca-069",
+    "company": "University of Waterloo / SHARCNET Consortium",
+    "facility_name": "Nibi — University of Waterloo / SHARCNET",
+    "lat": 43.4723,
+    "lng": -80.5449,
+    "address": "Waterloo, Ontario",
+    "country": "CA",
+    "region": "Ontario",
+    "status": "operational",
+    "facility_type": "colocation",
+    "capacity_mw": null,
+    "pue": null,
+    "pue_source": null,
+    "pue_source_url": "https://www.datacenterdynamics.com/en/product-news/inside-nibi-how-immersion-cooling-and-ai-scale-compute-are-changing-canadian-hpc/",
+    "cooling_method": "unknown",
+    "regulatory_zone": "ca-on",
+    "source": "DatacenterDynamics",
+    "source_url": "https://www.datacenterdynamics.com/en/product-news/inside-nibi-how-immersion-cooling-and-ai-scale-compute-are-changing-canadian-hpc/",
+    "source_date": "2026-04-03",
+    "last_verified": "2026-04-04",
+    "confidence_tier": "verified",
+    "notes": "Canada's first large-scale immersion-cooled supercomputer. Hypertec Trident immersion-born servers. Intel Xeon 6 Granite Rapids AP CPUs. 9 immersion tanks + DLC for GPUs. 50% cooling energy reduction vs air. 40% smaller footprint. 100% heat reuse to Lazaridis Quantum-Nano Centre.",
+    "data_gaps": [
+      "pue",
+      "capacity_mw"
+    ]
   }
 ]
