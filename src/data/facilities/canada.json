@@ -1870,5 +1870,32 @@
       "pue",
       "capacity_mw"
     ]
+  },
+  {
+    "id": "ca-070",
+    "company": "QScale",
+    "facility_name": "QScale Q01 — Quebec Sovereign AI Data Center (Liquid Cooled, 600kW/rack)",
+    "lat": 46.734,
+    "lng": -71.175,
+    "address": "Levis, Quebec",
+    "country": "CA",
+    "region": "Quebec",
+    "status": "operational",
+    "facility_type": "colocation",
+    "capacity_mw": 96,
+    "pue": null,
+    "pue_source": null,
+    "pue_source_url": "https://www.opencompute.org/facilities/24/qscale-q01-quebec-city-canada",
+    "cooling_method": "unknown",
+    "regulatory_zone": "ca-qc",
+    "source": "Open Compute Project",
+    "source_url": "https://www.opencompute.org/facilities/24/qscale-q01-quebec-city-canada",
+    "source_date": "2026-04-03",
+    "last_verified": "2026-04-04",
+    "confidence_tier": "reported",
+    "notes": "Canada's first purpose-built AI colocation facility. 600kW+ per cabinet liquid cooling. 96MW campus (8 planned DCs). OCP Ready. Hydro-Quebec clean electricity. Heat recovery. Part of Canada's $925.6M sovereign AI compute strategy (Budget 2025). Government call for proposals (100MW+ sovereign AI DCs) ran Jan-Feb 2026. QScale is prime candidate for Canadian sovereign AI infrastructure.",
+    "data_gaps": [
+      "pue"
+    ]
   }
 ]
