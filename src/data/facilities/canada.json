@@ -1979,5 +1979,61 @@
       "pue",
       "capacity_mw"
     ]
+  },
+  {
+    "id": "ca-074",
+    "company": "Equinix",
+    "facility_name": "Equinix TR5 Markham -- Waste Heat to 14M sqft Mixed-Use Development (MDE)",
+    "lat": 43.8561,
+    "lng": -79.337,
+    "address": "Markham, Ontario",
+    "country": "CA",
+    "region": "Ontario",
+    "status": "operational",
+    "facility_type": "colocation",
+    "capacity_mw": null,
+    "pue": null,
+    "pue_source": null,
+    "pue_source_url": "https://blog.equinix.com/blog/2025/04/24/the-hidden-benefit-of-data-centers-warming-communities-not-just-servers/",
+    "cooling_method": "unknown",
+    "regulatory_zone": "ca-on",
+    "source": "Equinix Blog",
+    "source_url": "https://blog.equinix.com/blog/2025/04/24/the-hidden-benefit-of-data-centers-warming-communities-not-just-servers/",
+    "source_date": "2026-04-03",
+    "last_verified": "2026-04-04",
+    "confidence_tier": "reported",
+    "notes": "Heat exported from Equinix TR5 is distributed via Markham District Energy (MDE, est. 2000) to over 14 million sqft of mixed-use development including residential buildings, a hotel, university, and local shopping center in downtown Markham. MDE heat pump project commissioned late 2023. MDE was established by City of Markham after 1998 ice storm. IBM Canada was first anchor customer. Excess heat must be rejected in summer when demand is low.",
+    "data_gaps": [
+      "pue",
+      "capacity_mw"
+    ]
+  },
+  {
+    "id": "ca-075",
+    "company": "Telehouse Canada / Enwave",
+    "facility_name": "Telehouse / Enwave Toronto (151 + 250 Front St) -- Deep Lake Water Cooling + Heat Recovery",
+    "lat": 43.6453,
+    "lng": -79.3862,
+    "address": "Toronto, Ontario",
+    "country": "CA",
+    "region": "Ontario",
+    "status": "operational",
+    "facility_type": "colocation",
+    "capacity_mw": null,
+    "pue": null,
+    "pue_source": null,
+    "pue_source_url": "https://www.telehouse.ca/data-centres/",
+    "cooling_method": "unknown",
+    "regulatory_zone": "ca-on",
+    "source": "Telehouse Canada",
+    "source_url": "https://www.telehouse.ca/data-centres/",
+    "source_date": "2026-04-03",
+    "last_verified": "2026-04-04",
+    "confidence_tier": "reported",
+    "notes": "Telehouse Canada operates DCs at 151 and 250 Front Street West in Toronto, cooled by Enwave's Deep Lake Water Cooling System (DLWC). Three intake pipes draw 4C water from Lake Ontario to cool ~190 buildings including data centers, hospitals, and campuses. Waste heat from DCs is leveraged by Enwave's Green Heat Plant (Pearl Street) -- an electrified heat pump upgrades waste heat into district heating hot water. Saves Telehouse water, electricity, and infrastructure costs. Part of North America's largest district cooling system.",
+    "data_gaps": [
+      "pue",
+      "capacity_mw"
+    ]
   }
 ]
