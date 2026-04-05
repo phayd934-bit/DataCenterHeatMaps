@@ -69,10 +69,10 @@
       },
       {
         "category": "energy_efficiency",
-        "name": "EnEfG Waste Heat Requirements (Abwärmepflicht) — §§ 8–10 EnEfG",
+        "name": "EnEfG §§ 11-16 — Data Centre Energy Efficiency & Waste Heat (Abwärmenutzung)",
         "level": "federal",
-        "summary": "New data centers starting operations from 1 July 2026 must document and utilize at least 10% of generated waste heat, increasing to 15% in 2027 and 20% in 2028. Operators must report waste heat quantities and demonstrate utilization plans or techno-economic feasibility assessments to BAFA.",
-        "url": "https://www.twobirds.com/en/insights/2024/germany/rechenzentren-und-abwaerme-ein-ueberblick-ueber-die-gesetzlichen-vorgaben-zur-abwaermenutzung",
+        "summary": "DCs starting after July 2027 must reuse ≥15% of waste heat, after July 2028 ≥20%. Operators must report energy consumption per customer annually. Energy/environmental management system required by July 2025.",
+        "url": "https://www.gesetze-im-internet.de/enefg/__16.html",
         "effective_date": "2026-07-01",
         "relevance": "Liquid and immersion cooling systems produce recoverable waste heat at higher and more usable temperatures than air cooling. New German data centers with liquid cooling are better positioned to meet waste heat utilization targets."
       },
@@ -113,28 +113,28 @@
       },
       {
         "category": "building_code",
-        "name": "Amsterdam Municipality — Data Center Moratorium (Permanent, April 2025)",
+        "name": "Amsterdam Municipality — Data Center Policy (Duurzaam Digitaal 2020-2030)",
         "level": "local",
-        "summary": "From April 2025, the Municipality of Amsterdam prohibits new data centers and all expansions within city boundaries. New construction is blocked unless specifically benefiting Amsterdam and not causing grid congestion. Facilities below 2,000 sqm and 5 MVA are exempt.",
-        "url": "https://nltimes.nl/2025/04/18/amsterdam-allowing-data-centers-municipality",
+        "summary": "Amsterdam permanently restricts new hyperscale data centers. New DCs must achieve PUE ≤1.2. Part of Duurzaam Digitaal sustainability framework.",
+        "url": "https://www.amsterdam.nl/en/policy/sustainability/",
         "effective_date": "2025-04-01",
         "relevance": "Entirely blocks new cooling deployments or retrofits inside Amsterdam city limits. Operators seeking liquid cooling upgrades in the Amsterdam metro must operate in Aalsmeer, Haarlemmermeer, Almere, or permitted northern zones."
       },
       {
         "category": "energy_efficiency",
-        "name": "Wet Milieubeheer — Dutch Energy Saving Obligation (Energiebesparingsplicht)",
+        "name": "Activiteitenbesluit Milieubeheer — Energy Saving Obligation (Energiebesparingsplicht)",
         "level": "federal",
-        "summary": "Business locations consuming ≥50,000 kWh electricity or ≥25,000 m³ natural gas annually must implement all energy saving measures with a payback period of five years or less. Data centers are explicitly within scope. Compliance is verified by the Netherlands Enterprise Agency (RVO).",
-        "url": "https://www.infomil.nl/onderwerpen/duurzaamheid-energie/activiteitenbesluit-milieubeheer/energie/energiebesparing/",
+        "summary": "Requires businesses including data centers to implement recognized energy conservation measures with payback period ≤5 years. Enforced by municipalities.",
+        "url": "https://wetten.overheid.nl/BWBR0022762/2022-09-21",
         "effective_date": "2019-07-01",
         "relevance": "Operators must document and implement energy saving measures. Liquid cooling upgrades clearing the 5-year payback threshold qualify as mandated measures that can be reported to RVO as compliance evidence."
       },
       {
         "category": "environmental",
-        "name": "Omgevingswet — Environmental Act (Cooling Systems and Water Discharge)",
+        "name": "Omgevingswet (Environmental Act) — Environmental Permits for Cooling Systems",
         "level": "federal",
-        "summary": "Active from 1 January 2024, the Environmental Act consolidates permitting for cooling installations using CO2, hydrocarbons, or ammonia refrigerants. Data centers must file energy saving reports and comply with discharge-of-water rules for cooling systems that produce water effluent.",
-        "url": "https://www.omgevingswetportaal.nl/wet-en-regelgeving/omgevingswet/",
+        "summary": "Integrated environmental permitting for cooling water discharge, noise, and emissions. Replaced multiple predecessor laws from January 2024.",
+        "url": "https://wetten.overheid.nl/BWBR0037885/2024-01-01/0",
         "effective_date": "2024-01-01",
         "relevance": "Liquid cooling systems using regulated refrigerants or producing water discharge require environmental permits. Direct-to-chip with open water loops requires water-discharge compliance assessment."
       }
@@ -166,10 +166,10 @@
       },
       {
         "category": "environmental",
-        "name": "EirGrid Grid Code — Dublin Constrained Zone Designation",
+        "name": "CRU Decision CRU2025236 — Data Centre Electricity Connection Policy (incl. Dublin Constrained Zone)",
         "level": "agency",
-        "summary": "Greater Dublin is designated a constrained zone for new large electricity consumers. All new data center connection requests in Dublin must demonstrate local generation adequacy. EirGrid and ESB Networks assess whether connection reinforces or strains local grid capacity. Cork, Limerick, Galway, and Waterford also identified as areas of concern.",
-        "url": "https://www.eirgridgroup.com/site-files/library/EirGrid/Connect-Business-User-Guide.pdf",
+        "summary": "Commission for Regulation of Utilities establishes connection policy for data centres including Dublin grid constraints. Large energy users must demonstrate flexibility and onsite generation.",
+        "url": "https://www.cru.ie/about-us/news/the-cru-publishes-its-decision-on-new-electricity-connection-policy-for-data-centres/",
         "effective_date": "2021-01-01",
         "relevance": "Dublin data center projects with lower total connected load (enabled by efficient liquid cooling) face less grid impact scrutiny. Smaller-footprint, high-efficiency cooling designs improve connection prospects."
       },
@@ -201,10 +201,10 @@
       },
       {
         "category": "tax_incentive",
-        "name": "Swedish Electricity Tax — Data Center Reduced Rate Abolition",
+        "name": "Swedish Energy Tax — Data Center Electricity Tax Rate Changes",
         "level": "federal",
-        "summary": "Sweden previously offered a reduced electricity tax rate (0.5 öre/kWh) for data centers compared to the standard industrial rate (~36 öre/kWh). This incentive was abolished effective 1 July 2017, significantly increasing operational energy costs for Swedish data centers.",
-        "url": "https://knowledge.sdialliance.org/policies/sweden-abolishes-tax-incentives-for-data-centers",
+        "summary": "Data centers previously received reduced electricity tax rate. New rules align with EU regulations. Refund type 795 applies. Tax changes effective from 2025.",
+        "url": "https://skatteverket.se/servicelankar/otherlanguages/inenglishengelska/businessesandemployers/startingandrunningaswedishbusiness/payingtaxesbusinesses/energytax.4.676f4884175c97df4192bab.html",
         "effective_date": "2017-07-01",
         "relevance": "Higher electricity costs amplify the financial return of any PUE improvement. Liquid cooling investments with a 5–10% PUE reduction generate larger cost savings in Sweden than in lower-electricity-cost jurisdictions."
       },
@@ -254,10 +254,10 @@
       },
       {
         "category": "building_code",
-        "name": "PINM (Projet d'Intérêt National Majeur) — Strategic Data Center Fast-Track Designation",
+        "name": "Code de l'urbanisme Art. L300-6-2 — Projet d'Intérêt National Majeur (PINM) Fast-Track",
         "level": "federal",
-        "summary": "France's PINM designation for large strategic data centers accelerates permitting by compressing multi-year planning processes. Data center projects qualifying as PINM benefit from coordinated central government support for planning approvals, grid connection, and environmental authorization.",
-        "url": "https://natlawreview.com/article/building-data-centers-france-navigating-regulatory-hurdles-and-unlocking-growth",
+        "summary": "Enables strategic projects including data centers to receive accelerated planning approval. Allows state to override local planning documents for nationally significant infrastructure.",
+        "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074075/LEGISCTA000048473052/",
         "effective_date": "2024-01-01",
         "relevance": "Large AI-focused data center projects with advanced liquid cooling infrastructure demonstrating energy efficiency targets are well-positioned to seek PINM designation and accelerate deployment timelines."
       }

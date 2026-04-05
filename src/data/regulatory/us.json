@@ -114,10 +114,10 @@
       },
       {
         "category": "energy_efficiency",
-        "name": "ERCOT Grid Interconnection Requirements",
+        "name": "PUC Texas / ERCOT Large Load Grid Interconnection Requirements",
         "level": "state_provincial",
-        "summary": "Data centers connecting to the ERCOT grid must comply with interconnection procedures. SB 6 (2025) expanded requirements: large loads (75+ MW) must undergo interconnection review, fund transmission upgrades, and register backup generators. ERCOT developing reliability service for demand reductions from large loads.",
-        "url": "https://www.ercot.com/gridinfo/load/load_hist",
+        "summary": "PUC Rules (16 TAC § 25.75) require transmission service providers to file interconnection costs. Large loads must demonstrate site control and meet study requirements.",
+        "url": "https://interchange.puc.texas.gov/Documents/55999_168_1550025.PDF",
         "effective_date": "2002-01-01",
         "relevance": "Large liquid-cooled AI data centers with high power draw must plan for ERCOT interconnection review and potential demand response obligations for cooling loads."
       }
@@ -255,10 +255,10 @@
       },
       {
         "category": "energy_efficiency",
-        "name": "Illinois POWER Act (Proposed — 2026 Session)",
+        "name": "Illinois Data Center Energy and Water Reporting Act (SB2181)",
         "level": "state_provincial",
-        "summary": "Introduced February 11, 2026. Would require data centers to submit clean energy supply plans (80% clean by 2030, 100% by 2045), mandate water usage reporting, require efficient cooling methods, and invest in renewable generation. Also requires community engagement. Not yet enacted as of April 2026.",
-        "url": "https://capitolnewsillinois.com/news/power-act-lawmakers-seek-to-regulate-new-data-centers-power-water-usage/",
+        "summary": "Beginning Jan 1 2026, all data centers must annually report energy and water consumption to the Illinois Power Agency by March 31. Agency to study impact on ratepayers.",
+        "url": "https://www.ilga.gov/Legislation/BillStatus?DocTypeID=SB&DocNum=2181&GAID=18&SessionID=114&LegID=161884",
         "effective_date": null,
         "relevance": "If enacted, would directly mandate efficient cooling technologies; operators planning Illinois data centers should monitor this legislation closely."
       },
