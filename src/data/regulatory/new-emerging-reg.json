@@ -1,0 +1,375 @@
+[
+  {
+    "zone_id": "me-sa",
+    "country": "Saudi Arabia",
+    "region": "National",
+    "regulatory_complexity_score": 68,
+    "regulations": [
+      {
+        "category": "data_center_specific",
+        "name": "Data Center Services Regulations (CST, 2024)",
+        "level": "federal",
+        "summary": "Issued by the Communications, Space and Technology Commission (CST) and effective 1 January 2024. Applies to all wholesale and retail data center service providers in Saudi Arabia. Providers must register with CST under one of four categories (Qualifying, Limited, Standard, Advanced), each with distinct requirements. Registration must be renewed every three years. Mandates energy management and sustainability plans, physical security controls, service level agreements, and accurate reporting of power capacity, connectivity, and certifications. Aims to position Saudi Arabia as a regional data center hub under Vision 2030.",
+        "url": "https://www.cst.gov.sa/en/media-center/news/CST-Announces-that-the-Data-Center-Services-Regulations-Document-has-Entered-Into-Force",
+        "effective_date": "2024-01-01",
+        "relevance": "Primary data center regulation in Saudi Arabia. Mandates sustainability and energy management plans, directly affecting cooling system design and efficiency reporting. All operators must register and comply or face enforcement action."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Saudi Energy Conservation Code for Commercial Buildings (SBC 601)",
+        "level": "federal",
+        "summary": "Produced by the Saudi Energy Efficiency Center (SEEC) under the Saudi Building Code National Committee (SBCNC). Provides minimum energy efficiency requirements for all non-residential buildings including HVAC systems, building envelope thermal performance, lighting, and hot water systems. Requires air conditioning systems to meet energy efficiency standards adapted to Saudi Arabia's extreme climate zones. Commercial buildings must demonstrate compliance with thermal insulation and HVAC efficiency benchmarks during permitting.",
+        "url": "https://www.seec.gov.sa/en/energy-efficiency-sectors/buildings-sector",
+        "effective_date": "2018-01-01",
+        "relevance": "Directly governs HVAC and cooling system efficiency requirements for data center construction. In Saudi Arabia's extreme heat environment, cooling represents the dominant energy load. SBC 601 sets the baseline for building envelope and mechanical system performance that all new data centers must meet."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "SASO 2874 - Energy Efficiency for Large-Capacity Air Conditioners",
+        "level": "federal",
+        "summary": "Technical regulation issued by the Saudi Standards, Metrology and Quality Organization (SASO). Sets minimum energy performance requirements for large-capacity air conditioning systems. Establishes Energy Efficiency Ratio (EER) thresholds for electrically-operated large AC units. Products must meet SASO 2874/2016 requirements and carry SASO energy efficiency labels. SEEC oversees enforcement through the national energy efficiency labeling program.",
+        "url": "https://www.saso.gov.sa/en/laws-and-regulations/technical_regulations/pages/default.aspx",
+        "effective_date": "2016-01-01",
+        "relevance": "Large-capacity cooling equipment deployed in data centers must meet SASO minimum efficiency standards. Applies to precision air conditioning units, computer room air handlers (CRAHs), and chiller systems purchased for data center cooling infrastructure."
+      },
+      {
+        "category": "environmental",
+        "name": "Environment Regulation (Royal Decree No. M/165, 2020)",
+        "level": "federal",
+        "summary": "Saudi Arabia's primary environmental law, issued by Royal Decree No. M/165 dated 19 Dhul Qada 1441 (10 July 2020), effective 13 January 2021. Supersedes the 2011 regulation. Established five specialized centers under the Ministry of Environment, Water and Agriculture (MEWA), including the National Centre for Environmental Compliance (NCEC). The NCEC classifies projects into three categories based on environmental impact severity and requires environmental permits to construct and environmental permits to operate. Classification considers activity type, energy usage, resource depletion, proximity to sensitive receptors, and duration/reversibility of impacts.",
+        "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+        "effective_date": "2021-01-13",
+        "relevance": "Data center construction requires NCEC environmental permits before construction and before operation. Project classification determines the level of Environmental Impact Assessment required. Cooling water discharge, noise from cooling equipment, and energy consumption are relevant assessment factors."
+      },
+      {
+        "category": "water_use",
+        "name": "Water Law (Royal Decree No. M/159, 2020)",
+        "level": "federal",
+        "summary": "Comprehensive water resource management law issued by Royal Decree No. M/159 dated 11 Dhu Al-Qa'dah 1441 (2 July 2020). Administered by the Ministry of Environment, Water and Agriculture (MEWA). Establishes framework for management of conventional water resources (non-renewable groundwater, renewable groundwater, surface water) and non-conventional resources (treated wastewater). The General Directorate of Water Resources and Rationalization oversees water allocation, conservation, and sustainable use. Executive Regulations for the Protection of Aqueous Media from Pollution set effluent discharge standards.",
+        "url": "https://laws.boe.gov.sa/Files/Download/?attId=a156d098-3e49-49b8-bb14-adbb012309cc",
+        "effective_date": "2020-07-02",
+        "relevance": "Critical for data centers using evaporative cooling in Saudi Arabia's water-scarce environment. Governs water extraction permits, effluent discharge from cooling tower blowdown, and wastewater treatment requirements. Water scarcity makes this a major constraint for wet cooling approaches."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Special Economic Zones Regulations (Cloud Computing SEZ)",
+        "level": "federal",
+        "summary": "Saudi Council of Ministers approved regulations in January 2026 covering four Special Economic Zones including the Cloud Computing SEZ. Licensed entities within SEZs benefit from targeted tax incentives: exclusion from Zakat regulations, withholding tax exemptions, and customs duty suspension on eligible imported goods. Corporate income tax applies under Saudi Tax Law but with potential activity-specific exemptions. Framework enters into force April 16, 2026 (90 days after Official Gazette publication). Additional incentives for digital infrastructure investment may be defined through licensing guidelines.",
+        "url": "https://www.misa.gov.sa/en/",
+        "effective_date": "2026-04-16",
+        "relevance": "The Cloud Computing SEZ provides direct fiscal incentives for data center investment in Saudi Arabia. Customs duty suspension reduces the cost of importing cooling equipment, servers, and infrastructure components. Zakat exemption and withholding tax relief improve the financial case for foreign data center operators."
+      },
+      {
+        "category": "building_code",
+        "name": "Saudi Building Code (SBC) - General Framework",
+        "level": "federal",
+        "summary": "Comprehensive building code framework administered by the Saudi Building Code National Committee (SBCNC). Covers structural safety, fire protection, mechanical systems, plumbing, and accessibility requirements for all construction in Saudi Arabia. Data centers must comply with structural load requirements for heavy server and cooling equipment, fire suppression standards for server rooms, mechanical ventilation requirements, and electrical system provisions. Compliance verified during building permit review by local authorities.",
+        "url": "https://sbc.gov.sa/En/Pages/default.aspx",
+        "effective_date": "2018-01-01",
+        "relevance": "All new data center construction must comply with SBC requirements. Structural provisions for equipment loading, fire suppression system requirements for server halls, and mechanical system specifications directly impact cooling infrastructure design and installation."
+      }
+    ]
+  },
+  {
+    "zone_id": "me-ae",
+    "country": "UAE",
+    "region": "National",
+    "regulatory_complexity_score": 62,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Federal Decree-Law No. 11 of 2024 on the Reduction of Climate Change Effects",
+        "level": "federal",
+        "summary": "First legally binding nationwide climate framework in the MENA region. Issued August 2024, effective 30 May 2025. Requires all businesses in the UAE (including free zones) to measure, report, and reduce greenhouse gas emissions. Entities emitting 0.5 million metric tons or more of CO2-equivalent annually (Scope 1 and 2) must register with the National Register for Carbon Credits (NRCC) and undergo third-party emissions verification. All organizations must align operations with the law by 30 May 2026. Non-compliance penalties range from AED 50,000 to AED 2,000,000, escalating to AED 4,000,000 for repeat violations.",
+        "url": "https://uaelegislation.gov.ae/en/legislations/2558",
+        "effective_date": "2025-05-30",
+        "relevance": "Large-scale data centers are significant energy consumers and may exceed the 0.5M ton CO2e threshold requiring mandatory NRCC registration. All data center operators must implement emissions measurement, reporting, and reduction programs. Energy-efficient cooling directly reduces Scope 2 emissions from grid electricity."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "General Framework for Adopting Sustainable Digital Transformation (2024)",
+        "level": "federal",
+        "summary": "Federal policy issued in 2024 to integrate sustainability principles into all digital transformation activities within government entities. Structured across 8 pillars covering environmental protection and sustainable digital futures. Specifically encourages engagement with data centers and cloud service providers committed to sustainability, energy efficiency, and resource conservation. Part of the extended 'Year of Sustainability' initiative under Presidential directive.",
+        "url": "https://www.uaelegislation.gov.ae/en/policy/details/the-general-framework-for-adopting-sustainable-digital-transformation",
+        "effective_date": "2024-01-01",
+        "relevance": "Sets government procurement preference for sustainable, energy-efficient data centers and cloud providers. Data center operators serving UAE government clients must demonstrate sustainability commitments. Drives demand for advanced cooling solutions with lower environmental footprint."
+      },
+      {
+        "category": "data_center_specific",
+        "name": "TDRA National Data Center Strategy (2023) and Cloud Service Provider Framework",
+        "level": "federal",
+        "summary": "The Telecommunications and Digital Government Regulatory Authority (TDRA) established the National Data Center Strategy in 2023, setting operational standards for data center security, energy efficiency, and international compliance. Operators must adhere to ISO/IEC 27001 for information security management and ISO 50001 for energy management. Government and sovereign data must not leave UAE territory. Cloud service providers must register with TDRA through the voluntary CLSP Information Form. TDRA also established accreditation frameworks for cloud providers.",
+        "url": "https://tdra.gov.ae/en/About/tdra-sectors/telecommunication/regulatory-affairs-department/regulations-and-ruling",
+        "effective_date": "2023-01-01",
+        "relevance": "ISO 50001 energy management compliance directly requires monitoring and optimizing cooling system energy consumption. Data localization requirements drive domestic data center demand. TDRA sets the operational baseline for all UAE data center facilities."
+      },
+      {
+        "category": "building_code",
+        "name": "Al Sa'fat - Dubai Green Building System (2nd Edition, 2023)",
+        "level": "emirate",
+        "summary": "Dubai's mandatory green building rating system, effective since October 2020, replacing the earlier Green Building Regulations and Specifications. Second edition issued January 2023. Classifies buildings into Bronze, Silver, Gold, and Platinum categories. All new buildings must achieve minimum Silver rating. Covers thermal insulation, HVAC efficiency, sustainable materials, renewable energy production, water management, and smart technology integration. Unlike voluntary LEED/BREEAM, Estidama/Al Sa'fat is embedded in law. Abu Dhabi uses the parallel Estidama Pearl Rating System (minimum 1 Pearl, 2 Pearls for government buildings).",
+        "url": "https://www.dm.gov.ae/municipality-business/al-safat-dubai-green-building-system/",
+        "effective_date": "2023-01-01",
+        "relevance": "All new data center construction in Dubai must achieve minimum Silver Al Sa'fat rating. HVAC efficiency, water conservation, and renewable energy integration are mandatory criteria. Abu Dhabi's Estidama Pearl system imposes parallel requirements. Cooling system design must meet green building performance benchmarks."
+      },
+      {
+        "category": "environmental",
+        "name": "Abu Dhabi Estidama Pearl Rating System",
+        "level": "emirate",
+        "summary": "Abu Dhabi's mandatory sustainable development framework, launched in 2010 by the Department of Municipalities and Transport. All new developments must achieve minimum 1 Pearl rating (2 Pearls for government-funded buildings). Requirements span energy, water, materials, ecology, and indoor environmental quality. Targets include 31% energy reduction, 37% water usage reduction, and 65% construction waste diversion from landfills. Certified third-party assessors verify compliance during design and construction phases.",
+        "url": "https://jawdah.qcc.abudhabi.ae/en/Registration/QCCServices/Services/STD/ISGL/ISGL-LIST/DP-306.pdf",
+        "effective_date": "2010-01-01",
+        "relevance": "Data centers in Abu Dhabi must meet Pearl Rating requirements for energy and water performance. The 31% energy reduction target and 37% water reduction target directly impact cooling system design choices. High-efficiency cooling and water-conserving approaches are needed to achieve Pearl compliance."
+      },
+      {
+        "category": "water_use",
+        "name": "UAE Water Security Strategy 2036",
+        "level": "federal",
+        "summary": "National water security strategy targeting reduction in total demand for water resources by 21%, increasing water productivity index to USD 110 per cubic meter, increasing the reuse of treated water to 95%, and increasing the national water storage capacity to 2 days. The UAE relies on desalination for approximately 42% of its water supply. Water tariffs are set by individual emirate utility authorities (DEWA in Dubai, ADDC in Abu Dhabi) and include conservation-tiered pricing structures.",
+        "url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/environment-and-energy/uae-water-security-strategy-2036",
+        "effective_date": "2017-01-01",
+        "relevance": "Data centers using evaporative cooling face water cost and availability constraints under this strategy. Tiered water pricing penalizes high-volume consumption. The 95% treated water reuse target may create opportunities for data centers to use recycled water for cooling."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "UAE Corporate Tax Law (Federal Decree-Law No. 47 of 2022) - Free Zone Provisions",
+        "level": "federal",
+        "summary": "The UAE introduced a 9% corporate tax effective June 2023 for taxable income exceeding AED 375,000. However, qualifying entities in designated free zones benefit from a 0% corporate tax rate on qualifying income. Data center operators established in free zones (such as Dubai Internet City, Abu Dhabi Global Market, Dubai Silicon Oasis) may qualify for this 0% rate if they meet substance requirements. Non-qualifying revenue is taxed at 9%. Transfer pricing rules apply to related-party transactions.",
+        "url": "https://uaelegislation.gov.ae/en/legislations/2024",
+        "effective_date": "2023-06-01",
+        "relevance": "Free zone 0% corporate tax provides significant fiscal incentive for data center investment in the UAE. Many major data center clusters are located within or adjacent to free zones. Reduces the effective cost of capital investment in cooling infrastructure and facility construction."
+      }
+    ]
+  },
+  {
+    "zone_id": "apac-in",
+    "country": "India",
+    "region": "National",
+    "regulatory_complexity_score": 58,
+    "regulations": [
+      {
+        "category": "data_center_specific",
+        "name": "Infrastructure Status for Data Centers (Department of Economic Affairs Notification, October 2022)",
+        "level": "federal",
+        "summary": "In the Union Budget 2022-23, data centers were proposed for inclusion in the Harmonized Master List of Infrastructure. In October 2022, the Department of Economic Affairs, Ministry of Finance designated data centers as infrastructure under the 'Communication' category. This status enables access to long-term infrastructure financing from banks and institutions, external commercial borrowings, infrastructure investment trusts (InvITs), and viability gap funding. Aligns with TRAI's recommendation on the subject.",
+        "url": "https://www.dpiit.gov.in/static/uploads/2025/07/4274d19311c60fea1c8ac2f0ea315283.pdf",
+        "effective_date": "2022-10-01",
+        "relevance": "Infrastructure status unlocks cheaper financing for data center construction including cooling systems. Enables access to long-tenure infrastructure bonds and institutional lending at favorable rates. Directly improves the investment case for capital-intensive liquid cooling and advanced HVAC systems."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Conservation (Amendment) Act, 2022 (Act No. 19 of 2022)",
+        "level": "federal",
+        "summary": "Amends the Energy Conservation Act, 2001. Effective 1 January 2023. Empowers the central government to specify a carbon credit trading scheme (notified 28 July 2023). Mandates minimum share of non-fossil energy consumption for designated consumers. The Bureau of Energy Efficiency (BEE) maintains data and ensures compliance for designated consumers under the Perform, Achieve and Trade (PAT) scheme. Data centers as large energy consumers may be designated under future BEE notifications. Establishes the framework for India's Carbon Credit Trading Scheme (ICCTS).",
+        "url": "https://powermin.gov.in/sites/default/files/The_Energy_Conservation_Amendment_Act_2022_0.pdf",
+        "effective_date": "2023-01-01",
+        "relevance": "Data centers may be designated as 'designated consumers' under BEE, requiring mandatory energy audits, efficiency benchmarks, and PAT compliance. Carbon credit trading creates financial incentive for energy-efficient cooling. Non-fossil energy mandates encourage renewable-powered cooling operations."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Conservation Building Code (ECBC, 2017) - Bureau of Energy Efficiency",
+        "level": "federal",
+        "summary": "BEE's prescriptive and performance-based mandatory code for commercial buildings with connected load of 100 kW or above or contract demand of 120 kVA or above. Covers building envelope, HVAC systems, lighting, electrical systems, and water heating. Three performance tiers: ECBC (baseline), ECBC+ (enhanced), and SuperECBC (maximum). BEE and Lawrence Berkeley National Lab collaborated on Phase-II to develop data center-specific requirements for ECBC revision, including evaluation of energy performance metrics suitable for data center PAT-type programs.",
+        "url": "https://www.beeindia.gov.in/renewable-consumption-obligations-rco.php",
+        "effective_date": "2017-06-19",
+        "relevance": "Commercial data center buildings exceeding 100 kW connected load must comply with ECBC HVAC efficiency requirements. Data center-specific metrics (PUE-type) are being evaluated for future inclusion. Cooling system efficiency is the primary variable in ECBC compliance for data center buildings."
+      },
+      {
+        "category": "environmental",
+        "name": "EIA Notification, 2006 under Environment Protection Act, 1986",
+        "level": "federal",
+        "summary": "Under Section 3 of the Environment Protection Act, 1986 (Act No. 29 of 1986), the EIA Notification 2006 mandates prior environmental clearance for scheduled project categories. Data centers are not explicitly listed as a scheduled category. However, building and construction projects exceeding 20,000 square meters of built-up area require environmental clearance. Large data center campuses routinely exceed this threshold. Environmental clearance involves screening, scoping, public consultation, and expert appraisal. State-level Expert Appraisal Committees process applications for Category B projects.",
+        "url": "https://environmentclearance.nic.in/writereaddata/Form-1A/HomeLinks/GuidanceManual.htm",
+        "effective_date": "2006-09-14",
+        "relevance": "Data centers above 20,000 m2 built-up area require environmental clearance. Cooling system water consumption, thermal discharge, noise emissions, and energy demand are relevant assessment parameters. While data centers lack a dedicated EIA category, the building construction threshold catches most hyperscale facilities."
+      },
+      {
+        "category": "water_use",
+        "name": "Central Ground Water Authority (CGWA) NOC Requirements",
+        "level": "federal",
+        "summary": "Under the Environment Protection Act 1986, the Central Ground Water Authority (CGWA) requires No Objection Certificates for groundwater extraction by industries and infrastructure projects. Applies to any entity extracting groundwater through borewells or tubewells. NOC requirements vary by overexploited, critical, semi-critical, and safe groundwater assessment zones. Conditions may include mandatory rainwater harvesting, treated wastewater reuse, and water metering. State-level groundwater authorities may impose additional requirements.",
+        "url": "https://cgwa.mowr.gov.in/",
+        "effective_date": "2020-11-24",
+        "relevance": "Data centers using groundwater for cooling systems (cooling towers, make-up water) require CGWA NOC. In overexploited zones, NOCs may be denied or restricted, forcing operators to use municipal supply or recycled water. Mandatory rainwater harvesting conditions apply to all approvals."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Data Center Tax Holiday (Union Budget 2025-26, Income Tax Act 2025)",
+        "level": "federal",
+        "summary": "Announced in Union Budget 2025-26 and codified through Entry 13C in Schedule IV (read with Section 11) of the Income-tax Act, 2025. Provides a tax holiday extending to 2047 for qualifying foreign cloud service providers establishing data center infrastructure in India. Separate Transfer Pricing Safe Harbour provisions for Indian data center infrastructure providers. Part of the government's strategy to position India as a global data center hub. Complements the infrastructure status designation for favorable financing.",
+        "url": "https://www.indiabudget.gov.in/",
+        "effective_date": "2025-04-01",
+        "relevance": "Tax holiday until 2047 provides a strong long-term fiscal incentive for data center investment in India. Reduces effective operating costs, improving the business case for investing in advanced cooling technologies. Transfer pricing safe harbour simplifies compliance for domestic infrastructure providers."
+      },
+      {
+        "category": "building_code",
+        "name": "National Building Code of India 2016 (NBC 2016) - Bureau of Indian Standards",
+        "level": "federal",
+        "summary": "Published by the Bureau of Indian Standards (BIS) as a recommendatory model code. Provides comprehensive framework for planning, design, construction, and operation of buildings. Part 4 covers fire and life safety including fire suppression systems for server rooms. Part 8 covers building services including HVAC, electrical, and plumbing. Integrates seismic design requirements per IS 1893 for equipment mounting and piping systems. State governments and local authorities adopt and enforce specific provisions. BIS also publishes IS 16895 (based on EN 50600) for data center infrastructure.",
+        "url": "https://www.bis.gov.in/standards/technical-department/national-building-code/",
+        "effective_date": "2016-01-01",
+        "relevance": "While recommendatory at national level, NBC 2016 provisions are adopted by state building codes. Fire suppression requirements for server rooms, HVAC system specifications, and structural load provisions for heavy equipment directly affect data center cooling infrastructure design. IS 16895 provides data center-specific infrastructure standards."
+      },
+      {
+        "category": "data_center_specific",
+        "name": "Digital Personal Data Protection Act, 2023 (Act No. 22 of 2023)",
+        "level": "federal",
+        "summary": "India's first comprehensive data protection law, effective from Digital Personal Data Protection Rules 2025 notification (13 November 2025). Permits transfer of personal data outside India unless government restricts specific jurisdictions. Significant Data Fiduciaries must ensure certain categories of government-specified personal data remain within India. Does not impose blanket data localization but retains government authority to designate restricted territories. Drives domestic data center demand through potential future data localization requirements.",
+        "url": "https://www.meity.gov.in/data-protection-framework",
+        "effective_date": "2023-08-11",
+        "relevance": "Potential data localization restrictions under DPDPA will increase demand for domestic data center capacity. Drives investment in Indian data center infrastructure including cooling systems. Government data processing requirements may mandate in-country hosting."
+      }
+    ]
+  },
+  {
+    "zone_id": "latam-br",
+    "country": "Brazil",
+    "region": "National",
+    "regulatory_complexity_score": 60,
+    "regulations": [
+      {
+        "category": "data_center_specific",
+        "name": "ANATEL Consulta Publica No. 48/2025 - Data Center Conformity Assessment",
+        "level": "federal",
+        "summary": "ANATEL opened Public Consultation No. 48/2025 proposing technical requirements and operational procedures for conformity assessment of Data Centers that integrate Telecommunications Networks (DCTC). Under Resolution No. 780/2025 (August 2025), operators must catalog, classify, and undergo conformity assessment before operations begin. Requirements cover resilience, cybersecurity, physical security, energy efficiency, and sustainability. Conformity may be demonstrated through ANATEL-accredited certifications or by presenting ABNT-ISO/IEC 14001 (Environmental Management) and ABNT-ISO/IEC 50001 (Energy Management) certificates. Existing data centers have three years to comply.",
+        "url": "https://informacoes.anatel.gov.br/legislacao/resolucoes/2025",
+        "effective_date": "2025-08-01",
+        "relevance": "First data center-specific regulatory framework in Brazil. Energy efficiency and sustainability are explicit assessment criteria. ISO 50001 energy management compliance directly requires cooling system performance monitoring. Three-year transition period for existing facilities."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "REDATA - Special Tax Regime for Data Center Services (Medida Provisoria No. 1.318/2025)",
+        "level": "federal",
+        "summary": "Provisional Measure No. 1.318 signed 17 September 2025, modifying Law 11.196/2005. Establishes REDATA (Regime Especial de Dados) as part of the National Policy for Data Centers (PNDC) under Brasil Nova Industria Mission 4 (Digital Transformation). Reduces federal taxes (PIS, COFINS, IPI) to zero on servers, storage, network equipment, refrigeration and other data center equipment. Requires 100% renewable or clean energy with zero carbon emissions. Beneficiaries must invest 2% of investment value in R&D projects in Brazil. Government reserved R$5.2 billion for REDATA in the 2026 budget. Estimated to attract R$2 trillion in private investment over 10 years.",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/Mpv/mpv1318.htm",
+        "effective_date": "2025-09-18",
+        "relevance": "Zero federal tax on cooling equipment (refrigeration systems) is a direct cost reduction for data center construction. The 100% renewable energy requirement drives demand for energy-efficient cooling to minimize total energy consumption. R&D investment requirement may fund cooling technology innovation."
+      },
+      {
+        "category": "environmental",
+        "name": "CONAMA Resolution No. 237/1997 - Environmental Licensing",
+        "level": "federal",
+        "summary": "Resolution issued by the National Environment Council (CONAMA) on 19 December 1997. Establishes procedures for environmental licensing based on territorial competence and environmental impact scope (municipal, state, or federal). Licensing process involves three stages: Preliminary License (LP), Installation License (LI), and Operating License (LO). Contains a non-exhaustive list of activities subject to licensing including industrial, manufacturing, chemical, mining, and infrastructure projects. While data centers are not explicitly listed, large-scale facilities may trigger state-level licensing requirements depending on energy consumption, water use, and waste generation.",
+        "url": "https://conama.mma.gov.br/images/conteudo/CONAMA-ingles.pdf",
+        "effective_date": "1997-12-19",
+        "relevance": "Large data centers may require environmental licensing at state level. Cooling water discharge, noise from mechanical equipment, diesel generator emissions, and energy consumption are relevant environmental impact factors. The three-stage licensing process (LP-LI-LO) must be completed before construction and operation."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "National Policy on Climate Change (Lei No. 12.187/2009)",
+        "level": "federal",
+        "summary": "Law No. 12,187 of 29 December 2009 institutes the National Policy on Climate Change (PNMC). Establishes principles, objectives, directives and instruments for climate mitigation and adaptation. Sets voluntary national emissions reduction targets. Provides framework for sectoral mitigation plans, carbon market mechanisms, and energy efficiency programs. Amended multiple times to strengthen commitments aligned with Brazil's NDC under the Paris Agreement. PROCEL (National Energy Conservation Program under Eletrobras) operates within this policy framework for building and equipment energy efficiency.",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12187.htm",
+        "effective_date": "2009-12-29",
+        "relevance": "Sets the overarching climate policy framework that drives energy efficiency requirements for all sectors including data centers. PROCEL energy efficiency labeling for cooling equipment operates under this policy. Sectoral mitigation plans may include future data center-specific emissions targets."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Legal Framework for Distributed Generation (Lei No. 14.300/2022)",
+        "level": "federal",
+        "summary": "Federal Law No. 14,300 of 6 January 2022. Establishes the legal framework for microgeneration and distributed mini-generation of electricity, the Electric Energy Compensation System (SCEE), and the Social Renewable Energy Program (PERS). Modifies compensation rules for energy injected into the grid, with transition provisions for existing installations until 2045. Enables data center operators to install on-site solar generation and receive energy credits against grid consumption.",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14300.htm",
+        "effective_date": "2022-01-06",
+        "relevance": "Enables data centers to reduce grid energy consumption through on-site solar generation with net metering credits. Reduces the effective energy cost of cooling operations. The compensation framework provides financial incentive for renewable energy investment at data center sites."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "SUDENE/SUDAM Regional Development Tax Incentives",
+        "level": "federal",
+        "summary": "Companies investing in the Northeast (SUDENE region) and Amazon (SUDAM region, including Manaus Free Trade Zone) can receive up to 75% corporate income tax (IRPJ) reduction for 10 years. The Manaus Free Trade Zone offers additional incentives: near-complete exemption from import duties on manufacturing inputs, IPI exemption, and PIS/COFINS/ICMS reductions. Free zone benefits guaranteed through 2073. SUDENE and SUDAM programs represent approximately 0.45% of GDP in fiscal expenditure (2019). Data center investments in these regions can combine regional incentives with REDATA benefits.",
+        "url": "https://gestaoconteudo.presidencia.gov.br/gestao_brazilgovnews/trade-and-invest/doing-business/basic-information-to-know-before-starting-a-business-in-brazil/tax-incentives-and-exemptions",
+        "effective_date": "2007-01-01",
+        "relevance": "Up to 75% IRPJ reduction for data centers in SUDENE/SUDAM regions significantly reduces operating costs. Import duty exemptions in the Manaus Free Trade Zone lower the cost of importing cooling equipment and server hardware. Regional incentives stack with REDATA zero-tax provisions on equipment."
+      },
+      {
+        "category": "water_use",
+        "name": "National Water Resources Policy (Lei No. 9.433/1997) and Water Use Permits",
+        "level": "federal",
+        "summary": "Law No. 9,433 of 8 January 1997 establishes the National Water Resources Policy and creates the National Water Resources Management System. Water use permits (outorga) are required for any significant water extraction, including for industrial cooling. The National Water Agency (ANA) issues permits for federal water bodies; state agencies for state-jurisdiction water bodies. Permits specify volume limits, usage period, and conditions. Water committees (comites de bacia) participate in allocation decisions. Data centers using evaporative cooling require water use permits based on consumption volume.",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l9433.htm",
+        "effective_date": "1997-01-08",
+        "relevance": "Data centers using evaporative cooling towers require water use permits (outorga) specifying extraction volumes. In water-stressed regions, permits may be restricted or denied. Brazil's abundant water resources in the South and Southeast are favorable for wet cooling approaches, but permitting is still required."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-tr",
+    "country": "Turkey",
+    "region": "National",
+    "regulatory_complexity_score": 55,
+    "regulations": [
+      {
+        "category": "data_center_specific",
+        "name": "Electronic Communications Law No. 5809 - BTK Authorization Regulation",
+        "level": "federal",
+        "summary": "Law No. 5809 (2008) created the Information and Communication Technologies Authority (BTK) as Turkey's telecommunications regulatory body. Data center facilities currently must obtain Internet Service Provider (ISS) and Infrastructure Operation Service (AIH) authorizations under BTK's Authorization Regulation. Fees are calculated on total operational capacity. A draft law on 'Supporting and Measures for the Development of Data Center, Cloud Computing and Platform Services Sectors' has been prepared by the Presidential Digital Transformation Office and sent to the Ministry of Industry and Technology for finalization. Separate data center regulations are anticipated to resolve current authorization difficulties.",
+        "url": "https://www.btk.gov.tr/yonetmelikler",
+        "effective_date": "2008-11-10",
+        "relevance": "All data center operators in Turkey must obtain BTK authorization under current regulations. Pending sector-specific legislation will likely introduce dedicated data center requirements including energy efficiency standards. BTK has stated its goal is making Turkey a regional data center hub."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Efficiency Law No. 5627 (2007)",
+        "level": "federal",
+        "summary": "Published in the Official Gazette on 2 May 2007. Aims to increase efficiency in energy use across industrial establishments, buildings, power generation, transmission, distribution, and transport. Requires energy audits for industrial facilities and commercial buildings above threshold consumption levels. Mandates appointment of energy managers for large consumers. Establishes energy performance contracting framework and incentive mechanisms for energy efficiency investments. Administered by the Ministry of Energy and Natural Resources through the General Directorate of Energy Affairs.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5627&MevzuatTur=1&MevzuatTertip=5",
+        "effective_date": "2007-05-02",
+        "relevance": "Data centers as large energy consumers are subject to energy audit and energy manager requirements. Provides the legal basis for building energy performance regulations that apply to data center facilities. Energy efficiency investments including cooling system upgrades may qualify for incentive support."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Building Energy Performance Regulation (BEP-TR, 2008; revised 2024)",
+        "level": "federal",
+        "summary": "Regulation on Energy Performance of Buildings (Binalarda Enerji Performansi Yonetmeligi), originally passed 2008 under Law No. 5627, updated in 2013 and 2024. As of 1 January 2025, buildings with total construction area of 2,000 m2 or larger must be constructed as Nearly Zero Energy Buildings (NZEB) with minimum B-class Energy Performance Certificate. Buildings must obtain at least 10% of energy from renewable sources (since 2023 for buildings over 5,000 m2). Energy Performance Certificates (EPC) required for all building transactions. Updated thermal insulation requirements per TS 825 standard.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=13594&MevzuatTur=7&MevzuatTertip=5",
+        "effective_date": "2024-01-01",
+        "relevance": "All new data center buildings over 2,000 m2 must meet NZEB requirements with minimum B-class EPC. The 10% renewable energy requirement affects total facility energy planning. Cooling system efficiency is a major component of building energy performance calculations. Updated insulation requirements reduce cooling loads."
+      },
+      {
+        "category": "environmental",
+        "name": "Environmental Law No. 2872 (1983; amended) and EIA Regulation (2014)",
+        "level": "federal",
+        "summary": "Turkey's primary environmental legislation (Law No. 2872, 1983) establishes the framework for pollution control, waste management, and resource conservation. The Environmental Impact Assessment Regulation (25 November 2014, with amendments through 2019) requires EIA for projects in scheduled categories. Operating without environmental permits (cevre izni) is prohibited; facilities found in violation face stoppage orders. Treatment plants or environmental control systems must be operational before commissioning permits are issued. EIA categories defined by project type, scale, and environmental sensitivity.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2872&MevzuatTur=1&MevzuatTertip=5",
+        "effective_date": "2014-11-25",
+        "relevance": "Large data center developments may trigger EIA requirements depending on scale and location. Environmental permits are required before operation. Cooling water discharge, noise from cooling equipment, and diesel generator emissions are relevant assessment factors. Non-compliance results in immediate operational stoppage."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Presidential Decree No. 9903 - State Investment Incentives (2025)",
+        "level": "federal",
+        "summary": "Published 30 May 2025, replacing the former Decree No. 2012/3305. Restructured investment incentive system into three pillars: Turkey's Century Development Move, Sectoral Incentive System, and Regional Incentives. Data centers with at least 3 MW installed power qualify as Priority Investments with 5th-Region level incentives regardless of location (including Istanbul). Data centers 500 kW-3 MW qualify for Targeted Investments with regional incentives. Benefits include customs duty exemption, VAT exemption, corporate tax reduction, interest/profit-share support, and investment land allocation. Data centers must achieve PUE no higher than 1.65 at full load; HIT-30 high-tech projects target PUE 1.4 or below.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=9903&MevzuatTur=4&MevzuatTertip=5",
+        "effective_date": "2025-05-30",
+        "relevance": "Direct fiscal incentives for data center construction. PUE requirements (1.65 max, 1.4 for high-tech) mandate efficient cooling design. VAT and customs duty exemptions on cooling equipment (servers, cooling systems, generators) reduce capital costs. 5th-Region level incentives available even in Istanbul for 3MW+ facilities."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Technology Development Zones Law (No. 4691, 2001; amended)",
+        "level": "federal",
+        "summary": "Establishes Technology Development Zones (Teknoloji Gelistirme Bolgeleri - TGB) with significant tax incentives. Corporate income tax exemption on profits derived from R&D activities and intellectual property within TGBs. Full income tax exemption on salaries of R&D and design personnel. VAT exemption on software and R&D deliverables. Active TGBs operate across major Turkish cities. Data center operations supporting R&D activities within TGBs may benefit from these incentives.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4691&MevzuatTur=1&MevzuatTertip=5",
+        "effective_date": "2001-07-06",
+        "relevance": "Data centers located within or serving Technology Development Zones may benefit from corporate tax exemptions. R&D-related cooling technology development in TGBs qualifies for income tax and VAT exemptions. Supports Turkey's data center hub ambitions by reducing operational costs."
+      },
+      {
+        "category": "water_use",
+        "name": "Groundwater Law No. 167 and DSI Water Use Permits",
+        "level": "federal",
+        "summary": "Law of Groundwater No. 167 governs groundwater resource management. The General Directorate of State Hydraulic Works (DSI) manages water resources on behalf of the state and issues water use permits. Industrial water extraction requires DSI authorization. Surface water and groundwater allocations are determined based on availability, sustainability, and competing demands. Municipalities set water and sewerage tariffs that apply to data center water consumption for cooling.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=167&MevzuatTur=1&MevzuatTertip=5",
+        "effective_date": "1960-12-16",
+        "relevance": "Data centers extracting groundwater for cooling require DSI permits. Municipal water tariffs affect operational cost of evaporative cooling. Turkey's diverse climate zones mean water availability varies significantly, affecting cooling technology choices across different regions."
+      },
+      {
+        "category": "building_code",
+        "name": "Building Inspection Law No. 4708 (2001) and Turkish Building Code",
+        "level": "federal",
+        "summary": "Law No. 4708 establishes building inspection requirements in Turkey. All construction projects require building inspection by licensed organizations. Turkish building code integrates seismic design requirements (critical for Turkey), structural load provisions, fire protection, and mechanical systems standards. TS EN 50600 series (adopted from European EN 50600) provides data center-specific infrastructure standards covering facilities, power distribution, environmental control, and security. Compliance with Turkish seismic code is mandatory for all construction.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4708&MevzuatTur=1&MevzuatTertip=5",
+        "effective_date": "2001-07-13",
+        "relevance": "Stringent seismic design requirements affect cooling equipment mounting, piping systems, and rooftop installations in earthquake-prone regions. TS EN 50600 adoption provides standards for data center environmental control systems. Building inspection is mandatory for all construction phases."
+      }
+    ]
+  }
+]
