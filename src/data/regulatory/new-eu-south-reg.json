@@ -1,0 +1,393 @@
+[
+  {
+    "zone_id": "eu-es",
+    "country": "ES",
+    "region": "Spain",
+    "regulatory_complexity_score": 74,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "EU EED Recast (Directive 2023/1791) — Direct Applicability via EU Delegated Regulation 2024/1364 (Data Centre Reporting)",
+        "level": "supranational",
+        "summary": "EU Delegated Regulation 2024/1364 is directly applicable in Spain without national transposition. All data centre operators with installed IT power demand >=500 kW must report annually to the EU database: PUE, WUE, energy reuse factor (ERF), renewable energy factor (REF), cooling system details, and installed capacity. First report was due 15 September 2024; subsequent reports due 15 May annually. Spain has not yet enacted a specific national transposition of EED Article 12 as of April 2026 — MITECO opened a public consultation in mid-2024 but no Royal Decree has been published.",
+        "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-80715",
+        "effective_date": "2024-06-01",
+        "relevance": "Directly applicable to any DC facility >=500 kW in Spain. Cooling system type, PUE, and WUE are mandatory disclosure items. Liquid cooling deployments produce better reportable metrics."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Real Decreto-ley 14/2022 — Medidas de ahorro y eficiencia energetica",
+        "level": "national",
+        "summary": "Royal Decree-Law 14/2022 of 1 August 2022 introduced emergency energy savings and efficiency measures, including mandatory temperature set-points for commercial and public buildings (air-conditioning no lower than 27C in summer), energy audits for large consumers, and support for renewable energy deployment. Partially transposes earlier EED obligations.",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12925",
+        "effective_date": "2022-08-02",
+        "relevance": "Temperature set-points apply to common areas of DC facilities open to the public. Large energy consumers including DCs may face enhanced audit obligations. Liquid cooling systems are exempt from air-temperature set-point rules as they do not rely on ambient air conditioning."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Real Decreto 390/2021 — Certificacion de eficiencia energetica de edificios (as amended by RD 659/2025)",
+        "level": "national",
+        "summary": "Establishes the basic procedure for energy performance certification of buildings. As amended by Real Decreto 659/2025, buildings including data centres must obtain an energy performance certificate (EPC). The certificate rates the building's energy class (A-G) and must be renewed every 10 years.",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-9176",
+        "effective_date": "2021-06-03",
+        "relevance": "New-build and major-renovation DC facilities require an EPC. Efficient cooling systems improve the energy class rating, potentially qualifying for 'A' or 'B' class."
+      },
+      {
+        "category": "building_code",
+        "name": "Codigo Tecnico de la Edificacion (CTE) — Documento Basico DB-HE Ahorro de Energia (Real Decreto 314/2006, as amended by RD 732/2019 and RD 450/2022)",
+        "level": "national",
+        "summary": "Spain's Technical Building Code sets minimum energy performance requirements for all new buildings and major renovations. DB-HE sections cover thermal envelope limits (HE1), HVAC efficiency (HE2), DHW (HE4), and minimum renewable energy contribution (HE5). RD 732/2019 updated nZEB requirements. RD 450/2022 added electric vehicle infrastructure provisions.",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2019-18528",
+        "effective_date": "2020-06-27",
+        "relevance": "Data centre new builds must comply with CTE DB-HE for HVAC efficiency, thermal insulation, and renewable energy share. Advanced cooling systems directly affect HE2 compliance."
+      },
+      {
+        "category": "water_use",
+        "name": "Real Decreto Legislativo 1/2001 — Texto Refundido de la Ley de Aguas",
+        "level": "national",
+        "summary": "Consolidated Water Law. Any private use of public-domain water (surface or groundwater) for industrial cooling requires an administrative concession (concesion administrativa) from the relevant River Basin Authority (Confederacion Hidrografica). Concessions are granted for a maximum of 75 years and specify volume limits, quality return conditions, and fees (canon de regulacion). Existing rights must be registered in the Water Registry.",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-14276",
+        "effective_date": "2001-07-24",
+        "relevance": "DCs using evaporative cooling towers or water-based cooling drawing from public water sources must obtain a water concession. Closed-loop liquid cooling systems using municipal supply may only need a supply contract, not a concession."
+      },
+      {
+        "category": "water_use",
+        "name": "Real Decreto 1620/2007 — Regimen juridico de la reutilizacion de aguas depuradas",
+        "level": "national",
+        "summary": "Establishes the legal framework for reuse of treated wastewater. Permits use of reclaimed water in cooling towers and evaporative condensers (Quality Category 3.1) subject to specific microbiological and chemical quality thresholds. Requires an administrative authorization from the River Basin Authority.",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-21092",
+        "effective_date": "2007-12-08",
+        "relevance": "DCs seeking to reduce freshwater consumption by using reclaimed water for cooling must comply with quality thresholds under Category 3.1. Relevant for evaporative cooling deployments in water-scarce Spanish regions."
+      },
+      {
+        "category": "environmental",
+        "name": "Real Decreto Legislativo 1/2016 — Texto Refundido de la Ley de Prevencion y Control Integrados de la Contaminacion (IPPC)",
+        "level": "national",
+        "summary": "Consolidated text of the Integrated Pollution Prevention and Control Law, transposing the EU Industrial Emissions Directive (2010/75/EU). Installations listed in Annex I (including combustion plants >=50 MW thermal) require an Integrated Environmental Authorisation (Autorizacion Ambiental Integrada, AAI) covering air emissions, water discharges, waste, noise, and energy efficiency. DC backup generators alone typically fall below Annex I thresholds, but large combined heat/power or district heating schemes may trigger AAI.",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2016-12601",
+        "effective_date": "2016-12-31",
+        "relevance": "Most standalone DCs do not trigger AAI, but facilities with large diesel generator banks or co-located industrial activities should verify against Annex I thresholds. Waste heat export schemes may bring DCs into scope."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Ley 50/1985 — Incentivos regionales para correccion de desequilibrios economicos interterritoriales",
+        "level": "national",
+        "summary": "Provides regional investment incentives (capital grants of 10-40% of eligible investment) for projects in designated Economic Promotion Zones, Declining Industrial Zones, and Special Zones. Eligible sectors include industrial installations and technology infrastructure. Incentives are awarded by the Ministry of Finance via annual Orders (most recent: Orden HFP/1436/2023). Canary Islands have a separate, more generous regime under Ley 19/1994 (Zona Especial Canaria, ZEC) with a reduced 4% corporate tax rate.",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1986-85",
+        "effective_date": "1985-12-27",
+        "relevance": "DC investments in designated Spanish regions (Andalucia, Extremadura, Galicia, Canarias, etc.) may qualify for capital grants or tax credits. ZEC in Canary Islands offers 4% corporate tax for qualifying entities."
+      },
+      {
+        "category": "pue_reporting",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Effect in Spain (PUE Reporting)",
+        "level": "supranational",
+        "summary": "PUE reporting for Spanish DCs >=500 kW is mandated directly by EU Delegated Regulation 2024/1364, which is directly applicable without national transposition. Operators must report PUE calculated per EN 50600-4-2, along with WUE (EN 50600-4-9), ERF, REF, and cooling system type. Reports go to the EU database managed by the European Commission. Spain has no additional national PUE reporting obligation beyond the EU requirement as of April 2026.",
+        "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-80715",
+        "effective_date": "2024-06-01",
+        "relevance": "PUE reporting is a direct EU obligation for DCs >=500 kW. No separate Spanish reporting layer exists yet."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-it",
+    "country": "IT",
+    "region": "Italy",
+    "regulatory_complexity_score": 78,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Decreto Legislativo 4 luglio 2014, n. 102 — Attuazione della direttiva sull'efficienza energetica (as amended)",
+        "level": "national",
+        "summary": "Italy's primary energy efficiency law, transposing Directive 2012/27/EU and subsequently updated for EED Recast obligations. Mandates energy audits every 4 years for large enterprises (>250 employees or >50M EUR turnover). Companies consuming >85 TJ/year must adopt ISO 50001 by 11 October 2027. Companies between 10-85 TJ/year must conduct quadrennial energy audits from 2026. Data centres are explicitly covered as large energy consumers. Italy missed the 11 October 2025 deadline for full transposition of Directive 2023/1791; a draft legislative decree was under consultation in 2025-2026.",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2014%3B102%7Eart8=",
+        "effective_date": "2014-07-18",
+        "relevance": "Large DCs likely exceed the 10 TJ/year threshold and face mandatory energy audits or ISO 50001 adoption. Cooling system efficiency is a key audit parameter."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Applicability (Data Centre Reporting)",
+        "level": "supranational",
+        "summary": "Directly applicable in Italy. Data centre operators with installed IT power demand >=500 kW must report PUE, WUE, ERF, REF, cooling system details, and installed capacity to the EU database. First report due 15 September 2024; annual reports due 15 May thereafter. Italy has designated ENEA (Agenzia nazionale per le nuove tecnologie, l'energia e lo sviluppo economico sostenibile) as the national contact point.",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2014%3B102%7Eart8=",
+        "effective_date": "2024-06-01",
+        "relevance": "All Italian DCs >=500 kW must report PUE and cooling metrics annually to the EU database via ENEA."
+      },
+      {
+        "category": "building_code",
+        "name": "DPR 6 giugno 2001, n. 380 — Testo Unico delle disposizioni in materia edilizia",
+        "level": "national",
+        "summary": "Italy's Consolidated Building Code. All new construction and major renovations require a building permit (Permesso di Costruire) from the municipal authority (Comune). The permit process involves urban planning compliance, structural safety, fire prevention, and energy performance verification. Data centres as commercial/industrial buildings require permits under Title II. Seismic zone compliance (Part II, Title IV) applies in much of Italy.",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.presidente.repubblica%3A2001%3B380%7Eart3%21vig=",
+        "effective_date": "2001-06-30",
+        "relevance": "DC new-builds require Permesso di Costruire. Cooling system design affects structural load calculations and fire prevention assessments. Seismic compliance is critical in central and southern Italy."
+      },
+      {
+        "category": "environmental",
+        "name": "Decreto Legislativo 3 aprile 2006, n. 152 — Testo Unico Ambientale (Codice dell'Ambiente)",
+        "level": "national",
+        "summary": "Italy's comprehensive Environmental Code. Part II covers EIA (VIA) and Integrated Environmental Authorisation (AIA/IPPC). Part III covers water protection and management, including water discharge permits. Part IV covers waste. Part V covers air quality. Large industrial installations listed in Annex VIII (combustion >50 MW thermal, etc.) require AIA from the Ministry or Region. DCs with significant backup generation or industrial cooling water discharge may fall within scope. Water abstraction for cooling requires authorization under Part III.",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2006-04-03%3B152=",
+        "effective_date": "2006-04-14",
+        "relevance": "DCs with large diesel backup generators should check Annex VIII thresholds. Water-cooled facilities discharging thermal wastewater need authorization under Part III. EIA may be required for very large DC projects depending on regional thresholds."
+      },
+      {
+        "category": "water_use",
+        "name": "Regio Decreto 11 dicembre 1933, n. 1775 — Testo Unico sulle acque pubbliche (as amended by D.Lgs. 152/2006)",
+        "level": "national",
+        "summary": "Italy's foundational water law, still in force as amended. Industrial water abstraction (derivazione) from public watercourses or groundwater requires a concession from the Region or River Basin District Authority. The concession specifies maximum flow rates, quality return conditions, and fees (canoni). Processing time is 6-18 months. Large abstractions (>100 l/s) require additional environmental screening.",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Aregio.decreto%3A1933-12-11%3B1775=",
+        "effective_date": "1934-01-08",
+        "relevance": "DCs drawing water from rivers, lakes, or wells for cooling require a concession. Closed-loop liquid cooling using municipal water supply avoids this, but open-loop or evaporative systems do not."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Piano Transizione 5.0 — Art. 38 Decreto-Legge 2 marzo 2024, n. 19 (converted by Legge 29 aprile 2024, n. 56)",
+        "level": "national",
+        "summary": "Transizione 5.0 provides a tax credit for enterprises making investments in production structures located in Italy during 2024-2025 that result in measurable energy consumption reductions. The credit ranges from 5% to 45% depending on investment size and energy savings achieved. Eligible investments include digital transformation assets (Industry 4.0 goods), energy efficiency upgrades, and self-generation from renewables. Funded with 1,039.5M EUR (2024), 3,118.5M EUR (2025), and 415.8M EUR/year (2026-2030). Extended and modified by Legge 4/2026.",
+        "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.versione=1&art.idGruppo=10&art.flagTipoArticolo=0&art.codiceRedazionale=24G00035&art.idArticolo=38&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2024-03-02&art.progressivo=0",
+        "effective_date": "2024-03-02",
+        "relevance": "DC operators investing in energy-efficient cooling systems (liquid cooling, heat recovery) may qualify for Transizione 5.0 tax credits of 5-45% if the investment produces measurable energy savings. Self-generation (solar, etc.) at DC sites is also eligible."
+      },
+      {
+        "category": "pue_reporting",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Effect in Italy (PUE Reporting)",
+        "level": "supranational",
+        "summary": "PUE reporting for Italian DCs >=500 kW is mandated directly by EU Delegated Regulation 2024/1364. PUE must be calculated per EN 50600-4-2 and reported alongside WUE, ERF, REF, and cooling system type to the EU database. ENEA manages the Italian reporting portal. No additional national PUE reporting obligation exists beyond the EU requirement, though the pending full EED transposition may add national-layer requirements.",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2014%3B102%7Eart8=",
+        "effective_date": "2024-06-01",
+        "relevance": "Annual PUE disclosure is mandatory for DCs >=500 kW. Italy may add further national reporting requirements upon completing EED 2023/1791 transposition."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-pl",
+    "country": "PL",
+    "region": "Poland",
+    "regulatory_complexity_score": 70,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Ustawa z dnia 20 maja 2016 r. o efektywnosci energetycznej (Energy Efficiency Act, consolidated text 2024 — Dz.U. 2024 poz. 1047)",
+        "level": "national",
+        "summary": "Poland's primary energy efficiency law, transposing the original EED (2012/27/EU). Mandates energy audits for large enterprises every 4 years. Establishes energy savings obligations and a white certificate trading system. The consolidated text was published 21 June 2024. As of April 2026, Poland has not yet completed transposition of the EED Recast (Directive 2023/1791) — the 11 October 2025 deadline has passed. The EU Delegated Regulation 2024/1364 on DC reporting is directly applicable regardless.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001047",
+        "effective_date": "2016-10-01",
+        "relevance": "Large DCs in Poland face mandatory energy audits. The white certificate system can generate tradeable certificates for energy efficiency investments including cooling upgrades."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Applicability in Poland (Data Centre Reporting)",
+        "level": "supranational",
+        "summary": "Directly applicable in Poland. All DC operators with installed IT power demand >=500 kW must report PUE, WUE, ERF, REF, cooling system type, and capacity to the EU database. First report due 15 September 2024; annual reports due 15 May thereafter. Poland's national regulatory framework for administering these reports is still being developed.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001047",
+        "effective_date": "2024-06-01",
+        "relevance": "Polish DCs >=500 kW must report PUE and cooling metrics to the EU database annually."
+      },
+      {
+        "category": "building_code",
+        "name": "Prawo budowlane (Building Law, consolidated text 2024 — Dz.U. 2024 poz. 725) and Rozporzadzenie w sprawie warunkow technicznych (Technical Conditions Regulation, Dz.U. 2024 poz. 726)",
+        "level": "national",
+        "summary": "Poland's Building Law requires a building permit (pozwolenie na budowe) for commercial/industrial construction including data centres. The Technical Conditions Regulation (Rozporzadzenie Ministra Rozwoju i Technologii z dnia 9 maja 2024 r.) sets minimum requirements for thermal insulation, HVAC efficiency, energy performance, and ventilation. The 2024 amendments tightened nZEB requirements for non-residential buildings.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240000725",
+        "effective_date": "2024-04-01",
+        "relevance": "DC new-builds require building permits and must comply with updated thermal and HVAC efficiency standards. Cooling system design documentation is part of the permit application."
+      },
+      {
+        "category": "building_code",
+        "name": "Ustawa o charakterystyce energetycznej budynkow (Act on Building Energy Performance, consolidated text 2024 — Dz.U. 2024 poz. 101)",
+        "level": "national",
+        "summary": "Transposes the EPBD into Polish law. Requires energy performance certificates for new buildings, buildings sold or rented, and public buildings >250 m2. Large commercial buildings (including DCs) above threshold must display energy certificates. The 2022 amendment (Dz.U. 2022 poz. 2206) expanded digital registry requirements.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240000101",
+        "effective_date": "2014-09-09",
+        "relevance": "DC facilities require energy performance certificates. Cooling efficiency directly affects the certificate class."
+      },
+      {
+        "category": "water_use",
+        "name": "Prawo wodne (Water Law, consolidated text 2024 — Dz.U. 2024 poz. 1087)",
+        "level": "national",
+        "summary": "Poland's Water Law (Ustawa z dnia 20 lipca 2017 r.) requires a water-law permit (pozwolenie wodnoprawne) for industrial water abstraction exceeding 5 m3/day or water discharge to surface waters. Permits are issued by the Polish Waters Authority (Wody Polskie). Thermal discharge to watercourses is subject to temperature limits. Water use fees are calculated per m3 abstracted.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001087",
+        "effective_date": "2018-01-01",
+        "relevance": "DCs using open-loop cooling or abstracting groundwater/surface water for cooling towers need a pozwolenie wodnoprawne. Closed-loop liquid cooling using municipal supply typically does not trigger this requirement."
+      },
+      {
+        "category": "environmental",
+        "name": "Prawo ochrony srodowiska (Environmental Protection Law, consolidated text 2025 — Dz.U. 2025 poz. 647)",
+        "level": "national",
+        "summary": "Poland's comprehensive environmental protection law. Part IV establishes integrated permits (pozwolenie zintegrowane) for installations listed in Annex to the Act (transposing the Industrial Emissions Directive). Combustion plants >=50 MW thermal, certain waste management operations, and chemical plants require integrated permits. DCs with large backup generator installations should verify against Annex thresholds. The 2024 amendment (Dz.U. 2024 poz. 1940) updated ETS provisions.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000647",
+        "effective_date": "2001-10-01",
+        "relevance": "Most standalone DCs fall below integrated permit thresholds, but large installations with backup power capacity approaching 50 MW thermal should verify. Noise emission limits in the law apply to all DC facilities."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Ustawa o wspieraniu nowych inwestycji (Act on Supporting New Investments — Polish Investment Zone, Dz.U. 2018 poz. 1162) and Rozporzadzenie RM z dnia 27 grudnia 2022 r. (Dz.U. 2022 poz. 2861)",
+        "level": "national",
+        "summary": "Replaced the old Special Economic Zones regime with a nationwide Polish Investment Zone (Polska Strefa Inwestycji). Qualifying new investments receive a corporate income tax exemption (CIT at 0% on income from the investment) for 10-15 years, depending on region and investment size. Minimum investment thresholds vary by region (from 200,000 PLN in less-developed areas to 100M PLN in Warsaw). The 2022 Council of Ministers Regulation specifies eligible activities and maximum aid intensity (10-50% of eligible costs).",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180001162",
+        "effective_date": "2018-06-30",
+        "relevance": "DC investments in Poland can qualify for CIT exemptions under the Polish Investment Zone, particularly in eastern and southeastern Poland where aid intensity reaches 50%. The exemption covers income from the qualifying investment for 10-15 years."
+      },
+      {
+        "category": "pue_reporting",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Effect in Poland (PUE Reporting)",
+        "level": "supranational",
+        "summary": "PUE reporting for Polish DCs >=500 kW is mandated directly by EU Delegated Regulation 2024/1364. PUE must be reported per EN 50600-4-2 to the EU database. Poland has not yet established a national-layer PUE reporting obligation beyond the EU requirement.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001047",
+        "effective_date": "2024-06-01",
+        "relevance": "Annual PUE disclosure mandatory for DCs >=500 kW via EU database."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-pt",
+    "country": "PT",
+    "region": "Portugal",
+    "regulatory_complexity_score": 68,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Decreto-Lei n.o 118/2013 — Sistema de Certificacao Energetica (SCE) and RECS (as amended by DL 101-D/2020)",
+        "level": "national",
+        "summary": "Establishes Portugal's Building Energy Certification System (SCE), the Energy Performance Regulation for Residential Buildings (REH), and the Energy Performance Regulation for Commercial and Service Buildings (RECS). Large commercial buildings (>=1000 m2, or >=500 m2 for specific categories) must obtain energy certificates and implement energy management plans. Data centres as commercial/service buildings fall under RECS. Amended by Decreto-Lei 101-D/2020 to transpose EPBD Recast requirements including nZEB standards. ADENE (Agencia para a Energia) manages the SCE.",
+        "url": "https://dre.pt/legislacao-consolidada/-/lc/74729182/201908170444/diploma?rp=indice",
+        "effective_date": "2013-08-20",
+        "relevance": "DCs above 1000 m2 or using significant HVAC energy must obtain SCE certification under RECS. Cooling system efficiency is a key variable in the energy certificate rating."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Applicability in Portugal (Data Centre Reporting)",
+        "level": "supranational",
+        "summary": "Directly applicable in Portugal. All DC operators with installed IT power demand >=500 kW must report PUE, WUE, ERF, REF, cooling system details, and capacity to the EU database. First report due 15 September 2024; annual reports due 15 May thereafter. Portugal's national transposition of the full EED Recast (Directive 2023/1791) is pending as of April 2026.",
+        "url": "https://dre.pt/web/en/home/-/contents/142487103/details/2/normal",
+        "effective_date": "2024-06-01",
+        "relevance": "Portuguese DCs >=500 kW must report PUE and cooling metrics to the EU database annually."
+      },
+      {
+        "category": "building_code",
+        "name": "Decreto-Lei n.o 118/2013 — RECS (Regulamento de Desempenho Energetico dos Edificios de Comercio e Servicos)",
+        "level": "national",
+        "summary": "Part of the SCE framework, RECS sets minimum energy performance requirements for commercial and service buildings including mechanical ventilation, HVAC efficiency, lighting, and thermal envelope. New commercial buildings must meet nZEB standards. Technical HVAC systems must meet minimum seasonal efficiency requirements. Periodic inspections of HVAC systems >=12 kW cooling capacity are mandatory.",
+        "url": "https://dre.pt/legislacao-consolidada/-/lc/74729182/201908170444/diploma?rp=indice",
+        "effective_date": "2013-12-01",
+        "relevance": "DC cooling systems >=12 kW are subject to periodic HVAC inspections. New DC buildings must meet nZEB standards under RECS."
+      },
+      {
+        "category": "water_use",
+        "name": "Lei n.o 58/2005 — Lei da Agua (Water Law) and Decreto-Lei n.o 226-A/2007 (Water Use Regime)",
+        "level": "national",
+        "summary": "Portugal's Water Law transposes the EU Water Framework Directive. Decreto-Lei 226-A/2007 establishes the regime for utilization of water resources. Industrial water abstraction from public water domain (surface or groundwater) requires a utilization title (titulo de utilizacao) — either a licence or concession — from the Regional Hydrographic Authority (ARH, now integrated into APA - Agencia Portuguesa do Ambiente). Water use fees (Taxa de Recursos Hidricos, TRH) apply per m3.",
+        "url": "https://dre.pt/web/guest/legislacao-consolidada/-/lc/117104391/202106170831/diplomaExpandido",
+        "effective_date": "2005-12-29",
+        "relevance": "DCs abstracting water for cooling from rivers, groundwater, or other public domain sources require a utilization title from APA. Closed-loop cooling on municipal supply requires only a supply contract."
+      },
+      {
+        "category": "environmental",
+        "name": "Decreto-Lei n.o 75/2015 — Licenciamento Unico Ambiental (LUA)",
+        "level": "national",
+        "summary": "Establishes Portugal's Single Environmental Licensing regime (LUA), consolidating multiple environmental authorizations into a single process. Covers EIA (Avaliacao de Impacte Ambiental), integrated pollution prevention (PCIP/IPPC), waste management licensing, water discharge permits, and accident prevention. Applications are submitted through a single electronic portal. Large industrial installations falling under the IED (combustion >=50 MW thermal, etc.) require a Titulo Unico Ambiental (TUA).",
+        "url": "https://dre.pt/home/-/dre/67185043/details/maximized",
+        "effective_date": "2015-05-12",
+        "relevance": "The LUA streamlines environmental permitting into a single portal. Most standalone DCs fall below IED thresholds, but those with significant backup generation or industrial cooling discharge should verify. The single-portal approach reduces permitting complexity compared to other EU countries."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Codigo Fiscal do Investimento (Investment Tax Code) — RFAI (Regime Fiscal de Apoio ao Investimento) and SIFIDE (Sistema de Incentivos Fiscais em I&D)",
+        "level": "national",
+        "summary": "The Investment Tax Code (approved by Decreto-Lei 162/2014, consolidated) provides two key incentive regimes. RFAI offers a tax credit of 10-25% of eligible investment in tangible and intangible assets for productive investments in less-developed regions (aligned with EU regional aid map). SIFIDE provides a tax credit of 32.5% base rate + 50% incremental rate for R&D expenditure. Both regimes are available to DC operators making qualifying investments.",
+        "url": "https://dre.pt/web/guest/legislacao-consolidada/-/lc/114448807/201809211527/73503424/diploma/indice?p_p_state=maximized",
+        "effective_date": "2014-07-11",
+        "relevance": "DC investments in Portugal may qualify for RFAI tax credits (10-25%) in eligible regions. R&D activities at DC sites (cooling innovation, AI research) may qualify for SIFIDE credits (32.5-50%)."
+      },
+      {
+        "category": "pue_reporting",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Effect in Portugal (PUE Reporting)",
+        "level": "supranational",
+        "summary": "PUE reporting for Portuguese DCs >=500 kW is mandated directly by EU Delegated Regulation 2024/1364. PUE must be calculated per EN 50600-4-2. No additional national PUE reporting obligation exists in Portugal beyond the EU requirement as of April 2026.",
+        "url": "https://dre.pt/web/en/home/-/contents/142487103/details/2/normal",
+        "effective_date": "2024-06-01",
+        "relevance": "Annual PUE disclosure mandatory for DCs >=500 kW via EU database."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-ch",
+    "country": "CH",
+    "region": "Switzerland",
+    "regulatory_complexity_score": 65,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Energiegesetz (EnG) — Federal Energy Act (SR 730.0, 30 September 2016)",
+        "level": "federal",
+        "summary": "Switzerland's Federal Energy Act sets the framework for energy policy including efficiency targets, renewable energy promotion, and large consumer obligations. Large energy consumers (Grossverbraucher) — enterprises consuming >500 MWh electricity/year — can enter into target agreements (Zielvereinbarungen) with the federal government or cantons to improve energy efficiency. Cantons must implement programmes for large consumers. The Act does not contain data-centre-specific provisions but data centres typically qualify as large consumers. Switzerland is NOT an EU member and is NOT subject to the EED or EU Delegated Regulation 2024/1364.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/2017/762/de",
+        "effective_date": "2018-01-01",
+        "relevance": "DCs consuming >500 MWh/year (virtually all commercial DCs) are classified as Grossverbraucher and must participate in cantonal energy efficiency programmes or enter target agreements. No EU-mandated PUE reporting applies, but target agreements typically include energy intensity metrics."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energieverordnung (EnV) — Federal Energy Ordinance (SR 730.01, as amended 2024)",
+        "level": "federal",
+        "summary": "Implementing ordinance for the Energy Act. Specifies details of the large consumer programme, target agreement procedures, energy efficiency requirements for appliances and systems, and subsidy mechanisms. The 2024 amendment (AS 2024 702) updated efficiency standards and renewable energy provisions. Cantons retain authority to set additional requirements for large consumers.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/2017/763/de",
+        "effective_date": "2018-01-01",
+        "relevance": "Defines the operational framework for DC participation in large consumer efficiency programmes. Canton-level variation means DC operators must check local requirements."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Bundesgesetz uber die Reduktion der CO2-Emissionen (CO2 Act, revised 2024) and CO2-Verordnung (AS 2025 248)",
+        "level": "federal",
+        "summary": "The revised CO2 Act (entered into force 1 January 2025) sets Switzerland's climate targets: net-zero by 2050, with interim targets of -50% by 2030 vs 1990. The CO2 Ordinance (AS 2025 248) implements the Act. Companies can be exempted from the CO2 levy if they commit to emission reduction targets. The Act covers building emissions, transport, and industry. DCs using fossil-fuel backup generators are subject to the CO2 levy on fuel purchases. Companies committing to reduction targets can recover the levy.",
+        "url": "https://www.fedlex.admin.ch/eli/oc/2024/376/de",
+        "effective_date": "2025-01-01",
+        "relevance": "DCs operating diesel backup generators pay the CO2 levy (~120 CHF/tonne CO2). Target agreements can provide levy exemption. Heat recovery from DCs to district heating networks supports emission reduction commitments."
+      },
+      {
+        "category": "building_code",
+        "name": "Raumplanungsgesetz (RPG) — Federal Spatial Planning Act (SR 700) and Cantonal Building Laws",
+        "level": "federal_cantonal",
+        "summary": "The Federal Spatial Planning Act sets the framework for land use planning. Building permits (Baubewilligungen) are governed by cantonal law — each of Switzerland's 26 cantons has its own building legislation. Federal law requires that construction conform to zoning plans and complies with environmental, fire safety, and structural requirements. DC construction in industrial or commercial zones typically requires a cantonal building permit, with processing times of 2-6 months depending on canton and project complexity.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1979/1573_1573_1573/en",
+        "effective_date": "1980-01-01",
+        "relevance": "DC construction requires cantonal building permits. Zoning restrictions vary significantly between cantons — proximity to residential areas, noise limits, and building height restrictions are cantonal matters."
+      },
+      {
+        "category": "water_use",
+        "name": "Gewasserschutzgesetz (GSchG) — Federal Waters Protection Act (SR 814.20) and Gewasserschutzverordnung (GSchV, SR 814.201)",
+        "level": "federal",
+        "summary": "The Federal Waters Protection Act and its implementing ordinance regulate water abstraction, discharge, and thermal pollution of watercourses. Industrial cooling water discharge to surface waters must not raise the receiving water temperature by more than 3C (or 1.5C in sensitive waters). Abstraction of groundwater or surface water for cooling requires a cantonal permit. The GSchV sets specific discharge quality standards. Cantons enforce the federal standards and may impose additional restrictions.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1992/1860_1860_1860/en",
+        "effective_date": "1992-11-01",
+        "relevance": "DCs using open-loop or evaporative cooling drawing from natural water sources need cantonal water permits. Thermal discharge limits (3C max temperature rise) are strictly enforced. Closed-loop liquid cooling on municipal water supply avoids most permitting requirements."
+      },
+      {
+        "category": "environmental",
+        "name": "Umweltschutzgesetz (USG) — Federal Environmental Protection Act (SR 814.01) and UVPV (EIA Ordinance, SR 814.011)",
+        "level": "federal",
+        "summary": "The Federal Environmental Protection Act establishes the framework for environmental impact assessment (UVP/EIA), air pollution control, noise protection, and waste management. The EIA Ordinance (UVPV) lists installations requiring an environmental impact assessment — large industrial plants, energy infrastructure, and certain commercial developments trigger EIA depending on size. DCs are not explicitly listed in the UVPV Annex, but very large facilities (>20 MW electrical) or those in sensitive locations may trigger cantonal EIA requirements. The Luftreinhalte-Verordnung (LRV, Air Pollution Control Ordinance) limits emissions from backup generators.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1984/1122_1122_1122/en",
+        "effective_date": "1985-01-01",
+        "relevance": "Most DCs do not trigger federal EIA, but cantonal thresholds vary. Backup generator emissions must comply with LRV limits. Noise limits from the USG apply to all DC sites and affect cooling equipment placement."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Cantonal Tax Incentives and Federal Gebauedeprogramm (Building Programme)",
+        "level": "federal_cantonal",
+        "summary": "Switzerland has no single federal DC tax incentive programme. However, several mechanisms apply: (1) The federal Gebaudeprogramm (Building Programme) subsidizes energy efficiency improvements in buildings, including commercial HVAC upgrades. (2) Cantons offer varying tax incentives — e.g., Canton of Zurich and Canton of Zug have favourable corporate tax rates (12-14% effective) attracting DC investment. (3) Companies participating in target agreements under the EnG can receive CO2 levy refunds. (4) ProKilowatt (competitive subsidy programme under EnG) funds energy efficiency projects including industrial cooling optimization.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/2017/762/de",
+        "effective_date": "2018-01-01",
+        "relevance": "DC operators can access ProKilowatt subsidies for cooling efficiency projects. Cantonal corporate tax rates (11-22% effective) are a significant factor in DC siting. CO2 levy refunds via target agreements reduce operating costs."
+      },
+      {
+        "category": "pue_reporting",
+        "name": "No Federal PUE Reporting Mandate — Voluntary via Target Agreements",
+        "level": "federal",
+        "summary": "Switzerland does not impose a mandatory PUE reporting obligation. It is not subject to the EU EED or EU Delegated Regulation 2024/1364. However, DCs participating in target agreements (Zielvereinbarungen) under the Energy Act typically report energy intensity metrics including PUE-equivalent measures as part of their agreement. The Swiss Data Center Association (Swiss Datacenter Efficiency Association, SDEA) promotes voluntary PUE benchmarking among members.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/2017/762/de",
+        "effective_date": "2018-01-01",
+        "relevance": "No mandatory PUE reporting. Voluntary reporting through target agreements and industry association programmes. This represents lower regulatory burden compared to EU member states but less transparency for market intelligence."
+      }
+    ]
+  }
+]
