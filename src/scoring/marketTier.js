@@ -1,31 +1,18 @@
 /**
  * Classifies a facility into TAM / SAM / SOM.
+ *
+ * TAM = every data center that exists
+ * SAM = has ≤10MW capacity OR PUE ≤ 1.20 (one or the other)
+ * SOM = has BOTH ≤10MW capacity AND PUE ≤ 1.20
  */
-import { calculateCoolingFit } from './coolingFit.js';
 
-const SAM_COMPATIBLE_TYPES = new Set([
-  'colocation',
-  'enterprise',
-  'hyperscale',
-  'ai_factory',
-  'government',
-]);
-
-/**
- * @param {object} facility
- * @returns {'tam' | 'sam' | 'som'}
- */
 export function classifyMarketTier(facility) {
-  const { capacity_mw, facility_type } = facility;
-  const compatible = SAM_COMPATIBLE_TYPES.has(facility_type);
+  const { capacity_mw, pue } = facility
 
-  // Incompatible type → always TAM
-  if (!compatible) return 'tam';
+  const smallEnough = capacity_mw != null && capacity_mw <= 10
+  const efficientPue = pue != null && pue <= 1.20
 
-  // Capacity > 10MW → TAM
-  if (capacity_mw != null && capacity_mw > 10) return 'tam';
-
-  // capacity ≤ 10MW (or null, treated as potentially ≤10MW) + compatible type
-  const score = calculateCoolingFit(facility);
-  return score >= 70 ? 'som' : 'sam';
+  if (smallEnough && efficientPue) return 'som'
+  if (smallEnough || efficientPue) return 'sam'
+  return 'tam'
 }

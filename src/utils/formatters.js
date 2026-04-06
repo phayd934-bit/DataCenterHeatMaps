@@ -24,6 +24,12 @@ export function tierColor(tier) {
   return '#ea4335'
 }
 
+export function getFacilityColor(status, tier) {
+  if (status === 'in_development') return '#4285f4' // Blue
+  if (status === 'planned') return '#ff9800'         // Orange
+  return tierColor(tier)
+}
+
 export function tierLabel(tier) {
   return (tier || '').toUpperCase()
 }
@@ -31,9 +37,9 @@ export function tierLabel(tier) {
 export function statusLabel(status) {
   const labels = {
     operational: 'Operational',
-    under_construction: 'Under Construction',
+    in_development: 'In Development',
     planned: 'Planned',
-    announced: 'Announced',
+    decommissioned: 'Decommissioned',
   }
   return labels[status] || status
 }

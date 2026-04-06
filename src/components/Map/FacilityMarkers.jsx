@@ -1,31 +1,39 @@
-import { Marker } from 'react-map-gl/mapbox'
-import { tierColor } from '../../utils/formatters.js'
+import { CircleMarker, Tooltip } from 'react-leaflet'
+import { getFacilityColor, statusLabel } from '../../utils/formatters.js'
 
 export default function FacilityMarkers({ facilities, onClick }) {
+  const mapped = facilities.filter((f) => f.lat != null && f.lng != null)
   return (
     <>
-      {facilities.map((f) => (
-        <Marker
+      {mapped.map((f) => (
+        <CircleMarker
           key={f.id}
-          longitude={f.lng}
-          latitude={f.lat}
-          anchor="center"
-          onClick={(e) => {
-            e.originalEvent.stopPropagation()
-            onClick?.(f)
+          center={[f.lat, f.lng]}
+          radius={7}
+          pathOptions={{
+            fillColor: getFacilityColor(f.status, f.market_tier),
+            fillOpacity: 0.85,
+            color: '#fff',
+            weight: 2,
+          }}
+          eventHandlers={{
+            click: () => onClick?.(f),
           }}
         >
-          <div
-            className="rounded-full cursor-pointer border-2 border-white"
-            style={{
-              width: 12,
-              height: 12,
-              backgroundColor: tierColor(f.market_tier),
-              boxShadow: '0 1px 3px rgba(0,0,0,0.2)',
-            }}
-            title={f.facility_name}
-          />
-        </Marker>
+          <Tooltip direction="top" offset={[0, -8]}>
+            <span className="text-xs font-medium">{f.facility_name}</span>
+            <br />
+            <span className="text-[10px] text-gray-500">{f.company}</span>
+            {f.status !== 'operational' && (
+              <>
+                <br />
+                <span className="text-[10px] font-medium" style={{ color: getFacilityColor(f.status, f.market_tier) }}>
+                  {statusLabel(f.status)}
+                </span>
+              </>
+            )}
+          </Tooltip>
+        </CircleMarker>
       ))}
     </>
   )

@@ -1,5 +1,31 @@
 [
   {
+    "zone_id": "us-federal",
+    "country": "US",
+    "region": "United States (Federal)",
+    "regulatory_complexity_score": 54,
+    "regulations": [
+      {
+        "category": "environmental",
+        "name": "Clean Air Act Section 608 — Refrigerant Management and Technician Certification",
+        "level": "federal",
+        "summary": "EPA requires certified technicians to maintain, service, repair, or dispose of appliances that could release regulated refrigerants. Section 608 also covers refrigerant recovery, recycling, leak repair, recordkeeping, and approved refrigerant-handling practices.",
+        "url": "https://www.epa.gov/section608/section-608-technician-certification-requirements",
+        "effective_date": "1990-11-15",
+        "relevance": "Directly applies to cooling-system vendors and service providers working on refrigerant-based data center cooling equipment in the US."
+      },
+      {
+        "category": "environmental",
+        "name": "Clean Air Act — Stationary Source Permitting and Backup Generator Rules",
+        "level": "federal",
+        "summary": "Large data centers with stationary diesel or gas generators may trigger federal air permitting and must comply with EPA engine standards, including RICE NESHAP requirements for operation, testing, and maintenance.",
+        "url": "https://www.epa.gov/stationary-sources-air-pollution/clean-air-act-resources-data-centers",
+        "effective_date": "1970-12-31",
+        "relevance": "Relevant whenever cooling system resilience depends on on-site backup generation or combustion equipment."
+      }
+    ]
+  },
+  {
     "zone_id": "us-va",
     "country": "US",
     "region": "Virginia",

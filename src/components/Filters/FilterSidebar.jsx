@@ -8,16 +8,33 @@ import CoolingFitDistribution from '../Dashboard/CoolingFitDistribution.jsx'
 const COUNTRIES = [
   { value: 'US', label: 'United States' },
   { value: 'CA', label: 'Canada' },
+  { value: 'GB', label: 'United Kingdom' },
   { value: 'DE', label: 'Germany' },
   { value: 'NL', label: 'Netherlands' },
-  { value: 'IE', label: 'Ireland' },
   { value: 'FR', label: 'France' },
+  { value: 'IE', label: 'Ireland' },
   { value: 'SE', label: 'Sweden' },
   { value: 'FI', label: 'Finland' },
-  { value: 'GB', label: 'United Kingdom' },
+  { value: 'NO', label: 'Norway' },
+  { value: 'DK', label: 'Denmark' },
+  { value: 'IS', label: 'Iceland' },
+  { value: 'ES', label: 'Spain' },
+  { value: 'IT', label: 'Italy' },
+  { value: 'CH', label: 'Switzerland' },
+  { value: 'PL', label: 'Poland' },
+  { value: 'PT', label: 'Portugal' },
+  { value: 'JP', label: 'Japan' },
+  { value: 'KR', label: 'South Korea' },
+  { value: 'CN', label: 'China' },
+  { value: 'SG', label: 'Singapore' },
+  { value: 'AU', label: 'Australia' },
+  { value: 'IN', label: 'India' },
+  { value: 'SA', label: 'Saudi Arabia' },
+  { value: 'AE', label: 'UAE' },
+  { value: 'BR', label: 'Brazil' },
 ]
 
-const STATUSES = ['operational', 'under_construction', 'planned', 'announced']
+const STATUSES = ['operational', 'in_development', 'planned']
 const FACILITY_TYPES = ['colocation', 'enterprise', 'hyperscale', 'edge', 'government', 'ai_factory']
 const COOLING_METHODS = ['air_cooled', 'liquid_cooled', 'immersion', 'hybrid', 'evaporative', 'unknown']
 const MARKET_TIERS = ['tam', 'sam', 'som']
@@ -51,6 +68,12 @@ export default function FilterSidebar() {
 
       <FilterChips />
 
+      <FilterSection title="Market Tier">
+        <ChipSelect options={MARKET_TIERS} selected={filters.marketTiers || []} onChange={(v) => setFilter('marketTiers', v)} labelFn={(t) => t.toUpperCase()} />
+      </FilterSection>
+
+      <TamSamSom />
+
       <FilterSection title="Country">
         <MultiCheck options={COUNTRIES} selected={filters.countries || []} onChange={(v) => setFilter('countries', v)} />
       </FilterSection>
@@ -64,15 +87,15 @@ export default function FilterSidebar() {
       </FilterSection>
 
       <FilterSection title="Capacity (MW)">
-        <RangeSlider min={0} max={50} step={1} value={filters.capacityRange || [0, 50]}
-          onChange={(v) => setFilter('capacityRange', v[0] === 0 && v[1] === 50 ? null : v)}
+        <RangeSlider min={0} max={5000} step={5} value={filters.capacityRange || [0, 5000]}
+          onChange={(v) => setFilter('capacityRange', v[0] === 0 && v[1] === 5000 ? null : v)}
           highlight={[0, 10]} highlightLabel="Solar Steam range" />
       </FilterSection>
 
       <FilterSection title="PUE">
         <RangeSlider min={1.0} max={2.0} step={0.01} value={filters.pueRange || [1.0, 2.0]}
           onChange={(v) => setFilter('pueRange', v[0] === 1.0 && v[1] === 2.0 ? null : v)}
-          highlight={[1.04, 1.20]} highlightLabel="Primary focus" />
+          highlight={[1.0, 1.20]} highlightLabel="SOM target (≤1.20)" />
       </FilterSection>
 
       <FilterSection title="Cooling Method">
@@ -85,11 +108,6 @@ export default function FilterSidebar() {
           highlight={[70, 100]} highlightLabel="SOM threshold" />
       </FilterSection>
 
-      <FilterSection title="Market Tier">
-        <ChipSelect options={MARKET_TIERS} selected={filters.marketTiers || []} onChange={(v) => setFilter('marketTiers', v)} labelFn={(t) => t.toUpperCase()} />
-      </FilterSection>
-
-      <TamSamSom />
       <RegionBreakdown />
       <CoolingFitDistribution />
     </div>
@@ -147,23 +165,31 @@ function ChipSelect({ options, selected, onChange, labelFn }) {
 
 function RangeSlider({ min, max, step, value, onChange, highlight, highlightLabel }) {
   const [lo, hi] = value
+  const fmt = (v) => step < 1 ? v.toFixed(2) : v
+
+  const handleLo = (raw) => {
+    const n = Number(raw)
+    if (!isNaN(n)) onChange([Math.max(min, Math.min(n, hi)), hi])
+  }
+  const handleHi = (raw) => {
+    const n = Number(raw)
+    if (!isNaN(n)) onChange([lo, Math.min(max, Math.max(n, lo))])
+  }
+
   return (
     <div>
-      <div className="flex justify-between text-[10px] text-[#5f6368] mb-1">
-        <span>{step < 1 ? lo.toFixed(2) : lo}</span>
-        <span>{step < 1 ? hi.toFixed(2) : hi}</span>
-      </div>
-      <div className="flex gap-2">
-        <input type="range" min={min} max={max} step={step} value={lo}
-          onChange={(e) => onChange([Math.min(Number(e.target.value), hi), hi])}
-          className="w-full accent-[#1a73e8]" />
-        <input type="range" min={min} max={max} step={step} value={hi}
-          onChange={(e) => onChange([lo, Math.max(Number(e.target.value), lo)])}
-          className="w-full accent-[#1a73e8]" />
+      <div className="flex items-center gap-1.5 mb-1">
+        <input type="number" min={min} max={hi} step={step} value={fmt(lo)}
+          onChange={(e) => handleLo(e.target.value)}
+          className="w-[72px] text-[11px] text-[#3c4043] border border-[#dadce0] rounded px-1.5 py-0.5 focus:border-[#1a73e8] focus:outline-none" />
+        <span className="text-[10px] text-[#9aa0a6]">to</span>
+        <input type="number" min={lo} max={max} step={step} value={fmt(hi)}
+          onChange={(e) => handleHi(e.target.value)}
+          className="w-[72px] text-[11px] text-[#3c4043] border border-[#dadce0] rounded px-1.5 py-0.5 focus:border-[#1a73e8] focus:outline-none" />
       </div>
       {highlight && highlightLabel && (
         <div className="text-[9px] text-[#34a853] mt-0.5">
-          ★ {highlightLabel}: {step < 1 ? highlight[0].toFixed(2) : highlight[0]}–{step < 1 ? highlight[1].toFixed(2) : highlight[1]}
+          ★ {highlightLabel}: {fmt(highlight[0])}–{fmt(highlight[1])}
         </div>
       )}
     </div>
@@ -171,7 +197,7 @@ function RangeSlider({ min, max, step, value, onChange, highlight, highlightLabe
 }
 
 function statusChipLabel(s) {
-  const map = { operational: 'Operational', under_construction: 'Under Construction', planned: 'Planned', announced: 'Announced' }
+  const map = { operational: 'Operational', in_development: 'In Development', planned: 'Planned' }
   return map[s] || s
 }
 

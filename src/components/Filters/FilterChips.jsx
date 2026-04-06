@@ -1,4 +1,5 @@
 import { useFilterContext } from '../../context/FilterContext.jsx'
+import { statusLabel } from '../../utils/formatters.js'
 
 export default function FilterChips() {
   const { filters, setFilter } = useFilterContext()
@@ -6,7 +7,7 @@ export default function FilterChips() {
   const chips = []
 
   if (filters.countries?.length) filters.countries.forEach((c) => chips.push({ key: 'countries', value: c, label: c }))
-  if (filters.statuses?.length) filters.statuses.forEach((s) => chips.push({ key: 'statuses', value: s, label: s }))
+  if (filters.statuses?.length) filters.statuses.forEach((s) => chips.push({ key: 'statuses', value: s, label: statusLabel(s) }))
   if (filters.facilityTypes?.length) filters.facilityTypes.forEach((t) => chips.push({ key: 'facilityTypes', value: t, label: t }))
   if (filters.coolingMethods?.length) filters.coolingMethods.forEach((m) => chips.push({ key: 'coolingMethods', value: m, label: m }))
   if (filters.marketTiers?.length) filters.marketTiers.forEach((t) => chips.push({ key: 'marketTiers', value: t, label: t.toUpperCase() }))

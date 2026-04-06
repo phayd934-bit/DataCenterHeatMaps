@@ -3,8 +3,13 @@ import RegulatoryCard from './RegulatoryCard.jsx'
 import usRegulatory from '../../data/regulatory/us.json'
 import canadaRegulatory from '../../data/regulatory/canada.json'
 import euRegulatory from '../../data/regulatory/eu.json'
+import apacRegulatory from '../../data/regulatory/new-apac-reg.json'
+import emergingRegulatory from '../../data/regulatory/new-emerging-reg.json'
+import euSouthRegulatory from '../../data/regulatory/new-eu-south-reg.json'
+import nordicsUkRegulatory from '../../data/regulatory/new-nordics-uk-reg.json'
+import { isSupplementaryRegulation } from '../../utils/regulatory.js'
 
-const allRegulatory = [...usRegulatory, ...canadaRegulatory, ...euRegulatory]
+const allRegulatory = [...usRegulatory, ...canadaRegulatory, ...euRegulatory, ...apacRegulatory, ...emergingRegulatory, ...euSouthRegulatory, ...nordicsUkRegulatory]
 
 const CATEGORIES = [
   { value: 'all', label: 'All' },
@@ -18,6 +23,7 @@ const CATEGORIES = [
 
 export default function RegionPanel({ zoneId, onClose }) {
   const [categoryFilter, setCategoryFilter] = useState('all')
+  const [showSupplementary, setShowSupplementary] = useState(false)
   const zone = useMemo(() => allRegulatory.find((r) => r.zone_id === zoneId), [zoneId])
 
   if (!zone) {
@@ -31,7 +37,8 @@ export default function RegionPanel({ zoneId, onClose }) {
     )
   }
 
-  const filteredRegs = categoryFilter === 'all' ? zone.regulations : zone.regulations.filter((r) => r.category === categoryFilter)
+  const visibleRegs = showSupplementary ? zone.regulations : zone.regulations.filter((r) => !isSupplementaryRegulation(r))
+  const filteredRegs = categoryFilter === 'all' ? visibleRegs : visibleRegs.filter((r) => r.category === categoryFilter)
 
   return (
     <aside className="w-[300px] flex-shrink-0 border-l border-[#dadce0] bg-white overflow-y-auto p-4">
@@ -62,6 +69,15 @@ export default function RegionPanel({ zoneId, onClose }) {
             }`}>{cat.label}</button>
         ))}
       </div>
+
+      <button
+        onClick={() => setShowSupplementary((value) => !value)}
+        className={`text-[10px] px-2 py-1 rounded-full border mb-3 transition-colors ${
+          showSupplementary ? 'bg-[#fef7e0] text-[#e37400] border-[#fbbc04]' : 'bg-[#f1f3f4] text-[#5f6368] border-[#dadce0] hover:bg-[#e8eaed]'
+        }`}
+      >
+        {showSupplementary ? 'Showing all entries' : 'Showing binding entries'}
+      </button>
 
       <div className="flex flex-col gap-2">
         {filteredRegs.length === 0 ? (

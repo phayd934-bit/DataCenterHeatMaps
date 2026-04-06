@@ -1,37 +1,34 @@
-import { useState, useCallback } from 'react'
-import Map, { NavigationControl } from 'react-map-gl/mapbox'
-import 'mapbox-gl/dist/mapbox-gl.css'
+import { useCallback } from 'react'
+import { MapContainer as LeafletMap, TileLayer, ZoomControl } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css'
 import { useFilterContext } from '../../context/FilterContext.jsx'
 import FacilityMarkers from './FacilityMarkers.jsx'
 import MapLegend from './MapLegend.jsx'
 
-const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN || ''
-
-const INITIAL_VIEW = {
-  longitude: -40,
-  latitude: 45,
-  zoom: 2.5,
-}
+const INITIAL_CENTER = [45, -40]
+const INITIAL_ZOOM = 3
 
 export default function MapContainer({ onSelectFacility, onSelectRegion }) {
   const { filtered } = useFilterContext()
-  const [viewState, setViewState] = useState(INITIAL_VIEW)
 
   const handleMarkerClick = useCallback((facility) => {
     onSelectFacility?.(facility)
   }, [onSelectFacility])
 
   return (
-    <Map
-      {...viewState}
-      onMove={(e) => setViewState(e.viewState)}
-      mapboxAccessToken={MAPBOX_TOKEN}
-      mapStyle="mapbox://styles/mapbox/light-v11"
+    <LeafletMap
+      center={INITIAL_CENTER}
+      zoom={INITIAL_ZOOM}
+      zoomControl={false}
       style={{ width: '100%', height: '100%' }}
     >
-      <NavigationControl position="top-right" />
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <ZoomControl position="topright" />
       <FacilityMarkers facilities={filtered} onClick={handleMarkerClick} />
       <MapLegend />
-    </Map>
+    </LeafletMap>
   )
 }

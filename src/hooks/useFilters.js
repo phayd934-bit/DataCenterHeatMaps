@@ -3,7 +3,7 @@ import { useState, useMemo, useCallback } from 'react'
 export const PRESETS = {
   'Solar Steam Targets': {
     capacityRange: [0, 10],
-    pueRange: [1.04, 1.20],
+    pueRange: [1.0, 1.20],
     statuses: ['operational'],
   },
   'Competitive Landscape': {
@@ -11,7 +11,7 @@ export const PRESETS = {
     coolingMethods: ['liquid_cooled', 'immersion', 'hybrid'],
   },
   'Greenfield Opportunities': {
-    statuses: ['planned', 'announced', 'under_construction'],
+    statuses: ['planned', 'in_development'],
     capacityRange: [0, 10],
   },
 }

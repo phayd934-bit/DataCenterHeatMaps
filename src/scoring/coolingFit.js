@@ -5,7 +5,7 @@
 
 function scorePUE(pue) {
   if (pue == null) return 40;
-  if (pue >= 1.04 && pue <= 1.20) return 100;
+  if (pue <= 1.20) return 100;
   if (pue > 1.20 && pue <= 1.40) return 60;
   return 30; // > 1.40
 }
@@ -42,9 +42,8 @@ function scoreFacilityType(type) {
 
 function scoreStatus(status) {
   switch (status) {
-    case 'planned':
-    case 'announced':         return 100;
-    case 'under_construction': return 80;
+    case 'planned':            return 100;
+    case 'in_development':     return 80;
     case 'operational':        return 60;
     default:                   return 60;
   }

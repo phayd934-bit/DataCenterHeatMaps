@@ -22,7 +22,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "TRIPLE MATCH: PUE 1.03, Iceotope chassis-level immersion cooling, ~2MW facility. World's first chassis-level immersion deployment. Climate-positive via district heating waste heat reuse. 14% CapEx savings, 90% rack cooling energy reduction.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Iceotope chassis-level immersion"
   },
   {
     "id": "eu-002",
@@ -72,7 +73,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "PUE 1.18, closed-loop water-free ring chilled water system. 54MW campus. 83% of CyrusOne 2023 new builds use water-free cooling. Frankfurt hub.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-004",
@@ -100,7 +102,8 @@
     "data_gaps": [
       "capacity_mw",
       "coordinates"
-    ]
+    ],
+    "gpu": "Submer SmartPod (OCP-compliant)"
   },
   {
     "id": "eu-005",
@@ -125,7 +128,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "DLC, PUE <1.2, waste heat to 8000 homes.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA A100"
   },
   {
     "id": "eu-006",
@@ -151,7 +155,8 @@
     "notes": "PUE 1.004. 16 patents. Competitor intel.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "OVHcloud custom (16 patents)"
   },
   {
     "id": "eu-007",
@@ -175,7 +180,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "TRIPLE MATCH: Submer immersion, sub-1.1 PUE, 50kW.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Submer SmartPod XL+ (50kW)"
   },
   {
     "id": "eu-008",
@@ -225,7 +231,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "DTC + air. 130kW/rack. NVIDIA DGX-Ready.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA (DGX-Ready)"
   },
   {
     "id": "eu-010",
@@ -252,7 +259,8 @@
     "notes": "85% liquid-cooled. 4600 Blackwell GPUs.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell Ultra"
   },
   {
     "id": "eu-011",
@@ -409,7 +417,8 @@
     "notes": "PUE ~1.1. Seawater cooling via quarter-mile granite tunnel. Pioneering natural liquid cooling. Competitive intel for Google's approach.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Google TPU + NVIDIA"
   },
   {
     "id": "eu-017",
@@ -436,7 +445,8 @@
     "notes": "27MW, 3x 9MW halls. Closed-loop water cooling. BREEAM Very Good. 100% renewable. Heat reuse design.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-018",
@@ -463,7 +473,8 @@
     "notes": "54MW, 6x 9MW halls. Closed-loop water cooling. Heat reuse ready. 500sqm solar. BREEAM.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-019",
@@ -543,7 +554,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "120MW — world's largest liquid-cooled DC (2018). PUE 1.02. Two-phase immersion. Hot climate proof. COMPETITOR BENCHMARK.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Bitfury ASIC (originally crypto)"
   },
   {
     "id": "eu-022",
@@ -568,7 +580,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "40MW. PUE 1.03. Densest immersion DC at time of build (2015). COMPETITOR BENCHMARK.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Bitfury ASIC"
   },
   {
     "id": "eu-023",
@@ -593,7 +606,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "TRIPLE MATCH: PUE 1.04, liquid cooling, 6.4MW. EU flagship HPC. Waste heat = 20% of Kajaani district heating.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "AMD MI250X"
   },
   {
     "id": "eu-024",
@@ -632,8 +646,8 @@
     "status": "under_construction",
     "facility_type": "ai_factory",
     "capacity_mw": 10,
-    "pue": null,
-    "pue_source": null,
+    "pue": 1.03,
+    "pue_source": "XDS Datacentres immersion cooling specifications",
     "pue_source_url": "https://capacityglobal.com/news/xds-datacentres-immersive-data-centre-middle-east/",
     "cooling_method": "immersion",
     "regulatory_zone": "eu-sa",
@@ -659,8 +673,8 @@
     "status": "under_construction",
     "facility_type": "ai_factory",
     "capacity_mw": 10,
-    "pue": null,
-    "pue_source": null,
+    "pue": 1.03,
+    "pue_source": "XDS Datacentres immersion cooling specifications",
     "pue_source_url": "https://www.zawya.com/en/press-release/companies-news/xds-datacentres-and-ics-arabia-partner-to-launch-landmark-10mw-immersion-cooled-data-center-in-ksa-gafeocjo",
     "cooling_method": "immersion",
     "regulatory_zone": "eu-sa",
@@ -686,8 +700,8 @@
     "status": "operational",
     "facility_type": "colocation",
     "capacity_mw": 1,
-    "pue": null,
-    "pue_source": null,
+    "pue": 1.03,
+    "pue_source": "XDS Datacentres immersion cooling specifications",
     "pue_source_url": "https://capacityglobal.com/news/xds-datacentres-immersive-data-centre-middle-east/",
     "cooling_method": "immersion",
     "regulatory_zone": "eu-ae",
@@ -727,7 +741,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "eu-029",
@@ -754,7 +769,8 @@
     "notes": "EUROPE'S FIRST GB300 NVL72. 60K+ GPUs. NVIDIA-designed liquid cooling. 75MW. $1B+ EU investment.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell (GB300 NVL72)"
   },
   {
     "id": "eu-030",
@@ -779,7 +795,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "TRIPLE MATCH: PUE <1.05, 100% fanless DLC, 4.96MW. BullSequana XH3000. EU sovereign HPC. Warm water 40C.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "AMD + custom"
   },
   {
     "id": "eu-031",
@@ -793,8 +810,8 @@
     "status": "planned",
     "facility_type": "ai_factory",
     "capacity_mw": 6,
-    "pue": null,
-    "pue_source": null,
+    "pue": 1.02,
+    "pue_source": "DUG Cool immersion cooling platform",
     "pue_source_url": "https://dug.com/dug-cool/",
     "cooling_method": "immersion",
     "regulatory_zone": "eu-au",
@@ -806,7 +823,8 @@
     "notes": "6MW (qualifies!). Proprietary DUG Cool single-phase immersion. World's first carbon-free HPC campus target. 45-hectare site.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "HPC (seismic + AI)"
   },
   {
     "id": "eu-032",
@@ -833,7 +851,8 @@
     "notes": "PUE <1.02 in TROPICAL Singapore via Firmus immersion. Extraordinary achievement in hot/humid climate.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "eu-033",
@@ -860,7 +879,8 @@
     "notes": "5MW two-phase immersion hall. 120kW/rack. Major Korean telecom. 5G + AI integration.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA B200"
   },
   {
     "id": "eu-034",
@@ -912,7 +932,8 @@
     "notes": "PUE 1.015-1.02 WORLD RECORD. Research testbed. Partners: Meta, Ericsson, Vertiv, ABB.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Research testbed"
   },
   {
     "id": "eu-036",
@@ -939,7 +960,8 @@
     "notes": "13,800 GB300 GPUs. $830M. European AI champion. Liquid cooling required.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA GB300 NVL72"
   },
   {
     "id": "eu-037",
@@ -1022,7 +1044,8 @@
     "notes": "45K GB200 GPUs. £2B UK investment. Q4 2026 live. Also Verne Iceland + Microsoft Norway.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA GB200"
   },
   {
     "id": "eu-040",
@@ -1049,7 +1072,8 @@
     "notes": "230MW. 100K GPUs by end 2026. Microsoft $6.2B. Hydropower. Heat recovery. Stargate brand.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-041",
@@ -1076,7 +1100,8 @@
     "notes": "20K H100 GPUs. NexGen Cloud $1B anchor. DLC+immersion+RDHX. Expanding to 171MW.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "eu-042",
@@ -1103,7 +1128,8 @@
     "notes": "Korea's LARGEST DC. 114MW. GRC immersion (80% electricity cut). Samsung SDS building National AI Computing Center.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "116,000 servers"
   },
   {
     "id": "eu-043",
@@ -1130,7 +1156,8 @@
     "notes": "GB200 NVL72 liquid-cooled. 150→400MW. Former Sharp LCD factory. Stargate partner.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA GB200 NVL72"
   },
   {
     "id": "eu-044",
@@ -1155,7 +1182,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "36MW. DLC testing (LiquidStack immersion). Partial PUE 1.07 at Mitaka test.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-045",
@@ -1183,7 +1211,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA H200 + Blackwell"
   },
   {
     "id": "eu-046",
@@ -1235,7 +1264,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "20,736 Blackwell Ultra. $2B+. Asia's largest Tier IV. PUE <1.2. 2.25GW+ scalable.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA Blackwell Ultra"
   },
   {
     "id": "eu-048",
@@ -1424,7 +1454,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA B200"
   },
   {
     "id": "eu-055",
@@ -1452,7 +1483,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA DGX B200"
   },
   {
     "id": "eu-056",
@@ -1479,7 +1511,8 @@
     "notes": "$1.4B. 4,608 Blackwell GPUs (GB200 NVL72). DLC required. Taiwan semi hub.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA GB200 NVL72"
   },
   {
     "id": "eu-057",
@@ -1506,7 +1539,8 @@
     "notes": "500MW! NVIDIA partner. GB200 Blackwell. 400kW/rack DLC. Korean op in Africa.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA GB200"
   },
   {
     "id": "eu-058",
@@ -1614,7 +1648,8 @@
     "notes": "50MW. 20K+ Blackwell GPUs. DLC+immersion+RDHX. Australia's largest operator.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "eu-062",
@@ -1641,7 +1676,8 @@
     "notes": "310MW AI factory. Closed-loop liquid + heat recovery. Rubin-ready. Finland's largest planned.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell+Rubin"
   },
   {
     "id": "eu-063",
@@ -1695,7 +1731,8 @@
     "notes": "150MW. DLC from ground up for H100/Blackwell. xScale 3.0. $3.2B commitment.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA H100+Blackwell"
   },
   {
     "id": "eu-065",
@@ -1723,7 +1760,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA GB200 NVL72"
   },
   {
     "id": "eu-066",
@@ -1750,7 +1788,8 @@
     "notes": "58MW. Singapore's LARGEST DLC. Carrier-neutral. Expanding 400MW+.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "eu-067",
@@ -1778,7 +1817,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA H100+H200"
   },
   {
     "id": "eu-068",
@@ -1834,7 +1874,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-070",
@@ -2000,7 +2041,8 @@
     "data_gaps": [
       "pue",
       "cooling_method"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-076",
@@ -2412,7 +2454,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "eu-091",
@@ -2440,7 +2483,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA H200"
   },
   {
     "id": "eu-092",
@@ -2799,7 +2843,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Groq LPU"
   },
   {
     "id": "eu-105",
@@ -2827,7 +2872,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Groq LPU"
   },
   {
     "id": "eu-106",
@@ -2934,7 +2980,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "Underground mine data center in Nordfjord, Norway. PUE 1.08-1.15 using fjord seawater cooling at 8C from 100m depth. Supports DLC, inline cooling, immersion, and CRAH. 80MW current capacity expanding to 200MW. 90MW cooling via 12x7.5MW heat exchangers. Up to 300kW/rack with DLC. Waste heat recovery program operational. 120,000 sqm whitespace potential.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA GH200 Grace Hopper"
   },
   {
     "id": "eu-110",
@@ -2959,7 +3006,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "PUE 1.07 via 100% free-air cooling at 66N latitude (avg 1.3C). 4MW facility on 2.5 hectares, 6 data halls. Acquired by Northern Data AG (2021) rebranded as Ardent. 100% hydroelectric power. GPU/HPC focused. Ardent states liquid cooling planned for future builds. Pod-based 180kW system (18 racks). Up to 25kW/rack.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "eu-111",
@@ -3013,7 +3061,8 @@
     "notes": "Largest certified data center in Nordics. 24MW IT capacity across 15,000 sqm (34,000 sqm total). PUE target <1.2. Liquid cooling for AI/GPU loads (dedicated cooling options PDF). Gcore deployed 1MW+ GPU cluster (H100/A100). Waste heat recovery serves ~14,000 apartments via Helen district heating. 4MW expansion completed early 2025. 100% renewable energy.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Hopper"
   },
   {
     "id": "eu-113",
@@ -3272,7 +3321,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "WORLD-RECORD PUE: Category 2 PUE 1.025 (instantaneous <1.01). Pod 1 (OCP CPUs) PUE <1.03, Pod 3 (ASICs) PUE <1.003. 600kW total, 180 sqm whitespace. EU H2020 prototype. Patented EcoCooling evaporative system — no liquid cooling. ASHRAE compliant at -30C with <100W overhead for 140kW IT load. Hive Digital partnership.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Open Compute CPUs + ASICs"
   },
   {
     "id": "eu-123",
@@ -3489,7 +3539,7 @@
     "region": "Vienna",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 6,
     "pue": 1.05,
     "pue_source": null,
     "pue_source_url": "https://www.a1.digital/press/exoscale-and-diggers-collaborate-for-energy-efficient-data-center-cooling/",
@@ -3501,7 +3551,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "TRIPLE MATCH: PUE 1.05, Diggers direct liquid cooling (cold box with aluminum cold plates), 6MW connected load (A1 NGDC). 8 cold boxes, 80kW compute, 50C output water suitable for district heating. 98% waste heat utilization rate. 100% renewable energy. 8,000 sqm facility.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Google TPU"
   },
   {
     "id": "eu-132",
@@ -3580,7 +3631,8 @@
     "notes": "PUE 1.2 via EUR 15M river cooling system. Underground mine water at 15C year-round through 3km buried pipework. Eliminates electric chillers. Saves 18,400 MWh/year, 795 tonnes CO2. Hot water output feeds Euromediterranee urban heating (500,000 sqm). 30x more efficient than traditional cooling.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Google TPU"
   },
   {
     "id": "eu-135",
@@ -3867,7 +3919,8 @@
     "notes": "Largest AI campus outside US. Phase 1 = 200MW, total campus = 5GW. OpenAI+Oracle operated. NVIDIA partnership implies liquid cooling required at this scale/density. Desert climate demands advanced cooling. Massive opportunity.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA (likely Blackwell+)"
   },
   {
     "id": "eu-146",
@@ -4033,7 +4086,8 @@
     "notes": "Africa's first rack-level CDU cooling deployment. Gold Synergy self-cooling rack at CPT1. Zero water cooling. 3,000 NVIDIA GPUs deployed June 2025 (first phase of $700M Cassava-NVIDIA partnership). Plans to expand CDU tech across ADC network in 5 African countries.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA (NCP reference architecture)"
   },
   {
     "id": "eu-152",
@@ -4062,7 +4116,8 @@
       "pue",
       "capacity_mw",
       "cooling_method"
-    ]
+    ],
+    "gpu": "NVIDIA (NCP reference architecture)"
   },
   {
     "id": "eu-153",
@@ -4199,7 +4254,8 @@
       "pue",
       "capacity_mw",
       "cooling_method"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-158",
@@ -4444,7 +4500,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-167",
@@ -4769,7 +4826,8 @@
     "notes": "Equinix 4th Osaka IBX. 14.4MW IT power, 4,925 sqm. Chillers and pipes in each data hall supporting DLC and rear-door HX. Part of global 100+ DC liquid cooling rollout.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-179",
@@ -4796,7 +4854,8 @@
     "notes": "US$124M investment. 6th HK IBX. Liquid cooling for AI workloads. PUE target 1.2 or lower. 100% renewable energy. Operational Q1 2026. Partners: Dell Technologies, Schneider Electric.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-180",
@@ -4821,7 +4880,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "AirTrunk's first APAC deployment of direct-to-chip liquid cooling. 150MW initial (100MW expansion underway). Design PUE 1.15. 10.3 hectares. Rooftop solar with Pekat Solar. NVIDIA DGX-ready colocation partner.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-181",
@@ -4846,7 +4906,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "Largest single campus in APAC (ex-China). 320MW+ across 9 phases, 8.3 hectares. Design PUE 1.15. 132kV onsite substation. 80% less water than traditional DC.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-182",
@@ -5085,7 +5146,8 @@
     "notes": "Stargate Norway is a sovereign AI gigafactory near Narvik in Northern Norway. 230MW initial build-out expandable to 520MW. 100,000 NVIDIA GPUs targeted by end 2026. Closed-loop direct-to-chip liquid cooling confirmed. Powered 100% by renewable hydropower. Surplus heat reuse for local low-carbon enterprises. ~$1B initial capital.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Blackwell"
   },
   {
     "id": "eu-191",
@@ -5110,7 +5172,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "AQ Compute AQ-OSL1 in Honefoss is a greenfield AI-ready facility. Phase 1: 6MW IT power. Average PUE 1.05 with free cooling. Supports RDHX (rear door heat exchangers), immersion cooling, and direct-to-chip cooling. Up to 20kW/rack with free cooling, up to 80kW/rack with DLC from Cloud & Heat Technologies. Expansion adds 15MW (total 21MW), campus scalable to 171MW. Partnered with NexGen Cloud for net-zero AI Supercloud.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "eu-192",
@@ -5237,7 +5300,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "Nebius (formerly Yandex) Mantsala facility tripling capacity to 75MW. PUE as low as 1.1. Free cooling reduces reliance on chillers. Runs at higher server temps (up to 40C) saving ~15% energy. Heat recovery for local residential heating. 60,000 GPU capacity. Deploying NVIDIA H100, H200, and Blackwell platform (first in Europe for Blackwell). Among first European Blackwell deployments 2025.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Blackwell"
   },
   {
     "id": "eu-197",
@@ -5555,7 +5619,8 @@
     "notes": "Equinix LD8 at Harbour Exchange, London Docklands. 12MW power across two buildings (6-9 Harbour Exchange Square). Low energy indirect evaporative cooling with borehole water extraction. Major financial and enterprise connectivity hub. Part of extensive London LD series (LD1-LD13+).",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-209",
@@ -5636,7 +5701,8 @@
     "notes": "Equinix HE6 in Espoo is a 2.4MW, 1,756 sqm facility with chilled water cooling (N+1 redundancy). 4kW per cabinet density. 100% renewable energy. Part of Equinix Helsinki portfolio (HE1-HE7). Small facility in a large provider portfolio â€” potential for density upgrade.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-212",
@@ -5663,7 +5729,8 @@
     "notes": "EuroHPC pre-exascale supercomputer, 250 PFlops. PUE estimated below 1.1. Warm-water direct liquid cooling at 37C inlet / 47C outlet. Stage 2 expansion to 20MW IT with 16MW liquid-cooled + 4MW air-cooled. Waste heat recovers to building heating.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Hopper"
   },
   {
     "id": "eu-213",
@@ -5688,7 +5755,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "EuroHPC pre-exascale, 314 PFlops peak. PUE below 1.08 with 17MW cooling capacity. Liquid cooling systems deployed. NVIDIA Hopper GPU accelerated partition (1120 nodes). Waste heat used for building heating.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Hopper"
   },
   {
     "id": "eu-214",
@@ -5717,7 +5785,8 @@
       "pue",
       "capacity_mw",
       "cooling_method"
-    ]
+    ],
+    "gpu": "Fujitsu A64FX (ARM)"
   },
   {
     "id": "eu-215",
@@ -5744,7 +5813,8 @@
     "notes": "Equinix's flagship sustainable Paris DC. Opened 2023. Direct-to-chip liquid cooling deployed. 5MW power. Heat recovery: 10,000 MWh/year, 6.6MW captured via SMIREC heat network, heats 1,000+ homes and Olympic Aquatic Centre. 100% renewable energy.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-216",
@@ -5848,7 +5918,8 @@
     "notes": "Romania's largest DC, Uptime Institute certified. PUE 1.1. NVIDIA DGX-Ready certified partner with DGX A100 installed. AIC partnership for 800MW total build-out across 2 campuses. 10MW today, 70MW by end-2026, 512MW at MSC1 alone. Massive expansion = huge cooling infrastructure opportunity.",
     "data_gaps": [
       "cooling_method"
-    ]
+    ],
+    "gpu": "Ampere"
   },
   {
     "id": "eu-220",
@@ -6008,7 +6079,8 @@
     "notes": "PLN 100M (USD 24.8M) investment. Two new DCs: DC3 + DC4 combined 44MW. Hybrid air + direct liquid cooling (DLC used since 2015). DC3 opening late 2026. 3 floors with 3x 300sqm data halls each. 1.7MW solar farm. Polcom AI Cloud platform with 190,000 NVIDIA CUDA cores. High-density workloads 20x current standards.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-226",
@@ -6063,7 +6135,8 @@
     "notes": "16MW IT load, 8,600 sqm IT space. Redundant cooling (2n UPS, n+1 generators). Built 2015 with e-shelter expertise. DIN 50001 certified. Carrier-neutral. Potential liquid cooling retrofit candidate as AI density demands increase in Austrian market.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-228",
@@ -6119,7 +6192,8 @@
       "pue",
       "capacity_mw",
       "cooling_method"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-230",
@@ -6174,7 +6248,8 @@
     "notes": "10MW DC in Groningen. Unique district heating exchange: feeds city heating system, receives cooling in return. Part of 30MW total capacity across Groningen + Eemshaven. Acquired 2019 for USD 44M. Located outside Amsterdam moratorium zone. Eemshaven facility is submarine cable landing point.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-232",
@@ -6231,7 +6306,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Hopper"
   },
   {
     "id": "eu-234",
@@ -6449,7 +6525,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA B200"
   },
   {
     "id": "eu-242",
@@ -6505,7 +6582,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA H100/H200"
   },
   {
     "id": "eu-244",
@@ -6859,7 +6937,8 @@
     "notes": "APAC's largest LIC + DCLC deployment. 30MW IT power, 5,000 racks, 37,000 sqm. LC module: 4.8MW across 13,740 sqft. ~30% more energy efficient than conventional cooling. Campus planned up to 150MW (4 DCs). Partners: PhonePe, Sudlows, Dell.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-257",
@@ -6886,7 +6965,8 @@
     "notes": "~US$1.2B investment. 400MW campus (scalable to 500MW). 25,000 GPU capacity. Liquid immersion cooling. Grid + renewable power. Partnership with Telangana state government and Neysa Networks.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-258",
@@ -6968,7 +7048,8 @@
     "notes": "US$2B+ investment. 60MW (scalable to 250MW). 20,736 liquid-cooled NVIDIA Blackwell Ultra (HGX B300) GPUs. 800Gbps Quantum-X800 InfiniBand. 40PB parallel storage. Largest NVIDIA DGX Cloud cluster in APAC (US$1B+ 4-year). 10,000+ GPUs for IndiaAI Mission. Live by Aug 2026.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell Ultra"
   },
   {
     "id": "eu-261",
@@ -7051,7 +7132,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA GB300"
   },
   {
     "id": "eu-264",
@@ -7080,7 +7162,8 @@
       "pue",
       "capacity_mw",
       "cooling_method"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-265",
@@ -7107,7 +7190,8 @@
     "notes": "15MW IT capacity. Home to Nano 4 AI supercomputer: 1,760 NVIDIA H200 GPUs + 144 Blackwell chips in GB200 NVL72 configuration. Launched by President Lai. National sovereign AI infrastructure.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA GB200 NVL72"
   },
   {
     "id": "eu-266",
@@ -7489,7 +7573,8 @@
     "notes": "Middle East's most advanced AI supercluster. 13+MW with NVIDIA B300 GPUs and direct-to-chip liquid cooling. Doubled from 5MW (2024) to 13MW (2025). du AI Park roadmap targets 1GW by 2030 with liquid-cooled hyperscale DCs. Microsoft $544.5M hyperscale DC partnership. Live GPU cluster accessible to customers today. Direct-to-chip liquid cooling confirmed — high-value cooling vendor target.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Blackwell"
   },
   {
     "id": "eu-280",
@@ -7685,7 +7770,8 @@
     "data_gaps": [
       "pue",
       "cooling_method"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-287",
@@ -7959,7 +8045,8 @@
       "pue",
       "capacity_mw",
       "cooling_method"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-297",
@@ -8704,7 +8791,8 @@
       "pue",
       "capacity_mw",
       "cooling_method"
-    ]
+    ],
+    "gpu": "Wafer-Scale"
   },
   {
     "id": "eu-324",
@@ -8786,7 +8874,8 @@
       "pue",
       "capacity_mw",
       "cooling_method"
-    ]
+    ],
+    "gpu": "Hopper"
   },
   {
     "id": "eu-327",
@@ -8899,7 +8988,8 @@
       "pue",
       "capacity_mw",
       "cooling_method"
-    ]
+    ],
+    "gpu": "Google TPU"
   },
   {
     "id": "eu-331",
@@ -9009,7 +9099,8 @@
     "notes": "Europe's first exascale supercomputer. 1 ExaFLOP/s. #4 TOP500. Most energy-efficient exascale system globally (60 GFlops/watt). #1 Green500 for exascale class. ~24,000 NVIDIA GH200 Grace Hopper Superchips. Eviden BullSequana XH3000 DLC. ~17MW power budget. Waste heat heats campus buildings. EUR 500M total budget.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Grace Hopper"
   },
   {
     "id": "eu-335",
@@ -9034,32 +9125,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "314 PFLOPS peak. 20MW total power, 17MW cooling capacity, PUE below 1.08. 6th greenest supercomputer worldwide (Green500). Eviden BullSequana XH3000 accelerator partition with NVIDIA H100 GPUs + Intel Sapphire Rapids. Advanced DLC on both accelerator and general purpose partitions.",
-    "data_gaps": []
-  },
-  {
-    "id": "eu-336",
-    "company": "CSC – IT Center for Science",
-    "facility_name": "LUMI — CSC Data Center, Kajaani",
-    "lat": 64.2264,
-    "lng": 27.7295,
-    "address": "Kajaani, Kainuu",
-    "country": "FI",
-    "region": "Kainuu",
-    "status": "operational",
-    "facility_type": "colocation",
-    "capacity_mw": null,
-    "pue": 1.03,
-    "pue_source": null,
-    "pue_source_url": "https://csc.fi/en/our-expertise/high-performance-computing/lumi-supercomputer/",
-    "cooling_method": "unknown",
-    "regulatory_zone": "eu-fi",
-    "source": "CSC",
-    "source_url": "https://csc.fi/en/our-expertise/high-performance-computing/lumi-supercomputer/",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "verified",
-    "notes": "380 PFLOPS. HPE Cray EX with AMD MI250X GPUs. PUE 1.03 with 100% free cooling. 100% hydroelectric power. Waste heat provides 20% of Kajaani city district heating — negative CO2 footprint (13,500 tons/year reduced). Greenest supercomputer in Europe.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA Hopper"
   },
   {
     "id": "eu-337",
@@ -9086,7 +9153,8 @@
     "notes": "TOP500 #7 (Nov 2024). 435 PFLOPS. 10,752 NVIDIA GH200 Grace Hopper Superchips. HPE Cray EX. Lake Lugano water cooling (45m depth, 460 L/s, 2.8km pipes). Waste heat supplies hot water to city of Lugano. 100% hydropower. 10MW at full load.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Grace Hopper"
   },
   {
     "id": "eu-338",
@@ -9140,7 +9208,8 @@
     "notes": "UK's most powerful supercomputer. 21 exaflops AI performance. 5,448 NVIDIA GH200 Grace Hopper Superchips. 100% fan-less HPE DLC with 90% cooling power reduction. 5MW facility. #4 Green500 worldwide. #6 fastest in Europe. Heat recovery pathway for industrial/district heating.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Grace Hopper"
   },
   {
     "id": "eu-340",
@@ -9168,7 +9237,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "AMD"
   },
   {
     "id": "eu-341",
@@ -9195,7 +9265,8 @@
     "notes": "France's most powerful research supercomputer. 125.9 PFLOPS peak. Warm-water DLC at 30-36C. H100 partition installed by Eviden (April 2024). Waste heat pipes to Paris-Saclay district heating network — heats equivalent of 1,000 homes. ~2MW / 17 GWh/year.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Hopper"
   },
   {
     "id": "eu-342",
@@ -9220,7 +9291,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "First operational EuroHPC system. 6.9 PFLOPS. BullSequana XH2000 with DLC. 830 kW power, cooling requires only 50 kW extra. Annual PUE <1.06. Waste heat heats IZUM building. 960 CPU + 60 GPU nodes (A100).",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA Ampere"
   },
   {
     "id": "eu-343",
@@ -9247,7 +9319,8 @@
     "notes": "4.5 PFLOPS. BullSequana XH2000 with DLC (90% hot water, 10% air). 12 racks, 1,128 compute nodes, 144,384 AMD EPYC cores. 1MW UPS. TOP500 #91. EUR 11.5M EuroHPC co-investment. Major upgrade announced by EuroHPC.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA H200"
   },
   {
     "id": "eu-344",
@@ -9274,7 +9347,8 @@
     "notes": "15.7 PFLOPS peak. 829 compute nodes, 106,752 cores. 800 kW power. Cold water-cooled racks (8-15C / 30-35C). 72 nodes with NVIDIA A100 GPUs. #15 Green500 at launch. EuroHPC petascale system.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Ampere"
   },
   {
     "id": "eu-345",
@@ -9302,7 +9376,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Ampere"
   },
   {
     "id": "eu-346",
@@ -9330,7 +9405,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "AMD MI250X"
   },
   {
     "id": "eu-347",
@@ -9385,7 +9461,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Hopper"
   },
   {
     "id": "eu-349",
@@ -9439,7 +9516,8 @@
     "notes": "33.86 PFLOPS. Former #1 TOP500 (2013-2015). 17.6 MW IT load, 24 MW with cooling. Customized chilled water cooling. Located in Guangzhou University Town with district cooling. Intel Xeon + Matrix-2000 accelerators.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Matrix-2000+ accelerator"
   },
   {
     "id": "eu-351",
@@ -9467,7 +9545,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Ampere"
   },
   {
     "id": "eu-352",
@@ -9495,7 +9574,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Ampere"
   },
   {
     "id": "eu-353",
@@ -9910,7 +9990,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-368",
@@ -9965,7 +10046,8 @@
     "notes": "Nearly 115MW combined capacity commitments across Gainesville VA, Chicago IL, Sacramento CA. Announced in April 2026 DCK roundup. Liquid cooling status unconfirmed but NTT supports liquid-ready designs.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-370",
@@ -10155,7 +10237,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "30MW IT load, 10,900 sqm server room. Liquid cooling installed as standard (Green Nexcenter). pPUE 1.15 target. Opening March 2026. NTT also operates a 75kW 'Data Center Trial Field' in Noda City, Chiba for liquid cooling verification (direct liquid cooling + immersion cooling devices). NTT testing two-phase direct-to-chip cooling in existing air-cooled DC.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-377",
@@ -10183,7 +10266,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-378",
@@ -10211,7 +10295,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-379",
@@ -10239,7 +10324,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA H100/H200"
   },
   {
     "id": "eu-380",
@@ -10320,7 +10406,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "58MW capacity, 120,000 sqft, 8 stories. Singapore's largest direct-to-chip liquid cooling deployment. PUE 1.23 at full load (one of most efficient in Asia). Opened February 2026. Carrier-neutral, multi-tenanted. Nxera total Singapore capacity now 120MW. Co-innovation platform with Deston, SGP Global, QCT, Shell, Stulz, Supermicro for liquid and immersion cooling R&D. NVIDIA GB200 GPU deployment.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA GB200"
   },
   {
     "id": "eu-383",
@@ -10431,7 +10518,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "eu-387",
@@ -10459,7 +10547,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-388",
@@ -10486,7 +10575,8 @@
     "notes": "Massive 1GW campus target (3GW ultimate). Phase 1: 120MW by late 2026. NVIDIA GH200 Grace Hopper Superchip and DGX Cloud. Powered by renewable energy. India's first GPU-as-a-Service cloud. $110B overall investment program. Liquid cooling highly likely given GPU density but not formally confirmed.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Grace Hopper"
   },
   {
     "id": "eu-389",
@@ -10623,7 +10713,8 @@
     "notes": "Indonesia's first sovereign AI data center. Launched December 2024 with NVIDIA accelerated computing. BDx Indonesia JV (Indosat Ooredoo Hutchison + Lintasarta + BDx Data Centers). Powered by green hydropower. 15MW facility near Jakarta, 100MW hyperscale campus planned at Suryacipta. Southeast Asia's most interconnected AI infrastructure.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-394",
@@ -10678,7 +10769,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-396",
@@ -10706,7 +10798,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "eu-397",
@@ -10899,7 +10992,8 @@
     "notes": "Japan's first ultra energy-efficient DC service compatible with liquid cooling technology (Green Nexcenter). pPUE 1.15 achieved. Liquid cooling as standard infrastructure. Opened fiscal 2024. Serves Tokyo metropolitan area.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-404",
@@ -10926,7 +11020,8 @@
     "notes": "Massive AI DC at former Sharp LCD factory. 150MW initial, expandable to 400MW. 440,000 sqm site, 750,000 sqm total floor. Joint ¥100B ($676M) investment with OpenAI. Direct-to-chip liquid cooling for 1,224+ NVIDIA Blackwell GPUs (Dec 2025 launch), scaling to 4,000+ GPUs / 10.6 ExaFLOPS. METI certified. Powers Sarashina LLM.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "eu-405",
@@ -11037,7 +11132,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "eu-409",
@@ -11940,7 +12036,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "eu-442",
@@ -12495,7 +12592,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-462",
@@ -12522,7 +12620,8 @@
     "notes": "French nuclear defense supercomputer center. CEA/DAM operates EXA1 (TOP500 #14 at launch) with 100% DLC — Atos BullSequana XH2000. PUE ~1.0. Used for nuclear warhead modeling, submarine reactor design. XH3000 upgrade contracted Nov 2022. Atos/Eviden patented DLC is European sovereign technology — manufactured in Angers, France. One of Europe's most powerful defense HPC systems.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA H200"
   },
   {
     "id": "eu-463",
@@ -12550,34 +12649,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
-  },
-  {
-    "id": "eu-464",
-    "company": "CSC — IT Center for Science (Finland)",
-    "facility_name": "LUMI Supercomputer — CSC Data Center Kajaani (Direct Liquid Cooled)",
-    "lat": 64.2272,
-    "lng": 27.7285,
-    "address": "Kajaani, Kainuu",
-    "country": "FI",
-    "region": "Kainuu",
-    "status": "operational",
-    "facility_type": "colocation",
-    "capacity_mw": 10,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://csc.fi/en/our-expertise/high-performance-computing/lumi-supercomputer/",
-    "cooling_method": "unknown",
-    "regulatory_zone": "eu-fi",
-    "source": "CSC — IT Center for Science",
-    "source_url": "https://csc.fi/en/our-expertise/high-performance-computing/lumi-supercomputer/",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "reported",
-    "notes": "Europe's greenest pre-exascale supercomputer. 375+ PetaFLOPS. 100% hydroelectric. DLC with waste heat recovery providing 20% of Kajaani district heat. Former paper mill. 10MW capacity. HPE Cray EX. 10-country EuroHPC consortium. One of most environmentally efficient supercomputers globally.",
-    "data_gaps": [
-      "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Grace Hopper"
   },
   {
     "id": "eu-465",
@@ -12602,7 +12675,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "EuroHPC pre-exascale supercomputer at CINECA Bologna. 4,992 liquid-cooled nodes. 10km DLC piping. 95% heat extraction. PUE target below 1.1. Expanding from 8MW to 20MW IT load (2025-2030). Stage 2a favors 16MW DLC + 4MW air. Atos BullSequana XH2000. Italian government co-funded.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA Ampere"
   },
   {
     "id": "eu-466",
@@ -12630,7 +12704,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "eu-467",
@@ -12686,7 +12761,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Grace Hopper + AMD EPYC 5th Gen"
   },
   {
     "id": "eu-469",
@@ -12713,7 +12789,8 @@
     "notes": "Japan's flagship supercomputer. 442 PetaFLOPS. 158,976 liquid-cooled nodes. Fujikura DLC cold plates. ~30MW. Was world's fastest (2020). Successor FugakuNEXT announced — RIKEN deploying liquid-cooled NVIDIA Blackwell for quantum-HPC hybrid platform. NEDO-funded (Ministry of Economy). Major Japanese government compute infrastructure.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Fujitsu A64FX (ARM)"
   },
   {
     "id": "eu-470",
@@ -12741,7 +12818,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "eu-471",
@@ -12769,7 +12847,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Google TPU"
   },
   {
     "id": "eu-472",
@@ -12797,7 +12876,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Google TPU"
   },
   {
     "id": "eu-473",
@@ -12825,7 +12905,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Google TPU"
   },
   {
     "id": "eu-474",
@@ -12853,7 +12934,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Google TPU"
   },
   {
     "id": "eu-475",
@@ -12909,7 +12991,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-477",
@@ -13021,7 +13104,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-481",
@@ -13326,7 +13410,8 @@
     "notes": "Flagship Stargate site. 8 buildings across 1,000 acres. Two buildings operational since Sep 2025 with NVIDIA GB200 Blackwell racks. Remaining 6 buildings by mid-2026 = 1.2GW total. Direct-to-chip closed-loop non-evaporative cooling. Liquid coolant piped directly onto GPU cold plates in sealed circuit. Winter 2026 weather event disrupted liquid cooling -- lessons learned.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA GB200"
   },
   {
     "id": "eu-492",
@@ -13436,7 +13521,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA GB200 NVL72"
   },
   {
     "id": "eu-496",
@@ -13520,7 +13606,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-499",
@@ -13548,7 +13635,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA GB200 NVL72"
   },
   {
     "id": "eu-500",
@@ -13604,7 +13692,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-502",
@@ -13632,7 +13721,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "AMD"
   },
   {
     "id": "eu-503",
@@ -13744,7 +13834,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-507",
@@ -13772,7 +13863,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-508",
@@ -13828,7 +13920,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-510",
@@ -13856,7 +13949,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-511",
@@ -14106,7 +14200,8 @@
     "notes": "Airedale deployed enhanced cooling at CyrusOne's 54MW Frankfurt campus. Achieved PUE of 1.18. Working with Sudlows. 34% energy saving vs client baseline model. Up to 44% savings vs standard product designs. Complete solution: high-performance systems + advanced controls.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-520",
@@ -14148,8 +14243,8 @@
     "status": "Operational",
     "facility_type": "colocation",
     "capacity_mw": 10,
-    "pue": null,
-    "pue_source": null,
+    "pue": 1.193,
+    "pue_source": "Nortek StatePoint deployment annualized PUE",
     "pue_source_url": "https://www.nortekdatacenter.com/nortek-data-center-coolings-statepoint-hybrid-fluid-cooling-plant-in-digital-edge-data-center/",
     "cooling_method": "unknown",
     "regulatory_zone": "eu-philippines",
@@ -14216,7 +14311,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-524",
@@ -14243,7 +14339,8 @@
     "notes": "NTT's first production immersion deployment and APAC's largest at the time. 4.8 MW capacity over 13,740 sqft at Navi Mumbai Data Center. LiquidStack two-phase immersion technology.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-525",
@@ -14407,7 +14504,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "AMD"
   },
   {
     "id": "eu-531",
@@ -14435,7 +14533,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-532",
@@ -14658,7 +14757,8 @@
     "notes": "180MW gross (164MW IT) AI colocation facility converting from Bitcoin mining. Tydal Phase 2 conversion. Will be Norway's largest AI data center and among largest in Europe. NVIDIA Vera Rubin reference designs. 100% carbon-free hydroelectric power. Immersion cooling. DCI (Sparc Group AB) contracted for end-to-end design, planning, installation, testing, commissioning. Excess heat routed to neighboring food production. December 2026 target completion.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Vera Rubin"
   },
   {
     "id": "eu-540",
@@ -14685,7 +14785,8 @@
     "notes": "UK's fastest AI supercomputer. 256 Dell PowerEdge XE9640 nodes with 512 Intel Xeon Scalable CPUs + 1,024 Intel Data Center GPU Max 1550 accelerators. Direct liquid cooling handles 60kW per rack. PUE 1.14. Phase 2 expansion with AMD MI355X GPUs funded at 36M GBP. Part of Cambridge Open Zettascale Lab.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Intel Data Center GPU Max"
   },
   {
     "id": "eu-541",
@@ -14713,7 +14814,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA GH200 Grace Hopper Superchip"
   },
   {
     "id": "eu-542",
@@ -14740,7 +14842,8 @@
     "notes": "Max Planck Society's primary supercomputer. 10 BullSequana XH3000 racks, 768 CPU nodes + 192 GPU nodes. AMD EPYC 4th Gen + AMD Instinct MI300A GPUs (European Atos-first). 100% fanless DLC with hot water. PUE < 1.05. 20M EUR contract. 3x performance over predecessor Cobra. Serves all 86 Max Planck Institutes.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "AMD MI300"
   },
   {
     "id": "eu-543",
@@ -14795,34 +14898,8 @@
     "notes": "UK's most powerful AI supercomputer. 225M GBP investment. 5,448 NVIDIA GH200 Grace Hopper Superchips. 21-23 exaflops AI performance. 5MW system. 100% fanless DLC via HPE Cray EX. 90% reduction in cooling power. 90%+ dry waterless operation via hybrid cooling towers. Nearly 25 PB storage. HPE Slingshot 11 interconnect. Launched July 2025.",
     "data_gaps": [
       "pue"
-    ]
-  },
-  {
-    "id": "eu-545",
-    "company": "CSC - IT Center for Science",
-    "facility_name": "LUMI Supercomputer -- CSC Kajaani Data Center",
-    "lat": 64.2278,
-    "lng": 27.7285,
-    "address": "Kajaani, Kainuu",
-    "country": "FI",
-    "region": "Kainuu",
-    "status": "operational",
-    "facility_type": "colocation",
-    "capacity_mw": null,
-    "pue": 1.04,
-    "pue_source": null,
-    "pue_source_url": "https://www.lumi-supercomputer.eu/the-waste-energy-of-lumi-supercomputer-produces-20-percent-of-the-district-heat-of-kajaani-csc-and-loiste-lampo-have-signed-an-agreement/",
-    "cooling_method": "unknown",
-    "regulatory_zone": "eu-fi",
-    "source": "LUMI",
-    "source_url": "https://www.lumi-supercomputer.eu/the-waste-energy-of-lumi-supercomputer-produces-20-percent-of-the-district-heat-of-kajaani-csc-and-loiste-lampo-have-signed-an-agreement/",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "reported",
-    "notes": "380 PFLOP/s EuroHPC pre-exascale system. PUE 1.04. 100% hydroelectric power (carbon-negative operations). Waste heat provides 20% of Kajaani city district heating (boosted to 90C via heat pumps). 40% total energy cost reduction. HPE Cray EX liquid-cooled blades. Site has 230MW electrical infrastructure. 11-country European consortium. One of the world's greenest supercomputers.",
-    "data_gaps": [
-      "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA GH200"
   },
   {
     "id": "eu-546",
@@ -14850,7 +14927,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA (multiple generations)"
   },
   {
     "id": "eu-547",
@@ -14878,7 +14956,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "AMD MI250X"
   },
   {
     "id": "eu-548",
@@ -14906,7 +14985,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA V100"
   },
   {
     "id": "eu-549",
@@ -14934,7 +15014,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "AMD MI250X"
   },
   {
     "id": "eu-550",
@@ -14962,7 +15043,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Volta"
   },
   {
     "id": "eu-551",
@@ -15017,7 +15099,8 @@
     "notes": "NVIDIA's flagship internal AI supercomputer, 576 DGX H100 nodes (4,608 GPUs), ranked #9 TOP500, 18.4 exaflops FP8. Liquid cooling rack manifolds in 90,000 sf data labs within Voyager/Endeavor campus buildings.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "eu-553",
@@ -15044,7 +15127,8 @@
     "notes": "10,000 sqm facility hosting hundreds of liquid-cooled Blackwell GPU systems plus BlueField-3 SuperNIC, Spectrum-X800 switches. $500M–$1.5B investment. Advanced liquid-cooling tech being introduced to Israel specifically for this project.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "eu-554",
@@ -15098,7 +15182,8 @@
     "notes": "Japan's fastest AI supercomputer. HPE Cray XD system with thousands of NVIDIA H200 GPUs. Liquid cooling uses 32°C water, 3MW free cooling tower + 200kW chiller. Built by Fujitsu with Asetek liquid cooling technology.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA H200"
   },
   {
     "id": "eu-556",
@@ -15317,7 +15402,8 @@
     "notes": "Mäntsälä has Europe's first NVIDIA GB300 NVL72 deployment. Lappeenranta expansion: 310MW, 100 acres, closed-loop liquid cooling with zero local water intake, heat recovery to district heating. NVIDIA Vera Rubin NVL72 later in 2026. First capacity 2027.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA GB300"
   },
   {
     "id": "eu-564",
@@ -15344,7 +15430,8 @@
     "notes": "300MW AI data center under construction in Tomakomai. Part of SoftBank's massive AI infrastructure push with NVIDIA. Cold climate location (Hokkaido) provides free cooling advantage.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-565",
@@ -15456,7 +15543,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "eu-569",
@@ -15512,7 +15600,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA H200"
   },
   {
     "id": "eu-571",
@@ -15540,7 +15629,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "eu-572",
@@ -15568,7 +15658,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA GB200 NVL72"
   },
   {
     "id": "eu-573",
@@ -15596,7 +15687,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "eu-574",
@@ -15624,7 +15716,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Hopper"
   },
   {
     "id": "eu-575",
@@ -15651,7 +15744,8 @@
     "notes": "UK's most powerful supercomputer dedicated to healthcare AI. 80 NVIDIA DGX A100 systems (640 A100 GPUs), ~400 PFLOPS AI compute, ~10 PFLOPS Linpack. $100M+ NVIDIA investment. Hosted at Kao Data Harlow with PUE 1.2, 100% free cooling, 100% renewable energy. Founding partners: AstraZeneca (MegaMolBART drug discovery), GSK, King's College London, Oxford Nanopore. Now integrated into NVIDIA DGX Cloud for broader EU/UK access. Green500 Top 5 at launch.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Ampere"
   },
   {
     "id": "eu-576",
@@ -15679,7 +15773,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Hopper"
   },
   {
     "id": "eu-577",
@@ -15707,7 +15802,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Hopper"
   },
   {
     "id": "eu-578",
@@ -15735,7 +15831,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Cerebras WSE-1 + NVIDIA Ampere"
   },
   {
     "id": "eu-579",
@@ -15760,7 +15857,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "One of Europe's largest biosciences data centres. Morgan Building houses four 250m2 halls, 400 racks, 35,000+ cores (growing with GPUs). 4MW facility. PUE 1.6-1.8 (targeting 1.4-1.6). CCHP plant captures waste heat for building heating. Produces 10 billion bases raw sequence data per day. Schneider Electric EcoStruxure IT management with 300+ custom APC PDUs. Computational output increased 50% while reducing energy 33%. Growing GPU estate for AI/ML genomics workloads.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Growing GPU estate"
   },
   {
     "id": "eu-580",
@@ -15788,7 +15886,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Ampere"
   },
   {
     "id": "eu-581",
@@ -15816,7 +15915,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-582",
@@ -15900,7 +16000,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "AMD"
   },
   {
     "id": "eu-585",
@@ -15929,7 +16030,8 @@
       "pue",
       "capacity_mw",
       "cooling_method"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "eu-586",
@@ -15954,7 +16056,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "UK sovereign AI supercomputer launched July 2025 at National Composites Centre in Bristol. 5,448 NVIDIA GH200 Grace Hopper Superchips via HPE Cray EX. 23 exaflops AI performance. 100% fan-less direct liquid cooling with PUE 1.1. All 5MW from zero-carbon grid supply. Part of UK AI Research Resource (AIRR) with 20x expansion planned by 2030. 225M GBP Phase 2 investment. Government-backed sovereign compute for UK AI research and public sector.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "NVIDIA GH200 Grace Hopper Superchip"
   },
   {
     "id": "eu-587",
@@ -15981,7 +16084,8 @@
     "notes": "UK's 750M GBP national supercomputer planned for Edinburgh. 31MW heat output projected. Housed in EPCC Advanced Computing Facility new wing (31M GBP). Heat recovery via old mine workings studied. No longer called exascale. Target early 2027 operational. Major sovereign compute investment for AI, science, industry. Liquid cooling virtually certain but specs not yet finalized.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Google TPU"
   },
   {
     "id": "eu-588",
@@ -16009,7 +16113,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA GB200 NVL4 (Grace Blackwell)"
   },
   {
     "id": "eu-589",
@@ -16037,7 +16142,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA GH200 Grace Hopper Superchip"
   },
   {
     "id": "eu-590",
@@ -16064,7 +16170,8 @@
     "notes": "Japan's sovereign AI supercomputer. 6,128 NVIDIA H200 GPUs on HPE Cray XD. 6.22 ExaFLOPS half precision. 3.0 ExaFLOPS single precision. 7-13x faster than ABCI 2.0. Direct liquid cooling + hot water/air hybrid (70kW/rack). 6MW capacity. METI-funded via Economic Security Fund as part of 1B USD sovereign AI initiative. Operational since Jan 2025.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA H200 Tensor Core"
   },
   {
     "id": "eu-591",
@@ -16119,7 +16226,8 @@
     "notes": "Taiwan's sovereign AI supercomputer. NCHC Nano4 with ASUS Direct-to-Chip liquid cooling. PUE 1.18. NVIDIA HGX H200 cluster at 81.55 PFLOPS (TOP500 #29). GB200 NVL72 Blackwell phase deploying in 2026. Part of Taiwan's 'Ten Major AI Infrastructure Projects.' ASUS AIDC automated setup (3 weeks to 3 days). Highest-density AI facility in Taiwan. NVIDIA + Foxconn AI factory for TSMC also planned.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA HGX H200 + GB200 NVL72 (Blackwell)"
   },
   {
     "id": "eu-593",
@@ -16146,7 +16254,8 @@
     "notes": "India's largest sovereign AI deployment. 20,736 liquid-cooled NVIDIA Blackwell Ultra (B300) GPUs. 2B USD investment. 60MW D2 DC at Greater Noida (scalable to 250MW), plus Navi Mumbai campus (scalable to 2GW). 10,000+ GPUs committed to IndiaAI Mission for sovereign foundation model development. NVIDIA DGX Cloud cluster (1B USD 4-year engagement). Shakti Studio AI platform with NVIDIA NIM. Expected operational Aug 2026.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell Ultra (HGX B300)"
   },
   {
     "id": "eu-594",
@@ -16174,7 +16283,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA H100 Tensor Core"
   },
   {
     "id": "eu-595",
@@ -16201,7 +16311,8 @@
     "notes": "Australian sovereign AI factory. Macquarie + Dell Technologies bringing NVIDIA-powered sovereign AI factories to Australia. 47MW facility with DLC capability. Fungible halls for air/liquid/hybrid cooling. Phase I 350M AUD with 6MW initial IT fit-out. Part of 65MW Macquarie Park campus. Opening Sep 2026. Purpose-built for high-density AI compute.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-596",
@@ -16282,7 +16393,8 @@
     "notes": "Largest AI infrastructure investment outside US. 1GW Stargate compute cluster (Phase 1: 200MW live 2026). Part of 5GW UAE-US AI Campus (10 sq miles). Built by G42/Khazna, operated by OpenAI and Oracle. NVIDIA Grace Blackwell GB300 systems. Cisco zero-trust security. Nuclear + solar + gas power. Sovereign AI for UAE and global inferencing.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Grace Blackwell GB300"
   },
   {
     "id": "eu-599",
@@ -16309,7 +16421,8 @@
     "notes": "OpenAI's first European data center. 100,000 NVIDIA GPUs by end 2026. 230MW initial capacity (expandable to 520MW). Closed-loop D2C liquid cooling. 100% renewable hydropower. Surplus GPU heat reused for local enterprises. Kvandal near Narvik in Northern Norway. Part of OpenAI for Countries programme. Nscale + Aker partnership.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA (model TBD)"
   },
   {
     "id": "eu-600",
@@ -16336,7 +16449,8 @@
     "notes": "Malaysia's sovereign AI data center. NVIDIA liquid-cooled GB200 NVL72 GPUs operational. 600MW campus on 1,640 acres in Johor. 500MW solar plant for renewable power. 2.38B USD invested (half DC infra, half AI solutions). Malaysia's first LLM (Ilmu). PM Anwar Ibrahim + Jensen Huang announced at APEC 2025. Global hyperscalers as customers. 5.9B MYR government AI budget 2026.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA GB200 NVL72 (Grace Blackwell)"
   },
   {
     "id": "eu-601",
@@ -16363,7 +16477,8 @@
     "notes": "Indonesia's first sovereign AI data center. BDx consortium (Indosat, Lintasarta, BDx). 500MW total campus at Jatiluhur. Direct-to-chip liquid cooling at scale (first in Indonesia). 120kW/rack density. NVIDIA DGX-Ready certified. NVIDIA accelerated computing platform. Renewable energy powered. Part of Indonesia's Golden Vision 2045 sovereign AI strategy. Indosat first in SEA to adopt NVIDIA GB200 NVL72.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA (multiple: H100, GB200 NVL72)"
   },
   {
     "id": "eu-602",
@@ -16418,7 +16533,8 @@
     "notes": "French sovereign AI data center for Mistral AI. 40MW DLC-throughout facility 40km south of Paris. 18,000 NVIDIA GB200 GPUs via Scaleway. 66 containers at 600kW each, 20 racks per container. Eclairion raised 50M EUR (Feb 2025). First DC operational 2027. Part of Macron's 109B EUR AI investment strategy. Renewable energy via Enedis substations. NOTE: FluidStack withdrew from France in March 2026, pivoting to US.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA GB200 (Grace Blackwell)"
   },
   {
     "id": "eu-604",
@@ -16445,7 +16561,8 @@
     "notes": "NVIDIA's own sovereign AI lab in Israel. 10,000 sqm facility at Mevo Carmel. 30MW. Hundreds of liquid-cooled Blackwell + Grace Blackwell Superchip systems. Full-stack networking (Spectrum-X800, Quantum-X800, BlueField-3). Part of NVIDIA's massive Israel investment. Jensen Huang described implications of building AI infrastructure in Israel as 'profound.'",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell + Grace Blackwell Superchip"
   },
   {
     "id": "eu-605",
@@ -16473,7 +16590,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA (model not disclosed)"
   },
   {
     "id": "eu-606",
@@ -16585,7 +16703,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA DGX-Ready"
   },
   {
     "id": "eu-610",
@@ -16697,7 +16816,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Google TPU"
   },
   {
     "id": "eu-614",
@@ -17138,7 +17258,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-630",
@@ -17299,7 +17420,8 @@
     "notes": "OpenAI's first European AI data center (Stargate Norway). Located in Kvandal near Narvik in the Arctic Circle. 230MW initial capacity powered entirely by renewable hydropower. Targeting 100,000 Nvidia GPUs by end of 2026. Closed-loop direct-to-chip liquid cooling. Waste heat recycled for local industry. ~$1B Phase 1 investment ($250M+ equity each from Nscale and Aker). Expansion to additional 290MW planned. Arctic location provides cheap power (below European average) and natural cooling. OpenAI's first AI gigafactory under 'For Countries' programme.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Nvidia (model TBD, likely Blackwell generation)"
   },
   {
     "id": "eu-636",
@@ -17326,7 +17448,8 @@
     "notes": "Verne's 40-acre Keflavik campus (140MW+ IT capacity) in Iceland hosts one of the Nordic region's largest liquid-cooled GPU installations. Nscale signed a 15MW lease (Nov 2025) to deploy 4,600 Nvidia Blackwell Ultra GPUs across 2026 in an 85% liquid-cooled / 15% air-cooled configuration. 100% renewable energy from geothermal and hydropower. Iceland's subarctic climate provides natural free cooling. Setting a new standard for sustainable high-performance computing.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Nvidia Blackwell"
   },
   {
     "id": "eu-637",
@@ -17543,7 +17666,8 @@
     "notes": "Pioneer liquid-cooled colocation in Silicon Valley. SJC02 is 9MW, supports 17kW-500kW+ per rack via DLC and RDHx. NVIDIA DGX Ready certified. Customers include Cerebras, Lambda Cloud, Cirrascale. Acquired by King Street for rapid scaling.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-645",
@@ -17597,7 +17721,8 @@
     "notes": "Early access system for NERSC-10 Doudna supercomputer. Dell IR7000 direct liquid-cooled rack + first US deployment of Rittal V3.5 CDU. NVIDIA Vera-Rubin platform pending. Cech delivered Jan 2026, full Doudna late 2026. National lab small-scale HPC.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA"
   },
   {
     "id": "eu-647",
@@ -18437,33 +18562,6 @@
     ]
   },
   {
-    "id": "eu-678",
-    "company": "National Renewable Energy Laboratory (NREL)",
-    "facility_name": "NREL Energy Systems Integration Facility (ESIF) HPC Data Center",
-    "lat": 39.7407,
-    "lng": -105.1728,
-    "address": "Golden, CO, ",
-    "country": "United States",
-    "region": "",
-    "status": "Operational",
-    "facility_type": "colocation",
-    "capacity_mw": 1,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://betterbuildingssolutioncenter.energy.gov/showcase-projects/nrels-energy-systems-integration-facility",
-    "cooling_method": "unknown",
-    "regulatory_zone": "eu-united states",
-    "source": "Research",
-    "source_url": "https://betterbuildingssolutioncenter.energy.gov/showcase-projects/nrels-energy-systems-integration-facility",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "reported",
-    "notes": "World-leading PUE of 1.036 (annualized average). Chiller-less design with warm-water direct liquid cooling captures 97% of waste heat for building heating. DCD Eco-Sustainability Award 2018. Under 2MW -- ideal SOM candidate for Solar Steam proof-of-concept.",
-    "data_gaps": [
-      "pue"
-    ]
-  },
-  {
     "id": "eu-679",
     "company": "IREN (formerly Iris Energy)",
     "facility_name": "IREN -- Canal Flats, British Columbia",
@@ -18488,7 +18586,8 @@
     "notes": "IREN Canal Flats site in BC. 30MW, PUE 1.1 (air-cooled). BC cold climate advantage. Transitioning to liquid cooling for Blackwell GPUs.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "eu-680",
@@ -18569,7 +18668,8 @@
     "notes": "IREN Horizon 1 at Childress 750MW campus. 75MW Phase 1, liquid-cooled for Nvidia Blackwell GPUs. Projected PUE 1.05-1.10. Q4 2025 target delivery.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "eu-683",
@@ -18637,8 +18737,8 @@
     "status": "Operational",
     "facility_type": "edge",
     "capacity_mw": 0.5,
-    "pue": null,
-    "pue_source": null,
+    "pue": 1.05,
+    "pue_source": "KDDI immersion cooling announcement",
     "pue_source_url": "https://www.gigabyte.com/Article/japanese-telco-leader-kddi-invents-immersion-cooling-small-data-center-with-gigabyte",
     "cooling_method": "unknown",
     "regulatory_zone": "eu-japan",
@@ -18650,7 +18750,8 @@
     "notes": "KDDI containerized immersion-cooled micro DC. PUE 1.05-1.07. 12ft shipping container form factor. 43% power reduction for cooling. 94% reduction in temperature control electricity vs air cooling in trials. Under 1MW -- strong SOM candidate for edge deployments.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA A100"
   },
   {
     "id": "eu-686",
@@ -18664,8 +18765,8 @@
     "status": "Operational",
     "facility_type": "colocation",
     "capacity_mw": 10,
-    "pue": null,
-    "pue_source": null,
+    "pue": 1.1,
+    "pue_source": "DigiPlex/STACK Oslo 3 specifications",
     "pue_source_url": "https://datacentercatalog.com/norway/digiplex-oslo-3-fetsund-data-center",
     "cooling_method": "unknown",
     "regulatory_zone": "eu-norway",
@@ -18880,8 +18981,8 @@
     "status": "Operational",
     "facility_type": "colocation",
     "capacity_mw": 8,
-    "pue": null,
-    "pue_source": null,
+    "pue": 1.16,
+    "pue_source": "Telehouse North Two design PUE",
     "pue_source_url": "https://www.telehouse.com/",
     "cooling_method": "unknown",
     "regulatory_zone": "eu-united kingdom",
@@ -18920,7 +19021,8 @@
     "notes": "OVHcloud hybrid immersion cooling achieves partial PUE (PPUE) of 1.004 -- nearly perfect efficiency for the cooling subsystem. 16 patents. Reduces server cooling power by up to 90%. IMPORTANT: This is PPUE (partial), not full facility PUE.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "eu-696",
@@ -18934,8 +19036,8 @@
     "status": "Operational",
     "facility_type": "colocation",
     "capacity_mw": 10,
-    "pue": null,
-    "pue_source": null,
+    "pue": 1.2,
+    "pue_source": "Sabey Columbia Campus average PUE",
     "pue_source_url": "https://sabeydatacenters.com/",
     "cooling_method": "unknown",
     "regulatory_zone": "eu-united states",
@@ -18961,8 +19063,8 @@
     "status": "Operational",
     "facility_type": "colocation",
     "capacity_mw": 8.8,
-    "pue": null,
-    "pue_source": null,
+    "pue": 1.2,
+    "pue_source": "Kao Data KLON-01 SLA-backed PUE",
     "pue_source_url": "https://kaodata.com/about/sustainability",
     "cooling_method": "unknown",
     "regulatory_zone": "eu-united kingdom",
@@ -18974,7 +19076,8 @@
     "notes": "Kao Data KLON-01 at Harlow campus. SLA-backed PUE 1.2, consistent even at partial loads. Indirect evaporative cooling, no mechanical refrigeration. 8.8MW. Potential SOM candidate.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA A100"
   },
   {
     "id": "eu-698",
@@ -19353,7 +19456,8 @@
     "notes": "Crusoe Cloud expanded capacity at atNorth's ICE02 data center in Keflavik, Iceland to 57MW (24MW expansion in Aug 2025). Deploying NVIDIA DGX GB200 NVL72 + Blackwell GPUs with Direct Liquid to Chip cooling. 100% renewable (geothermal + hydro). $175M credit facility from Victory Park Capital.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Blackwell"
   },
   {
     "id": "eu-712",
@@ -19408,7 +19512,8 @@
     "notes": "Yotta Chennai Data Center Park: 5 interconnected buildings with 25,000 racks and 140MW. Immersion + chilled-water cooling for GPU racks. PUE <1.2 on DLC workloads. Plans to deploy 20,736 liquid-cooled NVIDIA Blackwell Ultra GPUs ($2B+ investment) by Aug 2026.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Blackwell Ultra"
   },
   {
     "id": "eu-714",

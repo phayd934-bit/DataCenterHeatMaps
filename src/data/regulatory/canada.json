@@ -1,5 +1,31 @@
 [
   {
+    "zone_id": "ca-federal",
+    "country": "CA",
+    "region": "Canada (Federal)",
+    "regulatory_complexity_score": 52,
+    "regulations": [
+      {
+        "category": "environmental",
+        "name": "Canadian Environmental Protection Act, 1999 (CEPA)",
+        "level": "federal",
+        "summary": "CEPA is the core federal environmental statute governing toxic substances, air emissions, and federal enforcement tools relevant to refrigerants, halocarbons, and pollution-prevention obligations.",
+        "url": "https://laws-lois.justice.gc.ca/eng/acts/c-15.31/",
+        "effective_date": "1999-09-14",
+        "relevance": "Provides the federal legal basis for refrigerant and emissions compliance affecting cooling equipment supplied into Canadian data center projects."
+      },
+      {
+        "category": "environmental",
+        "name": "Federal Halocarbon Regulations, 2022",
+        "level": "federal",
+        "summary": "These regulations set federal requirements for installation, servicing, leak testing, withdrawal from use, inventories, and recordkeeping for refrigeration and air-conditioning systems containing halocarbons on federal and certain regulated lands.",
+        "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2022-110/",
+        "effective_date": "2022-06-01",
+        "relevance": "Directly relevant where a cooling systems company installs or services halocarbon-based equipment for federal facilities or projects subject to federal lands rules."
+      }
+    ]
+  },
+  {
     "zone_id": "ca-on",
     "country": "CA",
     "region": "Ontario",
