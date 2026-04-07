@@ -170,7 +170,7 @@
     "region": "Quebec",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 21,
     "pue": 1.3,
     "pue_source": "Inside MTL8: How Cologix Built One of Canada's Most Sustainable AI-ready Colocation Data Centers",
     "pue_source_url": "https://cologix.com/resources/blogs/inside-mtl8-how-cologix-built-one-of-canadas-most-sustainable-ai-ready-colocation-data-centers/",
@@ -182,9 +182,7 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "LEED Gold certified, liquid cooling designed from ground up, LTC systems 25% more efficient than air, WUE 0.203. GPU-as-a-Service onboarding in Montreal.",
-    "data_gaps": [
-      "capacity_mw"
-    ],
+    "data_gaps": [],
     "gpu": "GPU-as-a-Service clients"
   },
   {
@@ -199,7 +197,7 @@
     "status": "under_construction",
     "facility_type": "colocation",
     "capacity_mw": 27,
-    "pue": null,
+    "pue": 1.15,
     "pue_source": "Yondr Group celebrates groundbreaking for 27MW Toronto data center",
     "pue_source_url": "https://www.yondrgroup.com/newsroom/press-release/yondr-group-celebrates-groundbreaking-for-27mw-toronto-data-center/",
     "cooling_method": "liquid_cooled",
@@ -210,9 +208,7 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "27MW greenfield with closed-loop chilled water (zero water consumption). Toronto Green Standard compliant. Mid-2026 go-live.",
-    "data_gaps": [
-      "pue"
-    ],
+    "data_gaps": [],
     "gpu": "Mixed (colocation)"
   },
   {
@@ -253,7 +249,7 @@
     "status": "planned",
     "facility_type": "ai_factory",
     "capacity_mw": 5,
-    "pue": null,
+    "pue": 1.2,
     "pue_source": "Bell AI Fabric: Bell Canada plans AI data center supercluster with 500MW in British Columbia",
     "pue_source_url": "https://www.datacenterdynamics.com/en/news/bell-ai-fabric-bell-canada-plans-ai-data-center-supercluster-with-500mw-in-british-columbia/",
     "cooling_method": "liquid_cooled",
@@ -265,7 +261,7 @@
     "confidence_tier": "reported",
     "notes": "5MW planned AI fabric site, liquid-cooled design consistent with Kamloops facility. Scalable to 20MW. Part of Bell's 500MW BC supercluster.",
     "data_gaps": [
-      "pue"
+      "gpu"
     ],
     "gpu": null
   },
@@ -359,7 +355,7 @@
     "status": "operational",
     "facility_type": "colocation",
     "capacity_mw": 16,
-    "pue": null,
+    "pue": 1.39,
     "pue_source": null,
     "pue_source_url": "https://www.equinix.com/data-centers/americas-colocation/canada-colocation/toronto-data-centers/tr2",
     "cooling_method": "air_cooled",
@@ -370,9 +366,7 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "16MW, Smardt mag-lev chillers, water-side economizer. No liquid cooling yet. Equinix trialing liquid pods globally — TR2 could be a future deployment.",
-    "data_gaps": [
-      "pue"
-    ],
+    "data_gaps": [],
     "gpu": "Mixed (colocation)"
   },
   {
@@ -428,7 +422,7 @@
     "notes": "400MW planned AI hub. 4.5GW total Alberta pipeline. Stantec engineering. Construction 2025. Cooling specs not yet disclosed — early opportunity for Solar Steam.",
     "data_gaps": [
       "pue",
-      "cooling_method"
+      "gpu"
     ]
   },
   {
@@ -540,7 +534,8 @@
     "confidence_tier": "verified",
     "notes": "LARGEST TWO-PHASE DLC DEPLOYMENT. 300MW. Accelsius NeuCool + AquaFlow immersion + Johnson Controls. 2026-2027.",
     "data_gaps": [
-      "pue"
+      "pue",
+      "gpu"
     ]
   },
   {
@@ -570,7 +565,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": null
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "ca-022",
@@ -596,7 +591,8 @@
     "confidence_tier": "reported",
     "notes": "1GW proposed with closed-loop liquid cooling. Community pushback on water — liquid cooling is the selling point. Very early pipeline.",
     "data_gaps": [
-      "pue"
+      "pue",
+      "gpu"
     ]
   },
   {
@@ -640,7 +636,7 @@
     "status": "operational",
     "facility_type": "colocation",
     "capacity_mw": 5,
-    "pue": null,
+    "pue": 1.49,
     "pue_source": null,
     "pue_source_url": "https://cologix.com/news/coevolution-inc-selects-cologix-as-canadian-hub-to-expand-gpu-as-a-service-deployments/",
     "cooling_method": "hybrid",
@@ -651,9 +647,7 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "5MW (qualifies!). GPUaaS. LTC deployed. BC hydro. Cologix $1.5B expansion.",
-    "data_gaps": [
-      "pue"
-    ],
+    "data_gaps": [],
     "gpu": "GPU-as-a-Service"
   },
   {
@@ -681,7 +675,7 @@
     "notes": "150MW. $485M. Waste heat to greenhouse. Saskatchewan's largest.",
     "data_gaps": [
       "pue",
-      "cooling_method"
+      "gpu"
     ]
   },
   {
@@ -709,7 +703,7 @@
     "notes": "99MW with dedicated gas generation. Crypto+AI hybrid. Q4 2026.",
     "data_gaps": [
       "pue",
-      "cooling_method"
+      "gpu"
     ]
   },
   {
@@ -737,7 +731,7 @@
     "notes": "1GW modular campus. Natural gas. Different from Synapse also in Olds.",
     "data_gaps": [
       "pue",
-      "cooling_method"
+      "gpu"
     ]
   },
   {
@@ -766,7 +760,7 @@
     "data_gaps": [
       "pue",
       "capacity_mw",
-      "cooling_method"
+      "gpu"
     ]
   },
   {
@@ -794,7 +788,8 @@
     "notes": "CAD$19B total. 4+ Quebec sites. Fairwater zero-water DLC. Carbon negative by 2030.",
     "data_gaps": [
       "pue",
-      "capacity_mw"
+      "capacity_mw",
+      "gpu"
     ]
   },
   {
@@ -850,7 +845,8 @@
     "notes": "Upgrading to DTC liquid cooling (Jan 2025). Crypto→AI pivot.",
     "data_gaps": [
       "pue",
-      "capacity_mw"
+      "capacity_mw",
+      "gpu"
     ]
   },
   {
@@ -1157,7 +1153,9 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "9MW high-density liquid-cooled facility with PUE 1.20. Qualifies on PUE (1.20), liquid cooling, AND capacity (<=10MW). Chilled-water + free cooling. Rapid deployment: 1-3MW in <150 days. Uptime Tier 3.",
-    "data_gaps": [],
+    "data_gaps": [
+      "gpu"
+    ],
     "gpu": null
   },
   {
@@ -1267,7 +1265,7 @@
     "notes": "850-acre AI/HPC site 20km south of Pincher Creek. Initial 100MW natural gas, scalable to 4GW. Targeting ~130MW by end 2026. Captus Energy acquisition CAD$27M. Carbon capture planned. Pipeline opportunity.",
     "data_gaps": [
       "pue",
-      "cooling_method"
+      "gpu"
     ]
   },
   {
@@ -1294,8 +1292,7 @@
     "confidence_tier": "reported",
     "notes": "Scalable to 50MW sustainable hyperscale facility. Between Ottawa and Montreal. Serves federal/private demand in capital region. 100% Quebec hydro power. Pipeline opportunity for cooling vendor engagement.",
     "data_gaps": [
-      "pue",
-      "cooling_method"
+      "pue"
     ],
     "gpu": "Mixed (colocation)"
   },
@@ -1324,7 +1321,7 @@
     "notes": "54MW hyperscale expansion under construction. C$225M CPP/Deutsche Bank financing. Pre-leased to GPU-focused AI cloud compute provider. High probability of liquid cooling given AI/GPU focus. Pipeline opportunity.",
     "data_gaps": [
       "pue",
-      "cooling_method"
+      "gpu"
     ]
   },
   {
@@ -1409,7 +1406,7 @@
     "data_gaps": [
       "pue",
       "capacity_mw",
-      "cooling_method"
+      "gpu"
     ]
   },
   {
@@ -1493,7 +1490,7 @@
     "notes": "Proposed 380MW AI data center on 120-hectare Spruce Lake Industrial Park site. $2B total investment. 190MW on-site gas-fired plant (VoltaGrid) + 190MW from NB Power grid (from 2028). Pending EIA approval. Significant community opposition over water use and emissions. Target operational early 2028.",
     "data_gaps": [
       "pue",
-      "cooling_method"
+      "gpu"
     ]
   },
   {
@@ -1594,7 +1591,7 @@
     "status": "operational",
     "facility_type": "colocation",
     "capacity_mw": 7.5,
-    "pue": null,
+    "pue": 1.39,
     "pue_source": null,
     "pue_source_url": "https://www.equinix.com/data-centers/americas-colocation/canada-colocation/winnipeg-data-centers/wi1",
     "cooling_method": "air_cooled",
@@ -1605,9 +1602,7 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "7.5MW purpose-built facility. 64,000 sq ft. Uptime Institute Tier III design-certified. Built 2015 for Manitoba Telecom/Bell MTS, acquired by Equinix in $780M deal (13 Bell DCs) in 2020. Equinix rolling out direct-to-chip liquid cooling across 100+ DCs globally -- Winnipeg expansion planned.",
-    "data_gaps": [
-      "pue"
-    ],
+    "data_gaps": [],
     "gpu": "Mixed (colocation)"
   },
   {
@@ -1807,8 +1802,7 @@
     "notes": "200,000 sq ft data center proposed in Nanaimo, BC (Vancouver Island). Operator runs similar facility in Hong Kong. Committed to BC Hydro: no data/crypto mining. Potential 70,000L/day water usage for cooling. No subsea cables to Nanaimo currently -- nearest is Google Topaz cable landing at Port Alberni (40km NW). Not AI-focused.",
     "data_gaps": [
       "pue",
-      "capacity_mw",
-      "cooling_method"
+      "capacity_mw"
     ],
     "gpu": "Mixed (colocation)"
   },
@@ -1966,7 +1960,7 @@
     "status": "operational",
     "facility_type": "colocation",
     "capacity_mw": null,
-    "pue": null,
+    "pue": 1.39,
     "pue_source": null,
     "pue_source_url": "https://blog.equinix.com/blog/2025/04/24/the-hidden-benefit-of-data-centers-warming-communities-not-just-servers/",
     "cooling_method": "unknown",
@@ -1978,7 +1972,6 @@
     "confidence_tier": "reported",
     "notes": "Heat exported from Equinix TR5 is distributed via Markham District Energy (MDE, est. 2000) to over 14 million sqft of mixed-use development including residential buildings, a hotel, university, and local shopping center in downtown Markham. MDE heat pump project commissioned late 2023. MDE was established by City of Markham after 1998 ice storm. IBM Canada was first anchor customer. Excess heat must be rejected in summer when demand is low.",
     "data_gaps": [
-      "pue",
       "capacity_mw"
     ],
     "gpu": "Mixed (colocation)"
@@ -2107,7 +2100,7 @@
     "status": "operational",
     "facility_type": "colocation",
     "capacity_mw": 1,
-    "pue": null,
+    "pue": 1.49,
     "cooling_method": "air_cooled",
     "gpu": null,
     "source": "Cologix",
@@ -2120,7 +2113,6 @@
     "source_date": "2026-04",
     "last_verified": "2026-04-06",
     "data_gaps": [
-      "pue",
       "gpu"
     ]
   },
@@ -2135,7 +2127,7 @@
     "status": "operational",
     "facility_type": "colocation",
     "capacity_mw": 0.8,
-    "pue": null,
+    "pue": 1.39,
     "cooling_method": "air_cooled",
     "gpu": "NVIDIA DGX-Ready",
     "source": "Equinix",
@@ -2147,9 +2139,7 @@
     "confidence_tier": "verified",
     "source_date": "2026-04",
     "last_verified": "2026-04-06",
-    "data_gaps": [
-      "pue"
-    ]
+    "data_gaps": []
   },
   {
     "facility_name": "Equinix Calgary CL3",
@@ -2162,7 +2152,7 @@
     "status": "operational",
     "facility_type": "colocation",
     "capacity_mw": 1.5,
-    "pue": null,
+    "pue": 1.39,
     "cooling_method": "air_cooled",
     "gpu": "NVIDIA DGX-Ready",
     "source": "Equinix",
@@ -2174,9 +2164,7 @@
     "confidence_tier": "verified",
     "source_date": "2026-04",
     "last_verified": "2026-04-06",
-    "data_gaps": [
-      "pue"
-    ]
+    "data_gaps": []
   },
   {
     "facility_name": "Wolfpaw EDM1 Edmonton",
@@ -2246,7 +2234,7 @@
     "facility_type": "ai_factory",
     "capacity_mw": 26,
     "pue": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "gpu": null,
     "source": "CBC",
     "source_url": "https://www.cbc.ca/news/canada/british-columbia/bell-ai-new-data-centres-bc-1.7546516",
@@ -2353,7 +2341,7 @@
     "capacity_mw": 142,
     "pue": null,
     "cooling_method": "unknown",
-    "gpu": null,
+    "gpu": "NVIDIA (HPC/AI)",
     "source": "DCD",
     "source_url": "https://www.datacenterdynamics.com/en/news/canadas-qscale-plans-to-build-multi-billion-dollar-data-center-in-toronto/",
     "notes": "142MW C2.5-4B investment. Two 5-story buildings. 100% renewable. HPE customer.",
@@ -2364,8 +2352,7 @@
     "source_date": "2026-04",
     "last_verified": "2026-04-06",
     "data_gaps": [
-      "pue",
-      "gpu"
+      "pue"
     ]
   },
   {
@@ -2437,7 +2424,7 @@
     "capacity_mw": 300,
     "pue": null,
     "cooling_method": "unknown",
-    "gpu": null,
+    "gpu": "NVIDIA H100",
     "source": "CBC",
     "source_url": "https://www.cbc.ca/news/canada/saskatchewan/ai-data-rm-of-sherwood-9.7130417",
     "notes": "300MW 1.7B. Multiple 50MW buildings. Cerebras + CoreWeave tenants. Construction spring 2026.",
@@ -2448,8 +2435,7 @@
     "source_date": "2026-04",
     "last_verified": "2026-04-06",
     "data_gaps": [
-      "pue",
-      "gpu"
+      "pue"
     ]
   },
   {
@@ -3022,7 +3008,7 @@
     "status": "operational",
     "facility_type": "colocation",
     "capacity_mw": null,
-    "pue": null,
+    "pue": 1.39,
     "cooling_method": "air_cooled",
     "gpu": "NVIDIA DGX-Ready",
     "source": "Equinix",
@@ -3035,7 +3021,6 @@
     "source_date": "2026-04",
     "last_verified": "2026-04-06",
     "data_gaps": [
-      "pue",
       "capacity_mw"
     ]
   },
@@ -3165,7 +3150,7 @@
     "status": "operational",
     "facility_type": "colocation",
     "capacity_mw": 20,
-    "pue": null,
+    "pue": 1.49,
     "cooling_method": "air_cooled",
     "gpu": null,
     "source": "Cologix",
@@ -3178,7 +3163,6 @@
     "source_date": "2026-04",
     "last_verified": "2026-04-06",
     "data_gaps": [
-      "pue",
       "gpu"
     ]
   },
@@ -3193,7 +3177,7 @@
     "status": "operational",
     "facility_type": "hyperscale",
     "capacity_mw": 50,
-    "pue": null,
+    "pue": 1.25,
     "cooling_method": "air_cooled",
     "gpu": null,
     "source": "Digital Realty",
@@ -3206,7 +3190,6 @@
     "source_date": "2026-04",
     "last_verified": "2026-04-06",
     "data_gaps": [
-      "pue",
       "gpu"
     ]
   },
@@ -3249,7 +3232,7 @@
     "status": "operational",
     "facility_type": "colocation",
     "capacity_mw": 56,
-    "pue": null,
+    "pue": 1.3,
     "cooling_method": "air_cooled",
     "gpu": null,
     "source": "STACK Infrastructure",
@@ -3262,7 +3245,6 @@
     "source_date": "2026-04",
     "last_verified": "2026-04-06",
     "data_gaps": [
-      "pue",
       "gpu"
     ]
   },
@@ -3577,7 +3559,7 @@
     "status": "operational",
     "facility_type": "colocation",
     "capacity_mw": 3,
-    "pue": null,
+    "pue": 1.39,
     "cooling_method": "unknown",
     "gpu": "NVIDIA DGX-Ready",
     "source": "Equinix",
@@ -3589,9 +3571,7 @@
     "confidence_tier": "verified",
     "source_date": "2026-04",
     "last_verified": "2026-04-06",
-    "data_gaps": [
-      "pue"
-    ]
+    "data_gaps": []
   },
   {
     "facility_name": "Fibre Centre Moncton",
