@@ -16,6 +16,7 @@ export default function App() {
 
       <main className="flex-1 relative">
         <MapContainer
+          selectedFacilityId={selectedFacility?.id ?? null}
           onSelectFacility={(f) => { setSelectedFacility(f); setSelectedRegion(null) }}
           onSelectRegion={(r) => { setSelectedRegion(r); setSelectedFacility(null) }}
         />

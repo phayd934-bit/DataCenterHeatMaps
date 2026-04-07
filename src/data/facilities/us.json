@@ -48,7 +48,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "TRIPLE MATCH: PUE 1.15, water-based liquid cooling, 7MW. Floating barge design with patented natural water cooling. Zero water consumption, no chillers. Supports 55kW+/rack. Ideal Solar Steam target.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-003",
@@ -76,7 +77,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "NVIDIA Blackwell"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-004",
@@ -174,7 +175,7 @@
     "status": "planned",
     "facility_type": "ai_factory",
     "capacity_mw": null,
-    "pue": 1.0350000000000001,
+    "pue": 1.035,
     "pue_source": "GRC Expands Immersion Cooling to the Edge with New ICEraQ Nano System",
     "pue_source_url": "https://www.grcooling.com/press_releases/grc-expands-immersion-cooling-to-the-edge-with-new-iceraq-nano-system/",
     "cooling_method": "immersion",
@@ -215,7 +216,7 @@
     "confidence_tier": "verified",
     "notes": "TRIPLE MATCH: PUE 1.1, wall-to-wall liquid, 9MW. 250kW/cabinet.",
     "data_gaps": [],
-    "gpu": "NVIDIA Blackwell"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-009",
@@ -243,7 +244,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA Blackwell"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-010",
@@ -268,7 +269,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "36MW with built-in liquid cooling. PUE 1.3. High-density compute focus.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-011",
@@ -293,7 +295,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "54MW, 100kW+/rack, liquid-cooled or hybrid. PUE 1.35. Coming online 2026.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-012",
@@ -397,7 +400,8 @@
     "notes": "7.5MW with liquid cooling. ≤10MW target. Atlanta market. Air + liquid systems.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-016",
@@ -590,7 +594,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-023",
@@ -646,7 +651,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA Blackwell"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-025",
@@ -731,7 +736,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA Blackwell"
+    "gpu": "NVIDIA GB200 / GB300 NVL72"
   },
   {
     "id": "us-028",
@@ -758,34 +763,8 @@
     "notes": "10MW DLC integration facility. Builds liquid-cooled racks for enterprise.",
     "data_gaps": [
       "pue"
-    ]
-  },
-  {
-    "id": "us-029",
-    "company": "Novva Data Centers",
-    "facility_name": "Novva Tahoe Reno",
-    "lat": 39.5296,
-    "lng": -119.7817,
-    "address": "Tahoe Reno, Nevada",
-    "country": "US",
-    "region": "Nevada",
-    "status": "announced",
-    "facility_type": "colocation",
-    "capacity_mw": 10,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://www.prnewswire.com/news-releases/novva-data-centers-announces-the-launch-of-tahoe-reno-data-center-302500299.html",
-    "cooling_method": "liquid_cooled",
-    "regulatory_zone": "us-nv",
-    "source": "PRNewswire/Novva",
-    "source_url": "https://www.prnewswire.com/news-releases/novva-data-centers-announces-the-launch-of-tahoe-reno-data-center-302500299.html",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "verified",
-    "notes": "60MW (6x10MW halls). 10MW halls qualify! Near-zero water DLC. 12K gallons total.",
-    "data_gaps": [
-      "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-030",
@@ -812,7 +791,8 @@
     "notes": "10MW (qualifies!). Accelsius partnership. Scalable to 50MW. Renewable.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-031",
@@ -839,7 +819,8 @@
     "notes": "10MW (qualifies!). Air+liquid. GPU-capable. T5 delivered 40K sqft DLC in 12 months.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-032",
@@ -923,7 +904,8 @@
     "notes": "$25B. 1.4GW. 10 buildings. Liquid cooling for GPUs. Closed-loop.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-035",
@@ -1032,7 +1014,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-039",
@@ -1120,35 +1103,6 @@
     "gpu": "NVIDIA Blackwell Ultra"
   },
   {
-    "id": "us-042",
-    "company": "Vultr",
-    "facility_name": "Vultr Springfield OH",
-    "lat": 39.92,
-    "lng": -83.81,
-    "address": "Springfield, Ohio",
-    "country": "US",
-    "region": "Ohio",
-    "status": "under_construction",
-    "facility_type": "ai_factory",
-    "capacity_mw": 50,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://www.jobsohio.com/newsroom/news-press/vultr-announces-1-billion-data-center-investment-in-springfield",
-    "cooling_method": "unknown",
-    "regulatory_zone": "us-oh",
-    "source": "JobsOhio",
-    "source_url": "https://www.jobsohio.com/newsroom/news-press/vultr-announces-1-billion-data-center-investment-in-springfield",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "reported",
-    "notes": "$1B. 24K AMD MI355X. Largest AMD GPU deployment. Liquid likely at MI355X density.",
-    "data_gaps": [
-      "pue",
-      "cooling_method"
-    ],
-    "gpu": "AMD MI355X"
-  },
-  {
     "id": "us-043",
     "company": "Sabey Data Centers",
     "facility_name": "Sabey Quincy WA",
@@ -1173,7 +1127,8 @@
     "notes": "DLC-native campus. Cold plate+sidecars+immersion. PUE ~1.2. Hydropower. Lowest TCO.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-044",
@@ -1228,7 +1183,8 @@
     "notes": "20MW. Hybrid air+liquid. New entrant. Late 2026.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-046",
@@ -1255,7 +1211,8 @@
     "notes": "16MW. Liquid cooling. Miami 2026. Major enterprise operator.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-047",
@@ -1366,7 +1323,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-051",
@@ -1394,7 +1352,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-052",
@@ -1421,7 +1380,8 @@
     "notes": "144MW closed-loop DLC. NoVA = world's largest DC market.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-053",
@@ -1475,7 +1435,8 @@
     "notes": "100MW. Closed-loop DLC. 137-acre campus. $240M financing.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-055",
@@ -1575,7 +1536,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-mi",
     "source": "Research",
     "source_url": null,
@@ -1586,7 +1547,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Blackwell"
+    "gpu": "NVIDIA H200 / B200 / B300"
   },
   {
     "id": "us-059",
@@ -1603,7 +1564,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "air_cooled",
     "regulatory_zone": "us-wa",
     "source": "Research",
     "source_url": null,
@@ -1627,11 +1588,11 @@
     "region": "Oregon",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 5.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-or",
     "source": "Research",
     "source_url": null,
@@ -1660,7 +1621,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-tx",
     "source": "Research",
     "source_url": null,
@@ -1670,7 +1631,8 @@
     "notes": "Ultra-small 1.5MW AI data center in Galveston County, TX. Joint venture with DC Futureminds. Dataprana specializes in immersion-cooled facilities (flagship 30MW immersion site in La Marque, TX). This is a proof-of-concept site targeting GPUaaS providers. Extremely small facility — ideal for small-scale cooling vendor engagement.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-062",
@@ -1683,11 +1645,11 @@
     "region": "Texas",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 5.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "Research",
     "source_url": null,
@@ -1716,7 +1678,7 @@
     "pue": 1.1,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-nv",
     "source": "Research",
     "source_url": null,
@@ -1724,7 +1686,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "PUE 1.1 + liquid cooling at 20MW. Colovore's third facility, purpose-built for high-density AI/HPC with up to 250kW per rack via DTC and rear-door cooling. Groundbreaking Feb 2025. Larger than 10MW threshold but PUE and cooling match strongly. Colovore is a liquid-cooling-native operator — competitor landscape intelligence value.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-064",
@@ -1741,7 +1704,7 @@
     "pue": 1.1,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-il",
     "source": "Research",
     "source_url": null,
@@ -1749,7 +1712,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "PUE ~1.1 + liquid cooling at 20MW. Fourth Colovore location, pre-leasing now for 2027 launch. Larger than 10MW but matches on PUE and cooling. Pre-construction phase means cooling vendor decisions still open.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-065",
@@ -1766,7 +1730,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-tx",
     "source": "Research",
     "source_url": null,
@@ -1794,7 +1758,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-va",
     "source": "Research",
     "source_url": null,
@@ -1819,11 +1783,11 @@
     "region": "Texas",
     "status": "announced",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 10.0,
     "pue": 1.1,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "Research",
     "source_url": null,
@@ -1833,7 +1797,8 @@
     "notes": "Colovore's 'Project Raptor' — $500M investment on 30-acre Ironwood Tract near Austin. Part of Colovore's expansion from 10MW to 50MW total. PUE 1.1 (company standard). Liquid cooling + closed-loop water. Construction early 2026. Pre-construction = ideal timing for cooling vendor engagement.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-068",
@@ -1850,7 +1815,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-ne",
     "source": "Research",
     "source_url": null,
@@ -1860,7 +1825,8 @@
     "notes": "Ultra-small 1MW edge data center in Long Island City, NYC. ARPA-E COOLERCHIPS-funded ($3.5M) technology: manifold microchannel heatsink + hybrid immersion cooling + additive-manufactured dry cooler. 80kW capable racks with precision immersion and cold plate. GPU and CPU solutions. Digital twin running. Company plans 'a couple more' US sites. Ideal small-facility target.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-069",
@@ -1877,7 +1843,7 @@
     "pue": 1.2,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-fl",
     "source": "Research",
     "source_url": null,
@@ -1885,7 +1851,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "verified",
     "notes": "PUE 1.2 + liquid cooling at 15.2MW. Metrobloks is a 2024-founded developer specializing in high-density liquid-cooled modular colocation in metro areas. Miami facility features up to 150kW/rack, hybrid air + DTC liquid cooling, 22MW reserved utility power. Q4 2026 launch. Ultra-low latency to NAP of the Americas. Pre-construction = cooling vendor decisions open.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-070",
@@ -1902,7 +1869,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-te",
     "source": "Research",
     "source_url": null,
@@ -1912,7 +1879,8 @@
     "notes": "Summit consumes ~15MW with warm-water (70F) DLC cold plates on all CPUs and GPUs plus rear-door heat exchangers. Cooling drops to 10% of ops cost vs predecessors. Being decommissioned as Frontier/Discovery come online — cooling lessons inform next-gen DOE systems.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA V100"
   },
   {
     "id": "us-071",
@@ -1929,7 +1897,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-il",
     "source": "Research",
     "source_url": null,
@@ -1939,7 +1907,8 @@
     "notes": "DOE exascale system consuming ~39MW (60MW facility allocation). Liquid-cooled with 44,000-gallon water system through pipes 4-30 inches diameter. 14 substations provide 60MW for Aurora + building + future systems (Solstice/Equinox). 60,000+ Intel GPUs.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Intel Data Center Max"
   },
   {
     "id": "us-072",
@@ -1952,11 +1921,11 @@
     "region": "Texas",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 9.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "Research",
     "source_url": null,
@@ -1966,7 +1935,8 @@
     "notes": "NSF flagship supercomputer with Dell PowerEdge XE9640 DLC servers using Intel Data Center GPU Max accelerators. TACC facility total capacity 9MW max (6MW typical). Stampede3 is 10 PFLOPS. DLC enables AI/ML acceleration on the GPU partition. Serving open science 2024-2029.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Intel Data Center Max"
   },
   {
     "id": "us-073",
@@ -1979,11 +1949,11 @@
     "region": "California",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 6.9,
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-ca",
     "source": "Research",
     "source_url": null,
@@ -2007,11 +1977,11 @@
     "region": "Illinois",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 0.54,
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-il",
     "source": "Research",
     "source_url": null,
@@ -2039,7 +2009,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-ne",
     "source": "Research",
     "source_url": null,
@@ -2064,11 +2034,11 @@
     "region": "New Mexico",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 1.2,
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-ne",
     "source": "Research",
     "source_url": null,
@@ -2079,7 +2049,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-077",
@@ -2096,7 +2067,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "Research",
     "source_url": null,
@@ -2124,7 +2095,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "air_cooled",
     "regulatory_zone": "us-il",
     "source": "Research",
     "source_url": null,
@@ -2135,7 +2106,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA DGX-Ready"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-079",
@@ -2152,7 +2123,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "air_cooled",
     "regulatory_zone": "us-tx",
     "source": "Research",
     "source_url": null,
@@ -2163,7 +2134,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA DGX-Ready"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-080",
@@ -2180,7 +2151,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "air_cooled",
     "regulatory_zone": "us-te",
     "source": "Research",
     "source_url": null,
@@ -2190,7 +2161,8 @@
     "notes": "DOES NOT CURRENTLY QUALIFY — liquid cooling not yet deployed. 100MW facility in Nashville, part of Centersquare/Csquare $1B expansion. Planning liquid-ready high-density AI aisles. Nashville positioned as AI landing zone. New Gallatin TN campus in development. Strong retrofit opportunity as liquid cooling is deployed.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-081",
@@ -2207,7 +2179,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-ut",
     "source": "Research",
     "source_url": null,
@@ -2235,7 +2207,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "air_cooled",
     "regulatory_zone": "us-oh",
     "source": "Research",
     "source_url": null,
@@ -2245,7 +2217,8 @@
     "notes": "DOES NOT CURRENTLY QUALIFY — liquid cooling not confirmed for this specific campus. 192MW campus (3x 64MW buildings), $2B+ investment, LEED Silver. Closed-loop chilled water with air-cooled chillers. Vantage broader portfolio includes 250kW+ racks and liquid cooling as baseline for AI campuses. Ohio emerging as major DC market (Intel hub nearby). Strong future DLC opportunity.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-083",
@@ -2262,7 +2235,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-mi",
     "source": "Research",
     "source_url": null,
@@ -2272,7 +2245,8 @@
     "notes": "Each of 8 buildings delivers 40MW IT capacity (320MW total). Compass-Vertiv CoolPhase Flex partnership enables air-to-liquid cooling switchover without downtime. $10B investment. Mississippi Power supplies 500MW. First building expected 2026. Emerging market with strong power availability and incentives.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-084",
@@ -2289,7 +2263,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-va",
     "source": "Research",
     "source_url": null,
@@ -2375,7 +2349,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-wi",
     "source": "Research",
     "source_url": null,
@@ -2386,7 +2360,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-088",
@@ -2399,11 +2374,11 @@
     "region": "Wisconsin",
     "status": "announced",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 1000,
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-wi",
     "source": "Research",
     "source_url": null,
@@ -2413,7 +2388,8 @@
     "notes": "1GW campus (4 data centers) for OpenAI Stargate. Closed-loop liquid cooling confirmed. Part of 4.5GW OpenAI/Oracle capacity. Vantage operating partner. Wisconsin emerging as hyperscale hub alongside Microsoft.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-089",
@@ -2430,7 +2406,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-ut",
     "source": "Research",
     "source_url": null,
@@ -2440,7 +2416,8 @@
     "notes": "60MW power capacity. NSA uses specially designed cooling with water-chilled fluorinert (liquid cooling agent) for classified servers. Feb 2025 Environmental Assessment filed for Utah Data Center campus expansion by USACE. DISA also awarded $931M to HPE for data center modernization (separate from UDC).",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-090",
@@ -2457,7 +2434,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-oh",
     "source": "Research",
     "source_url": null,
@@ -2467,7 +2444,8 @@
     "notes": "COL5 Phase 1: 25MW, AI-ready with customer choice of air or liquid cooling up to 100kW/rack. Q3 2026 RFS. First colo to complete AI-ready DC in Columbus. Total COL5: 120MW. Licking County 800MW campus ($7B) also planned.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-091",
@@ -2484,7 +2462,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": null,
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-nv",
     "source": "Research",
     "source_url": null,
@@ -2494,34 +2472,8 @@
     "notes": "60MW across 6x10MW halls with proprietary DTC cooling. Only 12,000 gal water total (closed-loop, zero evaporation). No cooling towers/chillers. 250kW-30MW deployments. CIM Group $2B financing. Novva also has SLC 175MW and LV 75+340MW campuses.",
     "data_gaps": [
       "pue"
-    ]
-  },
-  {
-    "id": "us-092",
-    "company": "TierPoint",
-    "facility_name": "TierPoint TekPark — Breinigsville, PA (100MW AI Expansion)",
-    "lat": 40.526,
-    "lng": -75.6295,
-    "address": "Breinigsville, Pennsylvania",
-    "country": "US",
-    "region": "Pennsylvania",
-    "status": "expanding",
-    "facility_type": "colocation",
-    "capacity_mw": null,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": null,
-    "cooling_method": "unknown",
-    "regulatory_zone": "us-pe",
-    "source": "Research",
-    "source_url": null,
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "reported",
-    "notes": "DOES NOT CURRENTLY QUALIFY. 137-acre campus, 100MW expansion H2 2026. Clients use advanced cooling for AI/GPU. $240M acquisition + $1.99B securitization. Strong DLC potential.",
-    "data_gaps": [
-      "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-093",
@@ -2538,7 +2490,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.enr.com/articles/62090-wisconsin-lands-1b-meta-data-center-as-mortenson-expands-hyperscale-work",
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-wi",
     "source": "Engineering News-Record",
     "source_url": "https://www.enr.com/articles/62090-wisconsin-lands-1b-meta-data-center-as-mortenson-expands-hyperscale-work",
@@ -2549,35 +2501,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
-  },
-  {
-    "id": "us-094",
-    "company": "Modine Manufacturing",
-    "facility_name": "Modine Airedale Manufacturing Facility — Franklin, WI",
-    "lat": 42.8886,
-    "lng": -88.0384,
-    "address": "Franklin, Wisconsin",
-    "country": "US",
-    "region": "Wisconsin",
-    "status": "operational",
-    "facility_type": "colocation",
-    "capacity_mw": null,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://investors.modine.com/news/news-details/2025/Modine-Expands-Data-Center-Cooling-Capacity-with-Opening-of-New-Facility-in-Franklin-Wisconsin/default.aspx",
-    "cooling_method": "unknown",
-    "regulatory_zone": "us-wi",
-    "source": "Modine Manufacturing (IR)",
-    "source_url": "https://investors.modine.com/news/news-details/2025/Modine-Expands-Data-Center-Cooling-Capacity-with-Opening-of-New-Facility-in-Franklin-Wisconsin/default.aspx",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "verified",
-    "notes": "Cooling vendor manufacturing hub. Modine makes Airedale data center cooling solutions. 155,000 sq ft facility, 300+ jobs. Part of $100M multi-year investment. Competitor intelligence — Modine is a cooling vendor, not a customer.",
-    "data_gaps": [
-      "pue",
-      "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-095",
@@ -2594,7 +2519,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.oracle.com/news/announcement/blog/oracle-is-set-to-power-on-new-data-center-in-michigan-2025-1018/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-mi",
     "source": "Oracle Corporation",
     "source_url": "https://www.oracle.com/news/announcement/blog/oracle-is-set-to-power-on-new-data-center-in-michigan-2025-1018/",
@@ -2622,7 +2547,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://governorreeves.ms.gov/tech-leader-xai-investing-more-than-20-billion-in-southaven/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-mi",
     "source": "Mississippi Governor's Office",
     "source_url": "https://governorreeves.ms.gov/tech-leader-xai-investing-more-than-20-billion-in-southaven/",
@@ -2650,7 +2575,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacenterdynamics.com/en/news/meta-forms-27-billion-joint-venture-with-blue-owl-to-fund-gigawatt-scale-ai-data-center-campus-in-louisiana/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-lo",
     "source": "DatacenterDynamics",
     "source_url": "https://www.datacenterdynamics.com/en/news/meta-forms-27-billion-joint-venture-with-blue-owl-to-fund-gigawatt-scale-ai-data-center-campus-in-louisiana/",
@@ -2660,7 +2585,8 @@
     "notes": "World's largest planned AI data center. 5GW total planned, 1.5GW+ Phase 1. $27B joint venture with Blue Owl Capital. 4M sq ft core build. Meta roadmap includes DTC liquid cooling for AI racks. Tent-like prefab construction inspired by xAI. 10 gas-fired power plants ordered.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-098",
@@ -2677,7 +2603,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacenterdynamics.com/en/news/vultr-plans-50mw-amd-mi355x-cluster-in-springfield-ohio/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-oh",
     "source": "DatacenterDynamics",
     "source_url": "https://www.datacenterdynamics.com/en/news/vultr-plans-50mw-amd-mi355x-cluster-in-springfield-ohio/",
@@ -2688,7 +2614,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "AMD MI350"
+    "gpu": "AMD MI355X"
   },
   {
     "id": "us-099",
@@ -2705,7 +2631,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://trellis.net/article/utah-data-center-solve-water-power-scarcity/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-ut",
     "source": "Trellis",
     "source_url": "https://trellis.net/article/utah-data-center-solve-water-power-scarcity/",
@@ -2715,7 +2641,8 @@
     "notes": "Self-powered data center campus on 4,000 acres. Closed-loop DTC liquid cooling saves millions of gallons vs evaporative. Caterpillar G3520K generators + 1.1GWh battery storage. 455MW Q4 2026, scaling to 4GW. Over 4,800 ft elevation for natural cooling efficiency. Combined cooling, heat and power system.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-100",
@@ -2732,7 +2659,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.novva.com/media-center/a-data-center-for-the-people-our-flagship-facility-unveiled/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-ut",
     "source": "Novva Data Centers",
     "source_url": "https://www.novva.com/media-center/a-data-center-for-the-people-our-flagship-facility-unveiled/",
@@ -2742,7 +2669,8 @@
     "notes": "One of the largest DTC-cooled AI data centers in the world upon completion. Waterless cooling system. Phase 3: 318,000 sq ft, 72MW critical IT. Total campus: 1M sq ft, 175MW when complete. $2B CIM Group financing. Also operates in Colorado Springs and Las Vegas.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-101",
@@ -2759,7 +2687,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.novva.com/data-center-facilities/colorado/",
-    "cooling_method": "unknown",
+    "cooling_method": "air_cooled",
     "regulatory_zone": "us-co",
     "source": "Novva Data Centers",
     "source_url": "https://www.novva.com/data-center-facilities/colorado/",
@@ -2769,35 +2697,8 @@
     "notes": "68-acre campus near Denver. 8,000+ hours ambient mountain air cooling. Currently 6MW, expanding to 30-40MW with $200M investment. Plans for 100% renewable energy and waterless cooling. 250,000 sq ft expansion planned.",
     "data_gaps": [
       "pue"
-    ]
-  },
-  {
-    "id": "us-102",
-    "company": "Crusoe Energy",
-    "facility_name": "Crusoe Spark Factory — Brighton, CO (Liquid-Cooled Modular AI)",
-    "lat": 39.9853,
-    "lng": -104.8206,
-    "address": "Brighton, Colorado",
-    "country": "US",
-    "region": "Colorado",
-    "status": "under_construction",
-    "facility_type": "colocation",
-    "capacity_mw": null,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-manufacturing-facility-to-produce-modular-ai-factories",
-    "cooling_method": "unknown",
-    "regulatory_zone": "us-co",
-    "source": "Crusoe Energy Systems",
-    "source_url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-manufacturing-facility-to-produce-modular-ai-factories",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "reported",
-    "notes": "Crusoe manufacturing facility for liquid-cooled modular AI factories (Crusoe Spark). 352,000 sq ft, $200M+. Liquid-cooled version launching H2 2026. First factory-produced modules Q3 2026. This is a manufacturing site for prefab liquid-cooled DC modules.",
-    "data_gaps": [
-      "pue",
-      "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-103",
@@ -2810,11 +2711,11 @@
     "region": "New Mexico",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 900.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://elpasomatters.org/2025/09/25/stargate-open-ai-oracle-project-jupiter-data-center-dona-ana-new-mexico-el-paso-texas/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-ne",
     "source": "El Paso Matters",
     "source_url": "https://elpasomatters.org/2025/09/25/stargate-open-ai-oracle-project-jupiter-data-center-dona-ana-new-mexico-el-paso-texas/",
@@ -2842,7 +2743,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.edged.us/news/des-moines-iowa",
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-io",
     "source": "Edged Energy",
     "source_url": "https://www.edged.us/news/des-moines-iowa",
@@ -2852,7 +2753,8 @@
     "notes": "13MW AI-optimized modular DC. Closed-loop waterless cooling. Supports up to 70kW/rack air and 200kW/rack with plug-and-play liquid cooling integration. Groundbreaking May 2025. Completion 2027.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-105",
@@ -2869,7 +2771,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.axios.com/local/des-moines/2026/01/16/microsoft-west-des-moines-data-center-water-zero",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-io",
     "source": "Axios Des Moines",
     "source_url": "https://www.axios.com/local/des-moines/2026/01/16/microsoft-west-des-moines-data-center-water-zero",
@@ -2880,7 +2782,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-106",
@@ -2893,11 +2796,11 @@
     "region": "Idaho",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 200.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://datacenters.atmeta.com/asset/kuna-data-center-info-sheet/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-id",
     "source": "Meta Platforms",
     "source_url": "https://datacenters.atmeta.com/asset/kuna-data-center-info-sheet/",
@@ -2907,7 +2810,8 @@
     "notes": "960,000 sq ft Meta DC. $800M investment. 200MW renewable energy. Closed-loop water-efficient cooling. Water positive by 2030. Operational end of 2026 (delayed from 2025). 1,400 construction workers at peak.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-107",
@@ -2924,7 +2828,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://valorc3.com/valorc3-data-centers-announces-10mw-data-center-in-boise-idaho/",
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-id",
     "source": "ValorC3 Data Centers",
     "source_url": "https://valorc3.com/valorc3-data-centers-announces-10mw-data-center-in-boise-idaho/",
@@ -2934,7 +2838,8 @@
     "notes": "10MW AI-ready colocation in Boise. Air and liquid cooling with closed-loop for minimal water waste. Expanding to 12MW before Phase 1 complete. Near Boise City Hall West. Strong small-facility cooling vendor opportunity.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-108",
@@ -2947,7 +2852,7 @@
     "region": "Montana",
     "status": "announced",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 500,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://quanticainfra.com/2025/08/04/quantica-infrastructure-introduces-big-sky-digital-infrastructure-as-its-flagship-development-platform-in-montana/",
@@ -2961,7 +2866,8 @@
     "notes": "5,000-acre energy and digital campus outside Billings. 500MW initial, 1GW by 2030. Evaluating multiple cooling approaches including DTC liquid. Renewable + battery energy storage. NorthWestern Energy providing power. EnCap-backed. Cooling decision not yet finalized = opportunity window for vendors.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-109",
@@ -2978,7 +2884,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.related-digital.com/news/related-digital-breaks-ground-on-302-mw-data-center-campus-in-cheyenne-wyoming",
-    "cooling_method": "unknown",
+    "cooling_method": "air_cooled",
     "regulatory_zone": "us-wy",
     "source": "Related Digital",
     "source_url": "https://www.related-digital.com/news/related-digital-breaks-ground-on-302-mw-data-center-campus-in-cheyenne-wyoming",
@@ -2988,7 +2894,8 @@
     "notes": "$1.2B campus. CoreWeave 88MW anchor tenant. Air-cooled chillers, nominal water. 302MW total across 115 acres. Clayco as builder. Phase 1 late 2026. Wyoming's climate supports air cooling efficiency but CoreWeave's GPU workloads may eventually require liquid cooling upgrade.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-110",
@@ -3031,7 +2938,7 @@
     "region": "Kansas",
     "status": "announced",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 150.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacenterdynamics.com/en/news/115-acre-data-center-could-come-to-osawatomie-kansas-says-local-government/",
@@ -3047,35 +2954,8 @@
       "pue",
       "capacity_mw",
       "cooling_method"
-    ]
-  },
-  {
-    "id": "us-112",
-    "company": "Lawrence Livermore National Laboratory / NNSA",
-    "facility_name": "El Capitan — Lawrence Livermore National Laboratory (LLNL)",
-    "lat": 37.6819,
-    "lng": -121.768,
-    "address": "Livermore, California",
-    "country": "US",
-    "region": "California",
-    "status": "operational",
-    "facility_type": "colocation",
-    "capacity_mw": null,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://www.hpe.com/us/en/newsroom/press-release/2024/11/hewlett-packard-enterprise-delivers-worlds-fastest-direct-liquid-cooled-exascale-supercomputer-el-capitan-for-lawrence-livermore-national-laboratory.html",
-    "cooling_method": "unknown",
-    "regulatory_zone": "us-ca",
-    "source": "HPE Newsroom",
-    "source_url": "https://www.hpe.com/us/en/newsroom/press-release/2024/11/hewlett-packard-enterprise-delivers-worlds-fastest-direct-liquid-cooled-exascale-supercomputer-el-capitan-for-lawrence-livermore-national-laboratory.html",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "verified",
-    "notes": "World's fastest supercomputer (#1 TOP500, Nov 2024). 1.742 exaflops. 100% fanless DLC by CoolIT Systems using patented Split-Flow cold plates across 11,000+ compute nodes. 43,808 AMD EPYC Genoa CPUs + 43,808 AMD Instinct MI300A GPUs. ~30 MW peak power. HPE Cray EX platform.",
-    "data_gaps": [
-      "pue"
     ],
-    "gpu": "AMD MI300"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-113",
@@ -3092,7 +2972,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.hpe.com/us/en/newsroom/press-release/2022/05/hewlett-packard-enterprise-ushers-in-new-era-with-worlds-first-and-fastest-exascale-supercomputer-frontier-for-the-us-department-of-energys-oak-ridge-national-laboratory.html",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-te",
     "source": "HPE Newsroom",
     "source_url": "https://www.hpe.com/us/en/newsroom/press-release/2022/05/hewlett-packard-enterprise-ushers-in-new-era-with-worlds-first-and-fastest-exascale-supercomputer-frontier-for-the-us-department-of-energys-oak-ridge-national-laboratory.html",
@@ -3104,34 +2984,6 @@
       "pue"
     ],
     "gpu": "AMD MI250"
-  },
-  {
-    "id": "us-114",
-    "company": "Argonne National Laboratory / ALCF",
-    "facility_name": "Aurora — Argonne National Laboratory (ANL)",
-    "lat": 41.7185,
-    "lng": -87.9815,
-    "address": "Lemont, Illinois",
-    "country": "US",
-    "region": "Illinois",
-    "status": "operational",
-    "facility_type": "colocation",
-    "capacity_mw": null,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://www.alcf.anl.gov/aurora",
-    "cooling_method": "unknown",
-    "regulatory_zone": "us-il",
-    "source": "Argonne National Laboratory",
-    "source_url": "https://www.alcf.anl.gov/aurora",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "verified",
-    "notes": "Intel-based exascale supercomputer. 2+ exaflops peak. HPE Cray EX platform with DLC. 63,744 Intel Data Center Max (Ponte Vecchio) GPUs + 21,248 Intel Xeon Max CPUs. 44,000 gal water cooling loop. ~39MW power consumption.",
-    "data_gaps": [
-      "pue"
-    ],
-    "gpu": "Intel Data Center Max"
   },
   {
     "id": "us-115",
@@ -3148,7 +3000,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.energy.gov/nnsa/articles/nnsas-los-alamos-national-laboratory-launches-frontier-ai-models-venado-supercomputer",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-ne",
     "source": "U.S. Department of Energy",
     "source_url": "https://www.energy.gov/nnsa/articles/nnsas-los-alamos-national-laboratory-launches-frontier-ai-models-venado-supercomputer",
@@ -3177,7 +3029,7 @@
     "pue": 1.03,
     "pue_source": null,
     "pue_source_url": "https://www.energy.gov/cmei/articles/department-energys-newest-energy-research-dedicated-supercomputer-arrives-nrel",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-co",
     "source": "U.S. Department of Energy",
     "source_url": "https://www.energy.gov/cmei/articles/department-energys-newest-energy-research-dedicated-supercomputer-arrives-nrel",
@@ -3188,7 +3040,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "NVIDIA Hopper"
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "us-117",
@@ -3205,7 +3057,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://baxtel.com/data-center/cyrusone-chicago-aurora-cme",
-    "cooling_method": "unknown",
+    "cooling_method": "air_cooled",
     "regulatory_zone": "us-il",
     "source": "Baxtel",
     "source_url": "https://baxtel.com/data-center/cyrusone-chicago-aurora-cme",
@@ -3233,7 +3085,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacenterfrontier.com/cooling/article/21546297/equinix-begins-running-liquid-cooled-servers-in-production-on-metal",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-nj",
     "source": "Data Center Frontier",
     "source_url": "https://www.datacenterfrontier.com/cooling/article/21546297/equinix-begins-running-liquid-cooled-servers-in-production-on-metal",
@@ -3258,11 +3110,11 @@
     "region": "Texas",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 130.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacenterdynamics.com/en/news/teslas-50000-gpu-cortex-supercomputer-went-live-in-q4-2024/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "Data Center Dynamics",
     "source_url": "https://www.datacenterdynamics.com/en/news/teslas-50000-gpu-cortex-supercomputer-went-live-in-q4-2024/",
@@ -3273,7 +3125,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA Hopper"
+    "gpu": "NVIDIA H100 + Tesla AI5"
   },
   {
     "id": "us-120",
@@ -3286,11 +3138,11 @@
     "region": "California",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 2.3,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://dgtlinfra.com/elon-musk-data-centers/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-ca",
     "source": "Dgtl Infra",
     "source_url": "https://dgtlinfra.com/elon-musk-data-centers/",
@@ -3319,7 +3171,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.grcooling.com/customer-successes/shells-skybox-houston-one-data-center/",
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-tx",
     "source": "GRC (Green Revolution Cooling)",
     "source_url": "https://www.grcooling.com/customer-successes/shells-skybox-houston-one-data-center/",
@@ -3363,34 +3215,6 @@
     "gpu": "NVIDIA Blackwell"
   },
   {
-    "id": "us-123",
-    "company": "Trane Technologies",
-    "facility_name": "Trane Technologies + LiquidStack — Immersion & Direct-to-Chip Platform",
-    "lat": 32.9537,
-    "lng": -96.8903,
-    "address": "Carrollton, Texas",
-    "country": "US",
-    "region": "Texas",
-    "status": "operational",
-    "facility_type": "colocation",
-    "capacity_mw": null,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-to-Acquire-LiquidStack-to-Accelerate-EndtoEnd-Data-Center-Thermal-Management-Solutions/default.aspx",
-    "cooling_method": "unknown",
-    "regulatory_zone": "us-tx",
-    "source": "Trane Technologies Investor Relations",
-    "source_url": "https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-to-Acquire-LiquidStack-to-Accelerate-EndtoEnd-Data-Center-Thermal-Management-Solutions/default.aspx",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "reported",
-    "notes": "M&A MARKET SIGNAL: Trane Technologies acquired LiquidStack (Feb 2026) for end-to-end DC thermal management: chillers + heat rejection + controls + liquid distribution + on-chip cooling. LiquidStack provides high-density liquid, DTC, and immersion cooling for AI/hyperscale. Operations in Carrollton TX + Hong Kong. Now in Trane Americas Commercial HVAC unit. Also partner in Samsung+Chemours Opteon testing (48U tank).",
-    "data_gaps": [
-      "pue",
-      "capacity_mw"
-    ]
-  },
-  {
     "id": "us-124",
     "company": "US Air Force / GRC (Green Revolution Cooling)",
     "facility_name": "GRC ICEtank C3 One — US Air Force Hill AFB (Immersion Cooled)",
@@ -3405,7 +3229,7 @@
     "pue": 1.05,
     "pue_source": null,
     "pue_source_url": "https://www.businesswire.com/news/home/20190220005641/en/GRC-Designs-Fully-integrated-Containerized-Cost-Efficient-Data-Center-Liquid-Immersion-Cooling-Solutions-for-the-US-Air-Force",
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-ut",
     "source": "BusinessWire / GRC",
     "source_url": "https://www.businesswire.com/news/home/20190220005641/en/GRC-Designs-Fully-integrated-Containerized-Cost-Efficient-Data-Center-Liquid-Immersion-Cooling-Solutions-for-the-US-Air-Force",
@@ -3415,7 +3239,8 @@
     "notes": "US Air Force deployed GRC ICEtank immersion-cooled containerized data centers at Hill AFB. C3 One variant uses cooling tower for heat rejection. Tested cumulatively for 3+ years with 100% uptime. PUE of 1.05. 93.1% reduction in cooling PUE. Turnkey system deployable in under 24 hours. GRC working with USAF on next-gen production units. Strong proof-of-concept for military immersion cooling at scale.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-125",
@@ -3432,7 +3257,7 @@
     "pue": 1.05,
     "pue_source": null,
     "pue_source_url": "https://www.businesswire.com/news/home/20190220005641/en/GRC-Designs-Fully-integrated-Containerized-Cost-Efficient-Data-Center-Liquid-Immersion-Cooling-Solutions-for-the-US-Air-Force",
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-ok",
     "source": "BusinessWire / GRC",
     "source_url": "https://www.businesswire.com/news/home/20190220005641/en/GRC-Designs-Fully-integrated-Containerized-Cost-Efficient-Data-Center-Liquid-Immersion-Cooling-Solutions-for-the-US-Air-Force",
@@ -3442,7 +3267,8 @@
     "notes": "US Air Force deployed GRC ICEtank immersion-cooled containerized data centers at Tinker AFB. C3 Two variant uses dry cooler for heat rejection. Tested cumulatively for 3+ years with 100% uptime. PUE of 1.05. Deployable in under 24 hours in wide range of environments. Remote monitoring and control capable.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-126",
@@ -3459,7 +3285,7 @@
     "pue": 1.05,
     "pue_source": null,
     "pue_source_url": "https://www.grcooling.com/customer-successes/national-security-agency",
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-ma",
     "source": "GRC (Green Revolution Cooling)",
     "source_url": "https://www.grcooling.com/customer-successes/national-security-agency",
@@ -3469,7 +3295,8 @@
     "notes": "NSA's Advanced Computing Research team at the Laboratory for Physical Sciences has been a GRC immersion cooling customer since 2012. Achieved PUE of 1.05. 100kW per rack (vs 10-15kW with air). 95% cooling energy cost savings. NSA engineer David Prucnal confirmed substantial CapEx reduction. NSA stated potential to cut future data center construction costs in half. Rapid global deployment capability highlighted.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-127",
@@ -3486,7 +3313,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://datacenters.lbl.gov/resources/immersion-cooling-electronics-dod",
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-di",
     "source": "Lawrence Berkeley National Lab / DOE",
     "source_url": "https://datacenters.lbl.gov/resources/immersion-cooling-electronics-dod",
@@ -3497,7 +3324,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-128",
@@ -3514,7 +3342,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacenterdynamics.com/en/news/disa-to-upgrade-crah-at-mechanicsburg-data-center/",
-    "cooling_method": "unknown",
+    "cooling_method": "air_cooled",
     "regulatory_zone": "us-pe",
     "source": "Data Center Dynamics",
     "source_url": "https://www.datacenterdynamics.com/en/news/disa-to-upgrade-crah-at-mechanicsburg-data-center/",
@@ -3525,7 +3353,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-129",
@@ -3542,7 +3371,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.sandia.gov/labnews/2024/05/30/hpc-cooling/",
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-ne",
     "source": "Sandia National Laboratories LabNews",
     "source_url": "https://www.sandia.gov/labnews/2024/05/30/hpc-cooling/",
@@ -3553,91 +3382,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
-  },
-  {
-    "id": "us-130",
-    "company": "Lawrence Livermore National Laboratory (LLNL) / DOE NNSA",
-    "facility_name": "Lawrence Livermore National Laboratory — El Capitan Exascale (Direct Liquid Cooled)",
-    "lat": 37.6889,
-    "lng": -121.7637,
-    "address": "Livermore, California",
-    "country": "US",
-    "region": "California",
-    "status": "operational",
-    "facility_type": "colocation",
-    "capacity_mw": 30,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://www.hpe.com/us/en/newsroom/press-release/2024/11/hewlett-packard-enterprise-delivers-worlds-fastest-direct-liquid-cooled-exascale-supercomputer-el-capitan-for-lawrence-livermore-national-laboratory.html",
-    "cooling_method": "unknown",
-    "regulatory_zone": "us-ca",
-    "source": "Hewlett Packard Enterprise",
-    "source_url": "https://www.hpe.com/us/en/newsroom/press-release/2024/11/hewlett-packard-enterprise-delivers-worlds-fastest-direct-liquid-cooled-exascale-supercomputer-el-capitan-for-lawrence-livermore-national-laboratory.html",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "reported",
-    "notes": "World's fastest supercomputer (Nov 2024). 2.79 ExaFLOPS. 100% direct liquid cooled — zero fans. 11,136 HPE Cray EX nodes with 44,544 AMD MI300A accelerators. ~30MW. Used for nuclear stockpile stewardship. CoolIT Systems provided DLC technology. Top-20 energy efficiency globally (58.89 GF/W). Flagship US government liquid-cooled HPC system.",
-    "data_gaps": [
-      "pue"
     ],
-    "gpu": "AMD CDNA 3"
-  },
-  {
-    "id": "us-131",
-    "company": "Oak Ridge National Laboratory (ORNL) / DOE Office of Science",
-    "facility_name": "Oak Ridge National Laboratory — Frontier Supercomputer (Direct Liquid Cooled)",
-    "lat": 35.9313,
-    "lng": -84.3107,
-    "address": "Oak Ridge, Tennessee",
-    "country": "US",
-    "region": "Tennessee",
-    "status": "operational",
-    "facility_type": "colocation",
-    "capacity_mw": 30,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://www.olcf.ornl.gov/frontier/",
-    "cooling_method": "unknown",
-    "regulatory_zone": "us-te",
-    "source": "ORNL / DOE",
-    "source_url": "https://www.olcf.ornl.gov/frontier/",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "reported",
-    "notes": "America's first exascale supercomputer (2022). HPE Cray EX with direct liquid cooling. 8-30MW range. Four evaporative cooling towers, 9,000-22,700 L/min water flow. TOP500 #2. DOE open science mission. Successor 'Discovery' (next-gen exascale) announced Oct 2025 — also liquid-cooled by HPE. ORNL also getting 'Lux' AI cluster.",
-    "data_gaps": [
-      "pue"
-    ],
-    "gpu": "AMD CDNA 2"
-  },
-  {
-    "id": "us-132",
-    "company": "Argonne National Laboratory / DOE Office of Science",
-    "facility_name": "Argonne National Laboratory — Aurora Exascale Supercomputer (Liquid Cooled)",
-    "lat": 41.7148,
-    "lng": -87.9813,
-    "address": "Lemont, Illinois",
-    "country": "US",
-    "region": "Illinois",
-    "status": "operational",
-    "facility_type": "colocation",
-    "capacity_mw": 39,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://www.anl.gov/aurora",
-    "cooling_method": "unknown",
-    "regulatory_zone": "us-il",
-    "source": "Argonne National Laboratory / DOE",
-    "source_url": "https://www.anl.gov/aurora",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "reported",
-    "notes": "Third US exascale supercomputer. ~39MW compute, 60MW infrastructure. Specialized liquid cooling on all blades. Intel Xeon Max + Ponte Vecchio GPUs. 44,000 gallons water through under-floor cooling. New Solstice (100,000 Blackwell GPUs, Oracle/NVIDIA) and Equinox (10,000 Blackwell GPUs) coming H1 2026.",
-    "data_gaps": [
-      "pue"
-    ],
-    "gpu": "Intel Xe HPC (Ponte Vecchio)"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-133",
@@ -3665,7 +3411,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-134",
@@ -3693,7 +3440,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA DGX-Ready"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-135",
@@ -3706,11 +3453,11 @@
     "region": "New York",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 160,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://investors.terawulf.com/news-events/press-releases/detail/114/terawulf-announces-fluidstack-expansion-with-160-mw-cb-5",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-ne",
     "source": "TeraWulf Investor Relations",
     "source_url": "https://investors.terawulf.com/news-events/press-releases/detail/114/terawulf-announces-fluidstack-expansion-with-160-mw-cb-5",
@@ -3720,7 +3467,8 @@
     "notes": "CB-5 is a new 160MW (IT load) purpose-built liquid-cooled data center building at TeraWulf's Lake Mariner campus, the site of a former coal power plant on Lake Ontario. Part of 200+ MW Fluidstack 10-year hosting agreement. Google provided $3.2B financial backstop. Dual 345kV transmission lines. Phase 1 (~40MW) expected H1 2026, full 200+ MW by year-end 2026. Former Bitcoin miner pivoting to AI infrastructure.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-136",
@@ -3737,7 +3485,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://investors.terawulf.com/news-events/press-releases/detail/128/terawulf-and-fluidstack-announce-successful-pricing-of",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "TeraWulf Investor Relations",
     "source_url": "https://investors.terawulf.com/news-events/press-releases/detail/128/terawulf-and-fluidstack-announce-successful-pricing-of",
@@ -3747,7 +3495,8 @@
     "notes": "168MW IT load (240MW gross) liquid-cooled AI data center at former Century Aluminum smelter site in Abernathy, TX. TeraWulf/Fluidstack JV with project-level financing. Expands TeraWulf's total contracted HPC platform to 510+ MW. Leverages existing transmission capacity. H2 2026 commissioning. Supported by Google financial backstop.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-137",
@@ -3764,7 +3513,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.riotplatforms.com/riot-platforms-launches-formal-evaluation-of-potential-ai-hpc-uses-for-remaining-600-mw-of-power-capacity-at-corsicana-facility/",
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-tx",
     "source": "Riot Platforms",
     "source_url": "https://www.riotplatforms.com/riot-platforms-launches-formal-evaluation-of-potential-ai-hpc-uses-for-remaining-600-mw-of-power-capacity-at-corsicana-facility/",
@@ -3774,7 +3523,8 @@
     "notes": "Riot Platforms' 858-acre Corsicana campus has 1GW ERCOT-approved capacity. 400MW operational for BTC mining with immersion cooling since April 2024. Remaining 600MW formally evaluated for AI/HPC conversion (announced Jan 2025). All further BTC mining buildouts paused. 1.86GW of liquid-cooling-ready power. Riot acquired 593 additional acres in 2025. 77% revenue growth forecast. Converting from pure crypto miner to AI data center operator.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-138",
@@ -3787,11 +3537,11 @@
     "region": "Texas",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 260,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://investors.corescientific.com/news-events/press-releases/detail/110/core-scientific-and-coreweave-announce-1-2-billion-expansion-at-denton-tx-site",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "Core Scientific Investor Relations",
     "source_url": "https://investors.corescientific.com/news-events/press-releases/detail/110/core-scientific-and-coreweave-announce-1-2-billion-expansion-at-denton-tx-site",
@@ -3815,11 +3565,11 @@
     "region": "Georgia",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 175,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://corescientific.com/high-density-data-centers/dalton-ga-dnn1-2/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-ga",
     "source": "Core Scientific",
     "source_url": "https://corescientific.com/high-density-data-centers/dalton-ga-dnn1-2/",
@@ -3843,11 +3593,11 @@
     "region": "North Carolina",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": 105,
+    "capacity_mw": 104,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://corescientific.com/high-density-data-centers/marble-nc/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-no",
     "source": "Core Scientific",
     "source_url": "https://corescientific.com/high-density-data-centers/marble-nc/",
@@ -3885,7 +3635,8 @@
     "notes": "285MW leasable (430MW gross) new AI data center campus on 265 acres in Hunt County, TX, outside Dallas. On-site substation planned. Could begin energizing in 2027, full power by 2029. Core Scientific securing additional greenfield capacity beyond its 6 existing CoreWeave sites.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-142",
@@ -3902,7 +3653,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://investors.ciphermining.com/news-releases/news-release-details/cipher-mining-provides-third-quarter-2025-business-update",
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-tx",
     "source": "Cipher Mining Investor Relations",
     "source_url": "https://investors.ciphermining.com/news-releases/news-release-details/cipher-mining-provides-third-quarter-2025-business-update",
@@ -3912,7 +3663,8 @@
     "notes": "300MW AI data center at Barber Lake, TX (near Colorado City). $5.5B 15-year lease with AWS. Both air and liquid cooling. Two-phase delivery: July 2026 (Phase I) and Q4 2026. AWS rent starts Aug 2026. $2B secured note offering (Black Pearl Compute LLC) to fund construction. Originally a 300MW Bitcoin mining site. 587+ acres total.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-143",
@@ -3939,7 +3691,8 @@
     "notes": "1GW planned data center JV in West Texas named Colchis. 620 acres with fully executed 1GW direct connect agreement with AEP. Cipher holds ~95% equity. Dual interconnection facility to be constructed by AEP. Targeted energization 2028, pending ERCOT review. Adjacent to existing substation.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-144",
@@ -3984,7 +3737,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.globenewswire.com/news-release/2025/06/30/3107324/0/en/Hut-8-Energizes-Vega-Data-Center.html",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "GlobeNewswire / Hut 8",
     "source_url": "https://www.globenewswire.com/news-release/2025/06/30/3107324/0/en/Hut-8-Energizes-Vega-Data-Center.html",
@@ -3995,7 +3748,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA H100"
+    "gpu": "Bitcoin ASIC miners"
   },
   {
     "id": "us-146",
@@ -4008,11 +3761,11 @@
     "region": "Washington",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 18,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://investor.bitfarms.com/news-releases/news-release-details/bitfarms-announces-plans-conversion-washington-site-hpcai",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-wa",
     "source": "Bitfarms Investor Relations",
     "source_url": "https://investor.bitfarms.com/news-releases/news-release-details/bitfarms-announces-plans-conversion-washington-site-hpcai",
@@ -4036,11 +3789,11 @@
     "region": "Texas",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 170,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-announces-september-2025-production-and-operations",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "Bitdeer Investor Relations",
     "source_url": "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-announces-september-2025-production-and-operations",
@@ -4050,7 +3803,8 @@
     "notes": "170MW operational at former Alcoa aluminum smelter in Rockdale, TX. 100MW hydro-cooling conversion fully energized for SEALMINER A2 rigs. Bitdeer evaluating conversion of up to 563MW to AI data center. Site is adjacent to Riot Platforms' Whinstone facility. Milam County. Bitdeer expects 200+ MW AI compute by end of 2026.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-148",
@@ -4063,11 +3817,11 @@
     "region": "Texas",
     "status": "planned",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 285,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacenterdynamics.com/en/news/cleanspark-partners-with-immersion-cooling-firm-submer-for-ai-data-center-pivot/",
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-tx",
     "source": "DCD",
     "source_url": "https://www.datacenterdynamics.com/en/news/cleanspark-partners-with-immersion-cooling-firm-submer-for-ai-data-center-pivot/",
@@ -4077,7 +3831,8 @@
     "notes": "285MW AI data center campus on 271 acres in Austin County, TX. Partnership with Submer for liquid immersion cooling. Engineered as next-gen AI factory for high-density GPU clusters. Substation construction underway, long-lead equipment secured. Fast-track schedule for H1 2027 energization. $9-11M/MW build cost. CleanSpark pivoting from 1.3GW BTC mining portfolio to AI. Part of 2GW+ pipeline with Submer.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-149",
@@ -4090,7 +3845,7 @@
     "region": "Texas",
     "status": "planned",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 600.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://investors.cleanspark.com/news/news-details/2026/CleanSpark-Expands-Texas-Footprint-with-Major-Power-Acquisition-Near-Houston-to-Support-Scaled-AI-and-HPC-Development/default.aspx",
@@ -4104,7 +3859,8 @@
     "notes": "600MW potential AI data center on 447 acres in Brazoria County, TX (~40 miles south of Houston). 300MW initial demand load with expansion to 600MW. Transmission-level power with long-term facilities extension agreement. Second CleanSpark Texas AI site after Austin County (285MW). Combined Texas potential: 885MW+. Land deal expected to close Q1 2026.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-150",
@@ -4117,11 +3873,11 @@
     "region": "North Dakota",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 400,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://ir.applieddigital.com/news-events/press-releases/detail/137/applied-digital-completes-phase-ii-ready-for-service-at",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-nd",
     "source": "Applied Digital Investor Relations",
     "source_url": "https://ir.applieddigital.com/news-events/press-releases/detail/137/applied-digital-completes-phase-ii-ready-for-service-at",
@@ -4131,7 +3887,8 @@
     "notes": "400MW AI Factory in Ellendale, ND. Building 1 (100MW) operational since Nov 2025. Proprietary closed-loop waterless DTC cooling design. Near-zero water consumption. 220+ days/year free cooling. CoreWeave is tenant for 400MW across 3 lease agreements. $2.7B lifecycle cost savings over 30 years vs comparable sites. Scalable to 1GW+. Macquarie $787.5M financing. Applied Digital transitioned from crypto mining to AI infrastructure.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "NVIDIA Blackwell"
   },
   {
     "id": "us-151",
@@ -4144,11 +3901,11 @@
     "region": "North Dakota",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 280,
     "pue": 1.18,
     "pue_source": null,
     "pue_source_url": "https://ir.applieddigital.com/news-events/press-releases/detail/127/applied-digital-to-break-ground-on-3-billion-polaris-forge",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-nd",
     "source": "Applied Digital Investor Relations",
     "source_url": "https://ir.applieddigital.com/news-events/press-releases/detail/127/applied-digital-to-break-ground-on-3-billion-polaris-forge",
@@ -4156,7 +3913,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "280MW AI Factory near Harwood, ND. $3B investment. $5B lease with unnamed U.S. investment-grade hyperscaler. 900+ acres, Cass County Electric Cooperative power. Projected PUE 1.18, near-zero water consumption. Closed-loop liquid cooling. Initial 200MW across two buildings in 2026, full 280MW early 2027. Applied Digital's second major AI campus in North Dakota.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-152",
@@ -4173,7 +3931,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://ir.mara.com/news-events/press-releases/detail/1349/marathon-digital-holdings-unveils-two-phase-immersion-cooling-system-to-optimize-data-center-operations",
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-tx",
     "source": "MARA Investor Relations",
     "source_url": "https://ir.mara.com/news-events/press-releases/detail/1349/marathon-digital-holdings-unveils-two-phase-immersion-cooling-system-to-optimize-data-center-operations",
@@ -4183,7 +3941,8 @@
     "notes": "300MW crypto mining data center with two-phase immersion cooling at Granbury, TX (Hood County). MARA developed 2PIC700 immersion system (2-4x power density, 60% cooling cost reduction) but later discontinued for AI in favor of DTC. AI inference deployed at site in modular air-cooled containers. MARA targets 50% revenue from international markets by 2028. 1.5GW total capacity target. Adjacent to wind farm.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-153",
@@ -4200,7 +3959,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacenterdynamics.com/en/news/cipher-mining-launches-150mw-black-pearl-bitcoin-mining-site-in-texas/",
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-tx",
     "source": "DCD",
     "source_url": "https://www.datacenterdynamics.com/en/news/cipher-mining-launches-150mw-black-pearl-bitcoin-mining-site-in-texas/",
@@ -4210,7 +3969,8 @@
     "notes": "300MW data center at Black Pearl site in Wink, TX (Winkler County). Phase 1 (150MW) operational. Originally 250MW air-cooled + 50MW liquid-cooled crypto mining. $2B secured note offering (Black Pearl Compute LLC, due 2031) to fund AI conversion. Part of $5.5B AWS lease. Cipher also holds 337 additional acres of adjacent land.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-154",
@@ -4227,7 +3987,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.solunacomputing.com/news/2025-results/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "Soluna Computing",
     "source_url": "https://www.solunacomputing.com/news/2025-results/",
@@ -4237,7 +3997,8 @@
     "notes": "150MW wind-powered AI data center campus at Briscoe County, TX. $53M wind farm acquisition. Project Dorothy 3 extends Dorothy 1/2 campus. Soluna provides AI compute to Atlas Cloud. Proprietary cooling with radiators on chips (60+ kW/rack, water-free). 4.3GW pipeline. Launched AI infrastructure initiative. Dorothy 2 (48MW) fully operational Nov 2025. Project Kati 1 (83MW) energizing H1 2026.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-155",
@@ -4250,7 +4011,7 @@
     "region": "Texas",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 16.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://investors.corescientific.com/news-events/press-releases/detail/9/core-scientific-to-provide-coreweave-up-to-16-mw-of-data-center-infrastructure-to-support-ai-and-hpc-workloads-in-long-term-hosting-contract-with-potential-revenue-of-more-than-100-million",
@@ -4278,11 +4039,11 @@
     "region": "Texas",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 20,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://tacc.utexas.edu/systems/horizon/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "TACC",
     "source_url": "https://tacc.utexas.edu/systems/horizon/",
@@ -4310,7 +4071,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.cisl.ucar.edu/ncar-wyoming-supercomputing-center",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-wy",
     "source": "NCAR/CISL",
     "source_url": "https://www.cisl.ucar.edu/ncar-wyoming-supercomputing-center",
@@ -4321,7 +4082,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-158",
@@ -4366,7 +4128,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://investor.lilly.com/news-releases/news-release-details/lilly-partners-nvidia-build-industrys-most-powerful-ai",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-in",
     "source": "Eli Lilly Investor Relations",
     "source_url": "https://investor.lilly.com/news-releases/news-release-details/lilly-partners-nvidia-build-industrys-most-powerful-ai",
@@ -4407,7 +4169,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "NVIDIA Hopper"
+    "gpu": "NVIDIA DGX H100"
   },
   {
     "id": "us-161",
@@ -4453,7 +4215,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://hpc.nih.gov/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-ma",
     "source": "NIH Center for Information Technology",
     "source_url": "https://hpc.nih.gov/",
@@ -4522,7 +4284,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-165",
@@ -4583,34 +4346,6 @@
     "gpu": "NVIDIA"
   },
   {
-    "id": "us-167",
-    "company": "Shell plc",
-    "facility_name": "Shell HPC Data Center -- Skybox Houston One, Katy TX (1.2MW Immersion-Cooled)",
-    "lat": 29.7858,
-    "lng": -95.8244,
-    "address": "Katy, Texas",
-    "country": "US",
-    "region": "Texas",
-    "status": "operational",
-    "facility_type": "colocation",
-    "capacity_mw": null,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://www.grcooling.com/customer-successes/shells-skybox-houston-one-data-center/",
-    "cooling_method": "unknown",
-    "regulatory_zone": "us-tx",
-    "source": "GRC (Green Revolution Cooling)",
-    "source_url": "https://www.grcooling.com/customer-successes/shells-skybox-houston-one-data-center/",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "reported",
-    "notes": "Shell deployed 864 dual-socket servers (AMD EPYC 9654, 96-core, 4th Gen) in 6 GRC ICEraQ Series 10 Duo immersion cooling pods at Skybox Houston One in Katy, Texas. Total: 1,728 processors, 165,888 cores, 1.2MW compute. Servers fully submerged in Shell's own ElectroSafe immersion cooling fluid. Each GRC pod cools 200kW using warm facility water (up to 100kW per 42U rack with 90F water). Net-zero operational emissions claimed via Shell Energy North America 100% renewable power. Penguin Solutions provided the HPC cluster.",
-    "data_gaps": [
-      "pue"
-    ],
-    "gpu": "AMD"
-  },
-  {
     "id": "us-168",
     "company": "DUG Technology",
     "facility_name": "DUG Technology HPC DC -- Skybox Houston, TX (15MW Immersion-Cooled, Oil & Gas)",
@@ -4621,11 +4356,11 @@
     "region": "Texas",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 15.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacenterfrontier.com/hpc-gets-bigger-in-texas-40000-servers-immersed-in-coolant",
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-tx",
     "source": "Data Center Frontier",
     "source_url": "https://www.datacenterfrontier.com/hpc-gets-bigger-in-texas-40000-servers-immersed-in-coolant",
@@ -4635,7 +4370,8 @@
     "notes": "DUG Technology, Australia's leading geoscience HPC provider, leased 15MW at Skybox Datacenters in Houston's Energy Corridor. 40,000 servers fully immersed in DUG Cool dielectric fluid across 720+ enclosures, delivering 250 petaflops. DUG Cool is a patented immersion system refined over a decade, reducing power consumption by up to 51% vs air cooling by eliminating refrigerated cooling and fans. Serves global oil & gas industry for seismic data processing. Also the largest commercial user of Intel Xeon Phi co-processors (historically). Previously used GRC CarnotJet System at Perth facility.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-169",
@@ -4648,11 +4384,11 @@
     "region": "Washington",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 1.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://subseacloud.com/",
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-wa",
     "source": "Subsea Cloud",
     "source_url": "https://subseacloud.com/",
@@ -4663,7 +4399,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-170",
@@ -4676,7 +4413,7 @@
     "region": "California",
     "status": "proposed",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 0.5,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacenterdynamics.com/en/news/networkocean-plans-underwater-data-center-test-in-san-francisco-bay/",
@@ -4692,7 +4429,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Nvidia Hopper"
+    "gpu": "NVIDIA H100 (unverified)"
   },
   {
     "id": "us-171",
@@ -4705,7 +4442,7 @@
     "region": "Maine",
     "status": "proposed",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 51.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacenterdynamics.com/en/news/underwater-data-center-powered-by-tidal-energy-proposed-off-the-coast-of-maine/",
@@ -4719,7 +4456,8 @@
     "notes": "Proposed 51MW tidal energy + subsea AI data center in Western Passage, Maine. 170 tidal turbines + 34 AI compute pods on ocean floor using 'universal docking cradles.' $415M estimated cost. FERC preliminary permit filed Feb 2026 for 48-month environmental study. Would also supply power to Eastport residents and the Passamaquoddy Tribe. Active infrastructure occupies ~27 acres of a 400-acre permit area. Developer also exploring Cook Inlet, Alaska. Very early stage -- years from operational.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-172",
@@ -4732,11 +4470,11 @@
     "region": "Nevada",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 650,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.switch.com/ai-factories/",
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-nv",
     "source": "Switch",
     "source_url": "https://www.switch.com/ai-factories/",
@@ -4760,11 +4498,11 @@
     "region": "Pennsylvania",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 15.5,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.ironmountain.com/data-centers/locations/pennsylvania-data-center",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-pe",
     "source": "Iron Mountain",
     "source_url": "https://www.ironmountain.com/data-centers/locations/pennsylvania-data-center",
@@ -4774,7 +4512,8 @@
     "notes": "Iron Mountain's iconic 'Underground' data center sits 200 feet below ground in a former limestone mine in Boyers, PA. 330,000 sqft facility on 315-acre campus. 15.5MW capacity. Geothermal cooling uses a 35-acre underground lake for chilled water -- natural 52F ambient temperature year-round eliminates traditional chillers. Physical security from 200ft of limestone above. Serves enterprise, government, and financial services clients. Part of DOE Better Buildings program for geothermal cooling system.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-174",
@@ -4787,11 +4526,11 @@
     "region": "Missouri",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 6.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://bluebirdfiber.com/bluebirds-underground-data-center-provides-innovative-construction-and-location-benefits/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-mi",
     "source": "Bluebird Fiber",
     "source_url": "https://bluebirdfiber.com/bluebirds-underground-data-center-provides-innovative-construction-and-location-benefits/",
@@ -4801,7 +4540,8 @@
     "notes": "Data center 85 feet below ground in a former Burlington Limestone mine in Springfield, Missouri. 2-square-mile block of honeycombed limestone with 5M+ sqft excavated. 80,000 sqft total facility with 29,000 sqft whitespace. 6MW off-grid power with 3 diverse utility feeds. Natural 64-68F year-round temperature. Closed-loop chilled water cooling. Protected from earthquakes, floods, extreme weather. $11.5M expansion completed 2020.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-175",
@@ -4814,11 +4554,11 @@
     "region": "Iowa",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 10.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.infobunker.com/",
-    "cooling_method": "unknown",
+    "cooling_method": "air_cooled",
     "regulatory_zone": "us-io",
     "source": "InfoBunker",
     "source_url": "https://www.infobunker.com/",
@@ -4828,7 +4568,8 @@
     "notes": "Military-grade hardened data center 50+ feet underground. 3-foot thick reinforced concrete. Designed to survive a 20-megaton nuclear blast from 2.5 miles. 10MW utility power via dedicated substation (ring-fed from 2 other substations). 3x 750kVA turbine diesel backup generators (N+2 or 2N+1). EMP shielded. 10-tonne blast doors. Dry cooling and economizer mode for 6-8 months/year. 65,000 sqft total (38,000 sqft DC). SSAE 16, SOC 1/2/3, PCI-DSS, HIPAA compliant.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-176",
@@ -4845,7 +4586,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://thecordovatimes.com/2024/04/29/new-data-center-launched-at-cec-hydro-plant-bringing-data-hosting-cloud-service-opportunities-to-community/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-al",
     "source": "The Cordova Times",
     "source_url": "https://thecordovatimes.com/2024/04/29/new-data-center-launched-at-cec-hydro-plant-bringing-data-hosting-cloud-service-opportunities-to-community/",
@@ -4855,7 +4596,8 @@
     "notes": "Greensparc and HPE deployed a 150-170kW modular edge data center at Cordova Electric Cooperative's Humpback Creek Hydro Facility in rural Alaska in spring 2024. Powered by 100% renewable hydroelectric power, it reduces energy costs by up to 80%. The facility is cooled by integration with the hydro plant's cold water. First reliable, powerful computing infrastructure in rural Alaska. Deployed in 30 days.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-177",
@@ -4868,11 +4610,11 @@
     "region": "Alaska",
     "status": "proposed",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 120,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.fn-digital.com/data-center",
-    "cooling_method": "unknown",
+    "cooling_method": "air_cooled",
     "regulatory_zone": "us-al",
     "source": "Far North Digital",
     "source_url": "https://www.fn-digital.com/data-center",
@@ -4882,7 +4624,8 @@
     "notes": "Far North Digital proposes a 120MW Phase 1 hyperscale data center at Prudhoe Bay on Alaska's North Slope. Arctic ambient air cooling reduces cooling energy 40-60%. Powered by natural gas. Existing 43-acre pad expandable to 100 acres. Fiber connectivity via multiple submarine cable routes to Lower 48. Environmental cooling eliminates need for HVAC systems.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-178",
@@ -4895,7 +4638,7 @@
     "region": "Arkansas",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 150,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.avaiodigital.com/updates/avaio-digital-announces-new-large-scale-ai-ready-data-center-and-power-campus-in-little-rock-arkansas",
@@ -4909,7 +4652,8 @@
     "notes": "AVAIO Digital announced its Leo Campus on January 12, 2026: a 760-acre AI-ready data center hub in Pulaski County, Arkansas. Initial $6B investment with potential to reach $21B through full buildout. Phase 1 contracted for 150MW from Entergy Arkansas, with campus anticipated to scale to 1GW. Features water-efficient cooling, rainwater recapture, rooftop solar, and advanced cooling economization. Construction started Q1 2026, Phase 1 complete June 2027.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-179",
@@ -4922,7 +4666,7 @@
     "region": "Connecticut",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 32,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacenterdynamics.com/en/news/construction-firm-gains-approval-for-32mw-data-center-in-beacon-falls-connecticut/",
@@ -4936,7 +4680,8 @@
     "notes": "O&G Industries is building a 294,164 sq ft, 32MW data center on 47 acres of a former sand mine in Beacon Falls, Connecticut. First in Connecticut to use Class I Renewable fuel cell technology as primary power. Grid-connected with backup generators. Approval granted 2022. Expected completion 2026. Connecticut's first significant new data center construction.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-180",
@@ -4949,11 +4694,11 @@
     "region": "Kentucky",
     "status": "pre-construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 480,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.constructiondive.com/news/terawulf-fluor-data-center-preconstruction-kentucky-megaproject/815027/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-ke",
     "source": "Construction Dive",
     "source_url": "https://www.constructiondive.com/news/terawulf-fluor-data-center-preconstruction-kentucky-megaproject/815027/",
@@ -4963,7 +4708,8 @@
     "notes": "TeraWulf plans to transform a 790-acre former Century Aluminum smelter site in Hawesville, Kentucky into a 480MW data center campus. $3-4B total investment. Fluor engaged for preconstruction. Sealed closed-loop cooling system uses air-to-fluid heat exchangers — no evaporative cooling. System filled once from three onsite wells; replacement water not needed for 7-15 years. G42 confirmed as anchor tenant for 70MW+. 250+ buildable acres with immediate 480MW power availability.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-181",
@@ -4976,7 +4722,7 @@
     "region": "Kentucky",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 402,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.powerhousedata.com/news/developers-unveil-plans-for-large-tech-data-center-in-louisville",
@@ -4990,7 +4736,8 @@
     "notes": "PowerHouse Data Centers and Poe Companies are building Kentucky's first hyperscale data center campus on a 154-acre site in Louisville. Seven two-story buildings, 1.8M sq ft, 402MW maximum capacity. Phase 1 (130MW) operational October 2026. Designed for HPC, HDP, and immersive cooling solutions. OCP-Ready and DGX-Ready environments. Louisville Water Co. nearby with extra capacity for water-based cooling. Prospective hyperscaler tenants include Google, Amazon, Microsoft.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-182",
@@ -5003,11 +4750,11 @@
     "region": "Maine",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 26,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://mainebiz.biz/article/aroostook-county-to-get-maines-first-ai-data-center/",
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "us-ma",
     "source": "Mainebiz",
     "source_url": "https://mainebiz.biz/article/aroostook-county-to-get-maines-first-ai-data-center/",
@@ -5017,7 +4764,8 @@
     "notes": "LiquidCool Solutions is building Maine's first large-scale AI data center at the former Loring Air Force Base in Limestone (Aroostook County). Uses patented immersion cooling: servers submerged in nonconductive oil-based fluid, eliminating fans, AC, and water entirely. Zero toxic byproducts, near-zero noise. 40% energy reduction, 70% space reduction. Initial 2MW operational in 115,000 sq ft warehouse. Will-serve agreement with Versant Power for 24MW additional, reaching 26MW total.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-183",
@@ -5034,7 +4782,7 @@
     "pue": 1.08,
     "pue_source": null,
     "pue_source_url": "https://datacenters.google/locations/berkeley-county-south-carolina/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-so",
     "source": "Google",
     "source_url": "https://datacenters.google/locations/berkeley-county-south-carolina/",
@@ -5044,7 +4792,8 @@
     "notes": "Google is massively expanding in South Carolina with two new data center campuses in Dorchester County (Ridgeville and St. George), plus expanding its existing Berkeley County campus. $3.3B investment announced Sep 2024, $9B additional 2026-2027. Google SC facilities achieve PUE as low as 1.08. Water-based cooling with rainwater collection. 200+ new jobs. Google's Climate-Conscious Cooling Commitment applies to new builds. Water reused 3+ times before discharge. Targets 120% water replenishment by 2030.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-184",
@@ -5061,7 +4810,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://capitalbnews.org/secret-data-center-deal-marion-county-south-carolina/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-so",
     "source": "Capital B News",
     "source_url": "https://capitalbnews.org/secret-data-center-deal-marion-county-south-carolina/",
@@ -5072,7 +4821,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-185",
@@ -5089,7 +4839,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.live5news.com/2025/12/15/9-new-data-centers-proposed-colleton-county/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-so",
     "source": "Live 5 News",
     "source_url": "https://www.live5news.com/2025/12/15/9-new-data-centers-proposed-colleton-county/",
@@ -5100,7 +4850,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-186",
@@ -5113,11 +4864,11 @@
     "region": "North Carolina",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 4,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.americantower.com/us/media-hub/blog/retail-liquid-cooling-coming-raleigh-data-center",
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-no",
     "source": "American Tower",
     "source_url": "https://www.americantower.com/us/media-hub/blog/retail-liquid-cooling-coming-raleigh-data-center",
@@ -5127,7 +4878,8 @@
     "notes": "American Tower is expanding its Raleigh Edge Data Center with a second data hall featuring retail liquid cooling capabilities. Full capacity 4MW IT power. High-density racks with plug-and-play liquid cooling and traditional air-cooling options. Data hall 2 tenant-ready Q4 2026. Up to four data center buildings possible at Raleigh location. American Tower transitioning 10 new sites to Construction Ready by H1 2026.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-187",
@@ -5140,11 +4892,11 @@
     "region": "Virginia",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 100.0,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://nvidianews.nvidia.com/news/nvidia-partners-ai-infrastructure-america",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-va",
     "source": "NVIDIA Newsroom",
     "source_url": "https://nvidianews.nvidia.com/news/nvidia-partners-ai-infrastructure-america",
@@ -5169,11 +4921,11 @@
     "region": "West Virginia",
     "status": "pre-construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 1350,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.nscale.com/press-releases/nscale-west-virginia-ai-factory",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-we",
     "source": "Nscale",
     "source_url": "https://www.nscale.com/press-releases/nscale-west-virginia-ai-factory",
@@ -5197,11 +4949,11 @@
     "region": "Texas",
     "status": "announced",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 900,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "Crusoe Energy Systems",
     "source_url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure",
@@ -5211,7 +4963,8 @@
     "notes": "Crusoe announced March 27, 2026 a new 900MW AI factory campus in Abilene, TX for Microsoft. Two new buildings (336MW critical IT each) plus onsite power plant. Closed-loop non-evaporative liquid cooling circulates coolant without water loss. Total Abilene site reaches 2.1GW. First facility switch-on mid-2027. By end 2026, Phase 2 brings six buildings to 1.2GW before 900MW Phase 3 addition.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-190",
@@ -5228,7 +4981,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.prnewswire.com/news-releases/gridfree-ai-unveils-first-grid-independent-data-center-site-newmark-named-exclusive-advisor-and-marketer-302650409.html",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "PRNewswire",
     "source_url": "https://www.prnewswire.com/news-releases/gridfree-ai-unveils-first-grid-independent-data-center-site-newmark-named-exclusive-advisor-and-marketer-302650409.html",
@@ -5238,7 +4991,8 @@
     "notes": "GridFree AI's South Dallas One is the first development of the South Dallas Cluster — a three-site campus with nearly 5GW cumulative gross power. Each site delivers 1.5GW+. Grid-independent: operates off local electrical grid using American-produced natural gas. Industrial-grade chilled-water cooling for high-density compute. Delivery in <24 months from lease signing. 5x9 availability (99.999%). Newmark as exclusive advisor and marketer.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-191",
@@ -5255,7 +5009,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://news.ufl.edu/2025/10/hipergator-4-unveiling/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-fl",
     "source": "University of Florida News",
     "source_url": "https://news.ufl.edu/2025/10/hipergator-4-unveiling/",
@@ -5280,11 +5034,11 @@
     "region": "Ohio",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 800,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://cologix.com/news/cologix-expands-central-ohio-footprint-with-land-acquisition-for-new-ai-ready-800mw-data-center-campus/",
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-oh",
     "source": "Cologix",
     "source_url": "https://cologix.com/news/cologix-expands-central-ohio-footprint-with-land-acquisition-for-new-ai-ready-800mw-data-center-campus/",
@@ -5312,7 +5066,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.edged.us/news/edged-us-expands-chicagoland-campus",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-il",
     "source": "Edged US (Official)",
     "source_url": "https://www.edged.us/news/edged-us-expands-chicagoland-campus",
@@ -5322,7 +5076,8 @@
     "notes": "Edged US broke ground on its second Aurora, IL facility, adding 72MW of capacity to its Chicagoland campus. Uses ThermalWorks closed-loop waterless liquid-to-chip cooling supporting 200kW per rack. Saves 277 million gallons of water annually vs. conventional evaporative cooling. Zero water for cooling. Part of Edged's GW-scale North American roadmap. First Aurora facility opened Feb 2025.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-194",
@@ -5339,7 +5094,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://datacenters.atmeta.com/2026/03/big-things-are-happening-el-paso/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "Meta Data Centers (Official)",
     "source_url": "https://datacenters.atmeta.com/2026/03/big-things-are-happening-el-paso/",
@@ -5349,7 +5104,8 @@
     "notes": "Meta revised its El Paso data center investment to $10 billion (up from $1.5B) in March 2026, targeting 1GW capacity by 2028. Closed-loop liquid cooling system recirculates water, uses zero water for most of the year. 100% clean/renewable energy matching. Water restoration commitment. 300 permanent jobs, 4,000 construction peak. Water use compared to a typical golf course.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-195",
@@ -5366,7 +5122,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://about.fb.com/news/2026/02/metas-new-data-center-lebanon-indiana-marks-milestone-ai-investment/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-in",
     "source": "Meta (Official Blog)",
     "source_url": "https://about.fb.com/news/2026/02/metas-new-data-center-lebanon-indiana-marks-milestone-ai-investment/",
@@ -5376,7 +5132,8 @@
     "notes": "Meta broke ground February 11, 2026 on a $10B, 1GW data center campus in Lebanon, Indiana. 1,500 acres, 13 structures, 4 million sq ft. Closed-loop liquid cooling uses zero water for majority of year. 100% water restoration to local watersheds. LEED Gold target. Meta's 27th US data center, 2nd in Indiana. 4,000 construction jobs, 300 operational.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-196",
@@ -5393,7 +5150,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.taylortx.gov/1293/Blueprint-Projects-Data-Center",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "City of Taylor, TX (Official)",
     "source_url": "https://www.taylortx.gov/1293/Blueprint-Projects-Data-Center",
@@ -5404,7 +5161,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-197",
@@ -5433,7 +5191,8 @@
       "pue",
       "capacity_mw",
       "cooling_method"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-198",
@@ -5450,7 +5209,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://qtsdatacenters.com/news/qts-announces-new-world-class-data-center-campus-in-cedar-rapids/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-io",
     "source": "QTS Data Centers (Official)",
     "source_url": "https://qtsdatacenters.com/news/qts-announces-new-world-class-data-center-campus-in-cedar-rapids/",
@@ -5479,7 +5238,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.timesleader.com/news/1735892/96-salem-twp-landowners-complete-historic-1700-acre-sale-for-major-data-center-campus",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-pe",
     "source": "Times Leader",
     "source_url": "https://www.timesleader.com/news/1735892/96-salem-twp-landowners-complete-historic-1700-acre-sale-for-major-data-center-campus",
@@ -5519,7 +5278,8 @@
     "data_gaps": [
       "pue",
       "cooling_method"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-201",
@@ -5536,7 +5296,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://vantage-dc.com/news/vantage-data-centers-invests-2b-in-fredericksburg-virginia-region-to-deliver-fourth-campus-in-the-commonwealth/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-va",
     "source": "Vantage Data Centers (Official)",
     "source_url": "https://vantage-dc.com/news/vantage-data-centers-invests-2b-in-fredericksburg-virginia-region-to-deliver-fourth-campus-in-the-commonwealth/",
@@ -5546,7 +5306,8 @@
     "notes": "Vantage Data Centers' VA4 campus: $2B investment on 82 acres in Stafford County, Virginia. Three two-story facilities totaling 929,000 sq ft and 192MW. Closed-loop chilled water with liquid-to-liquid cooling handling 100% of IT workloads. LEED Silver target. First building late 2027. Vantage's 4th Virginia campus, bringing total statewide capacity to 782MW. 50 permanent, 1,100 construction jobs.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-202",
@@ -5563,7 +5324,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://services.global.ntt/en-us/newsroom/ntt-data-continues-data-center-momentum",
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-mu",
     "source": "NTT DATA (Official)",
     "source_url": "https://services.global.ntt/en-us/newsroom/ntt-data-continues-data-center-momentum",
@@ -5601,7 +5362,8 @@
     "notes": "Rowan Digital broke ground March 2026 on Project Temple, a 300MW sustainable data center on 700 acres in Bell County, TX. $700M investment. Power via Oncor partnership. Mechanical cooling with reduced water consumption and water reuse. Expected operational 2027. ~600 construction jobs, 40+ permanent.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-204",
@@ -5628,7 +5390,8 @@
     "notes": "Crow Holdings, one of Dallas's largest real estate investors, partnering with CleanArc Data Centers to build a 245MW total campus on ~40 acres in central Dallas. Initial 70MW building expected late 2027. AI and hyperscale focused. CleanArc is a new entrant in the DC space.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-205",
@@ -5645,7 +5408,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://nebius.com/blog/posts/300-mw-new-jersey-and-iceland-regions",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-nj",
     "source": "Nebius (Official)",
     "source_url": "https://nebius.com/blog/posts/300-mw-new-jersey-and-iceland-regions",
@@ -5655,7 +5418,8 @@
     "notes": "Nebius partnering with DataOne to build a 300MW AI data center in Vineland, NJ. Direct liquid cooling for current and next-gen GPUs. 2.6M sqft campus. Behind-the-meter electricity. Heat recovery systems. First phase delivered summer 2025; full 300MW target Nov 2026.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-206",
@@ -5672,7 +5436,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacenterdynamics.com/en/news/600mw-natural-gas-powered-data-center-campus-proposed-in-hubbard-texas/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "Data Center Dynamics",
     "source_url": "https://www.datacenterdynamics.com/en/news/600mw-natural-gas-powered-data-center-campus-proposed-in-hubbard-texas/",
@@ -5682,7 +5446,8 @@
     "notes": "Nexus Data Centers building a 600MW AI campus on 2,000 acres near Hubbard, TX. Features AirJoule (GE Vernova JV) waste-heat-to-water atmospheric harvesting system -- converts DC waste heat into PFAS-free distilled water for cooling. Closed-loop, non-potable water, no municipal water supply needed. Natural gas powered.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-207",
@@ -5709,7 +5474,8 @@
     "notes": "Galaxy Digital's Helios data center site in West Texas received ERCOT approval for an additional 830MW, bringing total site capacity to 1.6GW. Announced Feb 2026. One of the largest single-site data center capacities in the US. AI/HPC focus.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-208",
@@ -5726,7 +5492,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://nebius.com/blog/posts/300-mw-new-jersey-and-iceland-regions",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-mi",
     "source": "Nebius (Official)",
     "source_url": "https://nebius.com/blog/posts/300-mw-new-jersey-and-iceland-regions",
@@ -5736,7 +5502,8 @@
     "notes": "Nebius colocation in Patmos-owned Kansas City facility (repurposed KC Star printing press building). 5MW live Q1 2025, expanding to 40MW by late 2026. Closed-loop liquid-ready cooling. Supports high-density AI racks without architectural redesign.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "us-209",
@@ -5753,7 +5520,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://services.global.ntt/en-us/services-and-products/global-data-centers/global-locations/americas/ashburn-va11-data-center",
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "us-va",
     "source": "NTT DATA (Official)",
     "source_url": "https://services.global.ntt/en-us/services-and-products/global-data-centers/global-locations/americas/ashburn-va11-data-center",
@@ -5781,7 +5548,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.flexential.com/resources/press-release/flexential-support-coreweaves-ai-cloud-expansion-13-mw-high-density",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "us-tx",
     "source": "Flexential (Official)",
     "source_url": "https://www.flexential.com/resources/press-release/flexential-support-coreweaves-ai-cloud-expansion-13-mw-high-density",

@@ -1,13 +1,13 @@
 export default function MapLegend() {
   const tierItems = [
     { color: '#34a853', label: 'SOM — High Fit' },
-    { color: '#fbbc04', label: 'SAM — Moderate Fit' },
+    { color: '#f5c542', label: 'SAM — Moderate Fit' },
     { color: '#ea4335', label: 'TAM — All Facilities' },
   ]
 
   const pipelineItems = [
     { color: '#4285f4', label: 'In Development' },
-    { color: '#ff9800', label: 'Planned' },
+    { color: '#00bcd4', label: 'Planned' },
   ]
 
   return (

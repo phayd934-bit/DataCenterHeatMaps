@@ -20,13 +20,13 @@ export function formatDate(dateStr) {
 
 export function tierColor(tier) {
   if (tier === 'som') return '#34a853'
-  if (tier === 'sam') return '#fbbc04'
+  if (tier === 'sam') return '#f5c542'
   return '#ea4335'
 }
 
 export function getFacilityColor(status, tier) {
   if (status === 'in_development') return '#4285f4' // Blue
-  if (status === 'planned') return '#ff9800'         // Orange
+  if (status === 'planned') return '#00bcd4'         // Turquoise
   return tierColor(tier)
 }
 

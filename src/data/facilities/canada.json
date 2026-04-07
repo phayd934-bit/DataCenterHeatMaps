@@ -48,7 +48,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "PUE 1.1, 10MW facility using KyotoCooling — first Canadian wholesale colo with this system. Ideal size for liquid cooling retrofit.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-003",
@@ -73,7 +74,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "PUE 1.1, 30MW, hybrid/liquid-ready. Operator has demonstrated efficiency commitment across campus. Liquid cooling expansion candidate.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-004",
@@ -98,11 +100,12 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "Direct-to-chip liquid cooling via Vertiv CDUs, 125kW/rack, PUE ~1.1. Major greenfield AI facility. Equipment vendor opportunity.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-005",
-    "company": "Bell Canada",
+    "company": "TELUS",
     "facility_name": "Sovereign AI Factory — Kamloops",
     "lat": 50.6745,
     "lng": -120.3273,
@@ -126,7 +129,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA Hopper + Blackwell"
+    "gpu": "NVIDIA"
   },
   {
     "id": "ca-006",
@@ -209,7 +212,8 @@
     "notes": "27MW greenfield with closed-loop chilled water (zero water consumption). Toronto Green Standard compliant. Mid-2026 go-live.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-009",
@@ -234,7 +238,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "Design PUE 1.2 at full capacity, free cooling most of year. Air-cooled currently — strong retrofit candidate for liquid cooling as AI tenants demand higher density.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-010",
@@ -262,7 +267,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA Hopper + Blackwell"
+    "gpu": null
   },
   {
     "id": "ca-011",
@@ -287,7 +292,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "TRIPLE MATCH: PUE <1.17, 9MW, Vertiv CoolPhase Flex liquid+air hybrid deploying Q1 2025. KyotoCooling + free cooling 90% of year. 100% Hydro-Quebec renewable.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-012",
@@ -312,7 +318,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "PUE as low as 1.15 with KyotoCooling. 30MW across 9 halls. Free cooling 90% of year. Vertiv liquid cooling partnership. 100% renewable.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-013",
@@ -337,7 +344,8 @@
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
     "notes": "46MW, PUE 1.25. Air-cooled. No target metrics matched but DLC offering available in 170+ DCs globally.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-014",
@@ -365,7 +373,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA DGX-Ready"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-015",
@@ -392,7 +400,8 @@
     "notes": "7.5MW small colo (former Rogers). ≤10MW = SAM target. No liquid cooling yet — retrofit opportunity. Part of 9-DC portfolio (49MW total).",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-016",
@@ -447,7 +456,8 @@
     "notes": "8MW Phase 1 (56MW campus). DLC up to 100kW/rack + immersion up to 300kW/rack. Canadian AI-ready.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-018",
@@ -560,7 +570,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "NVIDIA Hopper + Blackwell"
+    "gpu": null
   },
   {
     "id": "ca-022",
@@ -813,7 +823,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA Hopper"
+    "gpu": "NVIDIA H100 + H200"
   },
   {
     "id": "ca-031",
@@ -869,7 +879,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "NVIDIA Rubin Ultra (planned)"
   },
   {
     "id": "ca-033",
@@ -1010,7 +1021,8 @@
     "notes": "PUE 1.15 using free air cooling and hot/cold aisle containment. 10,000 sq ft within 790,000 sq ft complex. 600 tons N+1 cooling capacity. 99% renewable hydro power. Commissioned 2021.",
     "data_gaps": [
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-038",
@@ -1037,7 +1049,8 @@
     "notes": "7.5MW facility qualifies on capacity (<=10MW). Carrier neutral colocation in downtown Winnipeg. Powered by Manitoba Hydro (98%+ hydroelectric). 1,100 tonnes cooling capacity. 172,147 sqft building footprint.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-039",
@@ -1091,7 +1104,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA H100"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-041",
@@ -1119,7 +1132,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA H100"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-042",
@@ -1145,7 +1158,7 @@
     "confidence_tier": "reported",
     "notes": "9MW high-density liquid-cooled facility with PUE 1.20. Qualifies on PUE (1.20), liquid cooling, AND capacity (<=10MW). Chilled-water + free cooling. Rapid deployment: 1-3MW in <150 days. Uptime Tier 3.",
     "data_gaps": [],
-    "gpu": "NVIDIA Tesla K80"
+    "gpu": null
   },
   {
     "id": "ca-043",
@@ -1172,7 +1185,8 @@
     "notes": "6MW facility qualifies on capacity (<=10MW). Uptime Tier III certified (design + construction). 100,923 sqft purpose-built. 568 tons N+1 cooling. Brookfield Infrastructure rebranded from Cyxtera/Evoque 2024.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-044",
@@ -1199,7 +1213,8 @@
     "notes": "2.7MW Tier III facility qualifies on capacity (<=10MW). Chilled water cooling, N+1 redundancy. 4,900 sqft. SOC2 Type 2, ASHRAE compliant. Crown corporation operator.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-045",
@@ -1224,7 +1239,8 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "PUE as low as 1.1, 1.5MW facility. Qualifies on BOTH PUE (<=1.20) and capacity (<=10MW). 28,000 sqft, 7,000 sqft raised floor. N+1 power and cooling redundancy. Up to 20kW/rack.",
-    "data_gaps": []
+    "data_gaps": [],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-046",
@@ -1280,7 +1296,8 @@
     "data_gaps": [
       "pue",
       "cooling_method"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-048",
@@ -1325,7 +1342,7 @@
     "pue": 1.07,
     "pue_source": null,
     "pue_source_url": "https://www.sfu.ca/sfunews/stories/2025/09/canada-s-fastest-academic-supercomputer-is-now-online-at-sfu-aft.html",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "ca-bc",
     "source": "Simon Fraser University News",
     "source_url": "https://www.sfu.ca/sfunews/stories/2025/09/canada-s-fastest-academic-supercomputer-is-now-online-at-sfu-aft.html",
@@ -1353,7 +1370,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://scinethpc.ca/trillium/",
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "ca-on",
     "source": "SciNet HPC (University of Toronto)",
     "source_url": "https://scinethpc.ca/trillium/",
@@ -1420,7 +1437,8 @@
     "notes": "300MW+ campus scaling to 1GW in Regina, SK. Closed-loop immersion cooling by CoolIT Systems. PUE target 1.05-1.15. WUE near-zero. 7,000+ free cooling hours/year. Islanded micro-grid with gas turbines + renewables + 100MWh battery. Phase 1 (2026-27): 10MW IT, $300M CapEx. 100% Canadian-owned. Bird Construction, TransGas, SaskTel, FNPA partners.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-053",
@@ -1447,7 +1465,8 @@
     "notes": "500kW across 3 data halls, 20+ customers. Acquired from Carbon60 in March 2026 for $1.6M + $150K deferred. Liquid cooling configs supported up to 150kW/rack. Protected B security clearance ready. SSAE16 SOC2 Type2 compliant. First DC in Atlantic Canada for Carrier Connect (5th overall). Small facility in underserved market.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-054",
@@ -1492,7 +1511,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.datacentermap.com/canada/montreal/iweb-cl/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "ca-qc",
     "source": "datacentermap.com",
     "source_url": "https://www.datacentermap.com/canada/montreal/iweb-cl/",
@@ -1502,7 +1521,8 @@
     "notes": "100% Water Cooling System. 12,000 server capacity, 132 full racks. 700 tons AC capacity. 3.5MW diesel generator. Located at 5945 Couture Blvd, Saint-Leonard QC. Opened 2006, acquired by Leaseweb from iWeb in August 2021. Water-cooled facility in Montreal -- potential for cooling technology upgrade.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-056",
@@ -1530,7 +1550,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-057",
@@ -1558,7 +1579,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-058",
@@ -1586,7 +1608,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA DGX-Ready"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-059",
@@ -1614,7 +1636,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-060",
@@ -1642,7 +1665,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-061",
@@ -1659,7 +1683,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.globo.tech/colocation",
-    "cooling_method": "unknown",
+    "cooling_method": "air_cooled",
     "regulatory_zone": "ca-qc",
     "source": "GloboTech (official website)",
     "source_url": "https://www.globo.tech/colocation",
@@ -1669,35 +1693,8 @@
     "notes": "Scalable up to 24MW. 2N power, N+1 cooling. High-density rack ready up to 50kW/cabinet. Hot/cold aisle containment with free cold air cooling. Montreal location leverages Quebec climate for PUE efficiency. Canadian dedicated server and colocation provider.",
     "data_gaps": [
       "pue"
-    ]
-  },
-  {
-    "id": "ca-062",
-    "company": "Hypertec Group / 5C Group / Mila",
-    "facility_name": "Hypertec LaSalle AI Campus (Immersion)",
-    "lat": 45.43,
-    "lng": -73.63,
-    "address": "Montreal (LaSalle), Quebec",
-    "country": "CA",
-    "region": "Quebec",
-    "status": "operational",
-    "facility_type": "ai_factory",
-    "capacity_mw": null,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://hypertec.com/news/mila-5c-and-hypertec-announce-250-million-lasalle-campus-and-sovereign-ai-research-hub-to-strengthen-canadas-role-as-a-global-leader-in-ai-innovation",
-    "cooling_method": "unknown",
-    "regulatory_zone": "ca-qc",
-    "source": "Hypertec (press release)",
-    "source_url": "https://hypertec.com/news/mila-5c-and-hypertec-announce-250-million-lasalle-campus-and-sovereign-ai-research-hub-to-strengthen-canadas-role-as-a-global-leader-in-ai-innovation",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "reported",
-    "notes": "$250M Sovereign AI Research Hub at Hypertec's LaSalle HQ. Direct-to-chip + immersion cooling + applied heat recovery reducing energy consumption by up to 50%. TRIDENT iC Series single-phase immersion servers. Immersion-as-a-Service (IaaS) platform with Intel Xeon 5th Gen. Partnership with Mila (Quebec AI Institute) and 5C Group.",
-    "data_gaps": [
-      "pue",
-      "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-063",
@@ -1725,7 +1722,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-064",
@@ -1752,7 +1750,8 @@
     "notes": "2MW carrier-neutral data center at 390 March Road, Kanata ON. Supports free-air, hot-aisle containment, and liquid cooling configs up to 150kW/rack. Protected B security clearance ready. Part of Carrier Connect's 5-DC national portfolio. Ottawa government/tech hub location.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-065",
@@ -1780,35 +1779,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
-  },
-  {
-    "id": "ca-066",
-    "company": "Bell Canada",
-    "facility_name": "Bell AI Fabric Saskatchewan (RM of Sherwood)",
-    "lat": 50.4,
-    "lng": -104.65,
-    "address": "Regina (RM of Sherwood), Saskatchewan",
-    "country": "CA",
-    "region": "Saskatchewan",
-    "status": "announced",
-    "facility_type": "hyperscale",
-    "capacity_mw": 300,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://www.bce.ca/news-and-media/newsroom?article=bell-ai-fabric-expands-national-network-with-300-mw-data-centre-in-saskatchewan",
-    "cooling_method": "unknown",
-    "regulatory_zone": "ca-sa",
-    "source": "Bell Canada (official press release)",
-    "source_url": "https://www.bce.ca/news-and-media/newsroom?article=bell-ai-fabric-expands-national-network-with-300-mw-data-centre-in-saskatchewan",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "reported",
-    "notes": "300MW campus on 160 acres in RM of Sherwood outside Regina. $1.7B investment. $10B compute hardware from tenants. CoreWeave (NVIDIA GPUs) and Cerebras (wafer-scale) as anchor tenants. Closed-loop cooling -- zero municipal water draw. Heat recovery planned with University of Regina greenhouses and George Gordon First Nation. Multiple 50MW buildings totaling ~501,345 sq ft. First stage online H1 2027. Bell's largest-ever Saskatchewan investment.",
-    "data_gaps": [
-      "pue"
     ],
-    "gpu": "NVIDIA"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-067",
@@ -1837,7 +1809,8 @@
       "pue",
       "capacity_mw",
       "cooling_method"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-068",
@@ -1854,7 +1827,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://nuday.com/",
-    "cooling_method": "unknown",
+    "cooling_method": "air_cooled",
     "regulatory_zone": "ca-on",
     "source": "Nuday Networks (official website)",
     "source_url": "https://nuday.com/",
@@ -1865,35 +1838,8 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
-  },
-  {
-    "id": "ca-069",
-    "company": "University of Waterloo / SHARCNET Consortium",
-    "facility_name": "Nibi — University of Waterloo / SHARCNET",
-    "lat": 43.4723,
-    "lng": -80.5449,
-    "address": "Waterloo, Ontario",
-    "country": "CA",
-    "region": "Ontario",
-    "status": "operational",
-    "facility_type": "colocation",
-    "capacity_mw": null,
-    "pue": null,
-    "pue_source": null,
-    "pue_source_url": "https://www.datacenterdynamics.com/en/product-news/inside-nibi-how-immersion-cooling-and-ai-scale-compute-are-changing-canadian-hpc/",
-    "cooling_method": "unknown",
-    "regulatory_zone": "ca-on",
-    "source": "DatacenterDynamics",
-    "source_url": "https://www.datacenterdynamics.com/en/product-news/inside-nibi-how-immersion-cooling-and-ai-scale-compute-are-changing-canadian-hpc/",
-    "source_date": "2026-04-03",
-    "last_verified": "2026-04-04",
-    "confidence_tier": "verified",
-    "notes": "Canada's first large-scale immersion-cooled supercomputer. Hypertec Trident immersion-born servers. Intel Xeon 6 Granite Rapids AP CPUs. 9 immersion tanks + DLC for GPUs. 50% cooling energy reduction vs air. 40% smaller footprint. 100% heat reuse to Lazaridis Quantum-Nano Centre.",
-    "data_gaps": [
-      "pue",
-      "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-070",
@@ -1910,7 +1856,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.opencompute.org/facilities/24/qscale-q01-quebec-city-canada",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "ca-qc",
     "source": "Open Compute Project",
     "source_url": "https://www.opencompute.org/facilities/24/qscale-q01-quebec-city-canada",
@@ -1920,7 +1866,8 @@
     "notes": "Canada's first purpose-built AI colocation facility. 600kW+ per cabinet liquid cooling. 96MW campus (8 planned DCs). OCP Ready. Hydro-Quebec clean electricity. Heat recovery. Part of Canada's $925.6M sovereign AI compute strategy (Budget 2025). Government call for proposals (100MW+ sovereign AI DCs) ran Jan-Feb 2026. QScale is prime candidate for Canadian sovereign AI infrastructure.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-071",
@@ -1933,11 +1880,11 @@
     "region": "British Columbia",
     "status": "under_construction",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 10,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://irisenergy.gcs-web.com/news-releases/news-release-details/iren-august-2025-monthly-update",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "ca-bc",
     "source": "IREN Investor Relations",
     "source_url": "https://irisenergy.gcs-web.com/news-releases/news-release-details/iren-august-2025-monthly-update",
@@ -1948,7 +1895,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "NVIDIA Blackwell"
+    "gpu": "NVIDIA GB300 NVL72"
   },
   {
     "id": "ca-072",
@@ -1961,11 +1908,11 @@
     "region": "Quebec",
     "status": "operational",
     "facility_type": "colocation",
-    "capacity_mw": null,
+    "capacity_mw": 24,
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://bit-digital.com/press-releases/bit-digital-inc-vertically-integrates-acquiring-tier-3-hpc-datacenter-company-280-mw-pipeline-in-major-metropolitan-areas/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "ca-qc",
     "source": "Bit Digital",
     "source_url": "https://bit-digital.com/press-releases/bit-digital-inc-vertically-integrates-acquiring-tier-3-hpc-datacenter-company-280-mw-pipeline-in-major-metropolitan-areas/",
@@ -1975,7 +1922,8 @@
     "notes": "24MW Tier 3 HPC data center at 3195 Chemin Bedford, Montreal. 70,000 sq ft. Enovum acquired by Bit Digital in 2024 as part of vertical integration strategy. 288MW proprietary pipeline across major metro areas. All future Enovum sites designed for DTC liquid cooling. Part of Bit Digital's pivot from crypto mining to HPC infrastructure.",
     "data_gaps": [
       "pue"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-073",
@@ -1992,7 +1940,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://uwaterloo.ca/news/meet-nibi-waterloos-supercomputer-empowering-researchers",
-    "cooling_method": "unknown",
+    "cooling_method": "immersion",
     "regulatory_zone": "ca-on",
     "source": "University of Waterloo News",
     "source_url": "https://uwaterloo.ca/news/meet-nibi-waterloos-supercomputer-empowering-researchers",
@@ -2004,7 +1952,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "NVIDIA Hopper"
+    "gpu": "NVIDIA H100"
   },
   {
     "id": "ca-074",
@@ -2033,7 +1981,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "NVIDIA DGX-Ready"
+    "gpu": "Mixed (colocation)"
   },
   {
     "id": "ca-075",
@@ -2050,7 +1998,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.telehouse.ca/data-centres/",
-    "cooling_method": "unknown",
+    "cooling_method": "liquid_cooled",
     "regulatory_zone": "ca-on",
     "source": "Telehouse Canada",
     "source_url": "https://www.telehouse.ca/data-centres/",
@@ -2061,6 +2009,7 @@
     "data_gaps": [
       "pue",
       "capacity_mw"
-    ]
+    ],
+    "gpu": "Mixed (colocation)"
   }
 ]

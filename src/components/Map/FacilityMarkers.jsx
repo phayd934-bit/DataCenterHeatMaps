@@ -1,20 +1,22 @@
 import { CircleMarker, Tooltip } from 'react-leaflet'
 import { getFacilityColor, statusLabel } from '../../utils/formatters.js'
 
-export default function FacilityMarkers({ facilities, onClick }) {
+export default function FacilityMarkers({ facilities, selectedId, onClick }) {
   const mapped = facilities.filter((f) => f.lat != null && f.lng != null)
   return (
     <>
-      {mapped.map((f) => (
+      {mapped.map((f) => {
+        const isSelected = f.id === selectedId
+        return (
         <CircleMarker
           key={f.id}
           center={[f.lat, f.lng]}
-          radius={7}
+          radius={isSelected ? 12 : 7}
           pathOptions={{
             fillColor: getFacilityColor(f.status, f.market_tier),
-            fillOpacity: 0.85,
+            fillOpacity: isSelected ? 1 : 0.85,
             color: '#fff',
-            weight: 2,
+            weight: isSelected ? 3 : 2,
           }}
           eventHandlers={{
             click: () => onClick?.(f),
@@ -34,7 +36,8 @@ export default function FacilityMarkers({ facilities, onClick }) {
             )}
           </Tooltip>
         </CircleMarker>
-      ))}
+        )
+      })}
     </>
   )
 }

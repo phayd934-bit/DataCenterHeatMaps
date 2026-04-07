@@ -8,7 +8,7 @@ import MapLegend from './MapLegend.jsx'
 const INITIAL_CENTER = [45, -40]
 const INITIAL_ZOOM = 3
 
-export default function MapContainer({ onSelectFacility, onSelectRegion }) {
+export default function MapContainer({ selectedFacilityId, onSelectFacility, onSelectRegion }) {
   const { filtered } = useFilterContext()
 
   const handleMarkerClick = useCallback((facility) => {
@@ -27,7 +27,7 @@ export default function MapContainer({ onSelectFacility, onSelectRegion }) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <ZoomControl position="topright" />
-      <FacilityMarkers facilities={filtered} onClick={handleMarkerClick} />
+      <FacilityMarkers facilities={filtered} selectedId={selectedFacilityId} onClick={handleMarkerClick} />
       <MapLegend />
     </LeafletMap>
   )
