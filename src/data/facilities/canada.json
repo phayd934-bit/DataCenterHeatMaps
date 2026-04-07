@@ -693,7 +693,7 @@
     "pue": null,
     "pue_source": null,
     "pue_source_url": "https://www.blackridgeresearch.com/blog/list-of-largest-upcoming-data-centers-in-canada",
-    "cooling_method": "unknown",
+    "cooling_method": "hybrid",
     "regulatory_zone": "ca-ab",
     "source": "BlackRidge",
     "source_url": "https://www.blackridgeresearch.com/blog/list-of-largest-upcoming-data-centers-in-canada",
