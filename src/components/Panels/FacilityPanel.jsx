@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { formatPue, formatCapacity, tierColor, tierLabel, statusLabel, coolingLabel, typeLabel, formatDate } from '../../utils/formatters.js'
+import marketSizes from '../../data/market-sizes.json'
 
 export default function FacilityPanel({ facility, onClose, onViewRegulatory }) {
   const [showBreakdown, setShowBreakdown] = useState(false)
@@ -52,6 +53,8 @@ export default function FacilityPanel({ facility, onClose, onViewRegulatory }) {
       {f.data_gaps?.length > 0 && (
         <p className="text-[9px] text-[#fbbc04] mb-2">⚠ Data gaps: {f.data_gaps.join(', ')}</p>
       )}
+
+      <MarketSizeCard country={f.country} />
 
       {regulatoryZone && (
         <button
@@ -161,6 +164,29 @@ function MetricCard({ label, value, color, small, clickable, onClick, className 
       </div>
       <div className={`font-bold ${small ? 'text-[11px] mt-0.5' : 'text-base'}`}
         style={color ? { color } : { color: '#202124' }}>{value}</div>
+    </div>
+  )
+}
+
+function MarketSizeCard({ country }) {
+  const data = marketSizes[country]
+  if (!data) return null
+
+  return (
+    <div className="border border-[#dadce0] rounded-lg p-2.5 bg-[#f8f9fa] mb-2">
+      <div className="text-[9px] font-semibold text-[#5f6368] uppercase tracking-wide mb-1.5">Market Size (2025)</div>
+      <div className="grid grid-cols-2 gap-2">
+        <div className="text-center">
+          <div className="text-[9px] text-[#5f6368] uppercase">Data Centers</div>
+          <div className="text-sm font-bold text-[#1a73e8]">${data.dc_market}B</div>
+          <div className="text-[8px] text-[#9aa0a6]">{data.dc_source}</div>
+        </div>
+        <div className="text-center">
+          <div className="text-[9px] text-[#5f6368] uppercase">DC Cooling</div>
+          <div className="text-sm font-bold text-[#34a853]">${data.cooling_market}B</div>
+          <div className="text-[8px] text-[#9aa0a6]">{data.cooling_source}</div>
+        </div>
+      </div>
     </div>
   )
 }

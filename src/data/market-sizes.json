@@ -1,0 +1,42 @@
+{
+  "_metadata": {
+    "description": "Data center and cooling market sizes by country (2025 estimates, USD billions)",
+    "sources": [
+      "Mordor Intelligence (2025)",
+      "Statista Market Forecast (2025)",
+      "Grand View Research (2025)",
+      "Fortune Business Insights (2025)",
+      "Arizton Advisory (2025)",
+      "Precedence Research (2025)",
+      "GM Insights (2025)"
+    ],
+    "notes": "Values represent best available estimates from multiple industry research firms. DC market = total data center market (infrastructure, services, hardware). Cooling market = data center cooling systems market. All values in USD billions."
+  },
+  "US": { "dc_market": 171.9, "cooling_market": 25.6, "dc_source": "Statista 2025", "cooling_source": "Precedence Research 2025" },
+  "CA": { "dc_market": 8.49, "cooling_market": 0.36, "dc_source": "Statista 2025", "cooling_source": "Mordor Intelligence 2025" },
+  "GB": { "dc_market": 15.2, "cooling_market": 1.8, "dc_source": "Statista 2025 (est)", "cooling_source": "Fortune BI 2025 (est)" },
+  "DE": { "dc_market": 19.87, "cooling_market": 1.9, "dc_source": "Statista 2025", "cooling_source": "Fortune BI 2025 (est)" },
+  "NL": { "dc_market": 8.5, "cooling_market": 0.9, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "FR": { "dc_market": 10.2, "cooling_market": 1.1, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "IE": { "dc_market": 5.8, "cooling_market": 0.6, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "SE": { "dc_market": 3.5, "cooling_market": 0.35, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "FI": { "dc_market": 1.8, "cooling_market": 0.18, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "NO": { "dc_market": 2.1, "cooling_market": 0.22, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "DK": { "dc_market": 2.0, "cooling_market": 0.2, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "IS": { "dc_market": 0.3, "cooling_market": 0.03, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "ES": { "dc_market": 3.2, "cooling_market": 0.35, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "IT": { "dc_market": 4.5, "cooling_market": 0.48, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "CH": { "dc_market": 3.8, "cooling_market": 0.4, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "PL": { "dc_market": 1.5, "cooling_market": 0.16, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "PT": { "dc_market": 0.8, "cooling_market": 0.09, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "JP": { "dc_market": 21.96, "cooling_market": 0.92, "dc_source": "Statista 2025", "cooling_source": "GM Insights 2026 proj" },
+  "KR": { "dc_market": 8.3, "cooling_market": 0.65, "dc_source": "Grand View Research 2025", "cooling_source": "Industry estimate 2025" },
+  "CN": { "dc_market": 52.0, "cooling_market": 1.43, "dc_source": "Industry estimate 2025", "cooling_source": "GM Insights 2026 proj" },
+  "SG": { "dc_market": 4.2, "cooling_market": 0.42, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "AU": { "dc_market": 7.5, "cooling_market": 0.65, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "IN": { "dc_market": 10.5, "cooling_market": 0.9, "dc_source": "Grand View Research 2025", "cooling_source": "GM Insights 2026 proj" },
+  "SA": { "dc_market": 2.08, "cooling_market": 0.22, "dc_source": "Mordor Intelligence 2025", "cooling_source": "Industry estimate 2025" },
+  "AE": { "dc_market": 2.8, "cooling_market": 0.3, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "BR": { "dc_market": 5.5, "cooling_market": 0.5, "dc_source": "Industry estimate 2025", "cooling_source": "Industry estimate 2025" },
+  "GLOBAL": { "dc_market": 386.71, "cooling_market": 18.78, "dc_source": "Grand View Research 2025", "cooling_source": "GM Insights 2025" }
+}
