@@ -42,7 +42,8 @@ export default function FacilityPanel({ facility, onClose, onViewRegulatory }) {
           onClick={() => setShowBreakdown(!showBreakdown)}
         />
         <MetricCard label="Cooling" value={coolingLabel(f.cooling_method)} small />
-        <MetricCard label="GPU" value={f.gpu || 'N/A'} small className="col-span-2" />
+        <MetricCard label="DC Type" value={typeLabel(f.facility_type)} small />
+        <MetricCard label="GPU" value={f.gpu || 'N/A'} small />
       </div>
 
       {showBreakdown && <CoolingFitBreakdown facility={f} onClose={() => setShowBreakdown(false)} />}
