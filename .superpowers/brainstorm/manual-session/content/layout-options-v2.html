@@ -1,0 +1,176 @@
+<h2>Dashboard Layout</h2>
+<p class="subtitle">Same 3 layouts — now with a natural, Google Maps-inspired palette</p>
+<p style="margin-bottom: 16px; font-size: 13px; color: #888;">Light map canvas, muted earth tones, soft greens/blues for data layers. Clean and professional.</p>
+
+<div class="cards">
+  <!-- Option A -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 16px;">
+      <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; font-family: -apple-system, system-ui, sans-serif; font-size: 11px; color: #3c4043;">
+        <div style="display: flex; height: 280px; gap: 8px;">
+          <!-- Left sidebar -->
+          <div style="width: 220px; display: flex; flex-direction: column; gap: 6px; flex-shrink: 0;">
+            <div style="background: #fff; border: 1px solid #dadce0; border-radius: 8px; padding: 8px; text-align: center; font-weight: 600; color: #1a73e8;">☀ SOLAR STEAM</div>
+            <div style="background: #fff; border: 1px solid #dadce0; border-radius: 8px; padding: 8px; font-size: 10px;">
+              <div style="color: #5f6368; font-weight: 600; margin-bottom: 6px; text-transform: uppercase; font-size: 9px; letter-spacing: 0.5px;">Filters</div>
+              <div style="background: #f1f3f4; border-radius: 20px; padding: 4px 10px; margin: 3px 0; color: #3c4043;">Country ▾</div>
+              <div style="background: #f1f3f4; border-radius: 20px; padding: 4px 10px; margin: 3px 0; color: #3c4043;">Status ▾</div>
+              <div style="background: #f1f3f4; border-radius: 20px; padding: 4px 10px; margin: 3px 0; color: #3c4043;">Facility Type ▾</div>
+              <div style="background: #f1f3f4; border-radius: 20px; padding: 4px 10px; margin: 3px 0; color: #3c4043;">MW Range ▾</div>
+              <div style="background: #f1f3f4; border-radius: 20px; padding: 4px 10px; margin: 3px 0; color: #3c4043;">PUE Range ▾</div>
+              <div style="background: #f1f3f4; border-radius: 20px; padding: 4px 10px; margin: 3px 0; color: #3c4043;">Cooling Fit ▾</div>
+              <div style="background: #f1f3f4; border-radius: 20px; padding: 4px 10px; margin: 3px 0; color: #3c4043;">Market Tier ▾</div>
+            </div>
+            <div style="background: #fff; border: 1px solid #dadce0; border-radius: 8px; padding: 8px; flex: 1; font-size: 10px;">
+              <div style="color: #5f6368; font-weight: 600; margin-bottom: 6px; text-transform: uppercase; font-size: 9px; letter-spacing: 0.5px;">TAM / SAM / SOM</div>
+              <div style="display: flex; gap: 4px; align-items: flex-end; height: 50px; margin-top: 8px;">
+                <div style="background: #e8f0fe; border: 1px solid #a8c7fa; width: 33%; height: 100%; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #1967d2; font-size: 9px; font-weight: 600;">TAM</div>
+                <div style="background: #d2e3fc; border: 1px solid #7baaf7; width: 33%; height: 65%; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #1967d2; font-size: 9px; font-weight: 600;">SAM</div>
+                <div style="background: #ceead6; border: 1px solid #5bb974; width: 33%; height: 35%; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #137333; font-size: 9px; font-weight: 600;">SOM</div>
+              </div>
+            </div>
+          </div>
+          <!-- Main map area -->
+          <div style="flex: 1; background: #e8eaed; border-radius: 8px; position: relative; overflow: hidden; border: 1px solid #dadce0;">
+            <!-- Simplified land masses -->
+            <div style="position: absolute; top: 20%; left: 15%; width: 25%; height: 35%; background: #f0ece2; border-radius: 12px; opacity: 0.7;"></div>
+            <div style="position: absolute; top: 15%; left: 48%; width: 15%; height: 30%; background: #f0ece2; border-radius: 8px; opacity: 0.7;"></div>
+            <!-- Markers -->
+            <div style="position: absolute; top: 40%; left: 30%; width: 10px; height: 10px; background: #ea4335; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+            <div style="position: absolute; top: 35%; left: 33%; width: 8px; height: 8px; background: #fbbc04; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+            <div style="position: absolute; top: 45%; left: 26%; width: 11px; height: 11px; background: #34a853; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+            <div style="position: absolute; top: 32%; left: 52%; width: 8px; height: 8px; background: #ea4335; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+            <div style="position: absolute; top: 38%; left: 56%; width: 7px; height: 7px; background: #34a853; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+            <div style="position: absolute; top: 28%; left: 22%; width: 9px; height: 9px; background: #fbbc04; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+            <div style="position: absolute; bottom: 8px; left: 8px; font-size: 9px; color: #5f6368; background: rgba(255,255,255,0.9); padding: 4px 8px; border-radius: 4px;">
+              <span style="color: #34a853;">● SOM</span>&nbsp;
+              <span style="color: #fbbc04;">● SAM</span>&nbsp;
+              <span style="color: #ea4335;">● TAM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A: Sidebar + Full Map</h3>
+      <p>Filters and summary charts in a fixed left sidebar. Map takes remaining space. Click markers for a slide-in detail panel from the right.</p>
+    </div>
+  </div>
+
+  <!-- Option B -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 16px;">
+      <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; font-family: -apple-system, system-ui, sans-serif; font-size: 11px; color: #3c4043;">
+        <div style="display: flex; flex-direction: column; height: 280px; gap: 6px;">
+          <!-- Top bar -->
+          <div style="display: flex; gap: 6px; align-items: center; background: #fff; border: 1px solid #dadce0; border-radius: 8px; padding: 6px 10px;">
+            <div style="font-weight: 600; color: #1a73e8; white-space: nowrap;">☀ SOLAR STEAM</div>
+            <div style="width: 1px; height: 20px; background: #dadce0;"></div>
+            <div style="display: flex; gap: 4px; flex: 1; flex-wrap: wrap;">
+              <div style="background: #f1f3f4; border-radius: 16px; padding: 3px 10px; font-size: 10px;">Country ▾</div>
+              <div style="background: #f1f3f4; border-radius: 16px; padding: 3px 10px; font-size: 10px;">Status ▾</div>
+              <div style="background: #f1f3f4; border-radius: 16px; padding: 3px 10px; font-size: 10px;">Type ▾</div>
+              <div style="background: #f1f3f4; border-radius: 16px; padding: 3px 10px; font-size: 10px;">MW ▾</div>
+              <div style="background: #f1f3f4; border-radius: 16px; padding: 3px 10px; font-size: 10px;">PUE ▾</div>
+              <div style="background: #f1f3f4; border-radius: 16px; padding: 3px 10px; font-size: 10px;">More ▾</div>
+            </div>
+          </div>
+          <!-- Main area -->
+          <div style="display: flex; flex: 1; gap: 6px;">
+            <!-- Map -->
+            <div style="flex: 2; background: #e8eaed; border-radius: 8px; position: relative; border: 1px solid #dadce0; overflow: hidden;">
+              <div style="position: absolute; top: 15%; left: 12%; width: 30%; height: 40%; background: #f0ece2; border-radius: 12px; opacity: 0.7;"></div>
+              <div style="position: absolute; top: 10%; left: 55%; width: 18%; height: 35%; background: #f0ece2; border-radius: 8px; opacity: 0.7;"></div>
+              <div style="position: absolute; top: 40%; left: 30%; width: 10px; height: 10px; background: #ea4335; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+              <div style="position: absolute; top: 35%; left: 45%; width: 8px; height: 8px; background: #34a853; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+              <div style="position: absolute; top: 50%; left: 35%; width: 11px; height: 11px; background: #fbbc04; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+            </div>
+            <!-- Right dashboard -->
+            <div style="width: 200px; display: flex; flex-direction: column; gap: 6px; flex-shrink: 0;">
+              <div style="background: #fff; border: 1px solid #dadce0; border-radius: 8px; padding: 8px; font-size: 10px;">
+                <div style="color: #5f6368; font-weight: 600; margin-bottom: 6px; text-transform: uppercase; font-size: 9px; letter-spacing: 0.5px;">TAM / SAM / SOM</div>
+                <div style="display: flex; gap: 4px; align-items: flex-end; height: 40px;">
+                  <div style="background: #e8f0fe; border: 1px solid #a8c7fa; width: 33%; height: 100%; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #1967d2; font-size: 9px; font-weight: 600;">TAM</div>
+                  <div style="background: #d2e3fc; border: 1px solid #7baaf7; width: 33%; height: 65%; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #1967d2; font-size: 9px; font-weight: 600;">SAM</div>
+                  <div style="background: #ceead6; border: 1px solid #5bb974; width: 33%; height: 35%; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #137333; font-size: 9px; font-weight: 600;">SOM</div>
+                </div>
+              </div>
+              <div style="background: #fff; border: 1px solid #dadce0; border-radius: 8px; padding: 8px; font-size: 10px; flex: 1;">
+                <div style="color: #5f6368; font-weight: 600; margin-bottom: 6px; text-transform: uppercase; font-size: 9px; letter-spacing: 0.5px;">Region Breakdown</div>
+                <div style="margin-top: 6px;">
+                  <div style="display: flex; justify-content: space-between; margin: 3px 0;"><span>US</span><span style="color: #1967d2; font-weight: 600;">482</span></div>
+                  <div style="background: #f1f3f4; height: 4px; border-radius: 2px; margin-bottom: 6px;"><div style="background: #1a73e8; height: 100%; width: 75%; border-radius: 2px;"></div></div>
+                  <div style="display: flex; justify-content: space-between; margin: 3px 0;"><span>EU</span><span style="color: #1967d2; font-weight: 600;">298</span></div>
+                  <div style="background: #f1f3f4; height: 4px; border-radius: 2px; margin-bottom: 6px;"><div style="background: #1a73e8; height: 100%; width: 50%; border-radius: 2px;"></div></div>
+                  <div style="display: flex; justify-content: space-between; margin: 3px 0;"><span>CA</span><span style="color: #1967d2; font-weight: 600;">134</span></div>
+                  <div style="background: #f1f3f4; height: 4px; border-radius: 2px;"><div style="background: #1a73e8; height: 100%; width: 25%; border-radius: 2px;"></div></div>
+                </div>
+              </div>
+              <div style="background: #fff; border: 1px solid #dadce0; border-radius: 8px; padding: 8px; font-size: 10px;">
+                <div style="color: #5f6368; font-weight: 600; margin-bottom: 6px; text-transform: uppercase; font-size: 9px; letter-spacing: 0.5px;">Cooling Fit</div>
+                <div style="display: flex; gap: 2px; height: 30px; align-items: flex-end;">
+                  <div style="background: #34a853; width: 20%; height: 90%; border-radius: 3px; opacity: 0.8;"></div>
+                  <div style="background: #34a853; width: 20%; height: 70%; border-radius: 3px; opacity: 0.6;"></div>
+                  <div style="background: #fbbc04; width: 20%; height: 50%; border-radius: 3px; opacity: 0.8;"></div>
+                  <div style="background: #fbbc04; width: 20%; height: 35%; border-radius: 3px; opacity: 0.6;"></div>
+                  <div style="background: #ea4335; width: 20%; height: 15%; border-radius: 3px; opacity: 0.7;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B: Top Filters + Map/Dashboard Split</h3>
+      <p>Filters in a horizontal bar. Map takes 2/3, stacked charts on the right. Map + analytics always visible together.</p>
+    </div>
+  </div>
+
+  <!-- Option C -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 16px;">
+      <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; font-family: -apple-system, system-ui, sans-serif; font-size: 11px; color: #3c4043;">
+        <div style="display: flex; flex-direction: column; height: 280px; gap: 6px;">
+          <!-- Tab bar -->
+          <div style="display: flex; gap: 4px; align-items: center; background: #fff; border: 1px solid #dadce0; border-radius: 8px; padding: 6px 10px;">
+            <div style="font-weight: 600; color: #1a73e8; white-space: nowrap;">☀ SOLAR STEAM</div>
+            <div style="flex: 1;"></div>
+            <div style="background: #1a73e8; color: #fff; border-radius: 20px; padding: 4px 14px; font-size: 10px; font-weight: 600;">Map</div>
+            <div style="background: #f1f3f4; border-radius: 20px; padding: 4px 14px; font-size: 10px; color: #5f6368;">Dashboard</div>
+            <div style="background: #f1f3f4; border-radius: 20px; padding: 4px 14px; font-size: 10px; color: #5f6368;">Regulatory</div>
+          </div>
+          <!-- Full-width map -->
+          <div style="flex: 1; background: #e8eaed; border-radius: 8px; position: relative; overflow: hidden; border: 1px solid #dadce0;">
+            <div style="position: absolute; top: 12%; left: 8%; width: 35%; height: 45%; background: #f0ece2; border-radius: 12px; opacity: 0.7;"></div>
+            <div style="position: absolute; top: 8%; left: 52%; width: 20%; height: 38%; background: #f0ece2; border-radius: 8px; opacity: 0.7;"></div>
+            <!-- Filter chips -->
+            <div style="position: absolute; top: 8px; left: 8px; display: flex; gap: 4px;">
+              <div style="background: rgba(255,255,255,0.95); border: 1px solid #dadce0; border-radius: 20px; padding: 3px 10px; font-size: 9px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">US ×</div>
+              <div style="background: rgba(255,255,255,0.95); border: 1px solid #dadce0; border-radius: 20px; padding: 3px 10px; font-size: 9px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">≤10MW ×</div>
+              <div style="background: rgba(255,255,255,0.95); border: 1px solid #dadce0; border-radius: 20px; padding: 3px 10px; font-size: 9px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">PUE >1.2 ×</div>
+            </div>
+            <!-- Markers -->
+            <div style="position: absolute; top: 35%; left: 20%; width: 12px; height: 12px; background: #ea4335; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+            <div style="position: absolute; top: 40%; left: 35%; width: 9px; height: 9px; background: #34a853; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+            <div style="position: absolute; top: 30%; left: 50%; width: 14px; height: 14px; background: #fbbc04; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+            <div style="position: absolute; top: 50%; left: 40%; width: 7px; height: 7px; background: #34a853; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+            <div style="position: absolute; top: 25%; left: 15%; width: 10px; height: 10px; background: #fbbc04; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+            <div style="position: absolute; top: 45%; left: 60%; width: 11px; height: 11px; background: #ea4335; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"></div>
+            <!-- Bottom summary -->
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); border-top: 1px solid #dadce0; padding: 6px 12px; display: flex; justify-content: space-between; font-size: 10px;">
+              <span>TAM: <span style="color: #ea4335; font-weight: 600;">1,247</span></span>
+              <span>SAM: <span style="color: #fbbc04; font-weight: 600;">486</span></span>
+              <span>SOM: <span style="color: #34a853; font-weight: 600;">142</span></span>
+              <span>Showing: <span style="color: #1a73e8; font-weight: 600;">142 facilities</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C: Full-Screen Map + Tab Navigation</h3>
+      <p>Map gets the entire viewport. Floating filter chips. Separate tabs for Dashboard and Regulatory views. Maximum visual impact for presentations.</p>
+    </div>
+  </div>
+</div>

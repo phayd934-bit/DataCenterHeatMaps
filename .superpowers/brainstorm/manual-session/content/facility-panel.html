@@ -1,0 +1,149 @@
+<h2>Facility Detail Panel</h2>
+<p class="subtitle">When a user clicks a marker on the map, a panel slides in from the right. Which level of detail?</p>
+
+<div class="cards">
+  <!-- Option A: Compact -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 16px;">
+      <div style="background: #f8f9fa; border-radius: 8px; padding: 0; font-family: -apple-system, system-ui, sans-serif; font-size: 11px; color: #3c4043; overflow: hidden;">
+        <div style="display: flex; height: 320px;">
+          <!-- Map area (greyed out) -->
+          <div style="flex: 1; background: #e8eaed; position: relative; opacity: 0.5;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #9aa0a6; font-size: 12px;">Map</div>
+          </div>
+          <!-- Panel -->
+          <div style="width: 280px; background: #fff; border-left: 1px solid #dadce0; padding: 16px; overflow-y: auto;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span style="font-size: 9px; background: #ceead6; color: #137333; padding: 2px 8px; border-radius: 10px; font-weight: 600;">SOM</span>
+              <span style="color: #9aa0a6; cursor: pointer;">✕</span>
+            </div>
+            <div style="font-size: 15px; font-weight: 600; color: #202124; margin-bottom: 2px;">QTS Ashburn Campus A</div>
+            <div style="font-size: 11px; color: #5f6368; margin-bottom: 12px;">QTS Realty · Colocation</div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
+              <div style="background: #f8f9fa; border-radius: 6px; padding: 8px; text-align: center;">
+                <div style="font-size: 9px; color: #5f6368; text-transform: uppercase; letter-spacing: 0.5px;">Capacity</div>
+                <div style="font-size: 16px; font-weight: 700; color: #202124;">8.5 <span style="font-size: 10px; font-weight: 400;">MW</span></div>
+              </div>
+              <div style="background: #f8f9fa; border-radius: 6px; padding: 8px; text-align: center;">
+                <div style="font-size: 9px; color: #5f6368; text-transform: uppercase; letter-spacing: 0.5px;">PUE</div>
+                <div style="font-size: 16px; font-weight: 700; color: #ea4335;">1.45</div>
+              </div>
+              <div style="background: #f8f9fa; border-radius: 6px; padding: 8px; text-align: center;">
+                <div style="font-size: 9px; color: #5f6368; text-transform: uppercase; letter-spacing: 0.5px;">Cooling Fit</div>
+                <div style="font-size: 16px; font-weight: 700; color: #34a853;">82</div>
+              </div>
+              <div style="background: #f8f9fa; border-radius: 6px; padding: 8px; text-align: center;">
+                <div style="font-size: 9px; color: #5f6368; text-transform: uppercase; letter-spacing: 0.5px;">Cooling</div>
+                <div style="font-size: 11px; font-weight: 600; color: #202124; margin-top: 2px;">Air Cooled</div>
+              </div>
+            </div>
+
+            <div style="font-size: 10px; color: #5f6368; margin-bottom: 4px;">
+              📍 21727 Filigree Ct, Ashburn, VA 20147
+            </div>
+            <div style="font-size: 10px; color: #5f6368; margin-bottom: 8px;">
+              🟢 Operational
+            </div>
+
+            <div style="border-top: 1px solid #e8eaed; padding-top: 8px; font-size: 9px; color: #9aa0a6;">
+              Source: PeeringDB · Verified: Apr 2026
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A: Compact Card</h3>
+      <p>Key metrics in a 2x2 grid, address, status, source. Quick scan — everything above the fold. No scrolling needed.</p>
+    </div>
+  </div>
+
+  <!-- Option B: Detailed -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 16px;">
+      <div style="background: #f8f9fa; border-radius: 8px; padding: 0; font-family: -apple-system, system-ui, sans-serif; font-size: 11px; color: #3c4043; overflow: hidden;">
+        <div style="display: flex; height: 320px;">
+          <!-- Map area -->
+          <div style="flex: 1; background: #e8eaed; position: relative; opacity: 0.5;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #9aa0a6; font-size: 12px;">Map</div>
+          </div>
+          <!-- Panel -->
+          <div style="width: 300px; background: #fff; border-left: 1px solid #dadce0; padding: 14px; overflow-y: auto; font-size: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+              <span style="font-size: 9px; background: #ceead6; color: #137333; padding: 2px 8px; border-radius: 10px; font-weight: 600;">SOM · Score 82</span>
+              <span style="color: #9aa0a6; cursor: pointer;">✕</span>
+            </div>
+            <div style="font-size: 14px; font-weight: 600; color: #202124; margin-bottom: 2px;">QTS Ashburn Campus A</div>
+            <div style="font-size: 11px; color: #5f6368; margin-bottom: 10px;">QTS Realty · Colocation · <span style="color: #34a853;">Operational</span></div>
+
+            <!-- Metrics -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin-bottom: 10px;">
+              <div style="background: #f8f9fa; border-radius: 6px; padding: 6px; text-align: center;">
+                <div style="font-size: 8px; color: #5f6368; text-transform: uppercase;">Capacity</div>
+                <div style="font-size: 14px; font-weight: 700; color: #202124;">8.5 MW</div>
+              </div>
+              <div style="background: #f8f9fa; border-radius: 6px; padding: 6px; text-align: center;">
+                <div style="font-size: 8px; color: #5f6368; text-transform: uppercase;">PUE</div>
+                <div style="font-size: 14px; font-weight: 700; color: #ea4335;">1.45</div>
+              </div>
+              <div style="background: #f8f9fa; border-radius: 6px; padding: 6px; text-align: center;">
+                <div style="font-size: 8px; color: #5f6368; text-transform: uppercase;">Cooling Fit</div>
+                <div style="font-size: 14px; font-weight: 700; color: #34a853;">82/100</div>
+              </div>
+            </div>
+
+            <!-- Cooling section -->
+            <div style="background: #fff8e1; border: 1px solid #f9e4a0; border-radius: 6px; padding: 8px; margin-bottom: 10px;">
+              <div style="font-size: 9px; font-weight: 600; color: #e37400; text-transform: uppercase; margin-bottom: 4px;">Cooling Opportunity</div>
+              <div style="font-size: 10px; color: #3c4043;">Current: <strong>Air Cooled</strong></div>
+              <div style="font-size: 10px; color: #3c4043;">High PUE (1.45) + sub-10MW = strong candidate for liquid/immersion retrofit</div>
+            </div>
+
+            <!-- Score breakdown -->
+            <div style="margin-bottom: 10px;">
+              <div style="font-size: 9px; font-weight: 600; color: #5f6368; text-transform: uppercase; margin-bottom: 4px;">Score Breakdown</div>
+              <div style="display: flex; align-items: center; gap: 6px; margin: 3px 0;">
+                <span style="width: 55px; font-size: 9px; color: #5f6368;">PUE</span>
+                <div style="flex: 1; background: #f1f3f4; height: 4px; border-radius: 2px;"><div style="background: #ea4335; height: 100%; width: 100%; border-radius: 2px;"></div></div>
+                <span style="font-size: 9px; font-weight: 600; width: 20px; text-align: right;">100</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 6px; margin: 3px 0;">
+                <span style="width: 55px; font-size: 9px; color: #5f6368;">Capacity</span>
+                <div style="flex: 1; background: #f1f3f4; height: 4px; border-radius: 2px;"><div style="background: #1a73e8; height: 100%; width: 100%; border-radius: 2px;"></div></div>
+                <span style="font-size: 9px; font-weight: 600; width: 20px; text-align: right;">100</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 6px; margin: 3px 0;">
+                <span style="width: 55px; font-size: 9px; color: #5f6368;">Cooling</span>
+                <div style="flex: 1; background: #f1f3f4; height: 4px; border-radius: 2px;"><div style="background: #1a73e8; height: 100%; width: 100%; border-radius: 2px;"></div></div>
+                <span style="font-size: 9px; font-weight: 600; width: 20px; text-align: right;">100</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 6px; margin: 3px 0;">
+                <span style="width: 55px; font-size: 9px; color: #5f6368;">Type</span>
+                <div style="flex: 1; background: #f1f3f4; height: 4px; border-radius: 2px;"><div style="background: #1a73e8; height: 100%; width: 80%; border-radius: 2px;"></div></div>
+                <span style="font-size: 9px; font-weight: 600; width: 20px; text-align: right;">80</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 6px; margin: 3px 0;">
+                <span style="width: 55px; font-size: 9px; color: #5f6368;">Status</span>
+                <div style="flex: 1; background: #f1f3f4; height: 4px; border-radius: 2px;"><div style="background: #1a73e8; height: 100%; width: 60%; border-radius: 2px;"></div></div>
+                <span style="font-size: 9px; font-weight: 600; width: 20px; text-align: right;">60</span>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div style="font-size: 10px; color: #5f6368; margin-bottom: 4px;">📍 21727 Filigree Ct, Ashburn, VA 20147</div>
+            <div style="font-size: 10px; color: #1a73e8; margin-bottom: 8px; cursor: pointer;">View regulatory info for Virginia →</div>
+
+            <div style="border-top: 1px solid #e8eaed; padding-top: 6px; font-size: 9px; color: #9aa0a6;">
+              Source: PeeringDB · Verified: Apr 2026 · <span style="color: #fbbc04;">⚠ PUE from 2024 report</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B: Detailed with Score Breakdown</h3>
+      <p>Metrics + cooling opportunity callout + score breakdown bars + link to regulatory panel. Tells the full story of WHY this facility is a good target. Scrollable.</p>
+    </div>
+  </div>
+</div>

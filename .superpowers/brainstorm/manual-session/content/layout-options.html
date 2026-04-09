@@ -1,0 +1,169 @@
+<h2>Dashboard Layout</h2>
+<p class="subtitle">Which layout structure works best for a CEO/investor pitch tool?</p>
+
+<div class="cards">
+  <!-- Option A -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 16px;">
+      <div style="background: #1a1a2e; border-radius: 8px; padding: 12px; font-family: monospace; font-size: 11px; color: #8892b0;">
+        <div style="display: flex; height: 280px; gap: 8px;">
+          <!-- Left sidebar -->
+          <div style="width: 220px; display: flex; flex-direction: column; gap: 6px; flex-shrink: 0;">
+            <div style="background: #16213e; border-radius: 4px; padding: 8px; text-align: center; color: #64ffda;">SOLAR STEAM</div>
+            <div style="background: #16213e; border-radius: 4px; padding: 6px; font-size: 10px;">
+              <div style="color: #ccd6f6; margin-bottom: 4px;">FILTERS</div>
+              <div style="background: #0f3460; border-radius: 3px; padding: 3px 6px; margin: 2px 0;">Country ▾</div>
+              <div style="background: #0f3460; border-radius: 3px; padding: 3px 6px; margin: 2px 0;">Status ▾</div>
+              <div style="background: #0f3460; border-radius: 3px; padding: 3px 6px; margin: 2px 0;">Type ▾</div>
+              <div style="background: #0f3460; border-radius: 3px; padding: 3px 6px; margin: 2px 0;">MW Range ▾</div>
+              <div style="background: #0f3460; border-radius: 3px; padding: 3px 6px; margin: 2px 0;">PUE Range ▾</div>
+              <div style="background: #0f3460; border-radius: 3px; padding: 3px 6px; margin: 2px 0;">Cooling Fit ▾</div>
+              <div style="background: #0f3460; border-radius: 3px; padding: 3px 6px; margin: 2px 0;">Market Tier ▾</div>
+            </div>
+            <div style="background: #16213e; border-radius: 4px; padding: 6px; flex: 1; font-size: 10px;">
+              <div style="color: #ccd6f6; margin-bottom: 4px;">TAM / SAM / SOM</div>
+              <div style="display: flex; gap: 4px; align-items: flex-end; height: 50px; margin-top: 8px;">
+                <div style="background: #0f3460; width: 33%; height: 100%; border-radius: 2px; display: flex; align-items: center; justify-content: center; color: #64ffda; font-size: 9px;">TAM</div>
+                <div style="background: #1a5276; width: 33%; height: 65%; border-radius: 2px; display: flex; align-items: center; justify-content: center; color: #64ffda; font-size: 9px;">SAM</div>
+                <div style="background: #1e8449; width: 33%; height: 35%; border-radius: 2px; display: flex; align-items: center; justify-content: center; color: #64ffda; font-size: 9px;">SOM</div>
+              </div>
+            </div>
+          </div>
+          <!-- Main map area -->
+          <div style="flex: 1; background: #0a192f; border-radius: 4px; position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 8px; left: 8px; color: #64ffda; font-size: 10px;">MAP VIEW</div>
+            <!-- Simplified world outline -->
+            <div style="position: absolute; top: 40%; left: 30%; width: 8px; height: 8px; background: #e74c3c; border-radius: 50%; opacity: 0.8;"></div>
+            <div style="position: absolute; top: 35%; left: 32%; width: 6px; height: 6px; background: #f39c12; border-radius: 50%; opacity: 0.8;"></div>
+            <div style="position: absolute; top: 45%; left: 28%; width: 10px; height: 10px; background: #1e8449; border-radius: 50%; opacity: 0.8;"></div>
+            <div style="position: absolute; top: 38%; left: 55%; width: 7px; height: 7px; background: #e74c3c; border-radius: 50%; opacity: 0.8;"></div>
+            <div style="position: absolute; top: 42%; left: 58%; width: 5px; height: 5px; background: #1e8449; border-radius: 50%; opacity: 0.8;"></div>
+            <div style="position: absolute; top: 30%; left: 25%; width: 9px; height: 9px; background: #f39c12; border-radius: 50%; opacity: 0.8;"></div>
+            <div style="position: absolute; bottom: 8px; left: 8px; font-size: 9px; color: #8892b0;">
+              <span style="color: #1e8449;">● SOM</span>&nbsp;
+              <span style="color: #f39c12;">● SAM</span>&nbsp;
+              <span style="color: #e74c3c;">● TAM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A: Sidebar + Full Map</h3>
+      <p>Filters and summary charts in a fixed left sidebar. Map takes remaining space. Click markers to open a slide-in detail panel from the right. Maximum map real estate.</p>
+    </div>
+  </div>
+
+  <!-- Option B -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 16px;">
+      <div style="background: #1a1a2e; border-radius: 8px; padding: 12px; font-family: monospace; font-size: 11px; color: #8892b0;">
+        <div style="display: flex; flex-direction: column; height: 280px; gap: 6px;">
+          <!-- Top bar -->
+          <div style="display: flex; gap: 6px; align-items: center;">
+            <div style="background: #16213e; border-radius: 4px; padding: 6px 12px; color: #64ffda;">SOLAR STEAM</div>
+            <div style="display: flex; gap: 4px; flex: 1;">
+              <div style="background: #0f3460; border-radius: 3px; padding: 4px 8px; font-size: 10px;">Country ▾</div>
+              <div style="background: #0f3460; border-radius: 3px; padding: 4px 8px; font-size: 10px;">Status ▾</div>
+              <div style="background: #0f3460; border-radius: 3px; padding: 4px 8px; font-size: 10px;">Type ▾</div>
+              <div style="background: #0f3460; border-radius: 3px; padding: 4px 8px; font-size: 10px;">MW ▾</div>
+              <div style="background: #0f3460; border-radius: 3px; padding: 4px 8px; font-size: 10px;">PUE ▾</div>
+              <div style="background: #0f3460; border-radius: 3px; padding: 4px 8px; font-size: 10px;">More ▾</div>
+            </div>
+          </div>
+          <!-- Main area -->
+          <div style="display: flex; flex: 1; gap: 6px;">
+            <!-- Map -->
+            <div style="flex: 2; background: #0a192f; border-radius: 4px; position: relative;">
+              <div style="position: absolute; top: 8px; left: 8px; color: #64ffda; font-size: 10px;">MAP VIEW</div>
+              <div style="position: absolute; top: 40%; left: 30%; width: 8px; height: 8px; background: #e74c3c; border-radius: 50%; opacity: 0.8;"></div>
+              <div style="position: absolute; top: 35%; left: 45%; width: 6px; height: 6px; background: #1e8449; border-radius: 50%; opacity: 0.8;"></div>
+              <div style="position: absolute; top: 50%; left: 35%; width: 10px; height: 10px; background: #f39c12; border-radius: 50%; opacity: 0.8;"></div>
+            </div>
+            <!-- Right dashboard -->
+            <div style="width: 200px; display: flex; flex-direction: column; gap: 6px; flex-shrink: 0;">
+              <div style="background: #16213e; border-radius: 4px; padding: 8px; font-size: 10px;">
+                <div style="color: #ccd6f6; margin-bottom: 4px;">TAM / SAM / SOM</div>
+                <div style="display: flex; gap: 4px; align-items: flex-end; height: 40px;">
+                  <div style="background: #0f3460; width: 33%; height: 100%; border-radius: 2px; display: flex; align-items: center; justify-content: center; color: #64ffda; font-size: 9px;">TAM</div>
+                  <div style="background: #1a5276; width: 33%; height: 65%; border-radius: 2px; display: flex; align-items: center; justify-content: center; color: #64ffda; font-size: 9px;">SAM</div>
+                  <div style="background: #1e8449; width: 33%; height: 35%; border-radius: 2px; display: flex; align-items: center; justify-content: center; color: #64ffda; font-size: 9px;">SOM</div>
+                </div>
+              </div>
+              <div style="background: #16213e; border-radius: 4px; padding: 8px; font-size: 10px; flex: 1;">
+                <div style="color: #ccd6f6; margin-bottom: 4px;">REGION BREAKDOWN</div>
+                <div style="margin-top: 6px;">
+                  <div style="display: flex; justify-content: space-between; margin: 3px 0;"><span>US</span><span style="color: #64ffda;">482</span></div>
+                  <div style="background: #0f3460; height: 4px; border-radius: 2px; margin-bottom: 6px;"><div style="background: #64ffda; height: 100%; width: 75%; border-radius: 2px;"></div></div>
+                  <div style="display: flex; justify-content: space-between; margin: 3px 0;"><span>EU</span><span style="color: #64ffda;">298</span></div>
+                  <div style="background: #0f3460; height: 4px; border-radius: 2px; margin-bottom: 6px;"><div style="background: #64ffda; height: 100%; width: 50%; border-radius: 2px;"></div></div>
+                  <div style="display: flex; justify-content: space-between; margin: 3px 0;"><span>CA</span><span style="color: #64ffda;">134</span></div>
+                  <div style="background: #0f3460; height: 4px; border-radius: 2px;"><div style="background: #64ffda; height: 100%; width: 25%; border-radius: 2px;"></div></div>
+                </div>
+              </div>
+              <div style="background: #16213e; border-radius: 4px; padding: 8px; font-size: 10px;">
+                <div style="color: #ccd6f6; margin-bottom: 4px;">COOLING FIT</div>
+                <div style="display: flex; gap: 2px; height: 30px; align-items: flex-end;">
+                  <div style="background: #1e8449; width: 20%; height: 90%; border-radius: 2px;"></div>
+                  <div style="background: #1e8449; width: 20%; height: 70%; border-radius: 2px;"></div>
+                  <div style="background: #f39c12; width: 20%; height: 50%; border-radius: 2px;"></div>
+                  <div style="background: #f39c12; width: 20%; height: 35%; border-radius: 2px;"></div>
+                  <div style="background: #e74c3c; width: 20%; height: 15%; border-radius: 2px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B: Top Filters + Map/Dashboard Split</h3>
+      <p>Filters in a horizontal bar up top. Map takes 2/3 width, dashboard charts stacked on the right. Click markers for a slide-over detail panel. Balanced view — map + analytics visible simultaneously.</p>
+    </div>
+  </div>
+
+  <!-- Option C -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 16px;">
+      <div style="background: #1a1a2e; border-radius: 8px; padding: 12px; font-family: monospace; font-size: 11px; color: #8892b0;">
+        <div style="display: flex; flex-direction: column; height: 280px; gap: 6px;">
+          <!-- Tab bar -->
+          <div style="display: flex; gap: 4px; align-items: center;">
+            <div style="background: #16213e; border-radius: 4px; padding: 6px 12px; color: #64ffda;">SOLAR STEAM</div>
+            <div style="flex: 1;"></div>
+            <div style="background: #64ffda; color: #0a192f; border-radius: 3px; padding: 4px 12px; font-size: 10px; font-weight: bold;">Map</div>
+            <div style="background: #16213e; border-radius: 3px; padding: 4px 12px; font-size: 10px;">Dashboard</div>
+            <div style="background: #16213e; border-radius: 3px; padding: 4px 12px; font-size: 10px;">Regulatory</div>
+          </div>
+          <!-- Full-width map view -->
+          <div style="flex: 1; background: #0a192f; border-radius: 4px; position: relative;">
+            <div style="position: absolute; top: 8px; left: 8px; color: #64ffda; font-size: 10px;">MAP VIEW — FULL WIDTH</div>
+            <!-- Filter chips overlaid -->
+            <div style="position: absolute; top: 28px; left: 8px; display: flex; gap: 4px;">
+              <div style="background: rgba(15,52,96,0.9); border-radius: 12px; padding: 2px 8px; font-size: 9px;">US ×</div>
+              <div style="background: rgba(15,52,96,0.9); border-radius: 12px; padding: 2px 8px; font-size: 9px;">≤10MW ×</div>
+              <div style="background: rgba(15,52,96,0.9); border-radius: 12px; padding: 2px 8px; font-size: 9px;">PUE >1.2 ×</div>
+            </div>
+            <!-- Markers -->
+            <div style="position: absolute; top: 35%; left: 20%; width: 10px; height: 10px; background: #e74c3c; border-radius: 50%; opacity: 0.8;"></div>
+            <div style="position: absolute; top: 40%; left: 35%; width: 8px; height: 8px; background: #1e8449; border-radius: 50%; opacity: 0.8;"></div>
+            <div style="position: absolute; top: 30%; left: 50%; width: 12px; height: 12px; background: #f39c12; border-radius: 50%; opacity: 0.8;"></div>
+            <div style="position: absolute; top: 50%; left: 40%; width: 6px; height: 6px; background: #1e8449; border-radius: 50%; opacity: 0.8;"></div>
+            <div style="position: absolute; top: 45%; left: 60%; width: 9px; height: 9px; background: #e74c3c; border-radius: 50%; opacity: 0.8;"></div>
+            <!-- Bottom summary bar -->
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(22,33,62,0.95); padding: 6px 12px; display: flex; justify-content: space-between; font-size: 10px;">
+              <span>TAM: <span style="color: #e74c3c;">1,247</span></span>
+              <span>SAM: <span style="color: #f39c12;">486</span></span>
+              <span>SOM: <span style="color: #1e8449;">142</span></span>
+              <span>Showing: <span style="color: #64ffda;">142 facilities</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C: Full-Screen Map + Tab Navigation</h3>
+      <p>Map gets the entire viewport. Filters as floating chips on the map. Separate tabs for Dashboard (charts/analytics) and Regulatory (drill-down panels). Maximum visual impact for presentations — the map IS the story.</p>
+    </div>
+  </div>
+</div>

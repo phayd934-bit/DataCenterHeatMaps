@@ -1,0 +1,753 @@
+[
+  {
+    "facility_name": "Wonder Valley (Phase 1)",
+    "operator_company": "O'Leary Digital / MD of Greenview",
+    "parent_company": "O'Leary Ventures",
+    "country": "CA",
+    "state_province_region": "Alberta",
+    "city": "MD of Greenview",
+    "full_address": "Near Grande Prairie, AB",
+    "latitude": 55.17,
+    "longitude": -118.8,
+    "region_priority_bucket": "Canada",
+    "facility_status": "permitted",
+    "facility_type": "hyperscale",
+    "workload_type": "training",
+    "customer_type_if_known": "AI/HPC",
+    "build_phase_if_known": "Phase 1 of 58 buildings",
+    "heat_recovery": null,
+    "pipeline_stage": "permitted",
+    "announced_date": "2024-03-01",
+    "construction_start_date": "2028-10-01",
+    "total_planned_mw": 7500,
+    "current_phase_mw": 1400,
+    "expansion_planned": true,
+    "gpu_architecture": "AI-ready",
+    "gpu_verified": false,
+    "pue_value": null,
+    "pue_min_if_range": 1.1,
+    "pue_max_if_range": 1.2,
+    "pue_verified": true,
+    "pue_evidence_type": "indirect",
+    "cooling_type": "air",
+    "water_strategy": "evaporative",
+    "liquid_cooling_verified": false,
+    "facility_mw": 1400,
+    "mw_verified": true,
+    "mw_evidence_type": "direct",
+    "matched_on_pue": true,
+    "matched_on_cooling": false,
+    "matched_on_mw": false,
+    "matched_metric_count": 1,
+    "qualifies_for_dataset": true,
+    "liquid_cooling_fit_score": 85,
+    "opportunity_summary": "7.5GW total planned. Off-grid gas power. Received environmental exemption in April 2026. Construction timeline shifted to 2028.",
+    "confidence_score": 85,
+    "confidence_reason": "Provincial regulatory updates and environmental assessment exemptions (April 2026).",
+    "source_count": 5,
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05",
+    "source_1_url": "https://www.siteselection.com/issues/2024/mar/alberta-s-70-billion-wonder-valley.cfm",
+    "source_1_publisher": "Site Selection",
+    "source_1_evidence_snippet": "Wonder Valley project near Grande Prairie. 7.5 gigawatts of power. $70 billion investment."
+  },
+  {
+    "facility_name": "Hut 8 Vega Site",
+    "operator_company": "Hut 8",
+    "country": "CA",
+    "state_province_region": "Alberta",
+    "region_priority_bucket": "Canada",
+    "facility_status": "existing",
+    "facility_type": "AI",
+    "workload_type": "training",
+    "pipeline_stage": "existing",
+    "actual_completion_date": "2026-01-01",
+    "facility_mw": 205,
+    "mw_verified": true,
+    "gpu_architecture": "NVIDIA H100/H200",
+    "gpu_verified": true,
+    "pue_value": 1.06,
+    "pue_verified": true,
+    "pue_evidence_type": "direct",
+    "cooling_type": "direct-to-chip",
+    "cooling_vendor": "Proprietary (Closed-Loop)",
+    "liquid_cooling_verified": true,
+    "matched_on_pue": true,
+    "matched_on_cooling": true,
+    "matched_on_mw": false,
+    "matched_metric_count": 2,
+    "qualifies_for_dataset": true,
+    "liquid_cooling_fit_score": 100,
+    "opportunity_summary": "Verified 1.06 PUE early 2026. 205MW flagship AI hub. Proprietary liquid cooling supporting 180kW per rack. Uses 120,000 gallons of glycol-water solution. Benchmark for Canadian AI efficiency.",
+    "confidence_score": 95,
+    "confidence_reason": "Hut 8 Feb 2026 financial reports and technical energization audits.",
+    "source_count": 3,
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05",
+    "source_1_url": "https://hut8.com/vega-site-launch/",
+    "source_1_publisher": "Hut 8",
+    "source_1_evidence_snippet": "Verified PUE of 1.06. 205MW capacity. Proprietary 180kW/rack liquid cooling."
+  },
+  {
+    "facility_name": "Bit Digital MTL2 (Pointe-Claire)",
+    "operator_company": "Bit Digital / WhiteFiber",
+    "country": "CA",
+    "state_province_region": "Quebec",
+    "city": "Pointe-Claire",
+    "region_priority_bucket": "Canada",
+    "facility_status": "under_construction",
+    "facility_type": "AI",
+    "pipeline_stage": "under_construction",
+    "expected_completion_date": "2026-06-01",
+    "facility_mw": 5,
+    "mw_verified": true,
+    "cooling_type": "direct-to-chip",
+    "liquid_cooling_verified": true,
+    "matched_on_pue": false,
+    "matched_on_cooling": true,
+    "matched_on_mw": true,
+    "matched_metric_count": 2,
+    "qualifies_for_dataset": true,
+    "small_facility_fit_score": 100,
+    "opportunity_summary": "5MW retrofit for high-density AI. Features Direct-to-Chip liquid cooling for 150kW racks. Integrated with heat-reject loop for municipal heat recapture. Uses 100% renewable hydro.",
+    "confidence_score": 90,
+    "confidence_reason": "Bit Digital project roadmap and 2026 WhiteFiber infrastructure specs.",
+    "source_count": 2,
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05",
+    "source_1_url": "https://bit-digital.com/montreal-hpc-expansion/",
+    "source_1_publisher": "Bit Digital",
+    "source_1_evidence_snippet": "MTL2 facility in Pointe-Claire. 5MW capacity. 150kW rack density support."
+  },
+  {
+    "facility_name": "Keel Infrastructure Baie-Comeau (HPC Conversion)",
+    "operator_company": "Keel Infrastructure Corp.",
+    "country": "CA",
+    "state_province_region": "Quebec",
+    "city": "Baie-Comeau",
+    "region_priority_bucket": "Canada",
+    "facility_status": "expanding",
+    "facility_type": "AI",
+    "workload_type": "training",
+    "pipeline_stage": "expanding",
+    "facility_mw": 22,
+    "mw_verified": true,
+    "cooling_type": "direct-to-chip",
+    "cooling_vendor": "Vertiv / BAULNE",
+    "liquid_cooling_verified": true,
+    "matched_on_pue": false,
+    "matched_on_cooling": true,
+    "matched_on_mw": false,
+    "matched_metric_count": 1,
+    "qualifies_for_dataset": true,
+    "liquid_cooling_fit_score": 95,
+    "opportunity_summary": "22MW conversion from mining to HPC/AI infrastructure. Secured $128M partnership with Vertiv for liquid cooling systems and modular units. Leveraging Hydro-Quebec green power.",
+    "confidence_score": 90,
+    "confidence_reason": "Keel (Bitfarms) corporate updates and Vertiv partnership roadmap (April 2026).",
+    "source_count": 3,
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Bit Digital MTL1 (Bedford)",
+    "operator_company": "Bit Digital / WhiteFiber",
+    "country": "CA",
+    "state_province_region": "Quebec",
+    "city": "Montreal",
+    "full_address": "3195 Chemin Bedford, Montreal, QC",
+    "region_priority_bucket": "Canada",
+    "facility_status": "existing",
+    "facility_type": "colocation",
+    "pipeline_stage": "existing",
+    "facility_mw": 24,
+    "mw_verified": true,
+    "cooling_type": "in-row",
+    "liquid_cooling_verified": false,
+    "matched_on_pue": false,
+    "matched_on_cooling": false,
+    "matched_on_mw": false,
+    "matched_metric_count": 0,
+    "qualifies_for_dataset": true,
+    "opportunity_summary": "24MW IT capacity. Tier-3 facility. Supports up to 50kW per cabinet with advanced in-row air cooling. Prime candidate for future liquid cooling retrofits.",
+    "confidence_score": 95,
+    "confidence_reason": "WhiteFiber (Bit Digital) technical site documentation (early 2026).",
+    "source_count": 2,
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05",
+    "source_1_url": "https://whitefiber.com/mtl1-facility/",
+    "source_1_publisher": "WhiteFiber",
+    "source_1_evidence_snippet": "3195 Chemin Bedford. 24MW IT power. In-row cooling."
+  },
+  {
+    "facility_name": "Microsoft Canada East AI Cluster (Aggregate)",
+    "operator_company": "Microsoft",
+    "country": "CA",
+    "state_province_region": "Quebec",
+    "city": "Quebec City Region",
+    "region_priority_bucket": "Canada",
+    "facility_status": "under_construction",
+    "facility_type": "hyperscale",
+    "workload_type": "training",
+    "pipeline_stage": "under_construction",
+    "expected_completion_date": "2026-10-01",
+    "cooling_type": "liquid",
+    "liquid_cooling_verified": true,
+    "matched_on_pue": false,
+    "matched_on_cooling": true,
+    "matched_on_mw": false,
+    "matched_metric_count": 1,
+    "qualifies_for_dataset": true,
+    "liquid_cooling_fit_score": 100,
+    "opportunity_summary": "$7.5B push across four campuses (L’Ancienne-Lorette, Lévis, Donnacona, Saint-Augustin). H2 2026 go-live. Fully liquid-cooled AI infrastructure for Azure Canada East. Mandated sovereign data residency for 2026.",
+    "confidence_score": 95,
+    "confidence_reason": "Microsoft project tracking and Quebec City regional construction milestones (April 2026).",
+    "source_count": 4,
+    "primary_source_count": 3,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05",
+    "source_1_url": "https://news.microsoft.com/en-ca/2024/06/microsoft-canada-expansion/",
+    "source_1_publisher": "Microsoft",
+    "source_1_evidence_snippet": "Four new campuses in Quebec. $7.5 billion investment. AI-ready infrastructure."
+  },
+  {
+    "facility_name": "AWS Canada (Central) Varennes Phase 2",
+    "operator_company": "Amazon Web Services (AWS)",
+    "country": "CA",
+    "state_province_region": "Quebec",
+    "city": "Varennes",
+    "region_priority_bucket": "Canada",
+    "facility_status": "existing",
+    "facility_type": "hyperscale",
+    "pipeline_stage": "existing",
+    "actual_completion_date": "2026-03-01",
+    "facility_mw": 45,
+    "mw_verified": true,
+    "cooling_type": "air",
+    "matched_on_pue": false,
+    "matched_on_cooling": false,
+    "matched_on_mw": false,
+    "matched_metric_count": 0,
+    "qualifies_for_dataset": true,
+    "opportunity_summary": "45MW+ Phase 2 facility entered service March 2026. Part of $24.8B national AWS plan. High-density cloud/AI expansion near Montreal. Uses Hydro-Quebec renewable energy.",
+    "confidence_score": 90,
+    "confidence_reason": "AWS regional infra tracking and Varennes municipal planning records (early 2026).",
+    "source_count": 2,
+    "primary_source_count": 1,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Equinix Toronto TR2 (AI Upgrade)",
+    "operator_company": "Equinix",
+    "country": "CA",
+    "state_province_region": "Ontario",
+    "city": "Toronto",
+    "full_address": "45 Parliament Street, Toronto, ON",
+    "region_priority_bucket": "Canada",
+    "facility_status": "existing",
+    "facility_type": "colocation",
+    "workload_type": "mixed",
+    "pipeline_stage": "existing",
+    "facility_mw": 16,
+    "mw_verified": true,
+    "cooling_type": "direct-to-chip",
+    "liquid_cooling_verified": true,
+    "matched_on_pue": false,
+    "matched_on_cooling": true,
+    "matched_on_mw": false,
+    "matched_metric_count": 1,
+    "qualifies_for_dataset": true,
+    "liquid_cooling_fit_score": 100,
+    "opportunity_summary": "16MW carrier hub. 2026 AI retrofit supports Direct-to-Chip liquid cooling for densities exceeding 100kW per rack. Primary TorIX hub for AI inference.",
+    "confidence_score": 95,
+    "confidence_reason": "Equinix official facility specs and 2026 high-density AI rollout documentation.",
+    "source_count": 3,
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Equinix Toronto TR7 (AI Upgrade)",
+    "operator_company": "Equinix",
+    "country": "CA",
+    "state_province_region": "Ontario",
+    "city": "Brampton",
+    "full_address": "1895 Williams Parkway, Brampton, ON",
+    "region_priority_bucket": "Canada",
+    "facility_status": "existing",
+    "facility_type": "colocation",
+    "workload_type": "mixed",
+    "pipeline_stage": "existing",
+    "facility_mw": 16,
+    "mw_verified": true,
+    "cooling_type": "direct-to-chip",
+    "liquid_cooling_verified": true,
+    "matched_on_pue": false,
+    "matched_on_cooling": true,
+    "matched_on_mw": false,
+    "matched_metric_count": 1,
+    "qualifies_for_dataset": true,
+    "liquid_cooling_fit_score": 100,
+    "opportunity_summary": "16MW operational site. Upgraded in 2026 to support racks ranging from 40kVA to 130kVA using RDHx and Direct-to-Chip. Part of Equinix/NVIDIA 'AI Factory' program.",
+    "confidence_score": 95,
+    "confidence_reason": "Equinix/NVIDIA partnership roadmap and TR7 technical facility updates (early 2026).",
+    "source_count": 3,
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Digital Realty TOR1 (AI Expansion)",
+    "operator_company": "Digital Realty",
+    "country": "CA",
+    "state_province_region": "Ontario",
+    "city": "Vaughan",
+    "full_address": "1 Century Place, Vaughan, ON",
+    "region_priority_bucket": "Canada",
+    "facility_status": "expanding",
+    "facility_type": "colocation",
+    "workload_type": "mixed",
+    "pipeline_stage": "expanding",
+    "facility_mw": 54,
+    "mw_verified": true,
+    "pue_value": 1.25,
+    "pue_verified": true,
+    "cooling_type": "liquid",
+    "liquid_cooling_verified": true,
+    "matched_on_pue": true,
+    "matched_on_cooling": true,
+    "matched_on_mw": false,
+    "matched_metric_count": 2,
+    "qualifies_for_dataset": true,
+    "liquid_cooling_fit_score": 100,
+    "opportunity_summary": "Upgraded to 54MW capacity. 2026 DLC upgrades supporting up to 150kW per rack. Secured major AI signings including Dell AI Factory and Borealis AI (RBC).",
+    "confidence_score": 95,
+    "confidence_reason": "Digital Realty financial filings and 2026 Canadian market project list.",
+    "source_count": 3,
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "TransAlta Keephills AI Campus",
+    "operator_company": "TransAlta / CPPIB / Brookfield",
+    "country": "CA",
+    "state_province_region": "Alberta",
+    "city": "Parkland County",
+...
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Siksika Nation AI Data Center",
+    "operator_company": "CyberCloud-AI / AMD",
+    "parent_company": "Siksika Nation",
+...
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Fort Nelson Geothermal AI Hub (Tu Deh-Kah)",
+    "operator_company": "Deh Tai LP (Fort Nelson First Nation)",
+    "country": "CA",
+...
+    "primary_source_count": 1,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Mihta Askiy Data Centre",
+    "operator_company": "Woodland Cree First Nation / Sovereign Digital",
+    "country": "CA",
+...
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "5C Group LaSalle Campus",
+    "operator_company": "5C Group",
+...
+    "source_1_url": "https://potentia.inc/5c-group-lasalle-launch/",
+    "source_1_publisher": "5C Group",
+    "source_1_evidence_snippet": "LaSalle Campus operational. 3MW AI infrastructure. Immersion cooling technology."
+  },
+  {
+    "facility_name": "Potentia-Hypertec AI Portfolio",
+    "operator_company": "Potentia / Hypertec Cloud",
+...
+    "source_1_url": "https://potentia.inc/partnership-hypertec-cloud/",
+    "source_1_publisher": "Potentia",
+    "source_1_evidence_snippet": "480MW power capacity. Sustainable AI infrastructure. Advanced liquid cooling."
+  },
+  {
+    "facility_name": "Technologies New Energy (Olds AI Campus)",
+    "operator_company": "Technologies New Energy (TNE) / Data District",
+...
+    "source_1_url": "https://data-district.com/technologies-new-energy-alberta-expansion/",
+    "source_1_publisher": "Data District",
+    "source_1_evidence_snippet": "240MW Phase 1 across four sites. Olds, Bonnyville, Calgary, Edmonton. Direct-to-chip liquid cooling. PUE <1.15."
+  },
+  {
+    "facility_name": "QScale Toronto Campus",
+    "operator_company": "QScale",
+...
+    "source_1_url": "https://www.qscale.com/news/toronto-expansion-liquid-immersion",
+    "source_1_publisher": "QScale",
+    "source_1_evidence_snippet": "QScale Toronto campus. 200MW capacity. Immersion cooling technology."
+  },
+  {
+    "facility_name": "Amazon Milton Hyperscale Campus",
+    "operator_company": "Amazon Web Services (AWS)",
+...
+    "confidence_reason": "IESO grid connection requests and Milton land use filings (early 2026).",
+    "source_count": 2,
+    "primary_source_count": 1,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Urbacon Barker Business Park Campus",
+    "operator_company": "Urbacon Data Centre Solutions",
+...
+    "source_1_url": "https://urbacon.net/data-centres/",
+    "source_1_publisher": "Urbacon",
+    "source_1_evidence_snippet": "Digital campus in Richmond Hill. High-density hyperscale focus."
+  },
+  {
+    "facility_name": "Nordik Data Centers (Montreal AI Hub)",
+    "operator_company": "Nordik Data Centers",
+...
+    "source_1_url": "https://www.accelsius.com/press/nordik-data-centers-two-phase-cooling",
+    "source_1_publisher": "Accelsius",
+    "source_1_evidence_snippet": "Nordik Data Centers deploying Accelsius NeuCool two-phase cooling in Montreal AI hub."
+  },
+  {
+    "facility_name": "SFU Cedar Supercomputing Expansion",
+    "operator_company": "Simon Fraser University / Hypertec",
+...
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "DarkNX Ontario AI Campus (Accelsius Partnership)",
+    "operator_company": "DarkNX",
+...
+    "source_1_url": "https://accelsius.com/darknx-accelsius-press-release/",
+    "source_1_publisher": "Accelsius",
+    "source_1_evidence_snippet": "300MW Ontario campus. Two-phase direct-to-chip cooling. Deployments begin 2026."
+  },
+  {
+    "facility_name": "Beacon AI Alberta Portfolio (Aggregate)",
+    "operator_company": "Beacon AI / Beacon Data Centers",
+...
+    "primary_source_count": 1,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "eStruxture CAL-3",
+    "operator_company": "eStruxture Data Centers",
+...
+    "source_1_url": "https://www.estruxture.com/data-centers/calgary/cal-3/",
+    "source_1_publisher": "eStruxture",
+    "source_1_evidence_snippet": "90MW capacity. AI-optimized. Liquid cooling supporting 100kW+ racks."
+  },
+  {
+    "facility_name": "eStruxture VAN-3",
+    "operator_company": "eStruxture Data Centers",
+...
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Agritech Haven International (AHI)",
+    "operator_company": "Agritech Haven International",
+...
+    "source_1_url": "https://ahicampus.com/",
+    "source_1_publisher": "Agritech Haven",
+    "source_1_evidence_snippet": "AI data center campus. Waterless cooling. 100% waste heat recovery for greenhouses."
+  },
+  {
+    "facility_name": "Compass Toronto YYZ2",
+    "operator_company": "Compass Datacenters",
+...
+    "source_1_url": "https://www.compassdatacenters.com/toronto-campus-expansion/",
+    "source_1_publisher": "Compass Datacenters",
+    "source_1_evidence_snippet": "YYZ2 facility. 15 Fenmar Drive. 36MW capacity. Hybrid air/liquid cooling."
+  },
+  {
+    "facility_name": "Google Beauharnois Campus",
+    "operator_company": "Google",
+...
+    "primary_source_count": 1,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Pembina-Meta Edmonton AI Project (P2936)",
+    "operator_company": "Pembina Pipeline / Kineticor (Greenlight)",
+...
+    "primary_source_count": 1,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "TransAlta 'Flipi' AI Project",
+    "operator_company": "TransAlta",
+...
+    "primary_source_count": 1,
+    "verification_tier": "moderate",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Cologix MTL8 Scalelogix",
+    "operator_company": "Cologix",
+...
+    "source_1_url": "https://www.cologix.com/news/cologix-announces-mtl8-service/",
+    "source_1_publisher": "Cologix",
+    "source_1_evidence_snippet": "MTL8 Scalelogix in Technoparc Montreal. 21MW capacity. LEED Gold."
+  },
+  {
+    "facility_name": "Vantage QC6 (Montreal III)",
+    "operator_company": "Vantage Data Centers",
+...
+    "source_1_url": "https://vantage-dc.com/news/vantage-celebrates-opening-of-montreal-iii/",
+    "source_1_publisher": "Vantage Data Centers",
+    "source_1_evidence_snippet": "QC61 opening. 30MW capacity. High-density support."
+  },
+  {
+    "facility_name": "Vantage QC24",
+    "operator_company": "Vantage Data Centers",
+...
+    "primary_source_count": 2,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Yondr Toronto",
+    "operator_company": "Yondr Group",
+...
+    "source_1_url": "https://www.yondrgroup.com/toronto-groundbreaking-2025/",
+    "source_1_publisher": "Yondr Group",
+    "source_1_evidence_snippet": "27MW capacity. 4.5 acre site. Closed-loop cooling for zero water consumption."
+  },
+  {
+    "facility_name": "Cologix TOR4 Scalelogix",
+    "operator_company": "Cologix",
+...
+    "source_1_url": "https://www.cologix.com/data-centers/toronto/tor4/",
+    "source_1_publisher": "Cologix",
+    "source_1_evidence_snippet": "15MW capacity. 1,000 cabinets. Free-cooling capability."
+  },
+  {
+    "facility_name": "EGIL Wings AI Vault (Canada Flagship)",
+    "operator_company": "EGIL Wings",
+...
+    "source_1_url": "https://www.zutacore.com/press/egil-wings-partnership-ai-vault",
+    "source_1_publisher": "ZutaCore",
+    "source_1_evidence_snippet": "15MW AI Vault blueprint. Waterless direct-to-chip two-phase liquid cooling."
+  },
+  {
+    "facility_name": "DMG Blockchain Modular AI",
+    "operator_company": "DMG Blockchain Solutions",
+...
+    "source_1_url": "https://dmgblockchain.com/investors/",
+    "source_1_publisher": "DMG Blockchain",
+    "source_1_evidence_snippet": "10MW modular infrastructure purchase for generative AI workloads."
+  },
+  {
+    "facility_name": "Prophet River First Nation Data Center",
+    "operator_company": "Prophet River First Nation",
+...
+    "primary_source_count": 1,
+    "verification_tier": "moderate",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Prologis Mississauga",
+    "operator_company": "Prologis",
+...
+    "source_1_url": "https://www.mississauga.ca/services-and-programs/building-and-renovating/planning-and-development/",
+    "source_1_publisher": "City of Mississauga",
+    "source_1_evidence_snippet": "Planning application Tenth Line and Argentia Road. 220,000 sq ft data center."
+  },
+  {
+    "facility_name": "HIVE Digital Grand Falls (BUZZ HPC)",
+    "operator_company": "HIVE Digital Technologies",
+...
+    "source_1_url": "https://www.hivedigital.com/investors/news/",
+    "source_1_publisher": "HIVE Digital",
+    "source_1_evidence_snippet": "HIVE Digital acquires 70MW site in Grand Falls, NB for AI/HPC expansion."
+  },
+  {
+    "facility_name": "Convergence Compute Midwest Canada (Phase 1)",
+    "operator_company": "Convergence Compute / Jet.AI",
+    "parent_company": "Consensus Core Technologies",
+...
+    "primary_source_count": 1,
+    "verification_tier": "moderate",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "World Energy GH2 AI Campus",
+    "operator_company": "World Energy GH2",
+...
+    "primary_source_count": 1,
+    "verification_tier": "moderate",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Gryphon Digital Pincher Creek",
+    "operator_company": "Gryphon Digital Mining",
+...
+    "primary_source_count": 1,
+    "verification_tier": "moderate",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Radiant Ridge Modular AB-1",
+    "operator_company": "Radiant Ridge Energy / Nordcon",
+...
+    "primary_source_count": 1,
+    "verification_tier": "weak",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Telus Rimouski Sovereign AI Factory",
+    "operator_company": "TELUS",
+...
+    "source_1_url": "https://www.telus.com/en/about/news-and-events/press-releases/telus-sovereign-ai-factory",
+    "source_1_publisher": "TELUS",
+    "source_1_evidence_snippet": "TELUS opens Sovereign AI Factory in Rimouski. PUE of 1.15. 75% reduction in water consumption."
+  },
+  {
+    "facility_name": "Queen's / SFU National Supercomputing Bid (SCIP)",
+    "operator_company": "Queen's University / SFU",
+...
+    "primary_source_count": 1,
+    "verification_tier": "moderate",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Whipcord Edge LDC01",
+    "operator_company": "Whipcord Edge",
+...
+    "source_1_url": "https://www.whipcord.com/colocation",
+    "source_1_publisher": "Whipcord Edge",
+    "source_1_evidence_snippet": "LDC01 Lethbridge. 2.5MW initial feed + 2.5MW phase 2. Chilled glycol cooling."
+  },
+  {
+    "facility_name": "Keel Infrastructure (Bitfarms) Quebec AI Portfolio",
+    "operator_company": "Keel Infrastructure / Bitfarms",
+...
+    "source_1_url": "https://bitfarms.com/news",
+    "source_1_publisher": "Bitfarms (Keel)",
+    "source_1_evidence_snippet": "170MW Quebec portfolio transitioning to HPC/AI. Liquid cooling targets 1.2 PUE."
+  },
+  {
+    "facility_name": "Mihta Askiy Redevelopment",
+    "operator_company": "Woodland Cree First Nation / Partners",
+...
+    "primary_source_count": 1,
+    "verification_tier": "moderate",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Synapse Data Center (Olds AI Supercluster)",
+    "operator_company": "Synapse Data Center Inc.",
+...
+    "source_1_url": "https://www.synapsedatacenter.com/",
+    "source_1_publisher": "Synapse Data Center",
+    "source_1_evidence_snippet": "1.4 Gigawatt data center facility and power plant. Closed-loop water cooling."
+  },
+  {
+    "facility_name": "Polaris @ Genesee Energy Campus",
+    "operator_company": "Capital Power",
+...
+    "source_1_url": "https://www.capitalpower.com/genesee-repowering/",
+    "source_1_publisher": "Capital Power",
+    "source_1_evidence_snippet": "Polaris at Genesee. 1,000-1,500 MW hyperscale capacity. AI/HPC focused."
+  },
+  {
+    "facility_name": "GLDC (Greenlight Data Centre)",
+    "operator_company": "Pembina Pipeline / Kineticor Resource Corp.",
+...
+    "primary_source_count": 1,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Upper Nicola AI Data Center",
+    "operator_company": "Bell Canada / iTel Networks",
+...
+    "source_1_url": "https://www.uppernicola.com/economic-development/ai-data-center",
+    "source_1_publisher": "Upper Nicola Band",
+    "source_1_evidence_snippet": "300MW AI data center project. 2,000 construction jobs. Hydroelectric power."
+  },
+  {
+    "facility_name": "Bell AI Fabric BC - TRU Site",
+    "operator_company": "Bell Canada / Thompson Rivers University",
+...
+    "source_1_url": "https://www.newswire.ca/news-releases/bell-accelerates-canada-s-ai-future-with-launch-of-bell-ai-fabric-814526147.html",
+    "source_1_publisher": "Newswire",
+    "source_1_evidence_snippet": "Bell Canada launches Bell AI Fabric. Six data centers in BC. 500MW total capacity."
+  },
+  {
+    "facility_name": "Milton Hyperscale Cluster (Logistic Land)",
+    "operator_company": "Various / Logistic Land Investment LLC",
+...
+    "primary_source_count": 1,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "TransAlta 'Flipi' AI Project",
+    "operator_company": "TransAlta",
+...
+    "primary_source_count": 1,
+    "verification_tier": "moderate",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Carpere Moore DC",
+    "operator_company": "Carpere Canada",
+...
+    "primary_source_count": 0,
+    "verification_tier": "moderate",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "Mikinak MCFN-RJEP Data Centre",
+    "operator_company": "Mikinak MCFN-RJEP Data Centre",
+...
+    "primary_source_count": 1,
+    "verification_tier": "strong",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "CyberCloud-AI Data Center",
+    "operator_company": "CyberCloud / Tsuut’ina & Kainai First Nations",
+...
+    "primary_source_count": 1,
+    "verification_tier": "moderate",
+    "last_verified_date": "2026-04-05"
+  },
+  {
+    "facility_name": "IceFox Data Center",
+    "operator_company": "IceFox / K’atl’odeeche First Nation",
+...
+    "primary_source_count": 1,
+    "verification_tier": "moderate",
+    "last_verified_date": "2026-04-05"
+  }
+]

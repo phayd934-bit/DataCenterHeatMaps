@@ -1,0 +1,9 @@
+- [Cooling vendor deployment sources](reference_cooling_vendor_deployments.md) — best sources for finding DC liquid cooling customer sites (vendor press pages, DCD, HPCwire, national labs)
+- [2026 liquid cooling sources](reference_2026_liquid_cooling_sources.md) — 2026 DC facility announcements, Q1 M&A wave, vendor product launches, monthly roundup URLs
+- [Telecom liquid cooling sources](reference_telecom_liquid_cooling.md) — telco-specific DC liquid cooling: operator press rooms, vendor case studies, key findings (KDDI PUE 1.05, China joint white paper, AT&T/Verizon gaps)
+- [Sovereign AI DC sources](reference_sovereign_ai_sources.md) — gov-backed sovereign AI/national compute DCs: EuroHPC (19 AI Factories), ISED Canada, IndiaAI, SDAIA, NCHC Taiwan, Samsung SDS Korea
+- [PUE data sources](reference_pue_data_sources.md) — per-site PUE: Google publishes quarterly (30+ sites), Meta/MS/AWS fleet only, EU EED avg 1.36, China self-reported
+- [EU DC regulatory gov sources](reference_eu_dc_regulatory_sources.md) — ES/IT/PL/PT/CH official legal DBs: BOE, Normattiva, ISAP, DRE, Fedlex; EED transposition status Apr 2026
+- [Nordics+UK DC regulatory sources](reference_nordics_uk_regulatory_sources.md) — UK/NO/FI/IS/DK official legal DBs + key DC regs: ESOS, TEK17, forskrift om datasenter, elafgift, EIA Act, etc.
+- [APAC DC regulatory sources](reference_apac_dc_regulations.md) — JP/KR/SG/AU official gov regs: METI energy act, law.go.kr, IMDA GMDC PUE 1.25, NABERS, Safeguard Mechanism
+- [Emerging market DC regulatory sources](reference_emerging_dc_regulations.md) — SA/UAE/IN/BR/TR official gov DC regs: CST, TDRA, BEE/MeitY, ANATEL/REDATA, BTK/mevzuat
