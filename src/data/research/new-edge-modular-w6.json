@@ -44,7 +44,7 @@
     "liquid_cooling_verified": false,
     "facility_mw": 0.02,
     "source_1_url": "https://www.datacenterfrontier.com/edge-computing/article/11427138/vapor-io-targets-8216near-premises8217-with-more-sites-smaller-modules",
-    "opportunity_summary": "Live Kinetic Edge market. VEM20 edge modules. Blindmate cooling plant supports liquid cooling swap-in. Hot climate = strong Solar Steam fit.",
+    "opportunity_summary": "Live Kinetic Edge market. VEM20 edge modules. Blindmate cooling plant supports liquid cooling swap-in. Hot climate = strong Geo Center fit.",
     "notes": "One of 6 operational Vapor IO markets."
   },
   {
@@ -60,7 +60,7 @@
     "liquid_cooling_verified": false,
     "facility_mw": 0.02,
     "source_1_url": "https://www.datacenterfrontier.com/edge-computing/article/11427138/vapor-io-targets-8216near-premises8217-with-more-sites-smaller-modules",
-    "opportunity_summary": "Live Kinetic Edge in extreme desert heat. VEM20 micro modular. Blindmate cooling supports liquid. High solar insolation = excellent Solar Steam location.",
+    "opportunity_summary": "Live Kinetic Edge in extreme desert heat. VEM20 micro modular. Blindmate cooling supports liquid. High solar insolation = excellent Geo Center location.",
     "notes": "Desert climate ideal for solar steam. One of 6 live Vapor IO markets."
   },
   {
@@ -76,7 +76,7 @@
     "liquid_cooling_verified": false,
     "facility_mw": 0.02,
     "source_1_url": "https://www.datacenterfrontier.com/edge-computing/article/11427138/vapor-io-targets-8216near-premises8217-with-more-sites-smaller-modules",
-    "opportunity_summary": "Live Kinetic Edge in extreme heat Phoenix market. VEM20 modules. Ideal Solar Steam location — highest US cooling demand.",
+    "opportunity_summary": "Live Kinetic Edge in extreme heat Phoenix market. VEM20 modules. Ideal Geo Center location — highest US cooling demand.",
     "notes": "One of 6 live Vapor IO markets. Phoenix is top US data center market."
   },
   {
@@ -156,7 +156,7 @@
     "liquid_cooling_verified": false,
     "facility_mw": 0.048,
     "source_1_url": "https://www.datacenterfrontier.com/edge-computing/article/11428762/edgemicro-deploying-5-sites-in-next-phase-of-edge-network",
-    "opportunity_summary": "EdgeMicro containerized micro DC. 48kW, 6 racks. Hot Florida climate demands efficient cooling. Solar Steam opportunity.",
+    "opportunity_summary": "EdgeMicro containerized micro DC. 48kW, 6 racks. Hot Florida climate demands efficient cooling. Geo Center opportunity.",
     "notes": "One of first 3 EdgeMicro sites."
   },
   {
@@ -220,7 +220,7 @@
     "liquid_cooling_verified": false,
     "facility_mw": 0.048,
     "source_1_url": "https://www.prnewswire.com/news-releases/edgemicro-expanding-footprint-with-5-new-micro-data-centers-301117786.html",
-    "opportunity_summary": "Phase 2 EdgeMicro expansion. Major Texas metro. Extreme heat and humidity = highest cooling demand. Solar Steam ideal.",
+    "opportunity_summary": "Phase 2 EdgeMicro expansion. Major Texas metro. Extreme heat and humidity = highest cooling demand. Geo Center ideal.",
     "notes": "Planned Q4 2024 launch."
   },
   {
@@ -285,7 +285,7 @@
     "facility_mw": null,
     "source_1_url": "https://www.datacenterdynamics.com/en/news/grc-details-immersion-cooling-deployment-us-air-force/",
     "opportunity_summary": "GRC containerized immersion-cooled DC at Tinker AFB OKC. C3 Two variant with dry cooler heat rejection. 93.1% PUE reduction. Military-grade turnkey modular.",
-    "notes": "Dry cooler variant. Oklahoma heat = Solar Steam opportunity. Already in pipeline file."
+    "notes": "Dry cooler variant. Oklahoma heat = Geo Center opportunity. Already in pipeline file."
   },
   {
     "facility_name": "GRC ICEraQ Nano — Edge Immersion Cooling Platform",
@@ -316,7 +316,7 @@
     "liquid_cooling_verified": true,
     "facility_mw": null,
     "source_1_url": "https://www.grcooling.com/press-releases/grc-and-dcv-to-launch-next-gen-immersion-cooled-data-centers-in-the-middle-east/",
-    "opportunity_summary": "GRC + DCV Industries + Dell collaboration for immersion-cooled containerized DCs in Middle East. DCV QUBE modular with GRC cooling + Dell servers. 50% cooling energy reduction vs air. Extreme Gulf heat = top Solar Steam region.",
+    "opportunity_summary": "GRC + DCV Industries + Dell collaboration for immersion-cooled containerized DCs in Middle East. DCV QUBE modular with GRC cooling + Dell servers. 50% cooling energy reduction vs air. Extreme Gulf heat = top Geo Center region.",
     "notes": "Oct 2023 announcement. Plug-and-play modular. Gulf region harsh environment. Exact deployment sites TBD."
   },
   {
@@ -348,7 +348,7 @@
     "liquid_cooling_verified": true,
     "facility_mw": 7.5,
     "source_1_url": "https://www.datacenterfrontier.com/data-center-design/article/21438553/nautilus-expands-with-floating-data-centers-in-two-new-markets",
-    "opportunity_summary": "Nautilus expansion to LA port facility. 7.5MW floating DC on custom barge. Natural water cooling, zero water use. Southern California solar insolation ideal for Solar Steam pairing.",
+    "opportunity_summary": "Nautilus expansion to LA port facility. 7.5MW floating DC on custom barge. Natural water cooling, zero water use. Southern California solar insolation ideal for Geo Center pairing.",
     "notes": "Power agreements and water assessments in place. Adjacent shore support infrastructure."
   },
   {
@@ -364,7 +364,7 @@
     "liquid_cooling_verified": true,
     "facility_mw": 7.5,
     "source_1_url": "https://www.datacenterfrontier.com/data-center-design/article/21438553/nautilus-expands-with-floating-data-centers-in-two-new-markets",
-    "opportunity_summary": "Nautilus European expansion. 7.5MW floating DC in Marseille port. Mediterranean coast, <3km from cable landing station. 14 subsea cables. Zero-water natural cooling. Southern France solar ideal for Solar Steam.",
+    "opportunity_summary": "Nautilus European expansion. 7.5MW floating DC in Marseille port. Mediterranean coast, <3km from cable landing station. 14 subsea cables. Zero-water natural cooling. Southern France solar ideal for Geo Center.",
     "notes": "DE-CIX presence boosts connectivity. Mediterranean climate = high solar."
   },
   {
@@ -412,7 +412,7 @@
     "liquid_cooling_verified": true,
     "facility_mw": null,
     "source_1_url": "https://www.prnewswire.com/news-releases/compass-datacenters-and-schneider-electric-announce-prefabricated-white-space-module-to-accelerate-data-center-delivery-timelines-302550279.html",
-    "opportunity_summary": "768-acre campus, 24 buildings across 3 phases. Schneider EcoStruxure prefab pods with integrated liquid cooling water loop. First building energized May 2026. Modular pod architecture supports 1MW+ per pod. Texas heat = Solar Steam opportunity.",
+    "opportunity_summary": "768-acre campus, 24 buildings across 3 phases. Schneider EcoStruxure prefab pods with integrated liquid cooling water loop. First building energized May 2026. Modular pod architecture supports 1MW+ per pod. Texas heat = Geo Center opportunity.",
     "notes": "First EcoStruxure pods deployed at Compass campus fall 2025. Joint engineering. Motivair liquid cooling components. Just outside Grand Prairie TX."
   },
   {
@@ -572,7 +572,7 @@
     "liquid_cooling_verified": false,
     "facility_mw": null,
     "source_1_url": "https://www.globenewswire.com/news-release/2026/03/19/3259005/12618/en/Duos-Edge-AI-Deploys-Second-Edge-Data-Center-in-Amarillo-Texas-Market.html",
-    "opportunity_summary": "Second Duos EDC in Amarillo. Mar 19 2026 deployment. High-density low-latency AI computing. Modular rapid deployment (90 days). Strong Solar Steam candidate in Texas Panhandle.",
+    "opportunity_summary": "Second Duos EDC in Amarillo. Mar 19 2026 deployment. High-density low-latency AI computing. Modular rapid deployment (90 days). Strong Geo Center candidate in Texas Panhandle.",
     "notes": "Deployed March 2026. Potter County. Expanding beyond TX."
   },
   {
@@ -588,7 +588,7 @@
     "liquid_cooling_verified": false,
     "facility_mw": null,
     "source_1_url": "https://ir.duostechnologies.com/news-events/press-releases/detail/822/duos-edge-ai-deploys-edge-data-center-in-abilene-texas",
-    "opportunity_summary": "Duos Edge AI modular EDC in Abilene TX. Deployed Jan 7 2026. Carrier-neutral, real-time AI. 100kW/rack, 90-day deployment. West Texas solar ideal for Solar Steam.",
+    "opportunity_summary": "Duos Edge AI modular EDC in Abilene TX. Deployed Jan 7 2026. Carrier-neutral, real-time AI. 100kW/rack, 90-day deployment. West Texas solar ideal for Geo Center.",
     "notes": "West Texas underserved market."
   },
   {
@@ -604,7 +604,7 @@
     "liquid_cooling_verified": false,
     "facility_mw": null,
     "source_1_url": "https://ir.duostechnologies.com/news-events/press-releases/detail/821/duos-edge-ai-expands-within-and-beyond-texas",
-    "opportunity_summary": "Duos Edge AI modular EDC in Lubbock TX. 2 EDCs for carrier-neutral needs. West Texas Panhandle market. High solar insolation for Solar Steam.",
+    "opportunity_summary": "Duos Edge AI modular EDC in Lubbock TX. 2 EDCs for carrier-neutral needs. West Texas Panhandle market. High solar insolation for Geo Center.",
     "notes": "2 EDCs in Lubbock market per expansion announcement."
   },
   {
@@ -636,7 +636,7 @@
     "liquid_cooling_verified": false,
     "facility_mw": null,
     "source_1_url": "https://ir.duostechnologies.com/news-events/press-releases/detail/821/duos-edge-ai-expands-within-and-beyond-texas",
-    "opportunity_summary": "Duos Edge AI modular EDC in Corpus Christi. Gulf Coast Texas. Extreme heat and humidity = high cooling demand. Solar Steam ideal.",
+    "opportunity_summary": "Duos Edge AI modular EDC in Corpus Christi. Gulf Coast Texas. Extreme heat and humidity = high cooling demand. Geo Center ideal.",
     "notes": "Part of broader Texas expansion."
   },
   {
@@ -652,7 +652,7 @@
     "liquid_cooling_verified": false,
     "facility_mw": null,
     "source_1_url": "https://ir.duostechnologies.com/news-events/press-releases/detail/821/duos-edge-ai-expands-within-and-beyond-texas",
-    "opportunity_summary": "Duos Edge AI modular EDC in Victoria TX. South Texas rural market. 100kW/rack, 90-day deployment. Solar Steam candidate.",
+    "opportunity_summary": "Duos Edge AI modular EDC in Victoria TX. South Texas rural market. 100kW/rack, 90-day deployment. Geo Center candidate.",
     "notes": "Part of broader Texas expansion."
   },
   {
@@ -684,7 +684,7 @@
     "liquid_cooling_verified": true,
     "facility_mw": 1.0,
     "source_1_url": "https://aligneddc.com/blog/handling-the-heat-a-look-inside-aligneds-new-advanced-cooling-lab/",
-    "opportunity_summary": "Aligned's 1MW Advanced Cooling Lab at North Phoenix campus. DeltaFlow liquid cooling system — supports DLC, RDHX, immersion up to 300kW/rack. Modular AMI (Adaptive Modular Infrastructure) enables air-to-liquid transition without facility redesign. Desert heat = peak Solar Steam target.",
+    "opportunity_summary": "Aligned's 1MW Advanced Cooling Lab at North Phoenix campus. DeltaFlow liquid cooling system — supports DLC, RDHX, immersion up to 300kW/rack. Modular AMI (Adaptive Modular Infrastructure) enables air-to-liquid transition without facility redesign. Desert heat = peak Geo Center target.",
     "notes": "Aug 2025 opening. Partnership with DivCon Controls. Lab tests patented cooling tech for next-gen GPUs. 3 Phoenix-area campuses total."
   },
   {
@@ -700,7 +700,7 @@
     "liquid_cooling_verified": true,
     "facility_mw": 72.0,
     "source_1_url": "https://news.constructconnect.com/aligned-data-centers-breaks-ground-in-glendale-expanding-arizona-infrastructure",
-    "opportunity_summary": "Aligned Glendale campus: 100 acres, 4 planned facilities, first building 72MW. DeltaFlow liquid cooling integrated. Groundbreaking Apr 15 2025. Arizona desert = top Solar Steam market. Massive modular liquid-cooled capacity.",
+    "opportunity_summary": "Aligned Glendale campus: 100 acres, 4 planned facilities, first building 72MW. DeltaFlow liquid cooling integrated. Groundbreaking Apr 15 2025. Arizona desert = top Geo Center market. Massive modular liquid-cooled capacity.",
     "notes": "Already in pipeline file for Aligned overall — included here for modular liquid cooling specificity."
   },
   {
@@ -828,7 +828,7 @@
     "liquid_cooling_verified": true,
     "facility_mw": 0.2,
     "source_1_url": "https://www.vertiv.com/en-us/about/news-and-insights/corporate-news/vertiv-launches-chilled-water-based-prefabricated-modular-data-center-solution-to-address-growing-computing-demand-in-north-america/",
-    "opportunity_summary": "Vertiv SmartMod Max CW: chilled water prefab modular DC. 100-200kW IT load, up to 24 racks. Factory assembled/tested. Available NA. Water-based cooling = Solar Steam integration opportunity for thermal energy input.",
+    "opportunity_summary": "Vertiv SmartMod Max CW: chilled water prefab modular DC. 100-200kW IT load, up to 24 racks. Factory assembled/tested. Available NA. Water-based cooling = Geo Center integration opportunity for thermal energy input.",
     "notes": "Two-module design. North America availability."
   },
   {
@@ -892,7 +892,7 @@
     "liquid_cooling_verified": true,
     "facility_mw": null,
     "source_1_url": "https://www.databank.com/resources/blogs/data-center-construction-predictions-for-2026/",
-    "opportunity_summary": "DataBank Red Oak campus: massive construction with 7 liquid-cooled data halls (revised from 9 as network needs shifted mid-deployment). Peak crew 4,000-5,000 by early 2026. Texas location = high cooling demand + Solar Steam target.",
+    "opportunity_summary": "DataBank Red Oak campus: massive construction with 7 liquid-cooled data halls (revised from 9 as network needs shifted mid-deployment). Peak crew 4,000-5,000 by early 2026. Texas location = high cooling demand + Geo Center target.",
     "notes": "Red Oak TX, south of Dallas. Customer requirements shifting between GPU compute and network capacity mid-build demonstrates liquid cooling demand volatility."
   }
 ]

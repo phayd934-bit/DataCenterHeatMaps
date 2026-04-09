@@ -111,7 +111,7 @@
     "liquid_cooling_fit_score": 95,
     "immersion_cooling_fit_score": 80,
     "small_facility_fit_score": 100,
-    "opportunity_summary": "TRIPLE MATCH: PUE 1.15, water-based liquid cooling, 7MW. Floating barge design with patented natural water cooling. Zero water consumption, no chillers. Supports 55kW+/rack. Ideal Solar Steam target.",
+    "opportunity_summary": "TRIPLE MATCH: PUE 1.15, water-based liquid cooling, 7MW. Floating barge design with patented natural water cooling. Zero water consumption, no chillers. Supports 55kW+/rack. Ideal Geo Center target.",
     "likely_buyer_signal": true,
     "ai_hpc_signal": false,
     "high_density_signal": true,
@@ -508,7 +508,7 @@
     "water_use_signal": null,
     "grid_or_utility_signal": null,
     "certification_signal": null,
-    "notes": "GRC is a competitor/partner for Solar Steam. ICEraQ Nano targets edge at 13kW/10U. Useful competitive intelligence.",
+    "notes": "GRC is a competitor/partner for Geo Center. ICEraQ Nano targets edge at 13kW/10U. Useful competitive intelligence.",
     "gpu_architecture": null,
     "gpu_model": null,
     "gpu_count": null,
@@ -595,7 +595,7 @@
     "source_1_url": "https://www.datacentermap.com/usa/utah/salt-lake-city/databank-slc1/",
     "source_1_publisher": "datacentermap.com",
     "opportunity_summary": "0.5MW small colo. NVIDIA DGX-Ready certified. Liquid cooling ready.",
-    "notes": "Very small facility — ideal Solar Steam target size. Part of 6-facility SLC campus (44.8MW total).",
+    "notes": "Very small facility — ideal Geo Center target size. Part of 6-facility SLC campus (44.8MW total).",
     "gpu_architecture": "NVIDIA Blackwell",
     "gpu_model": "DGX-Ready certified",
     "gpu_count": null,
@@ -8145,7 +8145,7 @@
     "gpu_evidence_type": null,
     "compute_vendor": null,
     "rack_density_kw": 200,
-    "notes": "HIGH-PRIORITY COOLING TARGET. ThermalWorks waterless liquid-to-chip cooling at 200kW/rack. Zero water consumption. 277M gallons annual savings. Part of GW-scale North American expansion. Phase 1 already operational (Feb 2025). Strong Solar Steam fit."
+    "notes": "HIGH-PRIORITY COOLING TARGET. ThermalWorks waterless liquid-to-chip cooling at 200kW/rack. Zero water consumption. 277M gallons annual savings. Part of GW-scale North American expansion. Phase 1 already operational (Feb 2025). Strong Geo Center fit."
   },
   {
     "facility_name": "Meta El Paso -- 1GW Liquid-Cooled AI Data Center ($10B Expansion)",
@@ -8268,7 +8268,7 @@
     "gpu_evidence_type": null,
     "compute_vendor": null,
     "rack_density_kw": null,
-    "notes": "MARCH 2026 APPROVAL. Strategic location next to Samsung semiconductor campus. Closed-loop cooling = minimal water. $2.5B. Good Solar Steam prospect for closed-loop liquid cooling."
+    "notes": "MARCH 2026 APPROVAL. Strategic location next to Samsung semiconductor campus. Closed-loop cooling = minimal water. $2.5B. Good Geo Center prospect for closed-loop liquid cooling."
   },
   {
     "facility_name": "CRG (Clayco) Festus Missouri -- $6B Hyperscale Data Center Campus (365 Acres)",
@@ -8350,7 +8350,7 @@
     "gpu_evidence_type": null,
     "compute_vendor": null,
     "rack_density_kw": null,
-    "notes": "PHASE 1 COMPLETING 2026. Water-free cooling via closed-loop pumped refrigerant = no evaporative towers. 4B gallons annual water savings. $10B investment. Alliant Energy carbon-free partnership. Strong Solar Steam prospect for refrigerant-based cooling."
+    "notes": "PHASE 1 COMPLETING 2026. Water-free cooling via closed-loop pumped refrigerant = no evaporative towers. 4B gallons annual water savings. $10B investment. Alliant Energy carbon-free partnership. Strong Geo Center prospect for refrigerant-based cooling."
   },
   {
     "facility_name": "QTS Salem Township PA -- $500M+ Land for 12-17 Data Centers (Water-Free Cooling, 1,700 Acres)",
@@ -8473,7 +8473,7 @@
     "gpu_evidence_type": null,
     "compute_vendor": null,
     "rack_density_kw": null,
-    "notes": "VANTAGE 4TH VA CAMPUS. 100% liquid-to-liquid cooling for all IT = strong Solar Steam signal. Closed-loop chilled water. LEED Silver. 782MW total VA capacity. Northern Virginia data center corridor expansion."
+    "notes": "VANTAGE 4TH VA CAMPUS. 100% liquid-to-liquid cooling for all IT = strong Geo Center signal. Closed-loop chilled water. LEED Silver. 782MW total VA capacity. Northern Virginia data center corridor expansion."
   },
   {
     "facility_name": "NTT DATA -- 115MW AI-Ready Liquid Cooling Capacity (Gainesville VA / Chicago IL / Sacramento CA)",

@@ -47,7 +47,7 @@
     "source_date": "2026-04-03",
     "last_verified": "2026-04-03",
     "confidence_tier": "verified",
-    "notes": "TRIPLE MATCH: PUE 1.15, water-based liquid cooling, 7MW. Floating barge design with patented natural water cooling. Zero water consumption, no chillers. Supports 55kW+/rack. Ideal Solar Steam target.",
+    "notes": "TRIPLE MATCH: PUE 1.15, water-based liquid cooling, 7MW. Floating barge design with patented natural water cooling. Zero water consumption, no chillers. Supports 55kW+/rack. Ideal Geo Center target.",
     "data_gaps": [],
     "gpu": "Mixed (colocation)"
   },

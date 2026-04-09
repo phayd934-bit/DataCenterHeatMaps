@@ -809,7 +809,7 @@
     "gpu_evidence_type": null,
     "compute_vendor": null,
     "rack_density_kw": null,
-    "notes": "IDEAL Solar Steam target: 9MW, PUE <1.17, liquid cooling being deployed. Vertiv CoolPhase Flex partnership."
+    "notes": "IDEAL Geo Center target: 9MW, PUE <1.17, liquid cooling being deployed. Vertiv CoolPhase Flex partnership."
   },
   {
     "facility_name": "Compass Montreal II",
@@ -1030,7 +1030,7 @@
     "last_verified_date": "2026-04-03",
     "source_1_url": "https://majorprojects.alberta.ca/details/Beacon-Foothills-Artificial-Intelligence-Hub/11490",
     "source_1_publisher": "Alberta Major Projects",
-    "opportunity_summary": "400MW planned AI hub. 4.5GW total Alberta pipeline. Stantec engineering. Construction 2025. Cooling specs not yet disclosed — early opportunity for Solar Steam.",
+    "opportunity_summary": "400MW planned AI hub. 4.5GW total Alberta pipeline. Stantec engineering. Construction 2025. Cooling specs not yet disclosed — early opportunity for Geo Center.",
     "gpu_architecture": null,
     "gpu_model": null,
     "gpu_count": null,

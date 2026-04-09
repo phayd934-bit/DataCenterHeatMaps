@@ -45,7 +45,7 @@ export default function FilterSidebar() {
   return (
     <div className="flex flex-col gap-3">
       <div>
-        <h1 className="text-lg font-semibold text-[#1a73e8]">Solar Steam</h1>
+        <h1 className="text-lg font-semibold text-[#1a73e8]">Geo Center</h1>
         <p className="text-[10px] text-[#5f6368] mt-0.5">Data Center Cooling Market Intelligence</p>
       </div>
 
@@ -89,7 +89,7 @@ export default function FilterSidebar() {
       <FilterSection title="Capacity (MW)">
         <RangeSlider min={0} max={5000} step={5} value={filters.capacityRange || [0, 5000]}
           onChange={(v) => setFilter('capacityRange', v[0] === 0 && v[1] === 5000 ? null : v)}
-          highlight={[0, 10]} highlightLabel="Solar Steam range" />
+          highlight={[0, 10]} highlightLabel="Geo Center range" />
       </FilterSection>
 
       <FilterSection title="PUE">

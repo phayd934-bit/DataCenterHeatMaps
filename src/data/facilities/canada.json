@@ -419,7 +419,7 @@
     "source_date": "2026-04-03",
     "last_verified": "2026-04-03",
     "confidence_tier": "reported",
-    "notes": "400MW planned AI hub. 4.5GW total Alberta pipeline. Stantec engineering. Construction 2025. Cooling specs not yet disclosed — early opportunity for Solar Steam.",
+    "notes": "400MW planned AI hub. 4.5GW total Alberta pipeline. Stantec engineering. Construction 2025. Cooling specs not yet disclosed — early opportunity for Geo Center.",
     "data_gaps": [
       "pue",
       "gpu"

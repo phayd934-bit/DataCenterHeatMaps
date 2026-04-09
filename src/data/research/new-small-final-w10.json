@@ -14,7 +14,7 @@
     "pue_reported": null,
     "source_1_url": "https://blog.zutacore.com/zutacore-blog/munsteruniversity",
     "source_2_url": "https://hello.zutacore.com/university-of-munster-case-study",
-    "opportunity_summary": "University HPC data center retrofitted with ZutaCore HyperCool waterless two-phase DLC. Eliminated water leakage risk, reduced energy costs significantly. Plans to expand HyperCool to all future HPC needs. Small academic DC, ideal Solar Steam prospect.",
+    "opportunity_summary": "University HPC data center retrofitted with ZutaCore HyperCool waterless two-phase DLC. Eliminated water leakage risk, reduced energy costs significantly. Plans to expand HyperCool to all future HPC needs. Small academic DC, ideal Geo Center prospect.",
     "notes": "Confirmed ZutaCore customer. CIT (Center for Information Technology). Limited data center real estate driving high-density liquid cooling adoption. Under 2MW estimated."
   },
   {
@@ -87,7 +87,7 @@
     "source_1_url": "https://www.asetek.com/press-releases/cybermedia-center-osaka-university-adopts-asetek-liquid-cooling-for-new-computer-system-octopus/",
     "source_2_url": "https://www.prnewswire.com/news-releases/cybermedia-center-osaka-university-adopts-asetek-liquid-cooling-for-new-computer-system-octopus-300550673.html",
     "opportunity_summary": "1.463 PFLOPS hybrid HPC system with Asetek hot water DLC on 236 Skylake nodes + 44 KNL nodes + 37 P100 GPU nodes. RackCDU captures 60-80% of server heat, cutting cooling costs 50%. University campus DC under 5MW. Established liquid cooling reference.",
-    "notes": "OCTOPUS operational since 2017. Asetek InRackCDU technology. Hybrid cluster: CPU, many-core, GPU, large memory, and storage. Campus data center scale ideal for Solar Steam."
+    "notes": "OCTOPUS operational since 2017. Asetek InRackCDU technology. Hybrid cluster: CPU, many-core, GPU, large memory, and storage. Campus data center scale ideal for Geo Center."
   },
   {
     "facility_name": "NERSC Cech Early Access System -- Rittal DLC (Berkeley Lab)",
@@ -158,8 +158,8 @@
     "pue_reported": null,
     "source_1_url": "https://www.asperitas.com/resources/news",
     "source_2_url": "https://www.asperitas.com/",
-    "opportunity_summary": "Asperitas and STECON GROUP partnership to accelerate Southeast Asia's green DC future. Immersion cooling critical in tropical climates where air cooling is least effective. Thailand/SEA region rapidly building AI infrastructure. High Solar Steam potential.",
-    "notes": "Partnership announced Nov 2025. STECON is major Thai infrastructure company. Specific site TBD but partnership targets SEA market. Tropical climate = high cooling demand = strong Solar Steam fit."
+    "opportunity_summary": "Asperitas and STECON GROUP partnership to accelerate Southeast Asia's green DC future. Immersion cooling critical in tropical climates where air cooling is least effective. Thailand/SEA region rapidly building AI infrastructure. High Geo Center potential.",
+    "notes": "Partnership announced Nov 2025. STECON is major Thai infrastructure company. Specific site TBD but partnership targets SEA market. Tropical climate = high cooling demand = strong Geo Center fit."
   },
   {
     "facility_name": "CoolIT Starfield -- Manufacturing + Demo Facility (Calgary, Canada)",
@@ -177,7 +177,7 @@
     "source_1_url": "https://www.coolitsystems.com/resources/news/coolit-systems-scales-north-american-manufacturing-to-cool-ais-next-wave/",
     "source_2_url": "https://www.ecolab.com/news/2026/03/ecolab-to-acquire-coolit-systems-a-global-leader-in-advanced-liquid-cooling-for-next-gen-ai-data-ce",
     "opportunity_summary": "CoolIT's Starfield facility in Calgary: manufacturing hub + Liquid Lab Innovation Center for customer demos and testing. 25X production scaling in 18 months. 2MW CDU launched April 2025. 300+ DC deployments worldwide. Acquired by Ecolab for $4.75B (March 2026).",
-    "notes": "CoolIT is DLC market leader by volume. OMNI cold plate optimized for NVIDIA GB200/GB300. Starfield opened 2024. Ecolab acquisition pending. Canadian HQ = Solar Steam home market advantage."
+    "notes": "CoolIT is DLC market leader by volume. OMNI cold plate optimized for NVIDIA GB200/GB300. Starfield opened 2024. Ecolab acquisition pending. Canadian HQ = Geo Center home market advantage."
   },
   {
     "facility_name": "Iceotope Labs -- Precision Liquid Cooling Innovation Center (Sheffield, UK)",
