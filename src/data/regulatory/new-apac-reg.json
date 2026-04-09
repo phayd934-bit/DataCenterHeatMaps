@@ -1,0 +1,304 @@
+[
+  {
+    "zone_id": "apac-jp",
+    "country": "Japan",
+    "region": "National",
+    "regulatory_complexity_score": 62,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Act on Rationalizing Energy Use and Shifting to Non-fossil Energy (Act No. 49, 1979; revised 2023)",
+        "level": "national",
+        "summary": "Japan's primary energy efficiency law, revised April 2023 to include non-fossil energy shifting obligations. Businesses consuming 1,500 kL or more crude-oil-equivalent energy per year are designated as 'Specified Business Operators' and must appoint an energy manager, submit annual energy consumption reports and medium-to-long-term energy rationalization plans to METI. Data centers fall under this regime as large energy consumers. The revised Act requires businesses to track and report non-fossil energy usage alongside rationalization efforts. Benchmarking system evaluates sector-specific energy efficiency with S/A/B/C ratings; businesses rated B or C face regulatory guidance.",
+        "url": "https://www.meti.go.jp/english/policy/energy_environment/energy_efficiency/index.html",
+        "effective_date": "2023-04-01",
+        "relevance": "Directly governs energy reporting obligations for data center operators in Japan. Cooling systems represent the largest non-IT energy load and are a primary target for rationalization plans. Operators must demonstrate year-over-year efficiency improvements including cooling plant optimization."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Act on Improvement of Energy Consumption Performance of Buildings (Building Energy Efficiency Act, Act No. 53, 2015; revised 2025)",
+        "level": "national",
+        "summary": "Originally enacted July 2015 with regulatory measures for large non-residential buildings. As of April 2025, compliance with energy efficiency standards is mandatory for all new buildings. Non-residential buildings above 2,000 m2 must meet energy consumption performance standards covering HVAC, lighting, hot water, and elevators. Incentive measures include labeling systems and expedited building permits for high-efficiency designs. Covers extensions, renovations, and improvements to cooling system equipment.",
+        "url": "https://www.mlit.go.jp/common/001134876.pdf",
+        "effective_date": "2025-04-01",
+        "relevance": "New data center construction must meet mandatory energy consumption performance standards. Cooling system design (chillers, air handling units, heat rejection equipment) is a major component of the building energy performance calculation. High-efficiency cooling designs may qualify for expedited permitting."
+      },
+      {
+        "category": "environmental",
+        "name": "Environmental Impact Assessment Act (Act No. 81, 1997)",
+        "level": "national",
+        "summary": "Requires environmental impact assessment for large-scale development projects. Applicable to projects in categories defined by Cabinet Order including power plants, roads, railways, airports, and reclamation. While data centers are not explicitly listed as a designated project type, very large data center campus developments may trigger prefectural-level environmental assessment requirements depending on scale, location, and local ordinances.",
+        "url": "https://www.env.go.jp/en/laws/policy/assess/index.html",
+        "effective_date": "1999-06-12",
+        "relevance": "Large data center campuses with on-site power generation or significant environmental footprint may require environmental impact assessment under prefectural ordinances. Cooling water discharge, noise from cooling towers, and thermal emissions are relevant assessment factors."
+      },
+      {
+        "category": "water_use",
+        "name": "Water Pollution Control Law (Act No. 138, 1970)",
+        "level": "national",
+        "summary": "Regulates effluent from factories and business establishments discharged into public water bodies. National effluent standards apply to facilities discharging 50 m3 or more per day on average. Standards cover 24 substances for human health protection and 16 items for living environment protection. Prefectural governments may set stricter local standards. Cooling tower blowdown water from data centers must meet discharge standards for temperature, pH, and chemical treatment residuals.",
+        "url": "https://www.env.go.jp/en/laws/water/wlaw/index.html",
+        "effective_date": "1971-06-24",
+        "relevance": "Data centers using evaporative cooling towers must ensure blowdown water discharge meets national and prefectural effluent standards. Chemical water treatment (biocides, corrosion inhibitors) used in cooling water loops adds regulated substances to discharge. Closed-loop liquid cooling eliminates this compliance obligation."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "GX Economy Transition Bonds and Strategic Tax Incentives (GX Promotion Act, Act No. 32, 2023)",
+        "level": "national",
+        "summary": "Under the GX Promotion Act, Japan will issue GX Economy Transition Bonds to provide approximately 20 trillion yen in advance investment support over 10 years for private sector decarbonization investments. Tax incentives include immediate depreciation for strategic investment areas and enhanced R&D tax credits for strategically important technologies. Data center energy efficiency investments and green cooling technology may qualify under the GX framework. Emissions trading system enters full operation FY2026; fossil fuel surcharge begins FY2028.",
+        "url": "https://www.cas.go.jp/jp/seisaku/gx_jikkou_kaigi/pdf/kihon_en.pdf",
+        "effective_date": "2023-05-19",
+        "relevance": "Data center operators investing in energy-efficient cooling technologies (liquid cooling, waste heat recovery, free cooling) may access GX tax incentives for decarbonization investments. Emissions trading from FY2026 adds cost to carbon-intensive cooling approaches using grid electricity."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Economic Security Promotion Act — Cloud/AI Infrastructure Subsidies",
+        "level": "national",
+        "summary": "Under Article 9(4) of the Economic Security Promotion Act, METI approved subsidies of up to 72.5 billion yen total to five projects for improving computational resources necessary for AI development. Targets domestic data center and cloud infrastructure investment to reduce reliance on foreign cloud providers (domestic share approximately 30% of basic cloud services market). Companies must establish infrastructure within Japan to ensure stable supply of designated critical goods.",
+        "url": "https://www.meti.go.jp/english/press/2024/0419_001.html",
+        "effective_date": "2024-04-19",
+        "relevance": "Direct capital subsidy for domestic data center infrastructure build-out. Cooling infrastructure is a major component of total data center capital cost; subsidies reduce the barrier to deploying advanced cooling technologies in Japan-based facilities."
+      },
+      {
+        "category": "building_code",
+        "name": "Building Standards Act (Act No. 201, 1950; regularly amended)",
+        "level": "national",
+        "summary": "Japan's primary building code governing structural safety, fire protection, and building services. Administered by MLIT. Data centers must comply with structural load requirements for heavy equipment (servers, UPS, cooling plants), fire suppression standards for server rooms, and mechanical ventilation requirements. Seismic design requirements (particularly stringent in Japan) apply to cooling equipment mountings, piping systems, and rooftop installations. Local building authorities may impose additional requirements.",
+        "url": "https://www.mlit.go.jp/common/001325170.pdf",
+        "effective_date": "1950-11-23",
+        "relevance": "Seismic design requirements for cooling infrastructure are uniquely stringent in Japan. Cooling towers, chiller plants, piping systems, and CDU installations must be designed for seismic resistance. This adds cost but is non-negotiable for building permit approval."
+      }
+    ]
+  },
+  {
+    "zone_id": "apac-kr",
+    "country": "South Korea",
+    "region": "National",
+    "regulatory_complexity_score": 58,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Use Rationalization Act (Act No. 2006, 1979; regularly amended)",
+        "level": "national",
+        "summary": "Korea's primary energy efficiency legislation administered by MOTIE (Ministry of Trade, Industry and Energy). Requires large energy consumers (designated as 'energy-intensive businesses') to appoint energy managers, submit energy use reports, and implement energy conservation plans. Establishes the Korea Energy Agency (KEA) to oversee enforcement. The Act mandates energy audits for large facilities and sets minimum energy performance standards for equipment including HVAC systems. Data centers consuming above threshold energy levels must comply with reporting and efficiency improvement obligations.",
+        "url": "https://law.go.kr/LSW/lsInfoP.do?lsiSeq=98468&viewCls=engLsInfoR&urlMode=engLsInfoR",
+        "effective_date": "1979-12-28",
+        "relevance": "Data centers classified as large energy consumers must report energy usage annually and submit efficiency improvement plans. Cooling system efficiency (COP ratings for chillers, fan energy for air handling) directly impacts facility-level energy intensity metrics subject to government review."
+      },
+      {
+        "category": "environmental",
+        "name": "Framework Act on Carbon Neutrality and Green Growth for Coping with Climate Crisis (Act No. 18469, 2021)",
+        "level": "national",
+        "summary": "Enacted September 2021, making Korea the 14th country to enshrine 2050 carbon neutrality into law. Sets mid-term target of 40% GHG reduction from 2018 levels by 2030. Establishes Korea Emissions Trading Scheme (K-ETS) requiring covered entities to hold allowances matching their annual emissions. The Act mandates national climate adaptation strategies, sector-specific reduction plans, and a Presidential Commission on Carbon Neutrality. Large energy-consuming data centers may fall under K-ETS obligations depending on their emissions threshold.",
+        "url": "https://law.go.kr/LSW//lsInfoP.do?lsiSeq=235581&chrClsCd=010203&urlMode=engLsInfoR&viewCls=engLsInfoR",
+        "effective_date": "2022-03-25",
+        "relevance": "Data centers with significant Scope 1 and Scope 2 emissions may be subject to K-ETS allowance obligations. Cooling energy represents the largest controllable component of data center emissions; efficient cooling directly reduces emissions trading costs. 4.9% annual baseline decline increases pressure over time."
+      },
+      {
+        "category": "water_use",
+        "name": "Water Environment Conservation Act (Act No. 16619)",
+        "level": "national",
+        "summary": "Governs effluent discharge standards for industrial facilities. Facilities operating as 'specified water discharge facilities' must obtain permits and meet national effluent standards for 51 parameters. The Total Water Pollution Load Management System (TPLMS) sets basin-level pollution load allocations. Cooling tower blowdown and process water discharge from data centers must meet applicable standards. Prefectural and municipal authorities may impose additional restrictions.",
+        "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=218199&chrClsCd=010203&urlMode=engLsInfoR&viewCls=engLsInfoR",
+        "effective_date": "2019-01-15",
+        "relevance": "Data centers using open-loop or evaporative cooling systems must obtain discharge permits and meet stringent effluent standards for 51 parameters. Chemical treatment of cooling water (biocides, scale inhibitors) creates regulated discharge obligations. Closed-loop liquid cooling eliminates wastewater discharge compliance burden."
+      },
+      {
+        "category": "building_code",
+        "name": "Building Act and Enforcement Decree — Energy Saving Design Standards",
+        "level": "national",
+        "summary": "Korea's Building Act and associated enforcement decrees establish energy-saving design standards for buildings. The Ministry of Land, Infrastructure and Transport (MOLIT) administers building energy efficiency certification (G-SEED green building certification). Large non-residential buildings must meet energy performance requirements covering HVAC, insulation, and lighting. Korea has measures to boost green architecture through building energy efficiency certification, integrated building energy management systems, and green remodeling programs.",
+        "url": "https://www.molit.go.kr/english/USR/WPGE0201/m_36855/LST.jsp",
+        "effective_date": "2013-09-01",
+        "relevance": "Data center construction must meet building energy-saving design standards. HVAC system design including cooling equipment sizing, ductwork, and insulation must comply with MOLIT energy performance requirements. Green building certification (G-SEED) provides recognition for high-efficiency cooling designs."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Restriction of Special Taxation Act — National Strategic Technology Investment Tax Credit",
+        "level": "national",
+        "summary": "The Restriction of Special Taxation Act (regularly amended) provides investment tax credits for designated national strategic technologies. The 'K-Chips Act' amendment expanded tax credits to include semiconductor and advanced digital infrastructure investments. Tax deductions of up to 15% for large enterprises and 25% for SMEs on qualifying facility investments. R&D tax credits available for strategic technology fields. Data center infrastructure investments may qualify under digital infrastructure categories. Government increased facilities investment tax deduction by 2 percentage points for 5G and AI infrastructure.",
+        "url": "https://english.moef.go.kr/pc/selectTbPressCenterDtl.do?boardCd=N0001&seq=5759",
+        "effective_date": "2023-01-01",
+        "relevance": "Data center cooling infrastructure investments (particularly advanced technologies like liquid cooling for AI computing) may qualify for enhanced investment tax credits under national strategic technology designations. Tax benefits reduce effective capital cost of deploying high-efficiency cooling systems."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Digital New Deal and AI Computing Center Investment Programs",
+        "level": "national",
+        "summary": "Korea's Digital New Deal (2020) and subsequent AI computing infrastructure expansion plans direct government investment toward domestic data center and computing infrastructure. MSIT allocated KRW 18.6 trillion budget for 2024 including AI computing center establishment. The National AI Computing Center Establishment Plan funds GPU-based computing infrastructure with associated cooling requirements. Government co-investment model provides subsidies for qualifying data center and AI infrastructure projects.",
+        "url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=4&bbsSeqNo=42&nttSeqNo=1074",
+        "effective_date": "2024-01-01",
+        "relevance": "Government-funded AI computing centers require high-density cooling solutions. Programs provide capital funding that covers cooling infrastructure as part of total facility investment. Sets precedent for public-private partnership in data center cooling technology deployment."
+      },
+      {
+        "category": "efficiency_reporting",
+        "name": "Greenhouse Gas and Energy Target Management System",
+        "level": "national",
+        "summary": "Administered by the Greenhouse Gas Inventory and Research Center of Korea (GIR). Requires designated large emitters to report greenhouse gas emissions and energy consumption annually. The National GHGs Management System manages emissions and emission trading volumes of individual business sites. Data centers exceeding emission thresholds must participate in the reporting system and may be subject to emissions reduction targets. GIR conducts verification and compliance monitoring.",
+        "url": "https://www.gir.go.kr/eng/index.do?menuId=5",
+        "effective_date": "2012-01-01",
+        "relevance": "Data centers above emissions thresholds must report energy consumption and GHG emissions annually. Cooling energy consumption is a significant component of total facility emissions. Efficient cooling directly reduces reported emissions and potential K-ETS allowance costs."
+      }
+    ]
+  },
+  {
+    "zone_id": "apac-sg",
+    "country": "Singapore",
+    "region": "National",
+    "regulatory_complexity_score": 72,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "BCA-IMDA Green Mark for Data Centres 2024 (GMDC:2024)",
+        "level": "national",
+        "summary": "Jointly developed by BCA and IMDA with industry input, launched October 2024. Mandatory for new data centre development approvals — applicants under DC-CFA2 must achieve GMDC:2024 Platinum certification. Assesses performance in energy efficiency, sustainable design and construction, use of digital tools, and maintainability. PUE of 1.3 or lower is the target standard; DC-CFA2 requires PUE of 1.25 or better at 100% IT load. Replaces and raises standards from previous Green Mark for Data Centres scheme.",
+        "url": "https://www.imda.gov.sg/how-we-can-help/bca-imda-green-mark-for-data-centres-scheme",
+        "effective_date": "2024-10-08",
+        "relevance": "The most directly relevant regulation for data center cooling in Singapore. PUE 1.25 requirement at 100% IT load effectively mandates high-efficiency cooling solutions — liquid cooling, raised operating temperatures, or hybrid approaches. Platinum certification is a prerequisite for new capacity approvals."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Singapore Standard SS 564: Green Data Centres — Energy and Environmental Management Systems",
+        "level": "national",
+        "summary": "First published January 2011, revised as SS 564: Part 1 in 2013 (aligned with ISO 50001) and Part 2 (implementation guidelines). Establishes a Plan-Do-Check-Act framework for continuous improvement of data centre energy efficiency. Covers electrical, mechanical, IT equipment management, and facility design. Defines performance metrics and benchmarks for energy efficiency tracking. Available through Singapore Standards eShop. Developed by Green DC Standards Working Group under the IT Standards Committee.",
+        "url": "https://www.imda.gov.sg/regulations-and-licensing-listing/ict-standards-and-quality-of-service/it-standards-and-frameworks/green-data-centre-standard",
+        "effective_date": "2013-01-01",
+        "relevance": "Foundational standard for data centre energy management in Singapore. Provides the benchmarking framework against which cooling system efficiency is measured. ISO 50001 alignment means operators with existing energy management certifications can leverage those for compliance."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Tropical Data Centre Standard SS 697:2023",
+        "level": "national",
+        "summary": "Provides methodology and guidelines for safely raising data centre operating temperatures in tropical climates. Target: operating temperatures of 26 deg C and above (up from traditional 22 deg C). Achieves 2-5% cooling energy savings per 1 deg C increase. Three-phase TCO framework: measurement/simulation, detailed TCO calculations, operational classification and optimization. Real-world results: GovTech achieved 40% cooling fan energy reduction and 15% annual cost savings. Built on ASHRAE TC9.9 guidelines.",
+        "url": "https://www.imda.gov.sg/how-we-can-help/green-dc-roadmap/tropical-dc-standard",
+        "effective_date": "2023-01-01",
+        "relevance": "Directly targets cooling energy reduction in tropical data centres. Enables operators to justify higher supply air temperatures to reduce mechanical cooling load. Critical for achieving PUE targets required under GMDC:2024. Liquid cooling systems are inherently compatible with elevated ambient temperatures."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Singapore Standard SS 715:2025 — IT Energy Efficiency of Data Centre Equipment",
+        "level": "national",
+        "summary": "One of the first national standards for data centre IT energy efficiency tailored for tropical climates. Targets at least 30% energy savings through optimized IT equipment selection and operation at elevated temperatures (up to 35 deg C). Requires IT equipment to meet international energy efficiency baselines with operational best practices (workload consolidation, virtualization). IMDA offers an Energy Efficiency Grant for DC sector to co-fund purchases of pre-approved energy-efficient IT equipment meeting this standard.",
+        "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2025/sg-it-energy-efficiency-standard-for-data-centres-launched",
+        "effective_date": "2025-01-01",
+        "relevance": "IT equipment operating at 35 deg C reduces cooling demand significantly. Standard complements SS 697:2023 (facility temperatures) by ensuring IT equipment can handle elevated temperatures. Energy Efficiency Grant provides financial incentive to adopt compliant equipment."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Conservation Act 2012 (Cap. 92C; amended 2017, 2024)",
+        "level": "national",
+        "summary": "Requires corporations with operational control over business activities consuming 54 TJ or more of energy per calendar year (in at least 2 of 3 preceding years) to register as designated consumers. Obligations include: register within 6 months of qualifying, appoint Singapore Certified Energy Manager within 30 days, submit annual energy use and GHG emissions reports by June 30, file energy efficiency improvement plans (1-5 year periods), conduct energy efficiency opportunity assessments every 6 years, implement ISO 50001 energy management system. Administered by NEA. 2024 Amendment Act further strengthened requirements.",
+        "url": "https://sso.agc.gov.sg/Act/ECA2012",
+        "effective_date": "2013-04-22",
+        "relevance": "Most large data centres in Singapore exceed the 54 TJ threshold and are designated consumers. Cooling energy is the largest non-IT energy component and a primary target for efficiency improvement plans. Mandatory energy manager appointment ensures dedicated oversight of cooling optimization."
+      },
+      {
+        "category": "water_use",
+        "name": "Environmental Public Health (Cooling Towers and Water Fountains) Regulations 2001",
+        "level": "national",
+        "summary": "Under the Environmental Public Health Act, cooling towers must be registered with NEA. Operators must implement Legionella risk management programs including regular water quality testing, maintenance schedules, and treatment protocols. Cooling towers must be maintained to prevent microbial growth. NEA conducts inspections and enforcement. Non-compliance may result in fines and operational orders. Applies to all data centres operating evaporative cooling towers.",
+        "url": "https://www.nea.gov.sg/our-services/pollution-control/water-quality/cooling-towers-and-fountains",
+        "effective_date": "2001-01-22",
+        "relevance": "Data centres using evaporative cooling towers must register with NEA and maintain Legionella control programs. Adds ongoing compliance costs for water-cooled facilities. Liquid cooling systems that eliminate cooling towers bypass this regulatory requirement entirely."
+      },
+      {
+        "category": "water_use",
+        "name": "PUB Mandatory Water Efficiency Requirements",
+        "level": "national",
+        "summary": "Since January 2015, large water users consuming 60,000 m3 or more net water per year must: install private water meters at key usage areas, submit annual Water Efficiency Management Plans (WEMP) to PUB for at least three consecutive years. PUB published 'Technical Reference for Water Conservation in Cooling Towers' noting evaporative cooling accounts for 25% of total water demand for large users. Water Efficiency Labelling Scheme (WELS) mandatory since 2009 for specified fittings.",
+        "url": "https://www.pub.gov.sg/Public/WaterLoop/Water-Conservation/Mandatory-Water-Efficiency-Requirements",
+        "effective_date": "2015-01-01",
+        "relevance": "Large data centres with evaporative cooling systems may exceed the 60,000 m3 threshold. Mandatory water meters and efficiency management plans add compliance overhead. PUB's technical reference specifically addresses cooling tower water conservation. Waterless cooling systems eliminate this obligation."
+      },
+      {
+        "category": "environmental",
+        "name": "Environmental Protection and Management Act 1999 (EPMA)",
+        "level": "national",
+        "summary": "Singapore's primary environmental protection legislation covering air pollution, water pollution, land contamination, and hazardous substances. Trade effluent regulations under EPMA govern wastewater discharge from industrial premises. Cooling tower blowdown water containing chemical treatment residuals is subject to trade effluent standards. Regulated goods and registered suppliers requirements apply to certain cooling system refrigerants and chemicals.",
+        "url": "https://sso.agc.gov.sg/act/epma1999",
+        "effective_date": "1999-04-01",
+        "relevance": "Governs environmental compliance for data centre cooling operations including: wastewater discharge from cooling towers, refrigerant management for chillers (regulated substances), noise from outdoor cooling equipment, and air emissions from backup generators."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Data Centre — Call for Application (DC-CFA) Capacity Allocation",
+        "level": "national",
+        "summary": "Singapore lifted its 2019 data centre moratorium and now allocates new capacity through competitive DC-CFA rounds. DC-CFA2 (2025) offers at least 200 MW of capacity. Requirements: PUE of 1.25 or better at 100% IT load, BCA-IMDA Green Mark Platinum certification, minimum 50% green energy pathways (biomethane, low-carbon ammonia, hydrogen, fuel cells with CCS, building-integrated PV). Applications evaluated on strategic value, economic contributions (fixed assets, R&D, talent), and sustainability. Alternative pathway via Strategic Digital Infrastructure Scheme (SDIS) for unique proposals.",
+        "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2025/launch-of-second-data-centre",
+        "effective_date": "2025-01-01",
+        "relevance": "The most critical regulatory gateway for new data centre capacity in Singapore. PUE 1.25 at full load and 50% green energy effectively mandate advanced cooling solutions. The competitive allocation process rewards operators demonstrating superior cooling efficiency and sustainability innovation."
+      }
+    ]
+  },
+  {
+    "zone_id": "apac-au",
+    "country": "Australia",
+    "region": "National",
+    "regulatory_complexity_score": 52,
+    "regulations": [
+      {
+        "category": "efficiency_reporting",
+        "name": "NABERS Energy for Data Centres Rating System",
+        "level": "national",
+        "summary": "Administered by the NSW Government on behalf of all Australian states. Provides 1-to-6 star energy efficiency ratings for data centres based on Power Usage Effectiveness (PUE) using actual operational data over 12 months. Three rating types: Infrastructure (facility services efficiency), IT Equipment (server-side efficiency), and Whole Facility (combined). NABERS Accredited Assessors evaluate energy use for IT equipment, air conditioning, ventilation, process cooling, in-rack fans, and backup generators. Currently voluntary for data centres but under active consultation for expansion under the Commercial Building Disclosure (CBD) program. Data centres use 10x more energy than office buildings.",
+        "url": "https://www.nabers.gov.au/ratings/spaces-we-rate/data-centres",
+        "effective_date": "2014-01-01",
+        "relevance": "Primary energy efficiency benchmarking tool for Australian data centres. PUE-based star ratings directly measure cooling system efficiency as the largest non-IT energy component. Likely to become mandatory under CBD program expansion — operators should prepare for compulsory disclosure."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "National Construction Code 2022 — Section J Energy Efficiency",
+        "level": "national",
+        "summary": "Section J of the NCC 2022 (effective 1 October 2023) establishes energy efficiency performance requirements for commercial buildings. Part J1 sets performance requirements; Part J9 mandates energy monitoring and on-site distributed energy resources. The J1V1 NABERS Commitment Agreement Verification Method has been expanded beyond office buildings. Section J covers HVAC system efficiency, building fabric thermal performance, and lighting. Data centres classified as commercial buildings must comply with applicable Section J requirements for new construction. Administered by the Australian Building Codes Board (ABCB).",
+        "url": "https://ncc.abcb.gov.au/editions/ncc-2022/adopted/volume-one/j-energy-efficiency/part-j1-energy-efficiency-performance-requirements",
+        "effective_date": "2023-10-01",
+        "relevance": "New data centre construction must meet NCC Section J energy efficiency requirements. HVAC and cooling system design is a major component of building energy performance calculations. Compliance pathway may include NABERS Commitment Agreement for verified performance."
+      },
+      {
+        "category": "environmental",
+        "name": "National Greenhouse and Energy Reporting Act 2007 (NGER) and Safeguard Mechanism",
+        "level": "federal",
+        "summary": "The NGER Scheme requires corporations meeting reporting thresholds to report greenhouse gas emissions and energy consumption annually to the Clean Energy Regulator. The Safeguard Mechanism (reformed 2023) applies to industrial facilities emitting more than 100,000 tonnes CO2-e per year, setting legislated emissions baselines that decline by 4.9% annually to 2030. Responsible emitters must apply for NGER registration by 31 August after meeting the safeguard threshold. Very large data centre campuses powered by fossil-fuel-intensive grids could approach or exceed the 100,000 tonne threshold.",
+        "url": "https://www.dcceew.gov.au/climate-change/emissions-reporting/national-greenhouse-energy-reporting-scheme/safeguard-mechanism",
+        "effective_date": "2023-07-01",
+        "relevance": "Data centres on carbon-intensive grids face increasing pressure from the Safeguard Mechanism's declining baselines. Efficient cooling reduces total energy consumption and associated Scope 2 emissions. The 4.9% annual baseline decline creates escalating incentive for cooling efficiency improvements and renewable energy procurement."
+      },
+      {
+        "category": "environmental",
+        "name": "Environment Protection and Biodiversity Conservation Act 1999 (EPBC Act)",
+        "level": "federal",
+        "summary": "Australia's primary national environmental protection legislation. Requires environmental assessment and approval for actions that may have a significant impact on nine defined Matters of National Environmental Significance (MNES). State and territory governments hold primary responsibility for environmental protection, with the federal Environment Minister having authority over MNES. Data centre developments near protected areas, water resources, or heritage sites may trigger EPBC referral requirements. Environment Protection Australia (EPA) commenced administering reforms from 20 February 2026.",
+        "url": "https://www.dcceew.gov.au/environment/epbc",
+        "effective_date": "2000-07-16",
+        "relevance": "Large data centre developments may require EPBC Act referral if located near Matters of National Environmental Significance. Cooling water intake/discharge affecting waterways, noise impacts on protected species, and land clearing for campus development are potential triggers."
+      },
+      {
+        "category": "efficiency_reporting",
+        "name": "Commercial Building Disclosure (CBD) Program — Proposed Expansion to Data Centres",
+        "level": "federal",
+        "summary": "The CBD Program currently requires commercial office buildings of 1,000 m2 or more to obtain and disclose NABERS energy ratings at point of sale or lease. The Australian Government conducted an independent review and is actively consulting on expansion to data centres, hotels, shopping centres, and office tenancies. A $20 million Albanese Government investment ($10M for program expansion, $10M for NABERS tools and services) supports the expansion. If enacted, data centre operators would be required to obtain and disclose NABERS energy ratings, making efficiency reporting mandatory rather than voluntary.",
+        "url": "https://www.cbd.gov.au/about-cbd-program/future-cbd/cbd-program-expansion",
+        "effective_date": "2025-01-01",
+        "relevance": "When expanded to data centres, this will make NABERS energy efficiency disclosure mandatory. Cooling system efficiency (the primary driver of PUE) will be transparently benchmarked and publicly disclosed. Operators should proactively pursue NABERS ratings to prepare for mandatory disclosure."
+      },
+      {
+        "category": "water_use",
+        "name": "State-Level Water Use and Environment Protection Regulations",
+        "level": "state_provincial",
+        "summary": "Water extraction and discharge regulation is primarily administered at the state level in Australia. NSW EPA, Victoria EPA, Queensland DEHP, and other state agencies regulate water extraction licenses, trade waste agreements, and environmental protection licences. Large data centres using evaporative cooling may require water extraction licences (state-dependent thresholds) and trade waste agreements for cooling tower blowdown discharge. States have different threshold volumes and approval processes. Climate-stressed regions (e.g., Western Sydney, Melbourne) may impose additional water use restrictions during drought.",
+        "url": "https://www.dcceew.gov.au/water",
+        "effective_date": "varies by state",
+        "relevance": "Evaporative cooling water use is regulated at state level. In water-stressed areas (Western Sydney data centre corridor, Melbourne), water extraction licences may be difficult to obtain or have restrictive conditions. Waterless or closed-loop cooling systems avoid state water use compliance entirely."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Renewable Energy Target (RET) — Large-scale Generation Certificates",
+        "level": "federal",
+        "summary": "The RET scheme targets 33,000 GWh of additional renewable electricity generation annually from 2020-2030. Large-scale Generation Certificates (LGCs) are created by eligible renewable power stations (1 LGC = 1 MWh renewable electricity). Data centre operators can purchase LGCs to demonstrate renewable energy procurement. Emissions-intensive trade-exposed (EITE) activities may qualify for exemption certificates. The Guarantee of Origin scheme (being developed) will provide verified tracking of renewable energy attributes for large energy consumers including data centres.",
+        "url": "https://www.dcceew.gov.au/energy/renewable/target-scheme",
+        "effective_date": "2001-04-01",
+        "relevance": "Data centres can purchase LGCs to offset grid electricity used for cooling. The Guarantee of Origin scheme will enable verified renewable energy claims for cooling operations. Combined with NABERS ratings, renewable energy procurement improves overall sustainability credentials."
+      }
+    ]
+  }
+]

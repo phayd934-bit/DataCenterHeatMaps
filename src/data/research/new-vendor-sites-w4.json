@@ -1,0 +1,24 @@
+[
+  {
+    "facility_name": "Equinix DC15 Co-Innovation Facility (CIF), Ashburn VA",
+    "vendors_present": [
+      "ZutaCore HyperCool",
+      "Accelsius NeuCool",
+      "Flex/JetCool SmartPlate",
+      "Bloom Energy",
+      "VPS",
+      "Natron"
+    ],
+    "notes": "Equinix CIF is a multi-vendor testing/showcase facility. Multiple liquid cooling vendors have deployments here."
+  },
+  {
+    "facility_name": "Telehouse South Liquid Cooling Lab, London Docklands UK",
+    "vendors_present": [
+      "JetCool SmartPlate",
+      "Accelsius NeuCool",
+      "EkkoSense",
+      "Legrand"
+    ],
+    "notes": "Multi-vendor liquid cooling lab launched early 2025."
+  }
+]

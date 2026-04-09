@@ -1,0 +1,38 @@
+const fs = require('fs');
+const path = require('path');
+
+const ca = require('../src/data/research/canada-facilities.json');
+const us = require('../src/data/research/us-facilities.json');
+const eu = require('../src/data/research/eu-facilities.json');
+
+// Add Colovore to US
+us.push({
+  facility_name: "SJC02 Santa Clara", operator_company: "Colovore", parent_company: null,
+  country: "US", state_province_region: "California", city: "Santa Clara",
+  full_address: "3060 Raymond St, Santa Clara, CA", latitude: 37.3688, longitude: -121.9692,
+  region_priority_bucket: "USA", facility_status: "existing", facility_type: "colocation",
+  pue_value: 1.1, pue_verified: true, pue_evidence_type: "direct",
+  cooling_type: "liquid", liquid_cooling_verified: true, immersion_cooling_verified: false, cooling_evidence_type: "direct",
+  facility_mw: 9, mw_verified: true, mw_evidence_type: "direct",
+  matched_on_pue: true, matched_on_cooling: true, matched_on_mw: true, matched_metric_count: 3, qualifies_for_dataset: true,
+  liquid_cooling_fit_score: 100, immersion_cooling_fit_score: 80, small_facility_fit_score: 100,
+  opportunity_summary: "TRIPLE MATCH: PUE 1.1, wall-to-wall liquid, 9MW. 250kW/cabinet.",
+  confidence_score: 95, verification_tier: "strong", last_verified_date: "2026-04-03",
+  source_1_url: "https://www.colovore.com/news/colovore-opens-second-9mw-high-density-liquid-cooled-data-center-insanta-clara",
+  source_1_title: "Colovore Opens Second 9MW Liquid-Cooled DC", source_1_publisher: "Colovore",
+  notes: "Perfect triple match target."
+});
+
+// Add EU facilities
+eu.push(
+  { facility_name: "DEN01 Copenhagen", operator_company: "atNorth", country: "DK", state_province_region: "Greater Copenhagen", city: "Ballerup", latitude: 55.7317, longitude: 12.3645, region_priority_bucket: "EU", facility_status: "under_construction", facility_type: "colocation", pue_max_if_range: 1.2, pue_verified: true, pue_evidence_type: "direct", cooling_type: "direct-to-chip", liquid_cooling_verified: true, cooling_evidence_type: "direct", facility_mw: 22.5, mw_verified: true, matched_on_pue: true, matched_on_cooling: true, matched_on_mw: false, matched_metric_count: 2, qualifies_for_dataset: true, liquid_cooling_fit_score: 90, confidence_score: 85, verification_tier: "strong", last_verified_date: "2026-04-03", source_1_url: "https://www.atnorth.com/nordic-data-centers/denmark-data-centers/copenhagen-metro-site/", source_1_publisher: "atNorth", opportunity_summary: "DLC, PUE <1.2, waste heat to 8000 homes.", notes: "Q1 2026 go-live." },
+  { facility_name: "OVHcloud Hybrid Immersion", operator_company: "OVHcloud", country: "FR", state_province_region: "Hauts-de-France", city: "Gravelines", latitude: 50.9861, longitude: 2.1283, region_priority_bucket: "EU", facility_status: "existing", facility_type: "colocation", pue_value: 1.004, pue_verified: true, pue_evidence_type: "direct", cooling_type: "immersion", liquid_cooling_verified: true, immersion_cooling_verified: true, cooling_evidence_type: "direct", matched_on_pue: true, matched_on_cooling: true, matched_on_mw: false, matched_metric_count: 2, qualifies_for_dataset: true, liquid_cooling_fit_score: 95, confidence_score: 85, verification_tier: "strong", last_verified_date: "2026-04-03", source_1_url: "https://corporate.ovhcloud.com/en/newsroom/news/immersioncooling-ocp/", source_1_publisher: "OVHcloud", opportunity_summary: "PUE 1.004. 16 patents. Competitor intel.", notes: "Built own cooling tech." },
+  { facility_name: "Bellas Vistas Immersion Pilot", operator_company: "Telefonica", country: "ES", state_province_region: "Madrid", city: "Madrid", latitude: 40.4458, longitude: -3.7038, region_priority_bucket: "EU", facility_status: "existing", facility_type: "colocation", pue_max_if_range: 1.1, pue_verified: true, pue_evidence_type: "indirect", cooling_type: "immersion", liquid_cooling_verified: true, immersion_cooling_verified: true, cooling_evidence_type: "direct", it_load_mw: 0.05, mw_verified: true, matched_on_pue: true, matched_on_cooling: true, matched_on_mw: true, matched_metric_count: 3, qualifies_for_dataset: true, liquid_cooling_fit_score: 70, confidence_score: 80, verification_tier: "strong", last_verified_date: "2026-04-03", source_1_url: "https://www.telefonica.com/en/communication-room/press-room/telefonica-and-submer-deploy-a-sustainable-immersion-cooling-solution-at-bellas-vistas-central-office/", source_1_publisher: "Telefonica", opportunity_summary: "TRIPLE MATCH: Submer immersion, sub-1.1 PUE, 50kW.", notes: "Telecom edge." },
+  { facility_name: "N01 Kristiansand", operator_company: "Bulk Infrastructure", country: "NO", state_province_region: "Agder", city: "Kristiansand", latitude: 58.1599, longitude: 8.0182, region_priority_bucket: "EU", facility_status: "existing", facility_type: "colocation", pue_max_if_range: 1.2, pue_verified: true, pue_evidence_type: "direct", cooling_type: "hybrid", liquid_cooling_verified: true, cooling_evidence_type: "direct", facility_mw: 42, mw_verified: true, matched_on_pue: true, matched_on_cooling: true, matched_on_mw: false, matched_metric_count: 2, qualifies_for_dataset: true, liquid_cooling_fit_score: 80, confidence_score: 80, verification_tier: "strong", last_verified_date: "2026-04-03", source_1_url: "https://bulkinfrastructure.com/data-centers/locations/n01", source_1_publisher: "Bulk Infrastructure", opportunity_summary: "DLC 100kW+/rack. PUE <1.2. 42MW. 1GW campus.", notes: "100% renewable hydro." },
+  { facility_name: "KLON-03 Harlow", operator_company: "Kao Data", country: "GB", state_province_region: "Essex", city: "Harlow", latitude: 51.7727, longitude: 0.1023, region_priority_bucket: "EU", facility_status: "under_construction", facility_type: "AI", pue_value: 1.2, pue_verified: true, pue_evidence_type: "indirect", cooling_type: "hybrid", liquid_cooling_verified: true, cooling_evidence_type: "direct", facility_mw: 17.6, mw_verified: true, matched_on_pue: true, matched_on_cooling: true, matched_on_mw: false, matched_metric_count: 2, qualifies_for_dataset: true, liquid_cooling_fit_score: 85, confidence_score: 85, verification_tier: "strong", last_verified_date: "2026-04-03", source_1_url: "https://kaodata.com/discover/news/kao-data-announces-construction-of-a-new-17-6mw-liquid-cooled-ai-data-centre-in-harlow", source_1_publisher: "Kao Data", opportunity_summary: "DTC + air. 130kW/rack. NVIDIA DGX-Ready.", notes: "SLA-backed PUE 1.2." },
+  { facility_name: "Verne/Nscale AI Campus", operator_company: "Verne Global", country: "IS", state_province_region: "Sudurnes", city: "Keflavik", latitude: 63.997, longitude: -22.559, region_priority_bucket: "EU", facility_status: "under_construction", facility_type: "AI", cooling_type: "liquid", liquid_cooling_verified: true, cooling_evidence_type: "direct", facility_mw: 15, mw_verified: true, matched_on_pue: false, matched_on_cooling: true, matched_on_mw: false, matched_metric_count: 1, qualifies_for_dataset: true, liquid_cooling_fit_score: 85, confidence_score: 80, verification_tier: "strong", last_verified_date: "2026-04-03", source_1_url: "https://www.verneglobal.com/news/news-verne-and-nscale", source_1_publisher: "Verne Global", opportunity_summary: "85% liquid-cooled. 4600 Blackwell GPUs.", notes: "Iceland geothermal." }
+);
+
+fs.writeFileSync(path.join(__dirname, '../src/data/research/us-facilities.json'), JSON.stringify(us, null, 2));
+fs.writeFileSync(path.join(__dirname, '../src/data/research/eu-facilities.json'), JSON.stringify(eu, null, 2));
+console.log('US:', us.length, '| EU:', eu.length, '| CA:', ca.length, '| Total:', us.length + eu.length + ca.length);

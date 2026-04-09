@@ -1,0 +1,1732 @@
+[
+  {
+    "zone_id": "eu-wide",
+    "country": "EU",
+    "region": "European Union",
+    "regulatory_complexity_score": 72,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "EU Energy Efficiency Directive (EED Recast) — Directive (EU) 2023/1791",
+        "level": "federal",
+        "summary": "Mandatory annual reporting for all EU data centers with installed IT power demand ≥500 kW. Operators must disclose PUE, WUE, Energy Reuse Factor (ERF), and Renewable Energy Factor (REF) to the EU-wide database. First report covering 2023 was due 15 September 2024; from 2025 deadline is 15 May.",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023L1791",
+        "effective_date": "2023-10-10",
+        "relevance": "Any facility ≥500 kW must report PUE and cooling metrics annually. Cooling technology choices directly affect PUE disclosure and regulatory compliance standing."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "EU Delegated Regulation (EU) 2024/1364 — Data Centre Sustainability Rating Scheme",
+        "level": "federal",
+        "summary": "Sets out the common EU-wide rating scheme for data centre sustainability. Specifies exact KPIs and data formats required under EED Article 12 reporting. Covers energy use, water use, waste heat, grid services contribution, and cooling system details.",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1364",
+        "effective_date": "2024-06-01",
+        "relevance": "Defines how cooling systems must be documented and rated. Liquid cooling deployments may qualify for higher efficiency ratings under the scheme."
+      },
+      {
+        "category": "environmental",
+        "name": "EU Taxonomy Regulation (EU) 2020/852 — Climate Delegated Act (Data Centre Criteria)",
+        "level": "federal",
+        "summary": "Data center operations qualify as environmentally sustainable only if PUE ≤1.3 for existing facilities or ≤1.2 for new builds from 2025, combined with renewable energy and water thresholds. Misclassification exposes investors and operators to greenwashing liability under SFDR and CSRD.",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32021R2139",
+        "effective_date": "2021-01-01",
+        "relevance": "New data centers with liquid cooling are more likely to achieve PUE ≤1.2 and qualify as EU Taxonomy-aligned, enabling access to green financing and lower cost of capital."
+      },
+      {
+        "category": "environmental",
+        "name": "Corporate Sustainability Reporting Directive (CSRD) — Directive (EU) 2022/2464",
+        "level": "federal",
+        "summary": "Large companies and listed SMEs must report environmental, social, and governance data under European Sustainability Reporting Standards (ESRS), including Scope 1, 2, and 3 emissions. Data center operators above applicable thresholds must disclose energy consumption and efficiency metrics under ESRS E1.",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022L2464",
+        "effective_date": "2024-01-01",
+        "relevance": "Operators deploying liquid cooling to lower PUE and carbon intensity must document and report those gains under CSRD. Failure to improve efficiency metrics increases CSRD disclosure risk."
+      },
+      {
+        "category": "building_code",
+        "name": "EU Energy Performance of Buildings Directive (EPBD Recast) — Directive (EU) 2024/1275",
+        "level": "federal",
+        "summary": "Recast 2024 EPBD requires Member States to enforce minimum energy performance standards for technical building systems including cooling. Data centers in buildings subject to EPBD must demonstrate energy performance compliance and obtain energy performance certificates.",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024L1275",
+        "effective_date": "2024-05-28",
+        "relevance": "New data center buildings must meet minimum energy performance standards. Advanced cooling systems (DLC, immersion) contribute to achieving standards and reduce permitting friction."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-de",
+    "country": "DE",
+    "region": "Germany (Federal + Hessen)",
+    "regulatory_complexity_score": 85,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Energieeffizienzgesetz (EnEfG) — Act to Increase Energy Efficiency in Germany",
+        "level": "federal",
+        "summary": "Came into force 18 November 2023. Applies to private data centers ≥1 MW and public data centers ≥300 kW. Requires annual PUE reporting to BAFA by 31 March each year. Mandates 50% renewable energy from 1 January 2024 and 100% from 1 January 2027. Operators must establish energy or environmental management systems by 1 July 2025.",
+        "url": "https://www.gesetze-im-internet.de/enefg/",
+        "effective_date": "2023-11-18",
+        "relevance": "Directly mandates PUE measurement and annual disclosure. Liquid cooling investments that lower PUE demonstrate compliance. BAFA registry data is publicly searchable — a lead source for verified facility PUE data."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "EnEfG §§ 11-16 — Data Centre Energy Efficiency & Waste Heat (Abwärmenutzung)",
+        "level": "federal",
+        "summary": "DCs starting after July 2027 must reuse ≥15% of waste heat, after July 2028 ≥20%. Operators must report energy consumption per customer annually. Energy/environmental management system required by July 2025.",
+        "url": "https://www.gesetze-im-internet.de/enefg/__16.html",
+        "effective_date": "2026-07-01",
+        "relevance": "Liquid and immersion cooling systems produce recoverable waste heat at higher and more usable temperatures than air cooling. New German data centers with liquid cooling are better positioned to meet waste heat utilization targets."
+      },
+      {
+        "category": "building_code",
+        "name": "Hessische Bauordnung (HBO) — Hessen State Building Code",
+        "level": "state_provincial",
+        "summary": "Hessen state building regulation governing construction, structural safety, fire protection, and technical building systems for large industrial and commercial buildings including data centers. Permitting authority is the local Bauamt (building authority).",
+        "url": "https://www.rv.hessenrecht.hessen.de/bshe/document/jlr-BauOHE2018pG",
+        "effective_date": "2018-01-01",
+        "relevance": "Data center construction and cooling infrastructure (piping, CDUs, immersion tanks) in Frankfurt/Hessen require HBO compliance including fire protection review for liquid cooling systems."
+      },
+      {
+        "category": "environmental",
+        "name": "Bundes-Immissionsschutzgesetz (BImSchG) — Federal Immission Control Act",
+        "level": "federal",
+        "summary": "Large data center facilities may require immission control permits if they exceed noise or emissions thresholds. Cooling towers and large HVAC equipment are subject to TA Lärm noise emission limits. Evaporative cooling towers also require assessment under VDI 2089.",
+        "url": "https://www.gesetze-im-internet.de/bimschg/",
+        "effective_date": "1974-03-15",
+        "relevance": "Evaporative cooling towers require BImSchG permitting and TA Lärm compliance. Dry closed-loop liquid cooling and immersion systems generate less noise and have a lighter regulatory footprint."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-nl",
+    "country": "NL",
+    "region": "Netherlands (National + North Holland Province)",
+    "regulatory_complexity_score": 90,
+    "regulations": [
+      {
+        "category": "building_code",
+        "name": "Besluit Kwaliteit Leefomgeving (BKL) Amendment — Hyperscale Data Center Ban",
+        "level": "federal",
+        "summary": "Amendment effective 1 January 2024 bans new hyperscale data centers (>10 hectares and >70 MW electrical connected load) throughout most of the Netherlands. Exceptions apply only in Het Hogeland municipality (Eemshaven) and Hollands Kroon municipality (Agriport A7).",
+        "url": "https://wetten.overheid.nl/BWBR0045516/2024-01-01",
+        "effective_date": "2024-01-01",
+        "relevance": "Smaller data centers (<70 MW) or facilities in permitted northern zones are the only viable new-build opportunities. Edge and mid-size facilities with liquid cooling remain the target market."
+      },
+      {
+        "category": "building_code",
+        "name": "Amsterdam Municipality — Data Center Policy (Duurzaam Digitaal 2020-2030)",
+        "level": "local",
+        "summary": "Amsterdam permanently restricts new hyperscale data centers. New DCs must achieve PUE ≤1.2. Part of Duurzaam Digitaal sustainability framework.",
+        "url": "https://www.amsterdam.nl/en/policy/sustainability/",
+        "effective_date": "2025-04-01",
+        "relevance": "Entirely blocks new cooling deployments or retrofits inside Amsterdam city limits. Operators seeking liquid cooling upgrades in the Amsterdam metro must operate in Aalsmeer, Haarlemmermeer, Almere, or permitted northern zones."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Activiteitenbesluit Milieubeheer — Energy Saving Obligation (Energiebesparingsplicht)",
+        "level": "federal",
+        "summary": "Requires businesses including data centers to implement recognized energy conservation measures with payback period ≤5 years. Enforced by municipalities.",
+        "url": "https://wetten.overheid.nl/BWBR0022762/2022-09-21",
+        "effective_date": "2019-07-01",
+        "relevance": "Operators must document and implement energy saving measures. Liquid cooling upgrades clearing the 5-year payback threshold qualify as mandated measures that can be reported to RVO as compliance evidence."
+      },
+      {
+        "category": "environmental",
+        "name": "Omgevingswet (Environmental Act) — Environmental Permits for Cooling Systems",
+        "level": "federal",
+        "summary": "Integrated environmental permitting for cooling water discharge, noise, and emissions. Replaced multiple predecessor laws from January 2024.",
+        "url": "https://wetten.overheid.nl/BWBR0037885/2024-01-01/0",
+        "effective_date": "2024-01-01",
+        "relevance": "Liquid cooling systems using regulated refrigerants or producing water discharge require environmental permits. Direct-to-chip with open water loops requires water-discharge compliance assessment."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-ie",
+    "country": "IE",
+    "region": "Ireland",
+    "regulatory_complexity_score": 82,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "CRU Decision CRU2025236 — Large Energy Users Connection Policy (December 2025)",
+        "level": "agency",
+        "summary": "Final CRU policy published December 2025 ends the effective moratorium on new data center grid connections. New facilities with MIC ≥1 MVA must: (1) meet 80% of annual electricity demand via additional Irish renewables with a 6-year glide path; (2) provide dispatchable onsite or proximate generation/storage matching MIC; (3) participate in the Single Electricity Market (SEM). De-minimis threshold <1 MVA MIC is exempt.",
+        "url": "https://www.cru.ie/about-us/news/the-cru-publishes-its-decision-on-new-electricity-connection-policy-for-data-centres/",
+        "effective_date": "2025-12-01",
+        "relevance": "Efficient liquid cooling designs reduce total MIC required for a given IT load (lower PUE = less wasted power), easing compliance with onsite generation matching requirements and improving project economics."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Ireland EED Transposition — Data Centre Energy and Sustainability Performance Reporting",
+        "level": "federal",
+        "summary": "Ireland transposed EU EED Article 12 requiring operators of data centers ≥500 kW IT load to report PUE, WUE, ERF, and REF annually to the EU database. The Department of Climate, Energy and the Environment administers the obligation. First mandatory report was due 15 September 2024 covering calendar year 2023.",
+        "url": "https://www.gov.ie/en/department-of-climate-energy-and-the-environment/publications/data-centre-energy-and-sustainability-performance-reporting-obligations/",
+        "effective_date": "2024-09-15",
+        "relevance": "Irish data centers ≥500 kW must formally measure and disclose PUE. Liquid cooling investments that improve PUE must be reflected in mandatory annual disclosures and affect Taxonomy alignment assessment."
+      },
+      {
+        "category": "environmental",
+        "name": "CRU Decision CRU2025236 — Data Centre Electricity Connection Policy (incl. Dublin Constrained Zone)",
+        "level": "agency",
+        "summary": "Commission for Regulation of Utilities establishes connection policy for data centres including Dublin grid constraints. Large energy users must demonstrate flexibility and onsite generation.",
+        "url": "https://www.cru.ie/about-us/news/the-cru-publishes-its-decision-on-new-electricity-connection-policy-for-data-centres/",
+        "effective_date": "2021-01-01",
+        "relevance": "Dublin data center projects with lower total connected load (enabled by efficient liquid cooling) face less grid impact scrutiny. Smaller-footprint, high-efficiency cooling designs improve connection prospects."
+      },
+      {
+        "category": "building_code",
+        "name": "Planning and Development Act 2000 (as amended) — Strategic Infrastructure Development",
+        "level": "federal",
+        "summary": "Data centers meeting thresholds for Strategic Infrastructure Development (SID) — aggregate floor area >50,000 sqm or connection at 110 kV or higher — are subject to An Bord Pleanála review. Environmental Impact Assessment (EIA) is required for large facilities, covering cooling water consumption and noise impacts.",
+        "url": "https://www.irishstatutebook.ie/eli/2000/act/30/enacted/en/html",
+        "effective_date": "2000-01-01",
+        "relevance": "Large data center projects with substantial cooling plant (CDUs, cooling towers, immersion tanks) undergo SID-level EIA. Closed-loop liquid cooling with minimal water discharge and low noise profile reduces EIA complexity."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-se",
+    "country": "SE",
+    "region": "Sweden",
+    "regulatory_complexity_score": 55,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Lag (2025:570) om uppgiftsskyldighet om energiprestanda i datacenter — Act on Data Centre Energy Performance Disclosure",
+        "level": "federal",
+        "summary": "Entered into force 1 July 2025. Requires owners or operators of data centers with installed IT power demand ≥500 kW to report energy performance data (PUE, WUE, ERF, REF) to the EU-wide database under EED Article 12. Operators must notify the Swedish Energy Agency (Energimyndigheten) by 27 April 2026; EU database reporting due 15 May 2026 covering full year 2025.",
+        "url": "https://www.energimyndigheten.se/en/climate/climate/data-centre-energy-performance-reporting/",
+        "effective_date": "2025-07-01",
+        "relevance": "Swedish data centers ≥500 kW must formally measure and disclose PUE annually. Facilities deploying liquid cooling to achieve lower PUE gain a regulatory compliance advantage and may qualify for Taxonomy-aligned financing."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Swedish Energy Tax — Data Center Electricity Tax Rate Changes",
+        "level": "federal",
+        "summary": "Data centers previously received reduced electricity tax rate. New rules align with EU regulations. Refund type 795 applies. Tax changes effective from 2025.",
+        "url": "https://skatteverket.se/servicelankar/otherlanguages/inenglishengelska/businessesandemployers/startingandrunningaswedishbusiness/payingtaxesbusinesses/energytax.4.676f4884175c97df4192bab.html",
+        "effective_date": "2017-07-01",
+        "relevance": "Higher electricity costs amplify the financial return of any PUE improvement. Liquid cooling investments with a 5–10% PUE reduction generate larger cost savings in Sweden than in lower-electricity-cost jurisdictions."
+      },
+      {
+        "category": "environmental",
+        "name": "Miljöbalk (Environmental Code) — Chapter 9 Environmentally Hazardous Activities",
+        "level": "federal",
+        "summary": "Large data centers may require environmental permits under the Miljöbalk if classified as environmentally hazardous activities. Cooling systems using ammonia, CO2, or producing significant water discharge require formal permit applications to County Administrative Boards (Länsstyrelser).",
+        "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/miljobalk-1998808_sfs-1998-808/",
+        "effective_date": "1999-01-01",
+        "relevance": "Cooling system choice affects permit complexity. Free-air and closed water loop cooling in Nordic climate have low regulatory burden. Immersion systems using novel or flammable dielectric fluids may require chemical risk assessment."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-fr",
+    "country": "FR",
+    "region": "France",
+    "regulatory_complexity_score": 70,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Code de l'énergie Article L.236-2 — Waste Heat Valorization (Law No. 2025-391 of 30 April 2025)",
+        "level": "federal",
+        "summary": "Enacted 30 April 2025, Law 2025-391 requires data centers with total rated power ≥1 MW to valorize their waste heat through recovery applications unless technically or economically infeasible. Specific conditions, modalities, and exemptions are to be defined by Conseil d'État decree.",
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051699899",
+        "effective_date": "2025-04-30",
+        "relevance": "Liquid cooling systems (especially immersion and DLC with warm water return loops) produce waste heat at higher and more usable temperatures than air cooling. French data centers with liquid cooling are better positioned to comply."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "CRE Deliberation No. 2024-229 (18 December 2024) — Grid Connection Framework for Large Energy Users",
+        "level": "agency",
+        "summary": "From 1 August 2025, CRE's deliberation governs grid connections for new large electricity consumers including data centers. Options: immediate connection at full capacity subject to 5-year reassessment, or progressive ramp-up over up to 10 years. CRE deliberation No. 2025-120 (7 May 2025) adds a fast-track for very large consumers on State-designated favorable sites.",
+        "url": "https://www.cre.fr/content/download/25673/document",
+        "effective_date": "2025-08-01",
+        "relevance": "Lower connected load via efficient cooling enables faster full-capacity connection. Data centers with liquid cooling achieving PUE ≤1.2 require less total grid import capacity for equivalent IT load."
+      },
+      {
+        "category": "environmental",
+        "name": "ICPE (Installations Classées pour la Protection de l'Environnement) — Data Center Environmental Classification",
+        "level": "federal",
+        "summary": "Data centers in France are classified as ICPEs if they exceed electricity consumption or cooling system thresholds. Most large data centers fall under rubric 2925 (transformers) or 4802 (flammable liquids for immersion cooling dielectrics). ICPE status requires declaration, registration, or full authorization depending on thresholds.",
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006834228",
+        "effective_date": "1992-01-01",
+        "relevance": "Immersion cooling with dielectric fluid may trigger ICPE classification under flammable liquid rubrics (4802), adding permitting steps. Operators must classify fluids and file accordingly before deployment."
+      },
+      {
+        "category": "building_code",
+        "name": "Code de l'urbanisme Art. L300-6-2 — Projet d'Intérêt National Majeur (PINM) Fast-Track",
+        "level": "federal",
+        "summary": "Enables strategic projects including data centers to receive accelerated planning approval. Allows state to override local planning documents for nationally significant infrastructure.",
+        "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074075/LEGISCTA000048473052/",
+        "effective_date": "2024-01-01",
+        "relevance": "Large AI-focused data center projects with advanced liquid cooling infrastructure demonstrating energy efficiency targets are well-positioned to seek PINM designation and accelerate deployment timelines."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-gb",
+    "country": "GB",
+    "region": "United Kingdom",
+    "regulatory_complexity_score": 78,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Savings Opportunity Scheme (ESOS) Regulations 2014 (SI 2014/1643), as amended by SI 2023/1182",
+        "level": "federal",
+        "summary": "Large UK undertakings (250+ employees or turnover >50M GBP) must conduct energy audits every 4 years and submit action plans. Phase 3 (2024-2028) requires facility-level action plans and progress updates. Covers all energy consumption including building cooling systems.",
+        "url": "https://www.legislation.gov.uk/uksi/2014/1643/contents",
+        "effective_date": "2014-07-17",
+        "relevance": "Data centres qualifying as large undertakings must audit cooling energy consumption and identify efficiency opportunities. Phase 3 amendments (SI 2023/1182) tighten reporting with mandatory action plans."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Climate Change Agreements (CCA) for Data Centres Sector",
+        "level": "agency",
+        "summary": "Voluntary agreements between data centre operators and the Environment Agency to meet energy efficiency targets. Participating sites receive a discount on the Climate Change Levy (CCL). Over 170 data centre sites participate. New scheme from January 2026 sets facility-level targets with a sector improvement target of 14.5% relative to a 2022 baseline by end of 2030.",
+        "url": "https://www.gov.uk/guidance/climate-change-agreements--2",
+        "effective_date": "2013-04-01",
+        "relevance": "Directly incentivises cooling efficiency improvements in data centres. Facility-level targets from 2026 mean each site must individually demonstrate energy reduction, including from cooling systems."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Streamlined Energy and Carbon Reporting (SECR) -- Companies (Directors' Report) and Limited Liability Partnerships (Energy and Carbon Report) Regulations 2018 (SI 2018/1155)",
+        "level": "federal",
+        "summary": "Large UK companies and LLPs must disclose annual energy use (kWh), greenhouse gas emissions (tCO2e), and an intensity ratio in their annual directors' report. Applies to quoted companies (global scope) and large unquoted companies (UK scope).",
+        "url": "https://www.legislation.gov.uk/uksi/2018/1155/contents/made",
+        "effective_date": "2019-04-01",
+        "relevance": "Data centre operators meeting the 'large company' threshold must report total energy consumption including cooling. Drives transparency on cooling energy as a share of total facility consumption."
+      },
+      {
+        "category": "building_code",
+        "name": "Building Regulations 2010 -- Approved Document L: Conservation of Fuel and Power (Volume 2: Non-domestic Buildings), 2021 edition with 2023 amendments",
+        "level": "federal",
+        "summary": "Sets minimum energy performance standards for new and refurbished non-domestic buildings in England. Covers building fabric insulation, air tightness, fixed building services including cooling, ventilation, and lighting. Cooling systems must meet minimum efficiency standards (SEER ratings) and new installations must be commissioned to demonstrate compliance.",
+        "url": "https://www.gov.uk/government/publications/conservation-of-fuel-and-power-approved-document-l",
+        "effective_date": "2022-06-15",
+        "relevance": "New data centre buildings must comply with Part L energy performance requirements. Cooling system design (including SEER specifications) directly governed. Advanced liquid cooling may help exceed minimum standards."
+      },
+      {
+        "category": "environmental",
+        "name": "Environmental Permitting (England and Wales) Regulations 2016 (SI 2016/1154)",
+        "level": "federal",
+        "summary": "Consolidated environmental permitting regime for regulated activities including water discharge to surface water and groundwater, industrial installations, and waste operations. Permits issued by the Environment Agency with conditions on discharge volumes, quality, temperature, and frequency.",
+        "url": "https://www.legislation.gov.uk/uksi/2016/1154/contents/made",
+        "effective_date": "2016-01-01",
+        "relevance": "Data centres using evaporative or water-based cooling that discharge to surface water or ground require environmental permits. Discharge temperature limits and chemical treatment of cooling water are regulated."
+      },
+      {
+        "category": "water_use",
+        "name": "Water Resources Act 1991 -- Abstraction Licensing (as amended by Water Act 2003)",
+        "level": "federal",
+        "summary": "Abstraction of more than 20 cubic metres per day from any inland water, underground strata, or watercourse requires a licence from the Environment Agency. The Water Act 2003 reformed the licensing system and introduced time-limited licences.",
+        "url": "https://www.legislation.gov.uk/ukpga/1991/57/contents",
+        "effective_date": "1991-12-01",
+        "relevance": "Data centres using large volumes of water for evaporative cooling must obtain abstraction licences. Licence conditions may limit volumes and seasonal availability, constraining water-intensive cooling designs."
+      },
+      {
+        "category": "water_use",
+        "name": "Water Industry Act 1991, Part IV -- Trade Effluent (Sections 118-141)",
+        "level": "federal",
+        "summary": "Any discharge of trade effluent (including cooling water blowdown) into public sewers requires a trade effluent consent from the sewerage undertaker. Conditions may specify temperature, flow rate, chemical composition, and monitoring requirements.",
+        "url": "https://www.legislation.gov.uk/ukpga/1991/56/part/IV",
+        "effective_date": "1991-12-01",
+        "relevance": "Cooling tower blowdown and treated cooling water discharged to sewer requires trade effluent consent. Chemical treatment agents (biocides, scale inhibitors) in cooling circuits must comply with discharge conditions."
+      },
+      {
+        "category": "environmental",
+        "name": "Fluorinated Greenhouse Gases (Amendment) Regulations 2023 (SI 2023/1161)",
+        "level": "federal",
+        "summary": "Regulates the use, maintenance, and phase-down of fluorinated greenhouse gases (F-gases) in Great Britain. Requires leak checks on cooling equipment containing F-gases, certified technician requirements, record-keeping, and a progressive HFC phase-down schedule (reduced to 31% of baseline from January 2024).",
+        "url": "https://www.legislation.gov.uk/uksi/2023/1161/introduction/made",
+        "effective_date": "2024-01-01",
+        "relevance": "Data centres using traditional refrigerant-based cooling (CRACs, chillers) face increasing constraints on HFC refrigerants. F-gas phase-down drives adoption of low-GWP refrigerants or alternative cooling technologies such as liquid cooling."
+      },
+      {
+        "category": "safety",
+        "name": "Data Centres Designated as Critical National Infrastructure (CNI)",
+        "level": "federal",
+        "summary": "On 12 September 2024, data centres were designated as Critical National Infrastructure, alongside energy, water, and emergency services. A dedicated CNI data infrastructure team of senior government officials monitors threats, provides prioritised access to the National Cyber Security Centre, and coordinates emergency response. First CNI designation in a decade.",
+        "url": "https://www.gov.uk/government/news/data-centres-to-be-given-massive-boost-and-protections-from-cyber-criminals-and-it-blackouts",
+        "effective_date": "2024-09-12",
+        "relevance": "Elevates data centres to critical infrastructure status. Cooling system resilience becomes a national security consideration -- failures that threaten data integrity may trigger government intervention protocols."
+      },
+      {
+        "category": "safety",
+        "name": "Nationally Significant Infrastructure Projects (NSIP) -- Data Centres added to Planning Act 2008 regime (December 2024 NPPF reform)",
+        "level": "federal",
+        "summary": "Data centres above certain thresholds now eligible for the Nationally Significant Infrastructure Projects consenting regime, providing a streamlined planning process. Local planning authorities must consider data centre needs when setting local policies.",
+        "url": "https://www.gov.uk/government/publications/national-planning-policy-framework--2",
+        "effective_date": "2024-12-12",
+        "relevance": "Streamlined planning for large data centres reduces permitting timelines. Cooling infrastructure (water supply, heat rejection equipment, noise from cooling towers) is assessed as part of the NSIP consent."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-no",
+    "country": "NO",
+    "region": "Norway",
+    "regulatory_complexity_score": 62,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Forskrift om datasenter (Data Centre Regulation) -- FOR-2024-12-18-3313",
+        "level": "federal",
+        "summary": "All data centres with subscribed electrical capacity exceeding 0.5 MW must register with the Norwegian Communications Authority (Nkom) before commencing operations. Operators must report company details, location, services, customer types, cryptocurrency mining share, and total energy consumption. Existing centres had until 1 July 2025 to register. Non-compliance: fines up to 5% of annual turnover.",
+        "url": "https://lovdata.no/dokument/SF/forskrift/2024-12-18-3313",
+        "effective_date": "2025-01-01",
+        "relevance": "Mandatory registration creates a national inventory of data centres and their energy consumption. Although no direct cooling specifications, the energy reporting requirement encompasses cooling energy use."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Efficiency Assessment Requirement -- Data Centre Strategy 2025 (Chapter 5: Sustainability)",
+        "level": "federal",
+        "summary": "Companies with average annual energy consumption exceeding 2.5 GWh must prepare implementation plans for energy efficiency measures, present findings to management, and report in annual reports. First assessments due by 1 October 2026. Covers data centres as major energy consumers.",
+        "url": "https://www.regjeringen.no/en/documents/the-data-centre-industry-a-sustainable-industry-of-the-future-for-the-digital-norway/id3112356/?ch=5",
+        "effective_date": "2025-06-27",
+        "relevance": "Data centres consuming >2.5 GWh/year must formally assess and plan cooling efficiency improvements. Cooling typically represents 30-40% of DC energy, making it a primary target for mandated efficiency planning."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Waste Heat Cost-Benefit Analysis Requirement -- Data Centre Strategy 2025",
+        "level": "federal",
+        "summary": "Data centre operators with facilities exceeding 2 MW must conduct cost-benefit analyses for excess heat utilisation and must ensure surplus energy from existing and new facilities is utilised internally to the greatest extent possible. NVE approval required before construction of new facilities.",
+        "url": "https://www.regjeringen.no/en/documents/the-data-centre-industry-a-sustainable-industry-of-the-future-for-the-digital-norway/id3112356/?ch=5",
+        "effective_date": "2025-06-27",
+        "relevance": "Directly mandates that operators evaluate waste heat recovery from cooling systems. Liquid cooling systems produce higher-grade waste heat (40-60C) more suitable for district heating than air-cooled systems."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Electrical Power Tax -- General Rate Applied to Data Centres (removal of reduced rate)",
+        "level": "federal",
+        "summary": "The reduced electricity tax rate for data centres (introduced 2016) was abolished effective 1 January 2023. Data centres are now subject to the general electricity tax rate (7.13 ore/kWh for 2026). The reduced rate (0.60 ore/kWh) applies only to manufacturing and mining. Estimated additional revenue: 150 million NOK.",
+        "url": "https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/excise-duties/about-the-excise-duties/electrical-power-tax/",
+        "effective_date": "2023-01-01",
+        "relevance": "Loss of the reduced electricity tax rate increases operating costs for data centres, strengthening the business case for energy-efficient cooling technologies that reduce total electricity consumption."
+      },
+      {
+        "category": "environmental",
+        "name": "Pollution Control Act (Forurensningsloven) -- Act of 13 March 1981 No. 6",
+        "level": "federal",
+        "summary": "Fundamental principle: all pollution is prohibited unless specifically permitted. Activities that may cause pollution to air, water, or soil require emission permits from the Norwegian Environment Agency or county governor. Criminal penalties: fines or imprisonment up to 5 years for violations risking human life/health.",
+        "url": "https://www.regjeringen.no/en/documents/pollution-control-act/id171893/",
+        "effective_date": "1981-10-01",
+        "relevance": "Data centres with water discharge from cooling systems, backup generator emissions, or refrigerant leaks may require pollution permits. Cooling water thermal discharge to waterways is a regulated pollutant."
+      },
+      {
+        "category": "water_use",
+        "name": "Water Resources Act (Vannressursloven) -- Act of 24 November 2000 No. 82",
+        "level": "federal",
+        "summary": "Governs the use, management, and protection of freshwater resources including rivers, lakes, and groundwater. Abstraction and use of water resources for industrial purposes requires permits from NVE (Norwegian Water Resources and Energy Directorate). Aims to safeguard proper public use of water resources.",
+        "url": "https://lovdata.no/lov/2000-11-24-82",
+        "effective_date": "2001-01-01",
+        "relevance": "Data centres using freshwater for cooling (direct water cooling, evaporative towers) must obtain water abstraction permits from NVE. Groundwater use for geothermal cooling also regulated."
+      },
+      {
+        "category": "building_code",
+        "name": "Building Technical Regulations (TEK17) -- Forskrift om tekniske krav til byggverk",
+        "level": "federal",
+        "summary": "National building regulations setting mandatory energy performance requirements for new construction. Office buildings limited to 115 kWh/m2 annual energy consumption. Includes requirements for insulation, air tightness, heating/cooling systems, ventilation, and lighting. From 2022, mandatory greenhouse gas accounting (Section 17-1) for larger buildings.",
+        "url": "https://lovdata.no/dokument/SF/forskrift/2017-06-19-840",
+        "effective_date": "2017-07-01",
+        "relevance": "New data centre buildings must meet TEK17 energy performance standards. Cooling system design directly affects compliance with annual energy consumption limits and mandatory GHG accounting."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Act (Energiloven) -- Act of 29 June 1990 No. 50 -- Grid Connection Requirements",
+        "level": "federal",
+        "summary": "Regulates generation, conversion, transmission, trading, distribution, and use of energy. Grid connection for large consumers requires maturity assessment by grid operator (NEM Section 3-4, effective 1 January 2025). Area licences required for grid installations. NVE oversees grid connection codes (RfG, DCC, HVDC).",
+        "url": "https://lovdata.no/lov/1990-06-29-50",
+        "effective_date": "1991-01-01",
+        "relevance": "Data centres seeking grid connection (often 10-100+ MW) face maturity assessments and potential queue delays. 2,691 MW currently reserved for data centres with 4,390 MW awaiting connection. Grid access constraints directly affect cooling capacity planning."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-fi",
+    "country": "FI",
+    "region": "Finland",
+    "regulatory_complexity_score": 58,
+    "regulations": [
+      {
+        "category": "tax_incentive",
+        "name": "Act on Excise Duty on Electricity and Certain Fuels (1260/1996) -- Data Centre Electricity Tax Category Change",
+        "level": "federal",
+        "summary": "Data centres currently benefit from the lower electricity tax Category II (0.05 cents/kWh). Effective 1 July 2026, data centres will be moved to the general Category I rate (2.24 cents/kWh), an increase of 2.19 cents/kWh. A compensatory state aid scheme provides 10-year tax relief capped at EUR 30 million for qualifying facilities that reuse waste heat or exceed efficiency standards.",
+        "url": "https://www.finlex.fi/en/legislation/collection/1996/1260",
+        "effective_date": "1997-01-01",
+        "relevance": "The tax increase from Category II to Category I significantly raises operating costs. Facilities deploying efficient cooling systems that enable waste heat reuse qualify for the compensatory 10-year tax relief, directly incentivising liquid cooling and heat recovery."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Efficiency Act (1429/2014) -- Mandatory Energy Audits for Large Enterprises",
+        "level": "federal",
+        "summary": "Large companies (250+ employees or turnover >EUR 50M and balance sheet >EUR 43M) must conduct comprehensive energy audits every 4 years covering all locations. Audits identify energy consumption profiles and efficiency opportunities. Exemptions for facilities with ISO 50001 or ISO 14001+ETJ+ certification. Enforced by the Energy Authority (Energiavirasto).",
+        "url": "https://www.finlex.fi/en/legislation/collection/2014/1429",
+        "effective_date": "2015-01-01",
+        "relevance": "Large data centre operators must audit cooling energy consumption quadrennially. Cooling systems are typically the largest non-IT energy consumer and primary target for audit-identified savings."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "EU Energy Efficiency Directive (EED) National Implementation -- Data Centre Reporting via Energy Authority",
+        "level": "federal",
+        "summary": "Data centres with installed IT power demand of 500 kW or more must report annually to the European database. KPIs include PUE, WUE, Energy Reuse Factor, Renewable Energy Factor, temperature set points, and cooling system details. The Finnish Energy Authority (Energiavirasto) is the national coordinator. First reporting cycle began in 2024.",
+        "url": "https://energiavirasto.fi/en/-/reporting-from-data-centres-to-the-european-database-has-started",
+        "effective_date": "2024-09-15",
+        "relevance": "Mandatory annual PUE and WUE reporting directly measures cooling efficiency. Operators must disclose cooling technology details, creating regulatory pressure for best-in-class cooling systems."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Data Centre Registration Obligation and State Aid Scheme (Ministerial Committee Decision, 5 December 2025)",
+        "level": "federal",
+        "summary": "A cross-administrative registration system for data centres will be established. To qualify for the 10-year state aid (tax relief), data centres must register AND either reuse waste heat or exceed current energy efficiency standards. Security authorities gain examination powers over data centre investments. Implementation from 1 July 2026.",
+        "url": "https://valtioneuvosto.fi/en/-/ministerial-committee-on-economic-policy-decides-on-state-aid-for-data-centres-and-registration-obligation",
+        "effective_date": "2026-07-01",
+        "relevance": "State aid is conditioned on waste heat reuse or high energy efficiency. This directly incentivises cooling architectures (liquid cooling, heat pumps) that produce recoverable waste heat for district heating networks."
+      },
+      {
+        "category": "environmental",
+        "name": "Environmental Protection Act (527/2014)",
+        "level": "federal",
+        "summary": "Activities involving a risk of pollution require an environmental permit from the Regional State Administrative Agency (AVI). Covers emissions to air, water, and soil. Permits specify emission limits, monitoring requirements, and operational conditions. Government Decree on Environmental Protection (713/2014) defines activities subject to permitting.",
+        "url": "https://www.finlex.fi/en/legislation/translations/2014/eng/527",
+        "effective_date": "2014-09-01",
+        "relevance": "Data centres discharging cooling water, operating backup generators, or using chemical water treatment require environmental permits from AVI. Permit conditions may constrain cooling water discharge temperatures and volumes."
+      },
+      {
+        "category": "water_use",
+        "name": "Environmental Permits for Water Activities -- Regional State Administrative Agency (AVI)",
+        "level": "agency",
+        "summary": "Environmental permits for water abstraction and discharge are processed by Regional State Administrative Agencies (AVI). Activities with extensive environmental impact require AVI permits under both the Environmental Protection Act and the Water Act. Public consultation required for permit applications.",
+        "url": "https://avi.fi/en/services/businesses/licence-notices-and-applications/water-and-the-environment/environmental-permits",
+        "effective_date": "2014-09-01",
+        "relevance": "Data centres using significant water volumes for cooling must obtain AVI permits for both water abstraction and discharge. Finland's abundant freshwater resources make water-cooled systems feasible, but permits regulate volumes and thermal impact."
+      },
+      {
+        "category": "building_code",
+        "name": "Land Use and Building Act (132/1999) -- National Building Code Energy Performance Requirements",
+        "level": "federal",
+        "summary": "Sets general conditions for building including energy efficiency requirements. Compliance with minimum energy efficiency must be demonstrated by calculations based on energy use, energy loss, and form of energy. The National Building Code of Finland (administered by Ministry of the Environment) provides detailed technical requirements for insulation, HVAC systems, and energy performance.",
+        "url": "https://ym.fi/en/the-national-building-code-of-finland",
+        "effective_date": "2000-01-01",
+        "relevance": "New data centre construction must comply with national building code energy performance requirements. Cooling system efficiency and heat recovery provisions are integral to energy performance calculations."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-is",
+    "country": "IS",
+    "region": "Iceland",
+    "regulatory_complexity_score": 42,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Electricity Act No. 65/2003",
+        "level": "federal",
+        "summary": "Governs the generation, transmission, distribution, and sale of electricity in Iceland. A licence from the National Energy Authority (now the Environment and Energy Agency, established January 2025 under Act 110/2024) is required to construct and operate a power plant. Environmental factors must be considered when issuing licences (Article 5).",
+        "url": "https://www.government.is/media/atvinnuvegaraduneyti-media/media/acts/Act-No-65-2003-on-Electricity.pdf",
+        "effective_date": "2003-06-27",
+        "relevance": "Data centres connected to Iceland's grid benefit from nearly 100% renewable electricity (hydro and geothermal). The Act governs the electricity supply framework that makes Iceland attractive for data centres, though no DC-specific efficiency mandates exist."
+      },
+      {
+        "category": "environmental",
+        "name": "Environmental Impact Assessment Act No. 106/2000",
+        "level": "federal",
+        "summary": "Projects which may involve significant environmental effects require environmental impact assessment before consent is granted. The National Planning Agency decides whether projects are subject to EIA. All major industrial installations and power plants require EIA. Objectives: ensure environmental assessment, encourage stakeholder cooperation, and make environmental information public.",
+        "url": "https://www.government.is/topics/planning-and-construction/environmental-impact-assessment-/",
+        "effective_date": "2000-05-25",
+        "relevance": "Large data centre projects may trigger EIA requirements based on magnitude of environmental effects, including water use, thermal discharge, and land use impacts from cooling infrastructure."
+      },
+      {
+        "category": "environmental",
+        "name": "Act on Hygiene and Pollution Prevention No. 7/1998 (replaced by Act No. 25)",
+        "level": "federal",
+        "summary": "Establishes a permitting system for activities that may cause pollution. Purpose: create healthy living conditions and protect unpolluted environment. Permits reviewed at least every 16 years. Covers water discharge, air emissions, and waste management. Conditions on water reinjection prevent pollution of cold aquifers used for public consumption.",
+        "url": "https://www.government.is/topics/environment-climate-and-nature-protection/pollution-prevention/",
+        "effective_date": "1998-03-12",
+        "relevance": "Data centres discharging warm cooling water or using geothermal water for cooling must comply with pollution prevention permits. Water reinjection conditions protect Iceland's groundwater resources used for drinking water."
+      },
+      {
+        "category": "water_use",
+        "name": "Water Management Act (Vatnalög) -- implementing EU Water Framework Directive",
+        "level": "federal",
+        "summary": "Provides holistic protection for water and ecosystems covering surface water, groundwater, estuaries, and coastal water. Establishes coordinated management of water resources for protection and sustainable use. The Environment and Energy Agency implements the Act in cooperation with local authorities. River Basin Management Plans (2022-2027) set water quality objectives.",
+        "url": "https://www.government.is/topics/environment-climate-and-nature-protection/water/",
+        "effective_date": "2011-12-22",
+        "relevance": "Data centres using water for cooling are subject to water management objectives. Iceland's abundant cold water resources are advantageous for direct water cooling, but abstraction and thermal discharge must comply with River Basin Management Plans."
+      },
+      {
+        "category": "building_code",
+        "name": "Building Regulation (Byggingarreglugerð) No. 112/2012",
+        "level": "federal",
+        "summary": "National building regulations for Iceland. Energy efficiency requirements cover insulation, air permeability, and technical building systems including heating and cooling. Heating and cooling systems must conform to specifications in the Icelandic standard IST 66. Designers must ensure energy consumption efficiency throughout the building lifecycle.",
+        "url": "https://www.government.is/topics/planning-and-construction/construction/",
+        "effective_date": "2012-12-20",
+        "relevance": "New data centre buildings must comply with energy performance requirements. Iceland's near-100% renewable energy and cold climate reduce cooling energy needs, but building systems (including cooling) must still meet IST 66 standards."
+      },
+      {
+        "category": "safety",
+        "name": "Act on Working Environment, Health and Safety in Workplaces No. 46/1980 (as amended 2018)",
+        "level": "federal",
+        "summary": "Ensures safe and healthy working conditions in all workplaces. Employers must prepare written Health and Safety Plans. The Administration of Occupational Safety and Health (AOSH/Vinnueftirlit rikisins) conducts inspections and enforces standards for workplace safety, including temperature, ventilation, and hazardous substances.",
+        "url": "https://www.government.is/library/04-Legislation/Act%20No%2046%201980%20as%20amended%202018.pdf",
+        "effective_date": "1980-06-12",
+        "relevance": "Data centre cooling systems using refrigerants or operating in confined spaces must comply with workplace safety standards. Temperature and ventilation requirements for occupied areas of data centres are governed by this Act."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Competitive Electricity Pricing (no specific DC tax incentive legislation -- structural advantage)",
+        "level": "federal",
+        "summary": "Iceland has no specific data centre electricity tax incentive because industrial electricity prices are already among the lowest in Europe due to abundant renewable hydropower and geothermal energy. Power Purchase Agreements (PPAs) are negotiated directly with Landsvirkjun (national power company) at competitive rates. No carbon tax on electricity generation since generation is nearly 100% renewable.",
+        "url": "https://www.government.is/topics/business-and-industry/energy/",
+        "effective_date": "2003-06-27",
+        "relevance": "Low electricity costs reduce the economic burden of energy-intensive cooling. Combined with cold ambient temperatures, Iceland's structural energy advantage makes it uniquely suitable for data centres without needing explicit tax incentives."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-dk",
+    "country": "DK",
+    "region": "Denmark",
+    "regulatory_complexity_score": 68,
+    "regulations": [
+      {
+        "category": "tax_incentive",
+        "name": "Electricity Tax Act Amendment (Lov nr 1775 af 29/12/2025) -- Reduction to EU Minimum Rate",
+        "level": "federal",
+        "summary": "Amends the Electricity Tax Act (Elafgiftsloven) to reduce the general electricity tax from 72.7 ore/kWh to 0.8 ore/kWh (the EU minimum rate) for 2026 and 2027. Applies to all electricity consumers including data centres. Enacted 29 December 2025, effective 1 January 2026.",
+        "url": "https://www.retsinformation.dk/eli/lta/2025/1775",
+        "effective_date": "2026-01-01",
+        "relevance": "Dramatically reduces electricity costs for data centre cooling operations in 2026-2027. The 99% reduction in electricity tax improves the economics of all cooling technologies, but is temporary (2 years)."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "EU Energy Efficiency Directive (EED) -- Danish National Implementation (via Danish Energy Agency)",
+        "level": "federal",
+        "summary": "Denmark implements the EED recast requiring data centres with installed IT power demand of 500 kW or more to report PUE, WUE, Energy Reuse Factor, temperature set points, and cooling details annually to the EU database. The Danish Energy Agency (Energistyrelsen) is the national coordinator.",
+        "url": "https://ens.dk/en/supply-and-consumption/heat",
+        "effective_date": "2024-09-15",
+        "relevance": "Mandatory PUE and WUE reporting creates transparency on cooling efficiency. Danish data centres must disclose cooling technology details annually, driving adoption of efficient cooling systems."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Heat Supply Act (Varmeforsyningsloven) -- Surplus Heat Price Cap Removal (2025 amendment)",
+        "level": "federal",
+        "summary": "The Heat Supply Act governs Denmark's district heating infrastructure. A 2025 amendment removes the pricing cap on surplus heat, enabling data centres to sell waste heat to district heating networks at market-determined prices. Previously, the price cap reduced the economic incentive for data centres to invest in heat recovery infrastructure. Municipal heat planning ensures integration.",
+        "url": "https://www.retsinformation.dk/eli/lta/2024/1149",
+        "effective_date": "2025-07-01",
+        "relevance": "Removal of the surplus heat price cap directly incentivises data centres to recover and sell waste heat from cooling systems. Higher-temperature waste heat from liquid cooling systems (40-60C) is more economically valuable for district heating."
+      },
+      {
+        "category": "environmental",
+        "name": "Environmental Protection Act (Miljobeskyttelsesloven) -- Chapter 5: Environmental Approval for Listed Activities",
+        "level": "federal",
+        "summary": "Polluting businesses listed in Appendices 1 and 2 of the Environmental Approval Statutory Order (Godkendelsesbekendtgorelsen) must obtain environmental approval before establishment, changes, or expansion. Data centre backup power plants with rated thermal input of 50 MW or more are listed under Appendix 1, point 1.1b. Municipal or Miljostyrelsen approval depending on listing category.",
+        "url": "https://eng.mst.dk/industry/permits-and-inspections/environmental-inspection/danish-regulations",
+        "effective_date": "1991-06-01",
+        "relevance": "Data centres with large backup generator capacity (50+ MW thermal) require full environmental approval. Smaller facilities may need simplified approval. Cooling water discharge and air emissions from cooling towers also assessed."
+      },
+      {
+        "category": "water_use",
+        "name": "Water Supply Act (Vandforsyningsloven) -- LBK nr 1149 af 28/10/2024",
+        "level": "federal",
+        "summary": "Governs utilisation and protection of water resources based on integrated planning and quality requirements. Municipal councils are responsible for water extraction permits and supply planning. Public water supply facilities have supply obligations within their natural areas. The latest consolidated version was issued 28 October 2024.",
+        "url": "https://www.retsinformation.dk/eli/lta/2024/1149",
+        "effective_date": "1978-06-08",
+        "relevance": "Data centres using municipal water supply for cooling must comply with water supply planning. Large-scale water extraction for cooling may require coordination with municipal water supply plans and extraction permits."
+      },
+      {
+        "category": "building_code",
+        "name": "Building Regulations 2018 (Bygningsreglementet BR18)",
+        "level": "federal",
+        "summary": "Danish national building code setting standards for energy performance, fire safety, indoor climate, and structural safety. Energy frame limits maximum permitted energy consumption (heating, cooling, ventilation, lighting) per m2. From 2025, buildings with heating or cooling demand above 290 kW must have building automation to control and monitor HVAC systems.",
+        "url": "https://bygningsreglementet.dk/",
+        "effective_date": "2018-01-01",
+        "relevance": "Data centre buildings with cooling demand >290 kW (essentially all commercial DCs) must install building automation for cooling control and monitoring. Energy frame calculations must account for cooling energy consumption."
+      },
+      {
+        "category": "environmental",
+        "name": "Climate Act (Klimaloven) -- Act No. 965 of 26 June 2020",
+        "level": "federal",
+        "summary": "Legally binding targets: 70% GHG emission reduction by 2030 (vs 1990) and climate neutrality by 2050 (advanced to 2045 in 2022 coalition agreement). Climate targets set every 5 years with a 10-year perspective. All sectors including data centres expected to contribute to national reduction pathway.",
+        "url": "https://www.en.kefm.dk/Media/1/B/Climate%20Act_Denmark%20-%20WEBTILG%C3%86NGELIG-A.pdf",
+        "effective_date": "2020-06-26",
+        "relevance": "Denmark's aggressive climate targets create policy pressure for data centres to minimise emissions from cooling. Operators are expected to demonstrate alignment with national decarbonisation through efficient cooling, waste heat reuse, and renewable energy use."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Efficiency Roadmap (Energistyrelsen/Danish Energy Agency, 2025)",
+        "level": "agency",
+        "summary": "The Danish Energy Agency's roadmap for energy efficiency includes specific attention to data centres as growing energy consumers. Primary energy consumption is projected to remain stable partly due to data centre growth being offset by efficiency improvements. The roadmap supports waste heat integration with district heating and energy-efficient technology adoption.",
+        "url": "https://www.kefm.dk/Media/638654419076280051/Roadmap%20for%20energy%20efficiency.pdf",
+        "effective_date": "2025-01-01",
+        "relevance": "Policy roadmap signals increasing regulatory attention to data centre energy efficiency. Data centres expected to contribute to national efficiency targets through improved cooling systems and waste heat recovery."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-es",
+    "country": "ES",
+    "region": "Spain",
+    "regulatory_complexity_score": 74,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "EU EED Recast (Directive 2023/1791) — Direct Applicability via EU Delegated Regulation 2024/1364 (Data Centre Reporting)",
+        "level": "supranational",
+        "summary": "EU Delegated Regulation 2024/1364 is directly applicable in Spain without national transposition. All data centre operators with installed IT power demand >=500 kW must report annually to the EU database: PUE, WUE, energy reuse factor (ERF), renewable energy factor (REF), cooling system details, and installed capacity. First report was due 15 September 2024; subsequent reports due 15 May annually. Spain has not yet enacted a specific national transposition of EED Article 12 as of April 2026 — MITECO opened a public consultation in mid-2024 but no Royal Decree has been published.",
+        "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-80715",
+        "effective_date": "2024-06-01",
+        "relevance": "Directly applicable to any DC facility >=500 kW in Spain. Cooling system type, PUE, and WUE are mandatory disclosure items. Liquid cooling deployments produce better reportable metrics."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Real Decreto-ley 14/2022 — Medidas de ahorro y eficiencia energetica",
+        "level": "national",
+        "summary": "Royal Decree-Law 14/2022 of 1 August 2022 introduced emergency energy savings and efficiency measures, including mandatory temperature set-points for commercial and public buildings (air-conditioning no lower than 27C in summer), energy audits for large consumers, and support for renewable energy deployment. Partially transposes earlier EED obligations.",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12925",
+        "effective_date": "2022-08-02",
+        "relevance": "Temperature set-points apply to common areas of DC facilities open to the public. Large energy consumers including DCs may face enhanced audit obligations. Liquid cooling systems are exempt from air-temperature set-point rules as they do not rely on ambient air conditioning."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Real Decreto 390/2021 — Certificacion de eficiencia energetica de edificios (as amended by RD 659/2025)",
+        "level": "national",
+        "summary": "Establishes the basic procedure for energy performance certification of buildings. As amended by Real Decreto 659/2025, buildings including data centres must obtain an energy performance certificate (EPC). The certificate rates the building's energy class (A-G) and must be renewed every 10 years.",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-9176",
+        "effective_date": "2021-06-03",
+        "relevance": "New-build and major-renovation DC facilities require an EPC. Efficient cooling systems improve the energy class rating, potentially qualifying for 'A' or 'B' class."
+      },
+      {
+        "category": "building_code",
+        "name": "Codigo Tecnico de la Edificacion (CTE) — Documento Basico DB-HE Ahorro de Energia (Real Decreto 314/2006, as amended by RD 732/2019 and RD 450/2022)",
+        "level": "national",
+        "summary": "Spain's Technical Building Code sets minimum energy performance requirements for all new buildings and major renovations. DB-HE sections cover thermal envelope limits (HE1), HVAC efficiency (HE2), DHW (HE4), and minimum renewable energy contribution (HE5). RD 732/2019 updated nZEB requirements. RD 450/2022 added electric vehicle infrastructure provisions.",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2019-18528",
+        "effective_date": "2020-06-27",
+        "relevance": "Data centre new builds must comply with CTE DB-HE for HVAC efficiency, thermal insulation, and renewable energy share. Advanced cooling systems directly affect HE2 compliance."
+      },
+      {
+        "category": "water_use",
+        "name": "Real Decreto Legislativo 1/2001 — Texto Refundido de la Ley de Aguas",
+        "level": "national",
+        "summary": "Consolidated Water Law. Any private use of public-domain water (surface or groundwater) for industrial cooling requires an administrative concession (concesion administrativa) from the relevant River Basin Authority (Confederacion Hidrografica). Concessions are granted for a maximum of 75 years and specify volume limits, quality return conditions, and fees (canon de regulacion). Existing rights must be registered in the Water Registry.",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-14276",
+        "effective_date": "2001-07-24",
+        "relevance": "DCs using evaporative cooling towers or water-based cooling drawing from public water sources must obtain a water concession. Closed-loop liquid cooling systems using municipal supply may only need a supply contract, not a concession."
+      },
+      {
+        "category": "water_use",
+        "name": "Real Decreto 1620/2007 — Regimen juridico de la reutilizacion de aguas depuradas",
+        "level": "national",
+        "summary": "Establishes the legal framework for reuse of treated wastewater. Permits use of reclaimed water in cooling towers and evaporative condensers (Quality Category 3.1) subject to specific microbiological and chemical quality thresholds. Requires an administrative authorization from the River Basin Authority.",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-21092",
+        "effective_date": "2007-12-08",
+        "relevance": "DCs seeking to reduce freshwater consumption by using reclaimed water for cooling must comply with quality thresholds under Category 3.1. Relevant for evaporative cooling deployments in water-scarce Spanish regions."
+      },
+      {
+        "category": "environmental",
+        "name": "Real Decreto Legislativo 1/2016 — Texto Refundido de la Ley de Prevencion y Control Integrados de la Contaminacion (IPPC)",
+        "level": "national",
+        "summary": "Consolidated text of the Integrated Pollution Prevention and Control Law, transposing the EU Industrial Emissions Directive (2010/75/EU). Installations listed in Annex I (including combustion plants >=50 MW thermal) require an Integrated Environmental Authorisation (Autorizacion Ambiental Integrada, AAI) covering air emissions, water discharges, waste, noise, and energy efficiency. DC backup generators alone typically fall below Annex I thresholds, but large combined heat/power or district heating schemes may trigger AAI.",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2016-12601",
+        "effective_date": "2016-12-31",
+        "relevance": "Most standalone DCs do not trigger AAI, but facilities with large diesel generator banks or co-located industrial activities should verify against Annex I thresholds. Waste heat export schemes may bring DCs into scope."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Ley 50/1985 — Incentivos regionales para correccion de desequilibrios economicos interterritoriales",
+        "level": "national",
+        "summary": "Provides regional investment incentives (capital grants of 10-40% of eligible investment) for projects in designated Economic Promotion Zones, Declining Industrial Zones, and Special Zones. Eligible sectors include industrial installations and technology infrastructure. Incentives are awarded by the Ministry of Finance via annual Orders (most recent: Orden HFP/1436/2023). Canary Islands have a separate, more generous regime under Ley 19/1994 (Zona Especial Canaria, ZEC) with a reduced 4% corporate tax rate.",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1986-85",
+        "effective_date": "1985-12-27",
+        "relevance": "DC investments in designated Spanish regions (Andalucia, Extremadura, Galicia, Canarias, etc.) may qualify for capital grants or tax credits. ZEC in Canary Islands offers 4% corporate tax for qualifying entities."
+      },
+      {
+        "category": "pue_reporting",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Effect in Spain (PUE Reporting)",
+        "level": "supranational",
+        "summary": "PUE reporting for Spanish DCs >=500 kW is mandated directly by EU Delegated Regulation 2024/1364, which is directly applicable without national transposition. Operators must report PUE calculated per EN 50600-4-2, along with WUE (EN 50600-4-9), ERF, REF, and cooling system type. Reports go to the EU database managed by the European Commission. Spain has no additional national PUE reporting obligation beyond the EU requirement as of April 2026.",
+        "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-80715",
+        "effective_date": "2024-06-01",
+        "relevance": "PUE reporting is a direct EU obligation for DCs >=500 kW. No separate Spanish reporting layer exists yet."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-it",
+    "country": "IT",
+    "region": "Italy",
+    "regulatory_complexity_score": 78,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Decreto Legislativo 4 luglio 2014, n. 102 — Attuazione della direttiva sull'efficienza energetica (as amended)",
+        "level": "national",
+        "summary": "Italy's primary energy efficiency law, transposing Directive 2012/27/EU and subsequently updated for EED Recast obligations. Mandates energy audits every 4 years for large enterprises (>250 employees or >50M EUR turnover). Companies consuming >85 TJ/year must adopt ISO 50001 by 11 October 2027. Companies between 10-85 TJ/year must conduct quadrennial energy audits from 2026. Data centres are explicitly covered as large energy consumers. Italy missed the 11 October 2025 deadline for full transposition of Directive 2023/1791; a draft legislative decree was under consultation in 2025-2026.",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2014%3B102%7Eart8=",
+        "effective_date": "2014-07-18",
+        "relevance": "Large DCs likely exceed the 10 TJ/year threshold and face mandatory energy audits or ISO 50001 adoption. Cooling system efficiency is a key audit parameter."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Applicability (Data Centre Reporting)",
+        "level": "supranational",
+        "summary": "Directly applicable in Italy. Data centre operators with installed IT power demand >=500 kW must report PUE, WUE, ERF, REF, cooling system details, and installed capacity to the EU database. First report due 15 September 2024; annual reports due 15 May thereafter. Italy has designated ENEA (Agenzia nazionale per le nuove tecnologie, l'energia e lo sviluppo economico sostenibile) as the national contact point.",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2014%3B102%7Eart8=",
+        "effective_date": "2024-06-01",
+        "relevance": "All Italian DCs >=500 kW must report PUE and cooling metrics annually to the EU database via ENEA."
+      },
+      {
+        "category": "building_code",
+        "name": "DPR 6 giugno 2001, n. 380 — Testo Unico delle disposizioni in materia edilizia",
+        "level": "national",
+        "summary": "Italy's Consolidated Building Code. All new construction and major renovations require a building permit (Permesso di Costruire) from the municipal authority (Comune). The permit process involves urban planning compliance, structural safety, fire prevention, and energy performance verification. Data centres as commercial/industrial buildings require permits under Title II. Seismic zone compliance (Part II, Title IV) applies in much of Italy.",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.presidente.repubblica%3A2001%3B380%7Eart3%21vig=",
+        "effective_date": "2001-06-30",
+        "relevance": "DC new-builds require Permesso di Costruire. Cooling system design affects structural load calculations and fire prevention assessments. Seismic compliance is critical in central and southern Italy."
+      },
+      {
+        "category": "environmental",
+        "name": "Decreto Legislativo 3 aprile 2006, n. 152 — Testo Unico Ambientale (Codice dell'Ambiente)",
+        "level": "national",
+        "summary": "Italy's comprehensive Environmental Code. Part II covers EIA (VIA) and Integrated Environmental Authorisation (AIA/IPPC). Part III covers water protection and management, including water discharge permits. Part IV covers waste. Part V covers air quality. Large industrial installations listed in Annex VIII (combustion >50 MW thermal, etc.) require AIA from the Ministry or Region. DCs with significant backup generation or industrial cooling water discharge may fall within scope. Water abstraction for cooling requires authorization under Part III.",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2006-04-03%3B152=",
+        "effective_date": "2006-04-14",
+        "relevance": "DCs with large diesel backup generators should check Annex VIII thresholds. Water-cooled facilities discharging thermal wastewater need authorization under Part III. EIA may be required for very large DC projects depending on regional thresholds."
+      },
+      {
+        "category": "water_use",
+        "name": "Regio Decreto 11 dicembre 1933, n. 1775 — Testo Unico sulle acque pubbliche (as amended by D.Lgs. 152/2006)",
+        "level": "national",
+        "summary": "Italy's foundational water law, still in force as amended. Industrial water abstraction (derivazione) from public watercourses or groundwater requires a concession from the Region or River Basin District Authority. The concession specifies maximum flow rates, quality return conditions, and fees (canoni). Processing time is 6-18 months. Large abstractions (>100 l/s) require additional environmental screening.",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Aregio.decreto%3A1933-12-11%3B1775=",
+        "effective_date": "1934-01-08",
+        "relevance": "DCs drawing water from rivers, lakes, or wells for cooling require a concession. Closed-loop liquid cooling using municipal water supply avoids this, but open-loop or evaporative systems do not."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Piano Transizione 5.0 — Art. 38 Decreto-Legge 2 marzo 2024, n. 19 (converted by Legge 29 aprile 2024, n. 56)",
+        "level": "national",
+        "summary": "Transizione 5.0 provides a tax credit for enterprises making investments in production structures located in Italy during 2024-2025 that result in measurable energy consumption reductions. The credit ranges from 5% to 45% depending on investment size and energy savings achieved. Eligible investments include digital transformation assets (Industry 4.0 goods), energy efficiency upgrades, and self-generation from renewables. Funded with 1,039.5M EUR (2024), 3,118.5M EUR (2025), and 415.8M EUR/year (2026-2030). Extended and modified by Legge 4/2026.",
+        "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.versione=1&art.idGruppo=10&art.flagTipoArticolo=0&art.codiceRedazionale=24G00035&art.idArticolo=38&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2024-03-02&art.progressivo=0",
+        "effective_date": "2024-03-02",
+        "relevance": "DC operators investing in energy-efficient cooling systems (liquid cooling, heat recovery) may qualify for Transizione 5.0 tax credits of 5-45% if the investment produces measurable energy savings. Self-generation (solar, etc.) at DC sites is also eligible."
+      },
+      {
+        "category": "pue_reporting",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Effect in Italy (PUE Reporting)",
+        "level": "supranational",
+        "summary": "PUE reporting for Italian DCs >=500 kW is mandated directly by EU Delegated Regulation 2024/1364. PUE must be calculated per EN 50600-4-2 and reported alongside WUE, ERF, REF, and cooling system type to the EU database. ENEA manages the Italian reporting portal. No additional national PUE reporting obligation exists beyond the EU requirement, though the pending full EED transposition may add national-layer requirements.",
+        "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Adecreto.legislativo%3A2014%3B102%7Eart8=",
+        "effective_date": "2024-06-01",
+        "relevance": "Annual PUE disclosure is mandatory for DCs >=500 kW. Italy may add further national reporting requirements upon completing EED 2023/1791 transposition."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-pl",
+    "country": "PL",
+    "region": "Poland",
+    "regulatory_complexity_score": 70,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Ustawa z dnia 20 maja 2016 r. o efektywnosci energetycznej (Energy Efficiency Act, consolidated text 2024 — Dz.U. 2024 poz. 1047)",
+        "level": "national",
+        "summary": "Poland's primary energy efficiency law, transposing the original EED (2012/27/EU). Mandates energy audits for large enterprises every 4 years. Establishes energy savings obligations and a white certificate trading system. The consolidated text was published 21 June 2024. As of April 2026, Poland has not yet completed transposition of the EED Recast (Directive 2023/1791) — the 11 October 2025 deadline has passed. The EU Delegated Regulation 2024/1364 on DC reporting is directly applicable regardless.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001047",
+        "effective_date": "2016-10-01",
+        "relevance": "Large DCs in Poland face mandatory energy audits. The white certificate system can generate tradeable certificates for energy efficiency investments including cooling upgrades."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Applicability in Poland (Data Centre Reporting)",
+        "level": "supranational",
+        "summary": "Directly applicable in Poland. All DC operators with installed IT power demand >=500 kW must report PUE, WUE, ERF, REF, cooling system type, and capacity to the EU database. First report due 15 September 2024; annual reports due 15 May thereafter. Poland's national regulatory framework for administering these reports is still being developed.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001047",
+        "effective_date": "2024-06-01",
+        "relevance": "Polish DCs >=500 kW must report PUE and cooling metrics to the EU database annually."
+      },
+      {
+        "category": "building_code",
+        "name": "Prawo budowlane (Building Law, consolidated text 2024 — Dz.U. 2024 poz. 725) and Rozporzadzenie w sprawie warunkow technicznych (Technical Conditions Regulation, Dz.U. 2024 poz. 726)",
+        "level": "national",
+        "summary": "Poland's Building Law requires a building permit (pozwolenie na budowe) for commercial/industrial construction including data centres. The Technical Conditions Regulation (Rozporzadzenie Ministra Rozwoju i Technologii z dnia 9 maja 2024 r.) sets minimum requirements for thermal insulation, HVAC efficiency, energy performance, and ventilation. The 2024 amendments tightened nZEB requirements for non-residential buildings.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240000725",
+        "effective_date": "2024-04-01",
+        "relevance": "DC new-builds require building permits and must comply with updated thermal and HVAC efficiency standards. Cooling system design documentation is part of the permit application."
+      },
+      {
+        "category": "building_code",
+        "name": "Ustawa o charakterystyce energetycznej budynkow (Act on Building Energy Performance, consolidated text 2024 — Dz.U. 2024 poz. 101)",
+        "level": "national",
+        "summary": "Transposes the EPBD into Polish law. Requires energy performance certificates for new buildings, buildings sold or rented, and public buildings >250 m2. Large commercial buildings (including DCs) above threshold must display energy certificates. The 2022 amendment (Dz.U. 2022 poz. 2206) expanded digital registry requirements.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240000101",
+        "effective_date": "2014-09-09",
+        "relevance": "DC facilities require energy performance certificates. Cooling efficiency directly affects the certificate class."
+      },
+      {
+        "category": "water_use",
+        "name": "Prawo wodne (Water Law, consolidated text 2024 — Dz.U. 2024 poz. 1087)",
+        "level": "national",
+        "summary": "Poland's Water Law (Ustawa z dnia 20 lipca 2017 r.) requires a water-law permit (pozwolenie wodnoprawne) for industrial water abstraction exceeding 5 m3/day or water discharge to surface waters. Permits are issued by the Polish Waters Authority (Wody Polskie). Thermal discharge to watercourses is subject to temperature limits. Water use fees are calculated per m3 abstracted.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001087",
+        "effective_date": "2018-01-01",
+        "relevance": "DCs using open-loop cooling or abstracting groundwater/surface water for cooling towers need a pozwolenie wodnoprawne. Closed-loop liquid cooling using municipal supply typically does not trigger this requirement."
+      },
+      {
+        "category": "environmental",
+        "name": "Prawo ochrony srodowiska (Environmental Protection Law, consolidated text 2025 — Dz.U. 2025 poz. 647)",
+        "level": "national",
+        "summary": "Poland's comprehensive environmental protection law. Part IV establishes integrated permits (pozwolenie zintegrowane) for installations listed in Annex to the Act (transposing the Industrial Emissions Directive). Combustion plants >=50 MW thermal, certain waste management operations, and chemical plants require integrated permits. DCs with large backup generator installations should verify against Annex thresholds. The 2024 amendment (Dz.U. 2024 poz. 1940) updated ETS provisions.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000647",
+        "effective_date": "2001-10-01",
+        "relevance": "Most standalone DCs fall below integrated permit thresholds, but large installations with backup power capacity approaching 50 MW thermal should verify. Noise emission limits in the law apply to all DC facilities."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Ustawa o wspieraniu nowych inwestycji (Act on Supporting New Investments — Polish Investment Zone, Dz.U. 2018 poz. 1162) and Rozporzadzenie RM z dnia 27 grudnia 2022 r. (Dz.U. 2022 poz. 2861)",
+        "level": "national",
+        "summary": "Replaced the old Special Economic Zones regime with a nationwide Polish Investment Zone (Polska Strefa Inwestycji). Qualifying new investments receive a corporate income tax exemption (CIT at 0% on income from the investment) for 10-15 years, depending on region and investment size. Minimum investment thresholds vary by region (from 200,000 PLN in less-developed areas to 100M PLN in Warsaw). The 2022 Council of Ministers Regulation specifies eligible activities and maximum aid intensity (10-50% of eligible costs).",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180001162",
+        "effective_date": "2018-06-30",
+        "relevance": "DC investments in Poland can qualify for CIT exemptions under the Polish Investment Zone, particularly in eastern and southeastern Poland where aid intensity reaches 50%. The exemption covers income from the qualifying investment for 10-15 years."
+      },
+      {
+        "category": "pue_reporting",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Effect in Poland (PUE Reporting)",
+        "level": "supranational",
+        "summary": "PUE reporting for Polish DCs >=500 kW is mandated directly by EU Delegated Regulation 2024/1364. PUE must be reported per EN 50600-4-2 to the EU database. Poland has not yet established a national-layer PUE reporting obligation beyond the EU requirement.",
+        "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001047",
+        "effective_date": "2024-06-01",
+        "relevance": "Annual PUE disclosure mandatory for DCs >=500 kW via EU database."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-pt",
+    "country": "PT",
+    "region": "Portugal",
+    "regulatory_complexity_score": 68,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Decreto-Lei n.o 118/2013 — Sistema de Certificacao Energetica (SCE) and RECS (as amended by DL 101-D/2020)",
+        "level": "national",
+        "summary": "Establishes Portugal's Building Energy Certification System (SCE), the Energy Performance Regulation for Residential Buildings (REH), and the Energy Performance Regulation for Commercial and Service Buildings (RECS). Large commercial buildings (>=1000 m2, or >=500 m2 for specific categories) must obtain energy certificates and implement energy management plans. Data centres as commercial/service buildings fall under RECS. Amended by Decreto-Lei 101-D/2020 to transpose EPBD Recast requirements including nZEB standards. ADENE (Agencia para a Energia) manages the SCE.",
+        "url": "https://dre.pt/legislacao-consolidada/-/lc/74729182/201908170444/diploma?rp=indice",
+        "effective_date": "2013-08-20",
+        "relevance": "DCs above 1000 m2 or using significant HVAC energy must obtain SCE certification under RECS. Cooling system efficiency is a key variable in the energy certificate rating."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Applicability in Portugal (Data Centre Reporting)",
+        "level": "supranational",
+        "summary": "Directly applicable in Portugal. All DC operators with installed IT power demand >=500 kW must report PUE, WUE, ERF, REF, cooling system details, and capacity to the EU database. First report due 15 September 2024; annual reports due 15 May thereafter. Portugal's national transposition of the full EED Recast (Directive 2023/1791) is pending as of April 2026.",
+        "url": "https://dre.pt/web/en/home/-/contents/142487103/details/2/normal",
+        "effective_date": "2024-06-01",
+        "relevance": "Portuguese DCs >=500 kW must report PUE and cooling metrics to the EU database annually."
+      },
+      {
+        "category": "building_code",
+        "name": "Decreto-Lei n.o 118/2013 — RECS (Regulamento de Desempenho Energetico dos Edificios de Comercio e Servicos)",
+        "level": "national",
+        "summary": "Part of the SCE framework, RECS sets minimum energy performance requirements for commercial and service buildings including mechanical ventilation, HVAC efficiency, lighting, and thermal envelope. New commercial buildings must meet nZEB standards. Technical HVAC systems must meet minimum seasonal efficiency requirements. Periodic inspections of HVAC systems >=12 kW cooling capacity are mandatory.",
+        "url": "https://dre.pt/legislacao-consolidada/-/lc/74729182/201908170444/diploma?rp=indice",
+        "effective_date": "2013-12-01",
+        "relevance": "DC cooling systems >=12 kW are subject to periodic HVAC inspections. New DC buildings must meet nZEB standards under RECS."
+      },
+      {
+        "category": "water_use",
+        "name": "Lei n.o 58/2005 — Lei da Agua (Water Law) and Decreto-Lei n.o 226-A/2007 (Water Use Regime)",
+        "level": "national",
+        "summary": "Portugal's Water Law transposes the EU Water Framework Directive. Decreto-Lei 226-A/2007 establishes the regime for utilization of water resources. Industrial water abstraction from public water domain (surface or groundwater) requires a utilization title (titulo de utilizacao) — either a licence or concession — from the Regional Hydrographic Authority (ARH, now integrated into APA - Agencia Portuguesa do Ambiente). Water use fees (Taxa de Recursos Hidricos, TRH) apply per m3.",
+        "url": "https://dre.pt/web/guest/legislacao-consolidada/-/lc/117104391/202106170831/diplomaExpandido",
+        "effective_date": "2005-12-29",
+        "relevance": "DCs abstracting water for cooling from rivers, groundwater, or other public domain sources require a utilization title from APA. Closed-loop cooling on municipal supply requires only a supply contract."
+      },
+      {
+        "category": "environmental",
+        "name": "Decreto-Lei n.o 75/2015 — Licenciamento Unico Ambiental (LUA)",
+        "level": "national",
+        "summary": "Establishes Portugal's Single Environmental Licensing regime (LUA), consolidating multiple environmental authorizations into a single process. Covers EIA (Avaliacao de Impacte Ambiental), integrated pollution prevention (PCIP/IPPC), waste management licensing, water discharge permits, and accident prevention. Applications are submitted through a single electronic portal. Large industrial installations falling under the IED (combustion >=50 MW thermal, etc.) require a Titulo Unico Ambiental (TUA).",
+        "url": "https://dre.pt/home/-/dre/67185043/details/maximized",
+        "effective_date": "2015-05-12",
+        "relevance": "The LUA streamlines environmental permitting into a single portal. Most standalone DCs fall below IED thresholds, but those with significant backup generation or industrial cooling discharge should verify. The single-portal approach reduces permitting complexity compared to other EU countries."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Codigo Fiscal do Investimento (Investment Tax Code) — RFAI (Regime Fiscal de Apoio ao Investimento) and SIFIDE (Sistema de Incentivos Fiscais em I&D)",
+        "level": "national",
+        "summary": "The Investment Tax Code (approved by Decreto-Lei 162/2014, consolidated) provides two key incentive regimes. RFAI offers a tax credit of 10-25% of eligible investment in tangible and intangible assets for productive investments in less-developed regions (aligned with EU regional aid map). SIFIDE provides a tax credit of 32.5% base rate + 50% incremental rate for R&D expenditure. Both regimes are available to DC operators making qualifying investments.",
+        "url": "https://dre.pt/web/guest/legislacao-consolidada/-/lc/114448807/201809211527/73503424/diploma/indice?p_p_state=maximized",
+        "effective_date": "2014-07-11",
+        "relevance": "DC investments in Portugal may qualify for RFAI tax credits (10-25%) in eligible regions. R&D activities at DC sites (cooling innovation, AI research) may qualify for SIFIDE credits (32.5-50%)."
+      },
+      {
+        "category": "pue_reporting",
+        "name": "EU Delegated Regulation 2024/1364 — Direct Effect in Portugal (PUE Reporting)",
+        "level": "supranational",
+        "summary": "PUE reporting for Portuguese DCs >=500 kW is mandated directly by EU Delegated Regulation 2024/1364. PUE must be calculated per EN 50600-4-2. No additional national PUE reporting obligation exists in Portugal beyond the EU requirement as of April 2026.",
+        "url": "https://dre.pt/web/en/home/-/contents/142487103/details/2/normal",
+        "effective_date": "2024-06-01",
+        "relevance": "Annual PUE disclosure mandatory for DCs >=500 kW via EU database."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-ch",
+    "country": "CH",
+    "region": "Switzerland",
+    "regulatory_complexity_score": 65,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Energiegesetz (EnG) — Federal Energy Act (SR 730.0, 30 September 2016)",
+        "level": "federal",
+        "summary": "Switzerland's Federal Energy Act sets the framework for energy policy including efficiency targets, renewable energy promotion, and large consumer obligations. Large energy consumers (Grossverbraucher) — enterprises consuming >500 MWh electricity/year — can enter into target agreements (Zielvereinbarungen) with the federal government or cantons to improve energy efficiency. Cantons must implement programmes for large consumers. The Act does not contain data-centre-specific provisions but data centres typically qualify as large consumers. Switzerland is NOT an EU member and is NOT subject to the EED or EU Delegated Regulation 2024/1364.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/2017/762/de",
+        "effective_date": "2018-01-01",
+        "relevance": "DCs consuming >500 MWh/year (virtually all commercial DCs) are classified as Grossverbraucher and must participate in cantonal energy efficiency programmes or enter target agreements. No EU-mandated PUE reporting applies, but target agreements typically include energy intensity metrics."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energieverordnung (EnV) — Federal Energy Ordinance (SR 730.01, as amended 2024)",
+        "level": "federal",
+        "summary": "Implementing ordinance for the Energy Act. Specifies details of the large consumer programme, target agreement procedures, energy efficiency requirements for appliances and systems, and subsidy mechanisms. The 2024 amendment (AS 2024 702) updated efficiency standards and renewable energy provisions. Cantons retain authority to set additional requirements for large consumers.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/2017/763/de",
+        "effective_date": "2018-01-01",
+        "relevance": "Defines the operational framework for DC participation in large consumer efficiency programmes. Canton-level variation means DC operators must check local requirements."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Bundesgesetz uber die Reduktion der CO2-Emissionen (CO2 Act, revised 2024) and CO2-Verordnung (AS 2025 248)",
+        "level": "federal",
+        "summary": "The revised CO2 Act (entered into force 1 January 2025) sets Switzerland's climate targets: net-zero by 2050, with interim targets of -50% by 2030 vs 1990. The CO2 Ordinance (AS 2025 248) implements the Act. Companies can be exempted from the CO2 levy if they commit to emission reduction targets. The Act covers building emissions, transport, and industry. DCs using fossil-fuel backup generators are subject to the CO2 levy on fuel purchases. Companies committing to reduction targets can recover the levy.",
+        "url": "https://www.fedlex.admin.ch/eli/oc/2024/376/de",
+        "effective_date": "2025-01-01",
+        "relevance": "DCs operating diesel backup generators pay the CO2 levy (~120 CHF/tonne CO2). Target agreements can provide levy exemption. Heat recovery from DCs to district heating networks supports emission reduction commitments."
+      },
+      {
+        "category": "building_code",
+        "name": "Raumplanungsgesetz (RPG) — Federal Spatial Planning Act (SR 700) and Cantonal Building Laws",
+        "level": "federal_cantonal",
+        "summary": "The Federal Spatial Planning Act sets the framework for land use planning. Building permits (Baubewilligungen) are governed by cantonal law — each of Switzerland's 26 cantons has its own building legislation. Federal law requires that construction conform to zoning plans and complies with environmental, fire safety, and structural requirements. DC construction in industrial or commercial zones typically requires a cantonal building permit, with processing times of 2-6 months depending on canton and project complexity.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1979/1573_1573_1573/en",
+        "effective_date": "1980-01-01",
+        "relevance": "DC construction requires cantonal building permits. Zoning restrictions vary significantly between cantons — proximity to residential areas, noise limits, and building height restrictions are cantonal matters."
+      },
+      {
+        "category": "water_use",
+        "name": "Gewasserschutzgesetz (GSchG) — Federal Waters Protection Act (SR 814.20) and Gewasserschutzverordnung (GSchV, SR 814.201)",
+        "level": "federal",
+        "summary": "The Federal Waters Protection Act and its implementing ordinance regulate water abstraction, discharge, and thermal pollution of watercourses. Industrial cooling water discharge to surface waters must not raise the receiving water temperature by more than 3C (or 1.5C in sensitive waters). Abstraction of groundwater or surface water for cooling requires a cantonal permit. The GSchV sets specific discharge quality standards. Cantons enforce the federal standards and may impose additional restrictions.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1992/1860_1860_1860/en",
+        "effective_date": "1992-11-01",
+        "relevance": "DCs using open-loop or evaporative cooling drawing from natural water sources need cantonal water permits. Thermal discharge limits (3C max temperature rise) are strictly enforced. Closed-loop liquid cooling on municipal water supply avoids most permitting requirements."
+      },
+      {
+        "category": "environmental",
+        "name": "Umweltschutzgesetz (USG) — Federal Environmental Protection Act (SR 814.01) and UVPV (EIA Ordinance, SR 814.011)",
+        "level": "federal",
+        "summary": "The Federal Environmental Protection Act establishes the framework for environmental impact assessment (UVP/EIA), air pollution control, noise protection, and waste management. The EIA Ordinance (UVPV) lists installations requiring an environmental impact assessment — large industrial plants, energy infrastructure, and certain commercial developments trigger EIA depending on size. DCs are not explicitly listed in the UVPV Annex, but very large facilities (>20 MW electrical) or those in sensitive locations may trigger cantonal EIA requirements. The Luftreinhalte-Verordnung (LRV, Air Pollution Control Ordinance) limits emissions from backup generators.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/1984/1122_1122_1122/en",
+        "effective_date": "1985-01-01",
+        "relevance": "Most DCs do not trigger federal EIA, but cantonal thresholds vary. Backup generator emissions must comply with LRV limits. Noise limits from the USG apply to all DC sites and affect cooling equipment placement."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Cantonal Tax Incentives and Federal Gebauedeprogramm (Building Programme)",
+        "level": "federal_cantonal",
+        "summary": "Switzerland has no single federal DC tax incentive programme. However, several mechanisms apply: (1) The federal Gebaudeprogramm (Building Programme) subsidizes energy efficiency improvements in buildings, including commercial HVAC upgrades. (2) Cantons offer varying tax incentives — e.g., Canton of Zurich and Canton of Zug have favourable corporate tax rates (12-14% effective) attracting DC investment. (3) Companies participating in target agreements under the EnG can receive CO2 levy refunds. (4) ProKilowatt (competitive subsidy programme under EnG) funds energy efficiency projects including industrial cooling optimization.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/2017/762/de",
+        "effective_date": "2018-01-01",
+        "relevance": "DC operators can access ProKilowatt subsidies for cooling efficiency projects. Cantonal corporate tax rates (11-22% effective) are a significant factor in DC siting. CO2 levy refunds via target agreements reduce operating costs."
+      },
+      {
+        "category": "pue_reporting",
+        "name": "No Federal PUE Reporting Mandate — Voluntary via Target Agreements",
+        "level": "federal",
+        "summary": "Switzerland does not impose a mandatory PUE reporting obligation. It is not subject to the EU EED or EU Delegated Regulation 2024/1364. However, DCs participating in target agreements (Zielvereinbarungen) under the Energy Act typically report energy intensity metrics including PUE-equivalent measures as part of their agreement. The Swiss Data Center Association (Swiss Datacenter Efficiency Association, SDEA) promotes voluntary PUE benchmarking among members.",
+        "url": "https://www.fedlex.admin.ch/eli/cc/2017/762/de",
+        "effective_date": "2018-01-01",
+        "relevance": "No mandatory PUE reporting. Voluntary reporting through target agreements and industry association programmes. This represents lower regulatory burden compared to EU member states but less transparency for market intelligence."
+      }
+    ]
+  },
+  {
+    "zone_id": "apac-jp",
+    "country": "Japan",
+    "region": "National",
+    "regulatory_complexity_score": 62,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Act on Rationalizing Energy Use and Shifting to Non-fossil Energy (Act No. 49, 1979; revised 2023)",
+        "level": "national",
+        "summary": "Japan's primary energy efficiency law, revised April 2023 to include non-fossil energy shifting obligations. Businesses consuming 1,500 kL or more crude-oil-equivalent energy per year are designated as 'Specified Business Operators' and must appoint an energy manager, submit annual energy consumption reports and medium-to-long-term energy rationalization plans to METI. Data centers fall under this regime as large energy consumers. The revised Act requires businesses to track and report non-fossil energy usage alongside rationalization efforts. Benchmarking system evaluates sector-specific energy efficiency with S/A/B/C ratings; businesses rated B or C face regulatory guidance.",
+        "url": "https://www.meti.go.jp/english/policy/energy_environment/energy_efficiency/index.html",
+        "effective_date": "2023-04-01",
+        "relevance": "Directly governs energy reporting obligations for data center operators in Japan. Cooling systems represent the largest non-IT energy load and are a primary target for rationalization plans. Operators must demonstrate year-over-year efficiency improvements including cooling plant optimization."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Act on Improvement of Energy Consumption Performance of Buildings (Building Energy Efficiency Act, Act No. 53, 2015; revised 2025)",
+        "level": "national",
+        "summary": "Originally enacted July 2015 with regulatory measures for large non-residential buildings. As of April 2025, compliance with energy efficiency standards is mandatory for all new buildings. Non-residential buildings above 2,000 m2 must meet energy consumption performance standards covering HVAC, lighting, hot water, and elevators. Incentive measures include labeling systems and expedited building permits for high-efficiency designs. Covers extensions, renovations, and improvements to cooling system equipment.",
+        "url": "https://www.mlit.go.jp/common/001134876.pdf",
+        "effective_date": "2025-04-01",
+        "relevance": "New data center construction must meet mandatory energy consumption performance standards. Cooling system design (chillers, air handling units, heat rejection equipment) is a major component of the building energy performance calculation. High-efficiency cooling designs may qualify for expedited permitting."
+      },
+      {
+        "category": "environmental",
+        "name": "Environmental Impact Assessment Act (Act No. 81, 1997)",
+        "level": "national",
+        "summary": "Requires environmental impact assessment for large-scale development projects. Applicable to projects in categories defined by Cabinet Order including power plants, roads, railways, airports, and reclamation. While data centers are not explicitly listed as a designated project type, very large data center campus developments may trigger prefectural-level environmental assessment requirements depending on scale, location, and local ordinances.",
+        "url": "https://www.env.go.jp/en/laws/policy/assess/index.html",
+        "effective_date": "1999-06-12",
+        "relevance": "Large data center campuses with on-site power generation or significant environmental footprint may require environmental impact assessment under prefectural ordinances. Cooling water discharge, noise from cooling towers, and thermal emissions are relevant assessment factors."
+      },
+      {
+        "category": "water_use",
+        "name": "Water Pollution Control Law (Act No. 138, 1970)",
+        "level": "national",
+        "summary": "Regulates effluent from factories and business establishments discharged into public water bodies. National effluent standards apply to facilities discharging 50 m3 or more per day on average. Standards cover 24 substances for human health protection and 16 items for living environment protection. Prefectural governments may set stricter local standards. Cooling tower blowdown water from data centers must meet discharge standards for temperature, pH, and chemical treatment residuals.",
+        "url": "https://www.env.go.jp/en/laws/water/wlaw/index.html",
+        "effective_date": "1971-06-24",
+        "relevance": "Data centers using evaporative cooling towers must ensure blowdown water discharge meets national and prefectural effluent standards. Chemical water treatment (biocides, corrosion inhibitors) used in cooling water loops adds regulated substances to discharge. Closed-loop liquid cooling eliminates this compliance obligation."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "GX Economy Transition Bonds and Strategic Tax Incentives (GX Promotion Act, Act No. 32, 2023)",
+        "level": "national",
+        "summary": "Under the GX Promotion Act, Japan will issue GX Economy Transition Bonds to provide approximately 20 trillion yen in advance investment support over 10 years for private sector decarbonization investments. Tax incentives include immediate depreciation for strategic investment areas and enhanced R&D tax credits for strategically important technologies. Data center energy efficiency investments and green cooling technology may qualify under the GX framework. Emissions trading system enters full operation FY2026; fossil fuel surcharge begins FY2028.",
+        "url": "https://www.cas.go.jp/jp/seisaku/gx_jikkou_kaigi/pdf/kihon_en.pdf",
+        "effective_date": "2023-05-19",
+        "relevance": "Data center operators investing in energy-efficient cooling technologies (liquid cooling, waste heat recovery, free cooling) may access GX tax incentives for decarbonization investments. Emissions trading from FY2026 adds cost to carbon-intensive cooling approaches using grid electricity."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Economic Security Promotion Act — Cloud/AI Infrastructure Subsidies",
+        "level": "national",
+        "summary": "Under Article 9(4) of the Economic Security Promotion Act, METI approved subsidies of up to 72.5 billion yen total to five projects for improving computational resources necessary for AI development. Targets domestic data center and cloud infrastructure investment to reduce reliance on foreign cloud providers (domestic share approximately 30% of basic cloud services market). Companies must establish infrastructure within Japan to ensure stable supply of designated critical goods.",
+        "url": "https://www.meti.go.jp/english/press/2024/0419_001.html",
+        "effective_date": "2024-04-19",
+        "relevance": "Direct capital subsidy for domestic data center infrastructure build-out. Cooling infrastructure is a major component of total data center capital cost; subsidies reduce the barrier to deploying advanced cooling technologies in Japan-based facilities."
+      },
+      {
+        "category": "building_code",
+        "name": "Building Standards Act (Act No. 201, 1950; regularly amended)",
+        "level": "national",
+        "summary": "Japan's primary building code governing structural safety, fire protection, and building services. Administered by MLIT. Data centers must comply with structural load requirements for heavy equipment (servers, UPS, cooling plants), fire suppression standards for server rooms, and mechanical ventilation requirements. Seismic design requirements (particularly stringent in Japan) apply to cooling equipment mountings, piping systems, and rooftop installations. Local building authorities may impose additional requirements.",
+        "url": "https://www.mlit.go.jp/common/001325170.pdf",
+        "effective_date": "1950-11-23",
+        "relevance": "Seismic design requirements for cooling infrastructure are uniquely stringent in Japan. Cooling towers, chiller plants, piping systems, and CDU installations must be designed for seismic resistance. This adds cost but is non-negotiable for building permit approval."
+      }
+    ]
+  },
+  {
+    "zone_id": "apac-kr",
+    "country": "South Korea",
+    "region": "National",
+    "regulatory_complexity_score": 58,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Use Rationalization Act (Act No. 2006, 1979; regularly amended)",
+        "level": "national",
+        "summary": "Korea's primary energy efficiency legislation administered by MOTIE (Ministry of Trade, Industry and Energy). Requires large energy consumers (designated as 'energy-intensive businesses') to appoint energy managers, submit energy use reports, and implement energy conservation plans. Establishes the Korea Energy Agency (KEA) to oversee enforcement. The Act mandates energy audits for large facilities and sets minimum energy performance standards for equipment including HVAC systems. Data centers consuming above threshold energy levels must comply with reporting and efficiency improvement obligations.",
+        "url": "https://law.go.kr/LSW/lsInfoP.do?lsiSeq=98468&viewCls=engLsInfoR&urlMode=engLsInfoR",
+        "effective_date": "1979-12-28",
+        "relevance": "Data centers classified as large energy consumers must report energy usage annually and submit efficiency improvement plans. Cooling system efficiency (COP ratings for chillers, fan energy for air handling) directly impacts facility-level energy intensity metrics subject to government review."
+      },
+      {
+        "category": "environmental",
+        "name": "Framework Act on Carbon Neutrality and Green Growth for Coping with Climate Crisis (Act No. 18469, 2021)",
+        "level": "national",
+        "summary": "Enacted September 2021, making Korea the 14th country to enshrine 2050 carbon neutrality into law. Sets mid-term target of 40% GHG reduction from 2018 levels by 2030. Establishes Korea Emissions Trading Scheme (K-ETS) requiring covered entities to hold allowances matching their annual emissions. The Act mandates national climate adaptation strategies, sector-specific reduction plans, and a Presidential Commission on Carbon Neutrality. Large energy-consuming data centers may fall under K-ETS obligations depending on their emissions threshold.",
+        "url": "https://law.go.kr/LSW//lsInfoP.do?lsiSeq=235581&chrClsCd=010203&urlMode=engLsInfoR&viewCls=engLsInfoR",
+        "effective_date": "2022-03-25",
+        "relevance": "Data centers with significant Scope 1 and Scope 2 emissions may be subject to K-ETS allowance obligations. Cooling energy represents the largest controllable component of data center emissions; efficient cooling directly reduces emissions trading costs. 4.9% annual baseline decline increases pressure over time."
+      },
+      {
+        "category": "water_use",
+        "name": "Water Environment Conservation Act (Act No. 16619)",
+        "level": "national",
+        "summary": "Governs effluent discharge standards for industrial facilities. Facilities operating as 'specified water discharge facilities' must obtain permits and meet national effluent standards for 51 parameters. The Total Water Pollution Load Management System (TPLMS) sets basin-level pollution load allocations. Cooling tower blowdown and process water discharge from data centers must meet applicable standards. Prefectural and municipal authorities may impose additional restrictions.",
+        "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=218199&chrClsCd=010203&urlMode=engLsInfoR&viewCls=engLsInfoR",
+        "effective_date": "2019-01-15",
+        "relevance": "Data centers using open-loop or evaporative cooling systems must obtain discharge permits and meet stringent effluent standards for 51 parameters. Chemical treatment of cooling water (biocides, scale inhibitors) creates regulated discharge obligations. Closed-loop liquid cooling eliminates wastewater discharge compliance burden."
+      },
+      {
+        "category": "building_code",
+        "name": "Building Act and Enforcement Decree — Energy Saving Design Standards",
+        "level": "national",
+        "summary": "Korea's Building Act and associated enforcement decrees establish energy-saving design standards for buildings. The Ministry of Land, Infrastructure and Transport (MOLIT) administers building energy efficiency certification (G-SEED green building certification). Large non-residential buildings must meet energy performance requirements covering HVAC, insulation, and lighting. Korea has measures to boost green architecture through building energy efficiency certification, integrated building energy management systems, and green remodeling programs.",
+        "url": "https://www.molit.go.kr/english/USR/WPGE0201/m_36855/LST.jsp",
+        "effective_date": "2013-09-01",
+        "relevance": "Data center construction must meet building energy-saving design standards. HVAC system design including cooling equipment sizing, ductwork, and insulation must comply with MOLIT energy performance requirements. Green building certification (G-SEED) provides recognition for high-efficiency cooling designs."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Restriction of Special Taxation Act — National Strategic Technology Investment Tax Credit",
+        "level": "national",
+        "summary": "The Restriction of Special Taxation Act (regularly amended) provides investment tax credits for designated national strategic technologies. The 'K-Chips Act' amendment expanded tax credits to include semiconductor and advanced digital infrastructure investments. Tax deductions of up to 15% for large enterprises and 25% for SMEs on qualifying facility investments. R&D tax credits available for strategic technology fields. Data center infrastructure investments may qualify under digital infrastructure categories. Government increased facilities investment tax deduction by 2 percentage points for 5G and AI infrastructure.",
+        "url": "https://english.moef.go.kr/pc/selectTbPressCenterDtl.do?boardCd=N0001&seq=5759",
+        "effective_date": "2023-01-01",
+        "relevance": "Data center cooling infrastructure investments (particularly advanced technologies like liquid cooling for AI computing) may qualify for enhanced investment tax credits under national strategic technology designations. Tax benefits reduce effective capital cost of deploying high-efficiency cooling systems."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Digital New Deal and AI Computing Center Investment Programs",
+        "level": "national",
+        "summary": "Korea's Digital New Deal (2020) and subsequent AI computing infrastructure expansion plans direct government investment toward domestic data center and computing infrastructure. MSIT allocated KRW 18.6 trillion budget for 2024 including AI computing center establishment. The National AI Computing Center Establishment Plan funds GPU-based computing infrastructure with associated cooling requirements. Government co-investment model provides subsidies for qualifying data center and AI infrastructure projects.",
+        "url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=4&bbsSeqNo=42&nttSeqNo=1074",
+        "effective_date": "2024-01-01",
+        "relevance": "Government-funded AI computing centers require high-density cooling solutions. Programs provide capital funding that covers cooling infrastructure as part of total facility investment. Sets precedent for public-private partnership in data center cooling technology deployment."
+      },
+      {
+        "category": "efficiency_reporting",
+        "name": "Greenhouse Gas and Energy Target Management System",
+        "level": "national",
+        "summary": "Administered by the Greenhouse Gas Inventory and Research Center of Korea (GIR). Requires designated large emitters to report greenhouse gas emissions and energy consumption annually. The National GHGs Management System manages emissions and emission trading volumes of individual business sites. Data centers exceeding emission thresholds must participate in the reporting system and may be subject to emissions reduction targets. GIR conducts verification and compliance monitoring.",
+        "url": "https://www.gir.go.kr/eng/index.do?menuId=5",
+        "effective_date": "2012-01-01",
+        "relevance": "Data centers above emissions thresholds must report energy consumption and GHG emissions annually. Cooling energy consumption is a significant component of total facility emissions. Efficient cooling directly reduces reported emissions and potential K-ETS allowance costs."
+      }
+    ]
+  },
+  {
+    "zone_id": "apac-sg",
+    "country": "Singapore",
+    "region": "National",
+    "regulatory_complexity_score": 72,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "BCA-IMDA Green Mark for Data Centres 2024 (GMDC:2024)",
+        "level": "national",
+        "summary": "Jointly developed by BCA and IMDA with industry input, launched October 2024. Mandatory for new data centre development approvals — applicants under DC-CFA2 must achieve GMDC:2024 Platinum certification. Assesses performance in energy efficiency, sustainable design and construction, use of digital tools, and maintainability. PUE of 1.3 or lower is the target standard; DC-CFA2 requires PUE of 1.25 or better at 100% IT load. Replaces and raises standards from previous Green Mark for Data Centres scheme.",
+        "url": "https://www.imda.gov.sg/how-we-can-help/bca-imda-green-mark-for-data-centres-scheme",
+        "effective_date": "2024-10-08",
+        "relevance": "The most directly relevant regulation for data center cooling in Singapore. PUE 1.25 requirement at 100% IT load effectively mandates high-efficiency cooling solutions — liquid cooling, raised operating temperatures, or hybrid approaches. Platinum certification is a prerequisite for new capacity approvals."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Singapore Standard SS 564: Green Data Centres — Energy and Environmental Management Systems",
+        "level": "national",
+        "summary": "First published January 2011, revised as SS 564: Part 1 in 2013 (aligned with ISO 50001) and Part 2 (implementation guidelines). Establishes a Plan-Do-Check-Act framework for continuous improvement of data centre energy efficiency. Covers electrical, mechanical, IT equipment management, and facility design. Defines performance metrics and benchmarks for energy efficiency tracking. Available through Singapore Standards eShop. Developed by Green DC Standards Working Group under the IT Standards Committee.",
+        "url": "https://www.imda.gov.sg/regulations-and-licensing-listing/ict-standards-and-quality-of-service/it-standards-and-frameworks/green-data-centre-standard",
+        "effective_date": "2013-01-01",
+        "relevance": "Foundational standard for data centre energy management in Singapore. Provides the benchmarking framework against which cooling system efficiency is measured. ISO 50001 alignment means operators with existing energy management certifications can leverage those for compliance."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Tropical Data Centre Standard SS 697:2023",
+        "level": "national",
+        "summary": "Provides methodology and guidelines for safely raising data centre operating temperatures in tropical climates. Target: operating temperatures of 26 deg C and above (up from traditional 22 deg C). Achieves 2-5% cooling energy savings per 1 deg C increase. Three-phase TCO framework: measurement/simulation, detailed TCO calculations, operational classification and optimization. Real-world results: GovTech achieved 40% cooling fan energy reduction and 15% annual cost savings. Built on ASHRAE TC9.9 guidelines.",
+        "url": "https://www.imda.gov.sg/how-we-can-help/green-dc-roadmap/tropical-dc-standard",
+        "effective_date": "2023-01-01",
+        "relevance": "Directly targets cooling energy reduction in tropical data centres. Enables operators to justify higher supply air temperatures to reduce mechanical cooling load. Critical for achieving PUE targets required under GMDC:2024. Liquid cooling systems are inherently compatible with elevated ambient temperatures."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Singapore Standard SS 715:2025 — IT Energy Efficiency of Data Centre Equipment",
+        "level": "national",
+        "summary": "One of the first national standards for data centre IT energy efficiency tailored for tropical climates. Targets at least 30% energy savings through optimized IT equipment selection and operation at elevated temperatures (up to 35 deg C). Requires IT equipment to meet international energy efficiency baselines with operational best practices (workload consolidation, virtualization). IMDA offers an Energy Efficiency Grant for DC sector to co-fund purchases of pre-approved energy-efficient IT equipment meeting this standard.",
+        "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2025/sg-it-energy-efficiency-standard-for-data-centres-launched",
+        "effective_date": "2025-01-01",
+        "relevance": "IT equipment operating at 35 deg C reduces cooling demand significantly. Standard complements SS 697:2023 (facility temperatures) by ensuring IT equipment can handle elevated temperatures. Energy Efficiency Grant provides financial incentive to adopt compliant equipment."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Conservation Act 2012 (Cap. 92C; amended 2017, 2024)",
+        "level": "national",
+        "summary": "Requires corporations with operational control over business activities consuming 54 TJ or more of energy per calendar year (in at least 2 of 3 preceding years) to register as designated consumers. Obligations include: register within 6 months of qualifying, appoint Singapore Certified Energy Manager within 30 days, submit annual energy use and GHG emissions reports by June 30, file energy efficiency improvement plans (1-5 year periods), conduct energy efficiency opportunity assessments every 6 years, implement ISO 50001 energy management system. Administered by NEA. 2024 Amendment Act further strengthened requirements.",
+        "url": "https://sso.agc.gov.sg/Act/ECA2012",
+        "effective_date": "2013-04-22",
+        "relevance": "Most large data centres in Singapore exceed the 54 TJ threshold and are designated consumers. Cooling energy is the largest non-IT energy component and a primary target for efficiency improvement plans. Mandatory energy manager appointment ensures dedicated oversight of cooling optimization."
+      },
+      {
+        "category": "water_use",
+        "name": "Environmental Public Health (Cooling Towers and Water Fountains) Regulations 2001",
+        "level": "national",
+        "summary": "Under the Environmental Public Health Act, cooling towers must be registered with NEA. Operators must implement Legionella risk management programs including regular water quality testing, maintenance schedules, and treatment protocols. Cooling towers must be maintained to prevent microbial growth. NEA conducts inspections and enforcement. Non-compliance may result in fines and operational orders. Applies to all data centres operating evaporative cooling towers.",
+        "url": "https://www.nea.gov.sg/our-services/pollution-control/water-quality/cooling-towers-and-fountains",
+        "effective_date": "2001-01-22",
+        "relevance": "Data centres using evaporative cooling towers must register with NEA and maintain Legionella control programs. Adds ongoing compliance costs for water-cooled facilities. Liquid cooling systems that eliminate cooling towers bypass this regulatory requirement entirely."
+      },
+      {
+        "category": "water_use",
+        "name": "PUB Mandatory Water Efficiency Requirements",
+        "level": "national",
+        "summary": "Since January 2015, large water users consuming 60,000 m3 or more net water per year must: install private water meters at key usage areas, submit annual Water Efficiency Management Plans (WEMP) to PUB for at least three consecutive years. PUB published 'Technical Reference for Water Conservation in Cooling Towers' noting evaporative cooling accounts for 25% of total water demand for large users. Water Efficiency Labelling Scheme (WELS) mandatory since 2009 for specified fittings.",
+        "url": "https://www.pub.gov.sg/Public/WaterLoop/Water-Conservation/Mandatory-Water-Efficiency-Requirements",
+        "effective_date": "2015-01-01",
+        "relevance": "Large data centres with evaporative cooling systems may exceed the 60,000 m3 threshold. Mandatory water meters and efficiency management plans add compliance overhead. PUB's technical reference specifically addresses cooling tower water conservation. Waterless cooling systems eliminate this obligation."
+      },
+      {
+        "category": "environmental",
+        "name": "Environmental Protection and Management Act 1999 (EPMA)",
+        "level": "national",
+        "summary": "Singapore's primary environmental protection legislation covering air pollution, water pollution, land contamination, and hazardous substances. Trade effluent regulations under EPMA govern wastewater discharge from industrial premises. Cooling tower blowdown water containing chemical treatment residuals is subject to trade effluent standards. Regulated goods and registered suppliers requirements apply to certain cooling system refrigerants and chemicals.",
+        "url": "https://sso.agc.gov.sg/act/epma1999",
+        "effective_date": "1999-04-01",
+        "relevance": "Governs environmental compliance for data centre cooling operations including: wastewater discharge from cooling towers, refrigerant management for chillers (regulated substances), noise from outdoor cooling equipment, and air emissions from backup generators."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Data Centre — Call for Application (DC-CFA) Capacity Allocation",
+        "level": "national",
+        "summary": "Singapore lifted its 2019 data centre moratorium and now allocates new capacity through competitive DC-CFA rounds. DC-CFA2 (2025) offers at least 200 MW of capacity. Requirements: PUE of 1.25 or better at 100% IT load, BCA-IMDA Green Mark Platinum certification, minimum 50% green energy pathways (biomethane, low-carbon ammonia, hydrogen, fuel cells with CCS, building-integrated PV). Applications evaluated on strategic value, economic contributions (fixed assets, R&D, talent), and sustainability. Alternative pathway via Strategic Digital Infrastructure Scheme (SDIS) for unique proposals.",
+        "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2025/launch-of-second-data-centre",
+        "effective_date": "2025-01-01",
+        "relevance": "The most critical regulatory gateway for new data centre capacity in Singapore. PUE 1.25 at full load and 50% green energy effectively mandate advanced cooling solutions. The competitive allocation process rewards operators demonstrating superior cooling efficiency and sustainability innovation."
+      }
+    ]
+  },
+  {
+    "zone_id": "apac-au",
+    "country": "Australia",
+    "region": "National",
+    "regulatory_complexity_score": 52,
+    "regulations": [
+      {
+        "category": "efficiency_reporting",
+        "name": "NABERS Energy for Data Centres Rating System",
+        "level": "national",
+        "summary": "Administered by the NSW Government on behalf of all Australian states. Provides 1-to-6 star energy efficiency ratings for data centres based on Power Usage Effectiveness (PUE) using actual operational data over 12 months. Three rating types: Infrastructure (facility services efficiency), IT Equipment (server-side efficiency), and Whole Facility (combined). NABERS Accredited Assessors evaluate energy use for IT equipment, air conditioning, ventilation, process cooling, in-rack fans, and backup generators. Currently voluntary for data centres but under active consultation for expansion under the Commercial Building Disclosure (CBD) program. Data centres use 10x more energy than office buildings.",
+        "url": "https://www.nabers.gov.au/ratings/spaces-we-rate/data-centres",
+        "effective_date": "2014-01-01",
+        "relevance": "Primary energy efficiency benchmarking tool for Australian data centres. PUE-based star ratings directly measure cooling system efficiency as the largest non-IT energy component. Likely to become mandatory under CBD program expansion — operators should prepare for compulsory disclosure."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "National Construction Code 2022 — Section J Energy Efficiency",
+        "level": "national",
+        "summary": "Section J of the NCC 2022 (effective 1 October 2023) establishes energy efficiency performance requirements for commercial buildings. Part J1 sets performance requirements; Part J9 mandates energy monitoring and on-site distributed energy resources. The J1V1 NABERS Commitment Agreement Verification Method has been expanded beyond office buildings. Section J covers HVAC system efficiency, building fabric thermal performance, and lighting. Data centres classified as commercial buildings must comply with applicable Section J requirements for new construction. Administered by the Australian Building Codes Board (ABCB).",
+        "url": "https://ncc.abcb.gov.au/editions/ncc-2022/adopted/volume-one/j-energy-efficiency/part-j1-energy-efficiency-performance-requirements",
+        "effective_date": "2023-10-01",
+        "relevance": "New data centre construction must meet NCC Section J energy efficiency requirements. HVAC and cooling system design is a major component of building energy performance calculations. Compliance pathway may include NABERS Commitment Agreement for verified performance."
+      },
+      {
+        "category": "environmental",
+        "name": "National Greenhouse and Energy Reporting Act 2007 (NGER) and Safeguard Mechanism",
+        "level": "federal",
+        "summary": "The NGER Scheme requires corporations meeting reporting thresholds to report greenhouse gas emissions and energy consumption annually to the Clean Energy Regulator. The Safeguard Mechanism (reformed 2023) applies to industrial facilities emitting more than 100,000 tonnes CO2-e per year, setting legislated emissions baselines that decline by 4.9% annually to 2030. Responsible emitters must apply for NGER registration by 31 August after meeting the safeguard threshold. Very large data centre campuses powered by fossil-fuel-intensive grids could approach or exceed the 100,000 tonne threshold.",
+        "url": "https://www.dcceew.gov.au/climate-change/emissions-reporting/national-greenhouse-energy-reporting-scheme/safeguard-mechanism",
+        "effective_date": "2023-07-01",
+        "relevance": "Data centres on carbon-intensive grids face increasing pressure from the Safeguard Mechanism's declining baselines. Efficient cooling reduces total energy consumption and associated Scope 2 emissions. The 4.9% annual baseline decline creates escalating incentive for cooling efficiency improvements and renewable energy procurement."
+      },
+      {
+        "category": "environmental",
+        "name": "Environment Protection and Biodiversity Conservation Act 1999 (EPBC Act)",
+        "level": "federal",
+        "summary": "Australia's primary national environmental protection legislation. Requires environmental assessment and approval for actions that may have a significant impact on nine defined Matters of National Environmental Significance (MNES). State and territory governments hold primary responsibility for environmental protection, with the federal Environment Minister having authority over MNES. Data centre developments near protected areas, water resources, or heritage sites may trigger EPBC referral requirements. Environment Protection Australia (EPA) commenced administering reforms from 20 February 2026.",
+        "url": "https://www.dcceew.gov.au/environment/epbc",
+        "effective_date": "2000-07-16",
+        "relevance": "Large data centre developments may require EPBC Act referral if located near Matters of National Environmental Significance. Cooling water intake/discharge affecting waterways, noise impacts on protected species, and land clearing for campus development are potential triggers."
+      },
+      {
+        "category": "efficiency_reporting",
+        "name": "Commercial Building Disclosure (CBD) Program — Proposed Expansion to Data Centres",
+        "level": "federal",
+        "summary": "The CBD Program currently requires commercial office buildings of 1,000 m2 or more to obtain and disclose NABERS energy ratings at point of sale or lease. The Australian Government conducted an independent review and is actively consulting on expansion to data centres, hotels, shopping centres, and office tenancies. A $20 million Albanese Government investment ($10M for program expansion, $10M for NABERS tools and services) supports the expansion. If enacted, data centre operators would be required to obtain and disclose NABERS energy ratings, making efficiency reporting mandatory rather than voluntary.",
+        "url": "https://www.cbd.gov.au/about-cbd-program/future-cbd/cbd-program-expansion",
+        "effective_date": "2025-01-01",
+        "relevance": "When expanded to data centres, this will make NABERS energy efficiency disclosure mandatory. Cooling system efficiency (the primary driver of PUE) will be transparently benchmarked and publicly disclosed. Operators should proactively pursue NABERS ratings to prepare for mandatory disclosure."
+      },
+      {
+        "category": "water_use",
+        "name": "State-Level Water Use and Environment Protection Regulations",
+        "level": "state_provincial",
+        "summary": "Water extraction and discharge regulation is primarily administered at the state level in Australia. NSW EPA, Victoria EPA, Queensland DEHP, and other state agencies regulate water extraction licenses, trade waste agreements, and environmental protection licences. Large data centres using evaporative cooling may require water extraction licences (state-dependent thresholds) and trade waste agreements for cooling tower blowdown discharge. States have different threshold volumes and approval processes. Climate-stressed regions (e.g., Western Sydney, Melbourne) may impose additional water use restrictions during drought.",
+        "url": "https://www.dcceew.gov.au/water",
+        "effective_date": "varies by state",
+        "relevance": "Evaporative cooling water use is regulated at state level. In water-stressed areas (Western Sydney data centre corridor, Melbourne), water extraction licences may be difficult to obtain or have restrictive conditions. Waterless or closed-loop cooling systems avoid state water use compliance entirely."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Renewable Energy Target (RET) — Large-scale Generation Certificates",
+        "level": "federal",
+        "summary": "The RET scheme targets 33,000 GWh of additional renewable electricity generation annually from 2020-2030. Large-scale Generation Certificates (LGCs) are created by eligible renewable power stations (1 LGC = 1 MWh renewable electricity). Data centre operators can purchase LGCs to demonstrate renewable energy procurement. Emissions-intensive trade-exposed (EITE) activities may qualify for exemption certificates. The Guarantee of Origin scheme (being developed) will provide verified tracking of renewable energy attributes for large energy consumers including data centres.",
+        "url": "https://www.dcceew.gov.au/energy/renewable/target-scheme",
+        "effective_date": "2001-04-01",
+        "relevance": "Data centres can purchase LGCs to offset grid electricity used for cooling. The Guarantee of Origin scheme will enable verified renewable energy claims for cooling operations. Combined with NABERS ratings, renewable energy procurement improves overall sustainability credentials."
+      }
+    ]
+  },
+  {
+    "zone_id": "me-sa",
+    "country": "Saudi Arabia",
+    "region": "National",
+    "regulatory_complexity_score": 68,
+    "regulations": [
+      {
+        "category": "data_center_specific",
+        "name": "Data Center Services Regulations (CST, 2024)",
+        "level": "federal",
+        "summary": "Issued by the Communications, Space and Technology Commission (CST) and effective 1 January 2024. Applies to all wholesale and retail data center service providers in Saudi Arabia. Providers must register with CST under one of four categories (Qualifying, Limited, Standard, Advanced), each with distinct requirements. Registration must be renewed every three years. Mandates energy management and sustainability plans, physical security controls, service level agreements, and accurate reporting of power capacity, connectivity, and certifications. Aims to position Saudi Arabia as a regional data center hub under Vision 2030.",
+        "url": "https://www.cst.gov.sa/en/media-center/news/CST-Announces-that-the-Data-Center-Services-Regulations-Document-has-Entered-Into-Force",
+        "effective_date": "2024-01-01",
+        "relevance": "Primary data center regulation in Saudi Arabia. Mandates sustainability and energy management plans, directly affecting cooling system design and efficiency reporting. All operators must register and comply or face enforcement action."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Saudi Energy Conservation Code for Commercial Buildings (SBC 601)",
+        "level": "federal",
+        "summary": "Produced by the Saudi Energy Efficiency Center (SEEC) under the Saudi Building Code National Committee (SBCNC). Provides minimum energy efficiency requirements for all non-residential buildings including HVAC systems, building envelope thermal performance, lighting, and hot water systems. Requires air conditioning systems to meet energy efficiency standards adapted to Saudi Arabia's extreme climate zones. Commercial buildings must demonstrate compliance with thermal insulation and HVAC efficiency benchmarks during permitting.",
+        "url": "https://www.seec.gov.sa/en/energy-efficiency-sectors/buildings-sector",
+        "effective_date": "2018-01-01",
+        "relevance": "Directly governs HVAC and cooling system efficiency requirements for data center construction. In Saudi Arabia's extreme heat environment, cooling represents the dominant energy load. SBC 601 sets the baseline for building envelope and mechanical system performance that all new data centers must meet."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "SASO 2874 - Energy Efficiency for Large-Capacity Air Conditioners",
+        "level": "federal",
+        "summary": "Technical regulation issued by the Saudi Standards, Metrology and Quality Organization (SASO). Sets minimum energy performance requirements for large-capacity air conditioning systems. Establishes Energy Efficiency Ratio (EER) thresholds for electrically-operated large AC units. Products must meet SASO 2874/2016 requirements and carry SASO energy efficiency labels. SEEC oversees enforcement through the national energy efficiency labeling program.",
+        "url": "https://www.saso.gov.sa/en/laws-and-regulations/technical_regulations/pages/default.aspx",
+        "effective_date": "2016-01-01",
+        "relevance": "Large-capacity cooling equipment deployed in data centers must meet SASO minimum efficiency standards. Applies to precision air conditioning units, computer room air handlers (CRAHs), and chiller systems purchased for data center cooling infrastructure."
+      },
+      {
+        "category": "environmental",
+        "name": "Environment Regulation (Royal Decree No. M/165, 2020)",
+        "level": "federal",
+        "summary": "Saudi Arabia's primary environmental law, issued by Royal Decree No. M/165 dated 19 Dhul Qada 1441 (10 July 2020), effective 13 January 2021. Supersedes the 2011 regulation. Established five specialized centers under the Ministry of Environment, Water and Agriculture (MEWA), including the National Centre for Environmental Compliance (NCEC). The NCEC classifies projects into three categories based on environmental impact severity and requires environmental permits to construct and environmental permits to operate. Classification considers activity type, energy usage, resource depletion, proximity to sensitive receptors, and duration/reversibility of impacts.",
+        "url": "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Pages/default.aspx",
+        "effective_date": "2021-01-13",
+        "relevance": "Data center construction requires NCEC environmental permits before construction and before operation. Project classification determines the level of Environmental Impact Assessment required. Cooling water discharge, noise from cooling equipment, and energy consumption are relevant assessment factors."
+      },
+      {
+        "category": "water_use",
+        "name": "Water Law (Royal Decree No. M/159, 2020)",
+        "level": "federal",
+        "summary": "Comprehensive water resource management law issued by Royal Decree No. M/159 dated 11 Dhu Al-Qa'dah 1441 (2 July 2020). Administered by the Ministry of Environment, Water and Agriculture (MEWA). Establishes framework for management of conventional water resources (non-renewable groundwater, renewable groundwater, surface water) and non-conventional resources (treated wastewater). The General Directorate of Water Resources and Rationalization oversees water allocation, conservation, and sustainable use. Executive Regulations for the Protection of Aqueous Media from Pollution set effluent discharge standards.",
+        "url": "https://laws.boe.gov.sa/Files/Download/?attId=a156d098-3e49-49b8-bb14-adbb012309cc",
+        "effective_date": "2020-07-02",
+        "relevance": "Critical for data centers using evaporative cooling in Saudi Arabia's water-scarce environment. Governs water extraction permits, effluent discharge from cooling tower blowdown, and wastewater treatment requirements. Water scarcity makes this a major constraint for wet cooling approaches."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Special Economic Zones Regulations (Cloud Computing SEZ)",
+        "level": "federal",
+        "summary": "Saudi Council of Ministers approved regulations in January 2026 covering four Special Economic Zones including the Cloud Computing SEZ. Licensed entities within SEZs benefit from targeted tax incentives: exclusion from Zakat regulations, withholding tax exemptions, and customs duty suspension on eligible imported goods. Corporate income tax applies under Saudi Tax Law but with potential activity-specific exemptions. Framework enters into force April 16, 2026 (90 days after Official Gazette publication). Additional incentives for digital infrastructure investment may be defined through licensing guidelines.",
+        "url": "https://www.misa.gov.sa/en/",
+        "effective_date": "2026-04-16",
+        "relevance": "The Cloud Computing SEZ provides direct fiscal incentives for data center investment in Saudi Arabia. Customs duty suspension reduces the cost of importing cooling equipment, servers, and infrastructure components. Zakat exemption and withholding tax relief improve the financial case for foreign data center operators."
+      },
+      {
+        "category": "building_code",
+        "name": "Saudi Building Code (SBC) - General Framework",
+        "level": "federal",
+        "summary": "Comprehensive building code framework administered by the Saudi Building Code National Committee (SBCNC). Covers structural safety, fire protection, mechanical systems, plumbing, and accessibility requirements for all construction in Saudi Arabia. Data centers must comply with structural load requirements for heavy server and cooling equipment, fire suppression standards for server rooms, mechanical ventilation requirements, and electrical system provisions. Compliance verified during building permit review by local authorities.",
+        "url": "https://sbc.gov.sa/En/Pages/default.aspx",
+        "effective_date": "2018-01-01",
+        "relevance": "All new data center construction must comply with SBC requirements. Structural provisions for equipment loading, fire suppression system requirements for server halls, and mechanical system specifications directly impact cooling infrastructure design and installation."
+      }
+    ]
+  },
+  {
+    "zone_id": "me-ae",
+    "country": "UAE",
+    "region": "National",
+    "regulatory_complexity_score": 62,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Federal Decree-Law No. 11 of 2024 on the Reduction of Climate Change Effects",
+        "level": "federal",
+        "summary": "First legally binding nationwide climate framework in the MENA region. Issued August 2024, effective 30 May 2025. Requires all businesses in the UAE (including free zones) to measure, report, and reduce greenhouse gas emissions. Entities emitting 0.5 million metric tons or more of CO2-equivalent annually (Scope 1 and 2) must register with the National Register for Carbon Credits (NRCC) and undergo third-party emissions verification. All organizations must align operations with the law by 30 May 2026. Non-compliance penalties range from AED 50,000 to AED 2,000,000, escalating to AED 4,000,000 for repeat violations.",
+        "url": "https://uaelegislation.gov.ae/en/legislations/2558",
+        "effective_date": "2025-05-30",
+        "relevance": "Large-scale data centers are significant energy consumers and may exceed the 0.5M ton CO2e threshold requiring mandatory NRCC registration. All data center operators must implement emissions measurement, reporting, and reduction programs. Energy-efficient cooling directly reduces Scope 2 emissions from grid electricity."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "General Framework for Adopting Sustainable Digital Transformation (2024)",
+        "level": "federal",
+        "summary": "Federal policy issued in 2024 to integrate sustainability principles into all digital transformation activities within government entities. Structured across 8 pillars covering environmental protection and sustainable digital futures. Specifically encourages engagement with data centers and cloud service providers committed to sustainability, energy efficiency, and resource conservation. Part of the extended 'Year of Sustainability' initiative under Presidential directive.",
+        "url": "https://www.uaelegislation.gov.ae/en/policy/details/the-general-framework-for-adopting-sustainable-digital-transformation",
+        "effective_date": "2024-01-01",
+        "relevance": "Sets government procurement preference for sustainable, energy-efficient data centers and cloud providers. Data center operators serving UAE government clients must demonstrate sustainability commitments. Drives demand for advanced cooling solutions with lower environmental footprint."
+      },
+      {
+        "category": "data_center_specific",
+        "name": "TDRA National Data Center Strategy (2023) and Cloud Service Provider Framework",
+        "level": "federal",
+        "summary": "The Telecommunications and Digital Government Regulatory Authority (TDRA) established the National Data Center Strategy in 2023, setting operational standards for data center security, energy efficiency, and international compliance. Operators must adhere to ISO/IEC 27001 for information security management and ISO 50001 for energy management. Government and sovereign data must not leave UAE territory. Cloud service providers must register with TDRA through the voluntary CLSP Information Form. TDRA also established accreditation frameworks for cloud providers.",
+        "url": "https://tdra.gov.ae/en/About/tdra-sectors/telecommunication/regulatory-affairs-department/regulations-and-ruling",
+        "effective_date": "2023-01-01",
+        "relevance": "ISO 50001 energy management compliance directly requires monitoring and optimizing cooling system energy consumption. Data localization requirements drive domestic data center demand. TDRA sets the operational baseline for all UAE data center facilities."
+      },
+      {
+        "category": "building_code",
+        "name": "Al Sa'fat - Dubai Green Building System (2nd Edition, 2023)",
+        "level": "emirate",
+        "summary": "Dubai's mandatory green building rating system, effective since October 2020, replacing the earlier Green Building Regulations and Specifications. Second edition issued January 2023. Classifies buildings into Bronze, Silver, Gold, and Platinum categories. All new buildings must achieve minimum Silver rating. Covers thermal insulation, HVAC efficiency, sustainable materials, renewable energy production, water management, and smart technology integration. Unlike voluntary LEED/BREEAM, Estidama/Al Sa'fat is embedded in law. Abu Dhabi uses the parallel Estidama Pearl Rating System (minimum 1 Pearl, 2 Pearls for government buildings).",
+        "url": "https://www.dm.gov.ae/municipality-business/al-safat-dubai-green-building-system/",
+        "effective_date": "2023-01-01",
+        "relevance": "All new data center construction in Dubai must achieve minimum Silver Al Sa'fat rating. HVAC efficiency, water conservation, and renewable energy integration are mandatory criteria. Abu Dhabi's Estidama Pearl system imposes parallel requirements. Cooling system design must meet green building performance benchmarks."
+      },
+      {
+        "category": "environmental",
+        "name": "Abu Dhabi Estidama Pearl Rating System",
+        "level": "emirate",
+        "summary": "Abu Dhabi's mandatory sustainable development framework, launched in 2010 by the Department of Municipalities and Transport. All new developments must achieve minimum 1 Pearl rating (2 Pearls for government-funded buildings). Requirements span energy, water, materials, ecology, and indoor environmental quality. Targets include 31% energy reduction, 37% water usage reduction, and 65% construction waste diversion from landfills. Certified third-party assessors verify compliance during design and construction phases.",
+        "url": "https://jawdah.qcc.abudhabi.ae/en/Registration/QCCServices/Services/STD/ISGL/ISGL-LIST/DP-306.pdf",
+        "effective_date": "2010-01-01",
+        "relevance": "Data centers in Abu Dhabi must meet Pearl Rating requirements for energy and water performance. The 31% energy reduction target and 37% water reduction target directly impact cooling system design choices. High-efficiency cooling and water-conserving approaches are needed to achieve Pearl compliance."
+      },
+      {
+        "category": "water_use",
+        "name": "UAE Water Security Strategy 2036",
+        "level": "federal",
+        "summary": "National water security strategy targeting reduction in total demand for water resources by 21%, increasing water productivity index to USD 110 per cubic meter, increasing the reuse of treated water to 95%, and increasing the national water storage capacity to 2 days. The UAE relies on desalination for approximately 42% of its water supply. Water tariffs are set by individual emirate utility authorities (DEWA in Dubai, ADDC in Abu Dhabi) and include conservation-tiered pricing structures.",
+        "url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/environment-and-energy/uae-water-security-strategy-2036",
+        "effective_date": "2017-01-01",
+        "relevance": "Data centers using evaporative cooling face water cost and availability constraints under this strategy. Tiered water pricing penalizes high-volume consumption. The 95% treated water reuse target may create opportunities for data centers to use recycled water for cooling."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "UAE Corporate Tax Law (Federal Decree-Law No. 47 of 2022) - Free Zone Provisions",
+        "level": "federal",
+        "summary": "The UAE introduced a 9% corporate tax effective June 2023 for taxable income exceeding AED 375,000. However, qualifying entities in designated free zones benefit from a 0% corporate tax rate on qualifying income. Data center operators established in free zones (such as Dubai Internet City, Abu Dhabi Global Market, Dubai Silicon Oasis) may qualify for this 0% rate if they meet substance requirements. Non-qualifying revenue is taxed at 9%. Transfer pricing rules apply to related-party transactions.",
+        "url": "https://uaelegislation.gov.ae/en/legislations/2024",
+        "effective_date": "2023-06-01",
+        "relevance": "Free zone 0% corporate tax provides significant fiscal incentive for data center investment in the UAE. Many major data center clusters are located within or adjacent to free zones. Reduces the effective cost of capital investment in cooling infrastructure and facility construction."
+      }
+    ]
+  },
+  {
+    "zone_id": "apac-in",
+    "country": "India",
+    "region": "National",
+    "regulatory_complexity_score": 58,
+    "regulations": [
+      {
+        "category": "data_center_specific",
+        "name": "Infrastructure Status for Data Centers (Department of Economic Affairs Notification, October 2022)",
+        "level": "federal",
+        "summary": "In the Union Budget 2022-23, data centers were proposed for inclusion in the Harmonized Master List of Infrastructure. In October 2022, the Department of Economic Affairs, Ministry of Finance designated data centers as infrastructure under the 'Communication' category. This status enables access to long-term infrastructure financing from banks and institutions, external commercial borrowings, infrastructure investment trusts (InvITs), and viability gap funding. Aligns with TRAI's recommendation on the subject.",
+        "url": "https://www.dpiit.gov.in/static/uploads/2025/07/4274d19311c60fea1c8ac2f0ea315283.pdf",
+        "effective_date": "2022-10-01",
+        "relevance": "Infrastructure status unlocks cheaper financing for data center construction including cooling systems. Enables access to long-tenure infrastructure bonds and institutional lending at favorable rates. Directly improves the investment case for capital-intensive liquid cooling and advanced HVAC systems."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Conservation (Amendment) Act, 2022 (Act No. 19 of 2022)",
+        "level": "federal",
+        "summary": "Amends the Energy Conservation Act, 2001. Effective 1 January 2023. Empowers the central government to specify a carbon credit trading scheme (notified 28 July 2023). Mandates minimum share of non-fossil energy consumption for designated consumers. The Bureau of Energy Efficiency (BEE) maintains data and ensures compliance for designated consumers under the Perform, Achieve and Trade (PAT) scheme. Data centers as large energy consumers may be designated under future BEE notifications. Establishes the framework for India's Carbon Credit Trading Scheme (ICCTS).",
+        "url": "https://powermin.gov.in/sites/default/files/The_Energy_Conservation_Amendment_Act_2022_0.pdf",
+        "effective_date": "2023-01-01",
+        "relevance": "Data centers may be designated as 'designated consumers' under BEE, requiring mandatory energy audits, efficiency benchmarks, and PAT compliance. Carbon credit trading creates financial incentive for energy-efficient cooling. Non-fossil energy mandates encourage renewable-powered cooling operations."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Conservation Building Code (ECBC, 2017) - Bureau of Energy Efficiency",
+        "level": "federal",
+        "summary": "BEE's prescriptive and performance-based mandatory code for commercial buildings with connected load of 100 kW or above or contract demand of 120 kVA or above. Covers building envelope, HVAC systems, lighting, electrical systems, and water heating. Three performance tiers: ECBC (baseline), ECBC+ (enhanced), and SuperECBC (maximum). BEE and Lawrence Berkeley National Lab collaborated on Phase-II to develop data center-specific requirements for ECBC revision, including evaluation of energy performance metrics suitable for data center PAT-type programs.",
+        "url": "https://www.beeindia.gov.in/renewable-consumption-obligations-rco.php",
+        "effective_date": "2017-06-19",
+        "relevance": "Commercial data center buildings exceeding 100 kW connected load must comply with ECBC HVAC efficiency requirements. Data center-specific metrics (PUE-type) are being evaluated for future inclusion. Cooling system efficiency is the primary variable in ECBC compliance for data center buildings."
+      },
+      {
+        "category": "environmental",
+        "name": "EIA Notification, 2006 under Environment Protection Act, 1986",
+        "level": "federal",
+        "summary": "Under Section 3 of the Environment Protection Act, 1986 (Act No. 29 of 1986), the EIA Notification 2006 mandates prior environmental clearance for scheduled project categories. Data centers are not explicitly listed as a scheduled category. However, building and construction projects exceeding 20,000 square meters of built-up area require environmental clearance. Large data center campuses routinely exceed this threshold. Environmental clearance involves screening, scoping, public consultation, and expert appraisal. State-level Expert Appraisal Committees process applications for Category B projects.",
+        "url": "https://environmentclearance.nic.in/writereaddata/Form-1A/HomeLinks/GuidanceManual.htm",
+        "effective_date": "2006-09-14",
+        "relevance": "Data centers above 20,000 m2 built-up area require environmental clearance. Cooling system water consumption, thermal discharge, noise emissions, and energy demand are relevant assessment parameters. While data centers lack a dedicated EIA category, the building construction threshold catches most hyperscale facilities."
+      },
+      {
+        "category": "water_use",
+        "name": "Central Ground Water Authority (CGWA) NOC Requirements",
+        "level": "federal",
+        "summary": "Under the Environment Protection Act 1986, the Central Ground Water Authority (CGWA) requires No Objection Certificates for groundwater extraction by industries and infrastructure projects. Applies to any entity extracting groundwater through borewells or tubewells. NOC requirements vary by overexploited, critical, semi-critical, and safe groundwater assessment zones. Conditions may include mandatory rainwater harvesting, treated wastewater reuse, and water metering. State-level groundwater authorities may impose additional requirements.",
+        "url": "https://cgwa.mowr.gov.in/",
+        "effective_date": "2020-11-24",
+        "relevance": "Data centers using groundwater for cooling systems (cooling towers, make-up water) require CGWA NOC. In overexploited zones, NOCs may be denied or restricted, forcing operators to use municipal supply or recycled water. Mandatory rainwater harvesting conditions apply to all approvals."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Data Center Tax Holiday (Union Budget 2025-26, Income Tax Act 2025)",
+        "level": "federal",
+        "summary": "Announced in Union Budget 2025-26 and codified through Entry 13C in Schedule IV (read with Section 11) of the Income-tax Act, 2025. Provides a tax holiday extending to 2047 for qualifying foreign cloud service providers establishing data center infrastructure in India. Separate Transfer Pricing Safe Harbour provisions for Indian data center infrastructure providers. Part of the government's strategy to position India as a global data center hub. Complements the infrastructure status designation for favorable financing.",
+        "url": "https://www.indiabudget.gov.in/",
+        "effective_date": "2025-04-01",
+        "relevance": "Tax holiday until 2047 provides a strong long-term fiscal incentive for data center investment in India. Reduces effective operating costs, improving the business case for investing in advanced cooling technologies. Transfer pricing safe harbour simplifies compliance for domestic infrastructure providers."
+      },
+      {
+        "category": "building_code",
+        "name": "National Building Code of India 2016 (NBC 2016) - Bureau of Indian Standards",
+        "level": "federal",
+        "summary": "Published by the Bureau of Indian Standards (BIS) as a recommendatory model code. Provides comprehensive framework for planning, design, construction, and operation of buildings. Part 4 covers fire and life safety including fire suppression systems for server rooms. Part 8 covers building services including HVAC, electrical, and plumbing. Integrates seismic design requirements per IS 1893 for equipment mounting and piping systems. State governments and local authorities adopt and enforce specific provisions. BIS also publishes IS 16895 (based on EN 50600) for data center infrastructure.",
+        "url": "https://www.bis.gov.in/standards/technical-department/national-building-code/",
+        "effective_date": "2016-01-01",
+        "relevance": "While recommendatory at national level, NBC 2016 provisions are adopted by state building codes. Fire suppression requirements for server rooms, HVAC system specifications, and structural load provisions for heavy equipment directly affect data center cooling infrastructure design. IS 16895 provides data center-specific infrastructure standards."
+      },
+      {
+        "category": "data_center_specific",
+        "name": "Digital Personal Data Protection Act, 2023 (Act No. 22 of 2023)",
+        "level": "federal",
+        "summary": "India's first comprehensive data protection law, effective from Digital Personal Data Protection Rules 2025 notification (13 November 2025). Permits transfer of personal data outside India unless government restricts specific jurisdictions. Significant Data Fiduciaries must ensure certain categories of government-specified personal data remain within India. Does not impose blanket data localization but retains government authority to designate restricted territories. Drives domestic data center demand through potential future data localization requirements.",
+        "url": "https://www.meity.gov.in/data-protection-framework",
+        "effective_date": "2023-08-11",
+        "relevance": "Potential data localization restrictions under DPDPA will increase demand for domestic data center capacity. Drives investment in Indian data center infrastructure including cooling systems. Government data processing requirements may mandate in-country hosting."
+      }
+    ]
+  },
+  {
+    "zone_id": "latam-br",
+    "country": "Brazil",
+    "region": "National",
+    "regulatory_complexity_score": 60,
+    "regulations": [
+      {
+        "category": "data_center_specific",
+        "name": "ANATEL Consulta Publica No. 48/2025 - Data Center Conformity Assessment",
+        "level": "federal",
+        "summary": "ANATEL opened Public Consultation No. 48/2025 proposing technical requirements and operational procedures for conformity assessment of Data Centers that integrate Telecommunications Networks (DCTC). Under Resolution No. 780/2025 (August 2025), operators must catalog, classify, and undergo conformity assessment before operations begin. Requirements cover resilience, cybersecurity, physical security, energy efficiency, and sustainability. Conformity may be demonstrated through ANATEL-accredited certifications or by presenting ABNT-ISO/IEC 14001 (Environmental Management) and ABNT-ISO/IEC 50001 (Energy Management) certificates. Existing data centers have three years to comply.",
+        "url": "https://informacoes.anatel.gov.br/legislacao/resolucoes/2025",
+        "effective_date": "2025-08-01",
+        "relevance": "First data center-specific regulatory framework in Brazil. Energy efficiency and sustainability are explicit assessment criteria. ISO 50001 energy management compliance directly requires cooling system performance monitoring. Three-year transition period for existing facilities."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "REDATA - Special Tax Regime for Data Center Services (Medida Provisoria No. 1.318/2025)",
+        "level": "federal",
+        "summary": "Provisional Measure No. 1.318 signed 17 September 2025, modifying Law 11.196/2005. Establishes REDATA (Regime Especial de Dados) as part of the National Policy for Data Centers (PNDC) under Brasil Nova Industria Mission 4 (Digital Transformation). Reduces federal taxes (PIS, COFINS, IPI) to zero on servers, storage, network equipment, refrigeration and other data center equipment. Requires 100% renewable or clean energy with zero carbon emissions. Beneficiaries must invest 2% of investment value in R&D projects in Brazil. Government reserved R$5.2 billion for REDATA in the 2026 budget. Estimated to attract R$2 trillion in private investment over 10 years.",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/Mpv/mpv1318.htm",
+        "effective_date": "2025-09-18",
+        "relevance": "Zero federal tax on cooling equipment (refrigeration systems) is a direct cost reduction for data center construction. The 100% renewable energy requirement drives demand for energy-efficient cooling to minimize total energy consumption. R&D investment requirement may fund cooling technology innovation."
+      },
+      {
+        "category": "environmental",
+        "name": "CONAMA Resolution No. 237/1997 - Environmental Licensing",
+        "level": "federal",
+        "summary": "Resolution issued by the National Environment Council (CONAMA) on 19 December 1997. Establishes procedures for environmental licensing based on territorial competence and environmental impact scope (municipal, state, or federal). Licensing process involves three stages: Preliminary License (LP), Installation License (LI), and Operating License (LO). Contains a non-exhaustive list of activities subject to licensing including industrial, manufacturing, chemical, mining, and infrastructure projects. While data centers are not explicitly listed, large-scale facilities may trigger state-level licensing requirements depending on energy consumption, water use, and waste generation.",
+        "url": "https://conama.mma.gov.br/images/conteudo/CONAMA-ingles.pdf",
+        "effective_date": "1997-12-19",
+        "relevance": "Large data centers may require environmental licensing at state level. Cooling water discharge, noise from mechanical equipment, diesel generator emissions, and energy consumption are relevant environmental impact factors. The three-stage licensing process (LP-LI-LO) must be completed before construction and operation."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "National Policy on Climate Change (Lei No. 12.187/2009)",
+        "level": "federal",
+        "summary": "Law No. 12,187 of 29 December 2009 institutes the National Policy on Climate Change (PNMC). Establishes principles, objectives, directives and instruments for climate mitigation and adaptation. Sets voluntary national emissions reduction targets. Provides framework for sectoral mitigation plans, carbon market mechanisms, and energy efficiency programs. Amended multiple times to strengthen commitments aligned with Brazil's NDC under the Paris Agreement. PROCEL (National Energy Conservation Program under Eletrobras) operates within this policy framework for building and equipment energy efficiency.",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12187.htm",
+        "effective_date": "2009-12-29",
+        "relevance": "Sets the overarching climate policy framework that drives energy efficiency requirements for all sectors including data centers. PROCEL energy efficiency labeling for cooling equipment operates under this policy. Sectoral mitigation plans may include future data center-specific emissions targets."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Legal Framework for Distributed Generation (Lei No. 14.300/2022)",
+        "level": "federal",
+        "summary": "Federal Law No. 14,300 of 6 January 2022. Establishes the legal framework for microgeneration and distributed mini-generation of electricity, the Electric Energy Compensation System (SCEE), and the Social Renewable Energy Program (PERS). Modifies compensation rules for energy injected into the grid, with transition provisions for existing installations until 2045. Enables data center operators to install on-site solar generation and receive energy credits against grid consumption.",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14300.htm",
+        "effective_date": "2022-01-06",
+        "relevance": "Enables data centers to reduce grid energy consumption through on-site solar generation with net metering credits. Reduces the effective energy cost of cooling operations. The compensation framework provides financial incentive for renewable energy investment at data center sites."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "SUDENE/SUDAM Regional Development Tax Incentives",
+        "level": "federal",
+        "summary": "Companies investing in the Northeast (SUDENE region) and Amazon (SUDAM region, including Manaus Free Trade Zone) can receive up to 75% corporate income tax (IRPJ) reduction for 10 years. The Manaus Free Trade Zone offers additional incentives: near-complete exemption from import duties on manufacturing inputs, IPI exemption, and PIS/COFINS/ICMS reductions. Free zone benefits guaranteed through 2073. SUDENE and SUDAM programs represent approximately 0.45% of GDP in fiscal expenditure (2019). Data center investments in these regions can combine regional incentives with REDATA benefits.",
+        "url": "https://gestaoconteudo.presidencia.gov.br/gestao_brazilgovnews/trade-and-invest/doing-business/basic-information-to-know-before-starting-a-business-in-brazil/tax-incentives-and-exemptions",
+        "effective_date": "2007-01-01",
+        "relevance": "Up to 75% IRPJ reduction for data centers in SUDENE/SUDAM regions significantly reduces operating costs. Import duty exemptions in the Manaus Free Trade Zone lower the cost of importing cooling equipment and server hardware. Regional incentives stack with REDATA zero-tax provisions on equipment."
+      },
+      {
+        "category": "water_use",
+        "name": "National Water Resources Policy (Lei No. 9.433/1997) and Water Use Permits",
+        "level": "federal",
+        "summary": "Law No. 9,433 of 8 January 1997 establishes the National Water Resources Policy and creates the National Water Resources Management System. Water use permits (outorga) are required for any significant water extraction, including for industrial cooling. The National Water Agency (ANA) issues permits for federal water bodies; state agencies for state-jurisdiction water bodies. Permits specify volume limits, usage period, and conditions. Water committees (comites de bacia) participate in allocation decisions. Data centers using evaporative cooling require water use permits based on consumption volume.",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l9433.htm",
+        "effective_date": "1997-01-08",
+        "relevance": "Data centers using evaporative cooling towers require water use permits (outorga) specifying extraction volumes. In water-stressed regions, permits may be restricted or denied. Brazil's abundant water resources in the South and Southeast are favorable for wet cooling approaches, but permitting is still required."
+      }
+    ]
+  },
+  {
+    "zone_id": "eu-tr",
+    "country": "Turkey",
+    "region": "National",
+    "regulatory_complexity_score": 55,
+    "regulations": [
+      {
+        "category": "data_center_specific",
+        "name": "Electronic Communications Law No. 5809 - BTK Authorization Regulation",
+        "level": "federal",
+        "summary": "Law No. 5809 (2008) created the Information and Communication Technologies Authority (BTK) as Turkey's telecommunications regulatory body. Data center facilities currently must obtain Internet Service Provider (ISS) and Infrastructure Operation Service (AIH) authorizations under BTK's Authorization Regulation. Fees are calculated on total operational capacity. A draft law on 'Supporting and Measures for the Development of Data Center, Cloud Computing and Platform Services Sectors' has been prepared by the Presidential Digital Transformation Office and sent to the Ministry of Industry and Technology for finalization. Separate data center regulations are anticipated to resolve current authorization difficulties.",
+        "url": "https://www.btk.gov.tr/yonetmelikler",
+        "effective_date": "2008-11-10",
+        "relevance": "All data center operators in Turkey must obtain BTK authorization under current regulations. Pending sector-specific legislation will likely introduce dedicated data center requirements including energy efficiency standards. BTK has stated its goal is making Turkey a regional data center hub."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Energy Efficiency Law No. 5627 (2007)",
+        "level": "federal",
+        "summary": "Published in the Official Gazette on 2 May 2007. Aims to increase efficiency in energy use across industrial establishments, buildings, power generation, transmission, distribution, and transport. Requires energy audits for industrial facilities and commercial buildings above threshold consumption levels. Mandates appointment of energy managers for large consumers. Establishes energy performance contracting framework and incentive mechanisms for energy efficiency investments. Administered by the Ministry of Energy and Natural Resources through the General Directorate of Energy Affairs.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5627&MevzuatTur=1&MevzuatTertip=5",
+        "effective_date": "2007-05-02",
+        "relevance": "Data centers as large energy consumers are subject to energy audit and energy manager requirements. Provides the legal basis for building energy performance regulations that apply to data center facilities. Energy efficiency investments including cooling system upgrades may qualify for incentive support."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Building Energy Performance Regulation (BEP-TR, 2008; revised 2024)",
+        "level": "federal",
+        "summary": "Regulation on Energy Performance of Buildings (Binalarda Enerji Performansi Yonetmeligi), originally passed 2008 under Law No. 5627, updated in 2013 and 2024. As of 1 January 2025, buildings with total construction area of 2,000 m2 or larger must be constructed as Nearly Zero Energy Buildings (NZEB) with minimum B-class Energy Performance Certificate. Buildings must obtain at least 10% of energy from renewable sources (since 2023 for buildings over 5,000 m2). Energy Performance Certificates (EPC) required for all building transactions. Updated thermal insulation requirements per TS 825 standard.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=13594&MevzuatTur=7&MevzuatTertip=5",
+        "effective_date": "2024-01-01",
+        "relevance": "All new data center buildings over 2,000 m2 must meet NZEB requirements with minimum B-class EPC. The 10% renewable energy requirement affects total facility energy planning. Cooling system efficiency is a major component of building energy performance calculations. Updated insulation requirements reduce cooling loads."
+      },
+      {
+        "category": "environmental",
+        "name": "Environmental Law No. 2872 (1983; amended) and EIA Regulation (2014)",
+        "level": "federal",
+        "summary": "Turkey's primary environmental legislation (Law No. 2872, 1983) establishes the framework for pollution control, waste management, and resource conservation. The Environmental Impact Assessment Regulation (25 November 2014, with amendments through 2019) requires EIA for projects in scheduled categories. Operating without environmental permits (cevre izni) is prohibited; facilities found in violation face stoppage orders. Treatment plants or environmental control systems must be operational before commissioning permits are issued. EIA categories defined by project type, scale, and environmental sensitivity.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2872&MevzuatTur=1&MevzuatTertip=5",
+        "effective_date": "2014-11-25",
+        "relevance": "Large data center developments may trigger EIA requirements depending on scale and location. Environmental permits are required before operation. Cooling water discharge, noise from cooling equipment, and diesel generator emissions are relevant assessment factors. Non-compliance results in immediate operational stoppage."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Presidential Decree No. 9903 - State Investment Incentives (2025)",
+        "level": "federal",
+        "summary": "Published 30 May 2025, replacing the former Decree No. 2012/3305. Restructured investment incentive system into three pillars: Turkey's Century Development Move, Sectoral Incentive System, and Regional Incentives. Data centers with at least 3 MW installed power qualify as Priority Investments with 5th-Region level incentives regardless of location (including Istanbul). Data centers 500 kW-3 MW qualify for Targeted Investments with regional incentives. Benefits include customs duty exemption, VAT exemption, corporate tax reduction, interest/profit-share support, and investment land allocation. Data centers must achieve PUE no higher than 1.65 at full load; HIT-30 high-tech projects target PUE 1.4 or below.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=9903&MevzuatTur=4&MevzuatTertip=5",
+        "effective_date": "2025-05-30",
+        "relevance": "Direct fiscal incentives for data center construction. PUE requirements (1.65 max, 1.4 for high-tech) mandate efficient cooling design. VAT and customs duty exemptions on cooling equipment (servers, cooling systems, generators) reduce capital costs. 5th-Region level incentives available even in Istanbul for 3MW+ facilities."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Technology Development Zones Law (No. 4691, 2001; amended)",
+        "level": "federal",
+        "summary": "Establishes Technology Development Zones (Teknoloji Gelistirme Bolgeleri - TGB) with significant tax incentives. Corporate income tax exemption on profits derived from R&D activities and intellectual property within TGBs. Full income tax exemption on salaries of R&D and design personnel. VAT exemption on software and R&D deliverables. Active TGBs operate across major Turkish cities. Data center operations supporting R&D activities within TGBs may benefit from these incentives.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4691&MevzuatTur=1&MevzuatTertip=5",
+        "effective_date": "2001-07-06",
+        "relevance": "Data centers located within or serving Technology Development Zones may benefit from corporate tax exemptions. R&D-related cooling technology development in TGBs qualifies for income tax and VAT exemptions. Supports Turkey's data center hub ambitions by reducing operational costs."
+      },
+      {
+        "category": "water_use",
+        "name": "Groundwater Law No. 167 and DSI Water Use Permits",
+        "level": "federal",
+        "summary": "Law of Groundwater No. 167 governs groundwater resource management. The General Directorate of State Hydraulic Works (DSI) manages water resources on behalf of the state and issues water use permits. Industrial water extraction requires DSI authorization. Surface water and groundwater allocations are determined based on availability, sustainability, and competing demands. Municipalities set water and sewerage tariffs that apply to data center water consumption for cooling.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=167&MevzuatTur=1&MevzuatTertip=5",
+        "effective_date": "1960-12-16",
+        "relevance": "Data centers extracting groundwater for cooling require DSI permits. Municipal water tariffs affect operational cost of evaporative cooling. Turkey's diverse climate zones mean water availability varies significantly, affecting cooling technology choices across different regions."
+      },
+      {
+        "category": "building_code",
+        "name": "Building Inspection Law No. 4708 (2001) and Turkish Building Code",
+        "level": "federal",
+        "summary": "Law No. 4708 establishes building inspection requirements in Turkey. All construction projects require building inspection by licensed organizations. Turkish building code integrates seismic design requirements (critical for Turkey), structural load provisions, fire protection, and mechanical systems standards. TS EN 50600 series (adopted from European EN 50600) provides data center-specific infrastructure standards covering facilities, power distribution, environmental control, and security. Compliance with Turkish seismic code is mandatory for all construction.",
+        "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4708&MevzuatTur=1&MevzuatTertip=5",
+        "effective_date": "2001-07-13",
+        "relevance": "Stringent seismic design requirements affect cooling equipment mounting, piping systems, and rooftop installations in earthquake-prone regions. TS EN 50600 adoption provides standards for data center environmental control systems. Building inspection is mandatory for all construction phases."
+      }
+    ]
+  }
+]

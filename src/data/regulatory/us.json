@@ -1,0 +1,329 @@
+[
+  {
+    "zone_id": "us-federal",
+    "country": "US",
+    "region": "United States (Federal)",
+    "regulatory_complexity_score": 54,
+    "regulations": [
+      {
+        "category": "environmental",
+        "name": "Clean Air Act Section 608 — Refrigerant Management and Technician Certification",
+        "level": "federal",
+        "summary": "EPA requires certified technicians to maintain, service, repair, or dispose of appliances that could release regulated refrigerants. Section 608 also covers refrigerant recovery, recycling, leak repair, recordkeeping, and approved refrigerant-handling practices.",
+        "url": "https://www.epa.gov/section608/section-608-technician-certification-requirements",
+        "effective_date": "1990-11-15",
+        "relevance": "Directly applies to cooling-system vendors and service providers working on refrigerant-based data center cooling equipment in the US."
+      },
+      {
+        "category": "environmental",
+        "name": "Clean Air Act — Stationary Source Permitting and Backup Generator Rules",
+        "level": "federal",
+        "summary": "Large data centers with stationary diesel or gas generators may trigger federal air permitting and must comply with EPA engine standards, including RICE NESHAP requirements for operation, testing, and maintenance.",
+        "url": "https://www.epa.gov/stationary-sources-air-pollution/clean-air-act-resources-data-centers",
+        "effective_date": "1970-12-31",
+        "relevance": "Relevant whenever cooling system resilience depends on on-site backup generation or combustion equipment."
+      }
+    ]
+  },
+  {
+    "zone_id": "us-va",
+    "country": "US",
+    "region": "Virginia",
+    "regulatory_complexity_score": 58,
+    "regulations": [
+      {
+        "category": "tax_incentive",
+        "name": "Virginia Data Center Retail Sales and Use Tax Exemption (Va. Code 58.1-609.3)",
+        "level": "state_provincial",
+        "summary": "Exempts qualifying data centers and their tenants from Virginia retail sales and use tax on servers, network infrastructure, and cooling equipment (chillers, CRACs, HVAC, cooling towers, pumps, piping, backup generators). Requires minimum $150M capital investment and 50 new jobs (25 in enterprise zones). Applicants must enter MOU with VEDP. Available 2010-2035.",
+        "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter6/section58.1-609.3/",
+        "effective_date": "2010-07-01",
+        "relevance": "Directly reduces capital cost of purchasing cooling infrastructure — chillers, CDUs, immersion tanks, pumps, and piping all qualify. Covers both traditional and liquid cooling equipment."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Virginia Clean Economy Act (VCEA) (HB 1526 / SB 851)",
+        "level": "state_provincial",
+        "summary": "Requires Dominion Energy Virginia to achieve 100% carbon-free electricity by 2045, with intermediate targets. Mandates 16,100 MW solar/onshore wind, 5,200 MW offshore wind, 2,700 MW energy storage. Data center power demand has created significant grid pressure — an additional 59,800 MW of capacity needed under VCEA-compliant scenario.",
+        "url": "https://law.lis.virginia.gov/vacodefull/title56/chapter23.3/",
+        "effective_date": "2020-04-12",
+        "relevance": "Shapes renewable energy sourcing for data center power contracts in Northern Virginia; cooling operators buying large power blocks face utility clean energy obligations."
+      },
+      {
+        "category": "environmental",
+        "name": "Clean Air Act — Stationary Source Permitting (Federal, Title V / PSD)",
+        "level": "federal",
+        "summary": "Requires Title V operating permits for major stationary sources of air pollutants. Backup diesel generators at large data centers can trigger New Source Review (NSR) and Prevention of Significant Deterioration (PSD) permitting. EPA 50-hour rule allows limited non-emergency generator use for demand response. EPA launched dedicated Clean Air Act Resources page for data centers in 2025.",
+        "url": "https://www.epa.gov/stationary-sources-air-pollution/clean-air-act-resources-data-centers",
+        "effective_date": "1970-12-31",
+        "relevance": "Cooling system backup generators must comply with EPA RICE NESHAP (40 CFR Part 63 Subpart ZZZZ). 100-hour annual limit for non-emergency use, 50-hour limit for demand response participation."
+      },
+      {
+        "category": "building_code",
+        "name": "Virginia Uniform Statewide Building Code (USBC)",
+        "level": "state_provincial",
+        "summary": "Virginia adopts the International Building Code with amendments. New data centers must comply with structural, fire suppression, and mechanical code requirements. Loudoun County (Ashburn) has additional zoning and design standards for large-scale data center development including noise and setback requirements.",
+        "url": "https://www.dhcd.virginia.gov/building-codes",
+        "effective_date": "2018-01-01",
+        "relevance": "Governs mechanical room design, cooling plant layout, fire suppression in server halls, and structural loads for rooftop or slab-mounted cooling equipment."
+      },
+      {
+        "category": "water_use",
+        "name": "Virginia Water Protection Permit Program (DEQ)",
+        "level": "state_provincial",
+        "summary": "DEQ administers water withdrawal permits. Large data centers using evaporative cooling towers may require permits if withdrawals exceed threshold volumes. HB496 (proposed 2024) would have required localities to mandate water use modeling in data center applications — not enacted. Governor-elect Spanberger has signaled renewed attention to water issues.",
+        "url": "https://www.deq.virginia.gov/water/water-quantity/water-withdrawal-reporting",
+        "effective_date": "1989-01-01",
+        "relevance": "Evaporative cooling for large IT loads may require water withdrawal permits; closed-loop liquid cooling or waterless systems eliminate this compliance burden entirely."
+      },
+      {
+        "category": "environmental",
+        "name": "JLARC Data Centers in Virginia Study (2024)",
+        "level": "state_provincial",
+        "summary": "Virginia Joint Legislative Audit and Review Commission (JLARC) conducted a comprehensive study of data center impacts in Virginia, published 2024. Examined tax exemption costs, energy grid strain, water usage, and community impacts. Findings informing 2025-2026 legislative proposals including PUE requirements and tax incentive reform.",
+        "url": "https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp",
+        "effective_date": "2024-01-01",
+        "relevance": "Study findings are driving proposed PUE standards (1.1 target discussed) and potential tax incentive conditions linked to energy efficiency and cooling technology choices."
+      }
+    ]
+  },
+  {
+    "zone_id": "us-tx",
+    "country": "US",
+    "region": "Texas",
+    "regulatory_complexity_score": 48,
+    "regulations": [
+      {
+        "category": "tax_incentive",
+        "name": "Texas Data Center Sales Tax Exemption (Tax Code Ch. 151, Subch. H-3)",
+        "level": "state_provincial",
+        "summary": "Provides sales and use tax exemption on personal property necessary to operate a qualifying data center, including electricity, cooling systems, emergency generators, servers, storage, networking, racks, raised floors, and software. Covers electricity for heating and cooling in areas housing data center equipment. Over $1 billion in subsidies projected for 2025.",
+        "url": "https://comptroller.texas.gov/taxes/data-centers/",
+        "effective_date": "2014-01-01",
+        "relevance": "Directly covers cooling system equipment and electricity used for cooling. Both traditional air cooling and advanced liquid cooling infrastructure qualify for exemption."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Texas Senate Bill 6 — Large Load Grid Reliability (89th Legislature)",
+        "level": "state_provincial",
+        "summary": "Signed by Gov. Abbott on June 21, 2025. Applies to large loads exceeding 75 MW at a single site (threshold adjustable by PUCT). Requires data centers to fund grid infrastructure upgrades, participate in voluntary demand response programs with ERCOT, and enable remote disconnection during grid emergencies. Participants receive 24-hour notice before load-shedding events.",
+        "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB6",
+        "effective_date": "2025-06-21",
+        "relevance": "Large data centers (75+ MW) must plan for ERCOT interconnection costs, mandatory load flexibility during emergencies, and potential delivery charge changes. Affects cooling system backup power planning and demand response participation."
+      },
+      {
+        "category": "water_use",
+        "name": "Texas PUC Water Usage Reporting Survey for Data Centers",
+        "level": "state_provincial",
+        "summary": "The Texas Public Utility Commission (PUC) announced a mandatory survey of data centers and cryptocurrency mining facilities to report direct water use, cooling technology type, and indirect water consumption. Results shared with TWDB and TCEQ. Currently a reporting/planning measure with no operational limits.",
+        "url": "https://www.puc.texas.gov/",
+        "effective_date": "2026-02-01",
+        "relevance": "Data centers using evaporative cooling face new water reporting obligations; operators with closed-loop or direct-to-chip cooling have minimal reporting burden. Regulatory trajectory suggests future water use limits."
+      },
+      {
+        "category": "environmental",
+        "name": "TCEQ Air Quality Permit — Stationary Engines (RICE NESHAP / NSR)",
+        "level": "state_provincial",
+        "summary": "TCEQ enforces EPA's RICE NESHAP for reciprocating internal combustion engines including data center backup generators. New Source Review (NSR) permits required for major sources. TCEQ has noted capacity constraints in permitting AI data centers due to rapid growth in Texas.",
+        "url": "https://www.tceq.texas.gov/permitting/air/guidance/new_permits/psd-nsrpermits.html",
+        "effective_date": "2013-01-01",
+        "relevance": "Backup generators and cooling-related combustion equipment require TCEQ air permits regardless of primary cooling technology."
+      },
+      {
+        "category": "environmental",
+        "name": "Clean Air Act — Federal Backup Generator Rules (RICE NESHAP 40 CFR Part 63 Subpart ZZZZ)",
+        "level": "federal",
+        "summary": "EPA's RICE NESHAP regulates hazardous air pollutant emissions from stationary reciprocating internal combustion engines. Limits non-emergency operation to 100 hours/year (50 hours for demand response). Requires annual testing and inspections. EPA issued new guidance in May 2025 clarifying data center emergency generator operations.",
+        "url": "https://www.epa.gov/stationary-sources-air-pollution/clean-air-act-resources-data-centers",
+        "effective_date": "2006-06-15",
+        "relevance": "All data centers with backup generators must comply regardless of primary cooling technology. EPA May 2025 guidance clarified when generators may support local power supply."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "PUC Texas / ERCOT Large Load Grid Interconnection Requirements",
+        "level": "state_provincial",
+        "summary": "PUC Rules (16 TAC § 25.75) require transmission service providers to file interconnection costs. Large loads must demonstrate site control and meet study requirements.",
+        "url": "https://interchange.puc.texas.gov/Documents/55999_168_1550025.PDF",
+        "effective_date": "2002-01-01",
+        "relevance": "Large liquid-cooled AI data centers with high power draw must plan for ERCOT interconnection review and potential demand response obligations for cooling loads."
+      }
+    ]
+  },
+  {
+    "zone_id": "us-ca",
+    "country": "US",
+    "region": "California",
+    "regulatory_complexity_score": 82,
+    "regulations": [
+      {
+        "category": "building_code",
+        "name": "California Title 24, Part 6 — 2025 Building Energy Efficiency Standards (Data Centers)",
+        "level": "state_provincial",
+        "summary": "Effective January 1, 2026. Applies to all new data center construction, additions, and alterations affecting cooling systems. Requires 100% economizer cooling capability for each cooling system primarily serving computer rooms. Mandates fan power limits, hot/cold aisle containment, and humidity control. Performance path compliance via CBECC-Com modeling also permitted.",
+        "url": "https://www.energy.ca.gov/programs-and-topics/programs/building-energy-efficiency-standards/2025-building-energy-efficiency",
+        "effective_date": "2026-01-01",
+        "relevance": "Directly governs cooling system design for new California data centers; economizer mandates align with waterside economizers used in liquid cooling systems."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "SB 57 — Ratepayer and Technological Innovation Protection Act",
+        "level": "state_provincial",
+        "summary": "Signed by Governor Newsom on October 11, 2025. Directs CPUC to study and assess the impact of data center electricity demand on utility ratepayers. Report due January 1, 2027. May lead to tiered electricity rates or mandatory demand flexibility for large data center loads. Sunsets January 1, 2031.",
+        "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB57",
+        "effective_date": "2025-10-11",
+        "relevance": "Future electricity pricing could significantly affect operational costs for high-density liquid-cooled AI data centers; operators should monitor CPUC proceedings."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "AB 222 — Data Center Energy Usage Reporting (Pending)",
+        "level": "state_provincial",
+        "summary": "Would require data center operators to report energy consumption and efficiency metrics (PUE) to the California Energy Commission, including energy used for AI model training. Passed the Assembly but held in Senate as of 2025; may return for vote in 2026 session.",
+        "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB222",
+        "effective_date": null,
+        "relevance": "If enacted, would require PUE reporting to state regulators — operators with efficient liquid cooling would benefit from lower reported PUE figures."
+      },
+      {
+        "category": "water_use",
+        "name": "AB 93 (Vetoed) — Data Center Water Use Pre-Reporting",
+        "level": "state_provincial",
+        "summary": "Would have required data centers to provide estimated water use to water supplier before receiving a business license or permit, and annual water usage reports for operating facilities. Vetoed by Governor Newsom on October 11, 2025. Signals regulatory trajectory; subsequent legislation expected.",
+        "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB93",
+        "effective_date": null,
+        "relevance": "Even vetoed, signals upcoming water disclosure requirements for evaporative cooling; waterless liquid cooling operators can cite near-zero WUE as competitive advantage."
+      },
+      {
+        "category": "environmental",
+        "name": "California Air Resources Board (CARB) — Backup Generator Permits",
+        "level": "state_provincial",
+        "summary": "CARB and local AQMDs require permits for backup diesel generators. South Coast AQMD and Bay Area AQMD have strict NOx and PM limits. Emergency generators limited to 200 hours/year testing. Non-attainment status in major metro areas increases permitting stringency.",
+        "url": "https://ww2.arb.ca.gov/our-work/programs/stationary-diesel-engines",
+        "effective_date": "2010-01-01",
+        "relevance": "Data centers in non-attainment zones face strict generator emission limits; may incentivize battery storage over diesel backup for cooling systems."
+      },
+      {
+        "category": "environmental",
+        "name": "California Environmental Quality Act (CEQA)",
+        "level": "state_provincial",
+        "summary": "Requires environmental impact review for projects with significant environmental effects. Large data centers commonly require CEQA review analyzing water use, air quality, GHG emissions, and energy consumption. Cooling technology choice (evaporative vs. liquid) directly affects water and GHG sections of environmental impact reports.",
+        "url": "https://www.opr.ca.gov/ceqa/",
+        "effective_date": "1970-01-01",
+        "relevance": "New data center construction typically requires CEQA review; liquid cooling with lower water use can simplify environmental impact analysis."
+      }
+    ]
+  },
+  {
+    "zone_id": "us-or",
+    "country": "US",
+    "region": "Oregon",
+    "regulatory_complexity_score": 55,
+    "regulations": [
+      {
+        "category": "energy_efficiency",
+        "name": "Oregon POWER Act (HB 3546) — Large Energy User Rate Classification",
+        "level": "state_provincial",
+        "summary": "Signed by Gov. Tina Kotek in August 2025. Creates new customer classification for large industrial energy users consuming more than 20 MW, including data centers and cryptocurrency miners. Requires 10-year contracts committing to minimum energy payments and transmission cost contributions. Passed with bipartisan support.",
+        "url": "https://olis.oregonlegislature.gov/liz/2025R1/Measures/Overview/HB3546",
+        "effective_date": "2025-08-25",
+        "relevance": "Data centers over 20 MW in Oregon face new utility tariff classification and mandatory transmission cost sharing; changes economics for large liquid-cooled AI facilities."
+      },
+      {
+        "category": "tax_incentive",
+        "name": "Oregon Enterprise Zone Program — Data Center Property Tax Exemptions",
+        "level": "state_provincial",
+        "summary": "Oregon's Enterprise Zone program exempts business personal property (including servers, networking, cooling) from property tax for 3-5 years. Hillsboro and Washington County enterprise zones have attracted major data center investment. Note: Amendment to HB 4084 (2026) would temporarily bar expanded 10-year exemptions for new data centers for at least one year.",
+        "url": "https://www.oregon.gov/transparency/pages/tax-credits.aspx",
+        "effective_date": "1985-01-01",
+        "relevance": "Property tax exemption offsets capital cost of cooling infrastructure; however, expanded benefits temporarily restricted for new data centers under 2026 amendment."
+      },
+      {
+        "category": "building_code",
+        "name": "Oregon Energy Code (OECC) — Commercial Buildings (IECC 2021-Based)",
+        "level": "state_provincial",
+        "summary": "Oregon Building Codes Division enforces the Oregon Energy Code for commercial buildings, based on IECC 2021 with Oregon amendments. Data centers classified as high-density electronic equipment spaces. Requirements include economizer controls, minimum equipment efficiencies, and lighting power density limits.",
+        "url": "https://www.oregon.gov/bcd/codes-stand/pages/energy-code.aspx",
+        "effective_date": "2022-04-01",
+        "relevance": "Waterside economizers used in liquid cooling systems support compliance with OECC economizer mandates."
+      },
+      {
+        "category": "environmental",
+        "name": "Clean Air Act — Federal Stationary Source Permitting (Oregon DEQ)",
+        "level": "federal",
+        "summary": "Oregon DEQ administers Title V and New Source Review air quality permits under the Clean Air Act for stationary sources including backup generators. Oregon's temperate climate reduces diesel generator testing hours compared to warmer states.",
+        "url": "https://www.epa.gov/stationary-sources-air-pollution/clean-air-act-resources-data-centers",
+        "effective_date": "1970-12-31",
+        "relevance": "Backup generator permitting applies to cooling system backup power; Oregon DEQ administers on behalf of EPA."
+      },
+      {
+        "category": "water_use",
+        "name": "Oregon Water Resources Department — Water Rights and Permits",
+        "level": "state_provincial",
+        "summary": "Oregon operates a prior appropriation water rights system. Data centers with evaporative cooling withdrawing more than 1,250 gallons/day may require water use permits. Facilities using closed-loop or direct-to-chip waterless cooling have minimal exposure.",
+        "url": "https://www.oregon.gov/owrd/programs/waterrights/Pages/default.aspx",
+        "effective_date": "1909-01-01",
+        "relevance": "Evaporative cooling in Oregon's water-stressed regions may face permit delays; waterless liquid cooling avoids this regulatory pathway."
+      }
+    ]
+  },
+  {
+    "zone_id": "us-il",
+    "country": "US",
+    "region": "Illinois",
+    "regulatory_complexity_score": 65,
+    "regulations": [
+      {
+        "category": "tax_incentive",
+        "name": "Illinois Data Center Investment Tax Exemption Program (20 ILCS 605/605-1025)",
+        "level": "state_provincial",
+        "summary": "Provides qualifying data centers with sales and use tax exemptions for up to 20 years on servers, cooling equipment, and power infrastructure. Requires minimum $250M investment and job creation commitments. 27 data centers received incentives totaling $983M in estimated lifetime tax breaks per 2024 annual report. Program suspended for new applicants July 1, 2026 for two years per Governor Pritzker's 2026 State of the State announcement.",
+        "url": "https://dceo.illinois.gov/expandrelocate/incentives/datacenters.html",
+        "effective_date": "2019-06-05",
+        "relevance": "Covers cooling systems including chillers, cooling towers, CDUs, and liquid distribution infrastructure. Existing MOU holders retain exemptions; new applications suspended July 2026."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Illinois Data Center Energy and Water Reporting Act (SB2181)",
+        "level": "state_provincial",
+        "summary": "Beginning Jan 1 2026, all data centers must annually report energy and water consumption to the Illinois Power Agency by March 31. Agency to study impact on ratepayers.",
+        "url": "https://www.ilga.gov/Legislation/BillStatus?DocTypeID=SB&DocNum=2181&GAID=18&SessionID=114&LegID=161884",
+        "effective_date": null,
+        "relevance": "If enacted, would directly mandate efficient cooling technologies; operators planning Illinois data centers should monitor this legislation closely."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "Climate and Equitable Jobs Act (CEJA) — Clean Energy Path to 2045",
+        "level": "state_provincial",
+        "summary": "Sets Illinois on a path to 100% clean energy by 2045. Requires utilities to procure renewable energy credits. Established community solar and large-scale renewable programs. Illinois electricity costs rose 15% from 2024-2025 (vs. 4.5% national average), partly due to data center demand growth.",
+        "url": "https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=3918&ChapterID=14",
+        "effective_date": "2021-09-15",
+        "relevance": "Data centers procuring large power blocks must navigate renewable energy credit markets; high-density liquid cooling operators benefit from clean energy incentive structures."
+      },
+      {
+        "category": "environmental",
+        "name": "Illinois EPA — Air Permits for Stationary Sources (Clean Air Act SIP)",
+        "level": "state_provincial",
+        "summary": "Illinois EPA administers Clean Air Act permitting including Title V air permits. Cook County and Chicago are non-attainment areas for ozone and PM2.5, triggering stricter emission limits for data center backup generators under RICE NESHAP.",
+        "url": "https://epa.illinois.gov/topics/air-quality/permits.html",
+        "effective_date": "1972-01-01",
+        "relevance": "Data centers in Chicago metro face stricter air quality permitting for backup generators due to non-attainment status."
+      },
+      {
+        "category": "water_use",
+        "name": "Illinois Water Use Act — Large Volume Water Withdrawal Registration",
+        "level": "state_provincial",
+        "summary": "Requires registration of large volume water withdrawals (over 100,000 gallons/day) from any water source. Data centers with evaporative cooling towers often exceed this threshold. Facilities using waterless closed-loop cooling are exempt.",
+        "url": "https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=1427&ChapterID=27",
+        "effective_date": "1983-01-01",
+        "relevance": "Evaporative cooling towers at large data centers trigger registration and reporting; waterless cooling systems avoid this requirement."
+      },
+      {
+        "category": "energy_efficiency",
+        "name": "DOE ENERGY STAR Certification for Data Centers (Federal)",
+        "level": "federal",
+        "summary": "Joint EPA/DOE voluntary program. Data centers scoring 75+ (top 25% energy efficiency) earn certification. As of September 2024, only 270 of 5,381 US data centers were ENERGY STAR certified. DOE updated acquisition guidance for federal data center storage in December 2024. DOE regulates CRAC efficiency since 2012.",
+        "url": "https://www.energy.gov/femp/energy-efficiency-data-centers",
+        "effective_date": "2012-01-01",
+        "relevance": "Voluntary but influential — ENERGY STAR certification demonstrates cooling efficiency leadership. Digital Realty holds more certifications than any other provider globally."
+      }
+    ]
+  }
+]
