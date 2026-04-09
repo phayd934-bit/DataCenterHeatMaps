@@ -49,7 +49,7 @@
     "confidence_tier": "verified",
     "notes": "Fjord-cooled mountain hall. PUE near 1.10 achieved. Offers DLC and immersion for highest densities. 8°C constant fjord water at 100m depth. Closed-loop titanium heat exchangers.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-003",
@@ -130,7 +130,7 @@
     "confidence_tier": "verified",
     "notes": "DLC, PUE <1.2, waste heat to 8000 homes.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-006",
@@ -208,7 +208,7 @@
     "confidence_tier": "verified",
     "notes": "DLC 100kW+/rack. PUE <1.2. 42MW. 1GW campus.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-009",
@@ -260,7 +260,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.15 at 70% load. 20.5MW. Adiabatic free cooling. Air-cooled — retrofit opportunity for liquid.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-012",
@@ -286,7 +286,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.01 in hot humid Hong Kong. 40MW IT load. 252kW/rack. Two-phase immersion. Competitive intel — world benchmark.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-013",
@@ -314,7 +314,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-014",
@@ -340,7 +340,7 @@
     "confidence_tier": "verified",
     "notes": "78MW hyperscale, PUE 1.2 (Amsterdam mandate). EUR 1B+ investment. Jan 2026 construction start. Single hyperscale customer.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-016",
@@ -472,7 +472,7 @@
     "confidence_tier": "verified",
     "notes": "12MW launched (expanding to 72MW+). PUE ≤1.2. DLC supported. 100% geothermal+hydro. Waste heat to agtech.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-025",
@@ -500,7 +500,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-026",
@@ -528,7 +528,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-027",
@@ -556,7 +556,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-030",
@@ -664,7 +664,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.1. 20MW. Liquid cooling up to 100kW/rack. Air-to-Air evaporative + DLC. 100% renewable hydro+wind.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-035",
@@ -772,7 +772,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-050",
@@ -798,7 +798,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.15! 400kW/rack DLC. Waterless. Merlin Properties REIT. Also expanding Lisbon.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-070",
@@ -883,7 +883,7 @@
     "confidence_tier": "reported",
     "notes": "PUE 1.12 target. DLC+immersion. 600MW campus. India Tier 6.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-102",
@@ -911,7 +911,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-109",
@@ -989,7 +989,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.10-1.15. Liquid cooling ready since 2023: in-row CDUs, in-rack CDUs, direct-to-chip, rear-door, immersion. Over 100kW/rack supported. District heating connected for waste heat. 100% renewable wind power. OCP Ready certified. Expanding from 24MW to 28MW (Jan 2026). Built 2024.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-115",
@@ -1015,7 +1015,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.14 across 36-acre campus. 51MW IT load across 6 modular data centers. Hybrid cooling: free-air, evaporative (indirect), plus liquid cooling 'liquid optimisers'. 100% renewable energy + HVO backup generators. Rainwater harvesting for cooling. Tier III resilience. Operational since 2011. Synchronous replication to London.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-116",
@@ -1041,7 +1041,7 @@
     "confidence_tier": "verified",
     "notes": "PUE below 1.2 via fresh-air evaporative cooling. First London DC to deploy this cooling tech. 12MW total client power, 60,000 sqft. AI-Ready: supports direct-to-chip, immersive, and rear-door heat exchange liquid cooling within same workload. 6 data halls with flexible subdivision. Liquid cooled customer racks since 2015.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-117",
@@ -1067,7 +1067,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.2 via ultra-free air cooling. 10MW capacity, 800 racks across 6 data halls. 30,000 sqft. Aqua EcoPro+ free cooling chiller units (3x500kW). Chilled water system with hot/cold aisle containment. No liquid cooling currently — potential retrofit opportunity. 15 miles from Central London.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-118",
@@ -1093,7 +1093,7 @@
     "confidence_tier": "verified",
     "notes": "4MW facility in Farnborough. PUE 1.25. 1,200 racks across 4 data halls (22,000 sqft). Up to 30kW/rack supported. Free cooling chillers. Hall 4 expansion added 380 racks + 1MW IT load. No liquid cooling currently — small facility with potential for upgrade. Enterprise clients (UBS). On same Cody Technology Park as Ark.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-120",
@@ -1121,7 +1121,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-122",
@@ -1173,7 +1173,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.2 via award-winning evaporative cooling. 2MW capacity, near full. 150,000 sqft across 3 data floors. ~400 cabinets at 4kW/rack. 2N UPS, N+1 generators. No liquid cooling — potential small-facility retrofit opportunity. 100% uptime record.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-124",
@@ -1199,7 +1199,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.2 design target. 55MW compute capacity across 6 modular DCs. Mix of direct air, indirect air, and liquid cooling. SQ17 building: 24 data halls at 0.5MW each (12MW total). P1-P3: 6 data rooms at 760kW each (182 cabinets at 4.2kW). Multiple 33kV feeds. 100% renewable energy. Operational since 2010. Supports AI/high-density workloads.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-127",
@@ -1227,7 +1227,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-131",
@@ -1279,7 +1279,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.19 (Zurich West 2), hybrid air/liquid cooling for high-density computing, 40MW from two substations, 100,000-litre cooling liquid storage tanks. Free cooling using ambient air. 100% renewable energy. Prix Watt d'Or awarded. Tier IV.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-134",
@@ -1307,7 +1307,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-136",
@@ -1335,7 +1335,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-137",
@@ -1361,7 +1361,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.2, multiple cooling technologies: direct-to-chip (up to 130kW/rack), immersion, rear door cooling. Expanding to 150MW. Security levels 3+ to 4. 140+ kW/rack density supported. AI/HPC focused.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-139",
@@ -1387,7 +1387,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.1, world's first gigawatt-scale seawater cooling, integrated liquid cooling. SIN01: 26MW IT (expanded from 14MW via liquid cooling). WUE 0. 100% renewable. OCP Ready v2 certified. European Data Center Project of the Year 2025. EUR 8.5B campus investment.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-140",
@@ -1413,7 +1413,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.15 portfolio-wide. ThermalWorks waterless cooling: 70kW/rack (air) up to 200kW/rack (liquid cooling plug-and-play). 180MW critical power (expandable to 300MW). Zero water consumption for cooling. Saves 2.7B liters water/year vs conventional. 100% renewable. OCP Ready.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-141",
@@ -1439,7 +1439,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.2 with virtually no water for cooling. Closed-loop chilled water via air-cooled chillers. 52MW IT (32MW + 20MW buildings). EUR 1B investment. On-site 100MVA multi-fuel generation (HVO renewable + gas). 22-acre campus.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-159",
@@ -1465,7 +1465,7 @@
     "confidence_tier": "verified",
     "notes": "LATAM's largest DC campus. Phase 2 operational with liquid cooling up to 100kW/rack. PUE 1.35. 100MW new cluster under construction for 2025. Total campus: 600MW across 17 buildings. Master plan approved. $1.13B Phase 2 investment.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-163",
@@ -1493,7 +1493,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-164",
@@ -1575,7 +1575,7 @@
     "confidence_tier": "reported",
     "notes": "Phase 3 building at Shiroi campus: 10MW initial (expandable to 25MW), 1,000 racks, 5,400 sqm. DLC-ready design with reserved pipe routing. Construction began June 2025, operational FY2026.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-168",
@@ -1629,7 +1629,7 @@
     "confidence_tier": "reported",
     "notes": "350MW+ campus with 30,000+ racks. PUE 1.13 verified. Hybrid liquid+air cooling system developed with HEC Group. Industry standards development for cold-plate LC in China.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-170",
@@ -1657,7 +1657,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-172",
@@ -1685,7 +1685,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-179",
@@ -1791,7 +1791,7 @@
     "confidence_tier": "verified",
     "notes": "atNorth ICE02 Mjolnir is a Tier 3 campus on 9 hectares near Keflavik airport, Iceland. 83MW operational with 35MW expansion planned. PUE <=1.2 using free natural air cooling. All newer atNorth data centers are liquid cooling ready. 148,003 sqft raised floor. 100% renewable geothermal/hydro power.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-187",
@@ -1817,7 +1817,7 @@
     "confidence_tier": "verified",
     "notes": "Borealis Data Center operates in Blonduos, Iceland with PUE as low as 1.06. Direct air cooling (B52) and indirect air cooling (B62) buildings. OCP Ready certified — first in Iceland. 63MW+ grid connection expandable to 100MW+. ISO 27001 certified. 100% renewable energy. B62 has dual power feed, UPS, generators (Tier 3 equivalent).",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-189",
@@ -1843,7 +1843,7 @@
     "confidence_tier": "reported",
     "notes": "atNorth ICE01 (formerly Thor DC) is a 3.2MW facility in Reykjavik with PUE of 1.16 after first year of operation. Uses AST Global NFC (natural free cooling) containers. Up to 30kW per rack. 100% renewable geothermal+hydro. Option to expand to 19.2MW. 2,700 sqm facility.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-191",
@@ -1895,7 +1895,7 @@
     "confidence_tier": "reported",
     "notes": "ASP Data Center in Stavanger offers build-to-suit facilities from 10MW to 300MW. PUE below 1.2. Liquid cooling infrastructure including direct liquid cooling, on-chip cooling, and rear-door cooling. N+1 cooling redundancy. 100% renewable hydropower. Waste heat recovery to district heating grid. Tier 3 equivalent uptime. EN 50600 compliant. Average climate 8C in SW Norway.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-193",
@@ -1921,7 +1921,7 @@
     "confidence_tier": "verified",
     "notes": "Bulk N01 is a massive campus in Kristiansand area spanning 3kmÂ² with up to 1GW power potential. Current 42MW facility across 4 halls (~10.5MW each). Indirect air-to-air and chilled-water cooling plus DLC support. 100+ kW/rack in advanced configurations. PUE target <1.2. 100% green hydropower from 3.6GW substation with 12 independent feeds.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-195",
@@ -1947,7 +1947,7 @@
     "confidence_tier": "reported",
     "notes": "Formerly Fortlax F2/F3, now EcoDataCenter Pitea. 5.3MW electrical capacity, 140 racks at up to 20kW/rack. PUE 1.1 using outside air free cooling near the polar circle. N+1 redundancy for electricity, cooling, and UPS. EcoDataCenter acquired Fortlax 2019, brand removed Oct 2020.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-196",
@@ -1999,7 +1999,7 @@
     "confidence_tier": "reported",
     "notes": "Colt DCS London 3 (London North) in Welwyn Garden City. PUE 1.15 via distributed cooling system. 33 MVA on-site power. 8kW per rack. Tier III minimum with N+N power design. 20 miles north of London. Recently added 4 new data halls.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-205",
@@ -2025,7 +2025,7 @@
     "confidence_tier": "verified",
     "notes": "Colt DCS London 4 is a 31MW hyperscale facility at Hayes Digital Park. Designed for cloud and AI/HPC workloads. PUE <1.3 target. 9 data halls across 5 floors. BREEAM Very Good target. 100% renewable energy PPA. Waste heat recovery and water recycling planned. Phase 1 of larger Hayes campus expanding to 160MW (London 4, 6, 7, 8). GBP 2.5B total investment. London 6/7/8 add 97MW, construction mid-2026, L6 live early 2029.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-207",
@@ -2051,7 +2051,7 @@
     "confidence_tier": "verified",
     "notes": "DataVita DV1 in North Lanarkshire is Scotland's largest data center. Current 40MW capacity with 500MW+ expansion planned. Supports direct-to-chip, air, and immersive cooling. Adiabatic cooling (Scotland avg 8C year-round eliminates mechanical cooling need). Design PUE 1.18 full load; new expansion targets 1.15. Closed-loop cooling, near-zero water consumption. UK AI Growth Zone designation. 35% lower operating costs than other European hubs.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-219",
@@ -2107,7 +2107,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-239",
@@ -2135,7 +2135,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-240",
@@ -2163,7 +2163,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-246",
@@ -2273,7 +2273,7 @@
     "confidence_tier": "reported",
     "notes": "58MW. PUE 1.25 (most energy-efficient multi-tenant DC in tropical Singapore). Singapore's largest DTC liquid cooling deployment. 120,000 sqft, 8-storey. Integrated cable landing station. Green Mark Platinum. 90%+ pre-committed. Brings Nxera total to 120MW.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-266",
@@ -2299,7 +2299,7 @@
     "confidence_tier": "reported",
     "notes": "12.3MW (recently expanded from 2.3MW, adding 10MW). Planning another 15MW expansion. Design PUE <1.25. Heat exchange to Aventuur surfing lagoon planned. 7-hectare onsite solar farm. EPA approved. IL4 seismic rating.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-272",
@@ -2327,7 +2327,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-275",
@@ -2353,7 +2353,7 @@
     "confidence_tier": "reported",
     "notes": "11MW IT Load, 13,400 sqm. PUE 1.28. Australia's first Submer liquid immersion cooling setup via ResetData partnership. Supports both air and liquid cooling. CO2 reduction up to 45%. 90% smaller cooling footprint. Heat recyclable, no wastewater.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-289",
@@ -2379,7 +2379,7 @@
     "confidence_tier": "verified",
     "notes": "Nigeria's lowest PUE (1.35). 12MW AI-ready facility. Six data halls, 3,240 sqm. N+2 cooling redundancy. Hyperscale-ready. Predominantly gas power with solar planned. Commissioned April 2025. Equinix-backed (MainOne parent).",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-308",
@@ -2434,7 +2434,7 @@
     "confidence_tier": "reported",
     "notes": "Baltic AI data center with confirmed direct-to-chip liquid cooling readiness and 250kW/rack capability. 10MW Phase 1, expanding to 30MW. Weiss Technik Vindur CoolWall + Trane chillers. PUE target 1.3. 100% renewable energy. Uptime Tier III. LEED certification in progress. Heat recovery discussions with Riga municipality. President of Latvia visited facility. Very high-value liquid cooling vendor opportunity — facility designed for D2C from ground up.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-314",
@@ -2460,7 +2460,7 @@
     "confidence_tier": "reported",
     "notes": "New Romanian DC with confirmed Direct-to-Chip Liquid Cooling option at 50kW/rack. 5MW total (3MW IT) across 4 halls, 640 racks. Fan Wall cooling + N+1 free-cooling chillers. Design PUE 1.3. Tier III target. Seismic isolation for data halls. Romania accounts for 40%+ of upcoming CEE rack capacity. Small enough for cooling vendor pilot, DLC-ready from design.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-324",
@@ -2486,7 +2486,7 @@
     "confidence_tier": "reported",
     "notes": "Tanzania's first carrier-neutral Tier III DC. 6MW, 800 racks, indirect adiabatic cooling (PUE 1.3). IFC-backed Raxio Group ($100M commitment to African DCs). 2N power, 48hr fuel backup. 11 carriers. Under construction for 2026 launch. Hot climate = cooling is critical infrastructure. Future high-density or AI workloads could drive liquid cooling upgrade.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-338",
@@ -2596,7 +2596,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-390",
@@ -2624,7 +2624,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-403",
@@ -2734,7 +2734,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-540",
@@ -2872,7 +2872,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-630",
@@ -2900,7 +2900,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-634",
@@ -2926,7 +2926,7 @@
     "confidence_tier": "reported",
     "notes": "Former olivine mine 60m below sea level and 700m inside a mountain on Norway's west coast. 12 modular heat exchangers (90MW total cooling) draw 8C water from 100m depth in a 500m-deep fjord. Supports up to 300kW+ per rack via DLC and immersion cooling (designing 400kW solutions). 100% hydro and wind power. Guaranteed PUE 1.15. Near-zero WUE. Hosts Olivia -- Norway's most powerful supercomputer (HPE Cray EX, 13.2 petaflops, 64,512 CPUs + 304 GPUs, ranked #22 Green500). 225M NOK ($22.6M) system inaugurated June 2025. Expandable to 200MW and 120,000 sqm whitespace.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-685",
@@ -2982,7 +2982,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-694",
@@ -3010,7 +3010,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-696",
@@ -3038,7 +3038,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-697",
@@ -3066,7 +3066,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-710",
@@ -3092,7 +3092,7 @@
     "confidence_tier": "reported",
     "notes": "EDGNEX (DAMAC) investing $2.3B in a 144MW AI-focused data center in Cikarang, Bekasi (east of Jakarta). 50,000 sqm site at Greenland International Industrial Center. PUE target 1.32. Phase 1 operational Dec 2026. One of Southeast Asia's largest AI-dedicated developments.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-716",
@@ -3120,7 +3120,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-717",
@@ -3148,7 +3148,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-718",
@@ -3202,7 +3202,7 @@
     "confidence_tier": "announced",
     "notes": "SAM — 1–2 Years. Single-phase immersion (Submer SmartPod platform, 140 kW/SmartPod). 465 MW total planned across three DCs. Locations under selection. Submer Barcelona 56 MW own-operated DC announced Feb 2025 — planned for 2026. Engage with Solvenz and Submer now for first-mover position for 2026 opening.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-720",
@@ -3256,7 +3256,7 @@
     "confidence_tier": "verified",
     "notes": "SAM — Engage Now. Intelliscale platform: DLC + immersion + RDHx (300 kW/rack capable). Intelliscale 300 kW/rack confirmed in Aug 2023 press release. FRA6 itself described as air-cooled UPS in facility page (liquid not confirmed at FRA6 specifically). Build-to-suit model — no standard liquid colo booking; wholesale only; requires bespoke negotiation. Engage now for 2026–2027 delivery.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-722",
@@ -3341,7 +3341,7 @@
       "pue",
       "cooling_method"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-371",
@@ -3370,7 +3370,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-372",
@@ -3399,7 +3399,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-380",
@@ -3428,7 +3428,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-381",
@@ -3457,7 +3457,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-394",
@@ -3485,7 +3485,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-410",
@@ -3514,7 +3514,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-411",
@@ -3543,7 +3543,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-478",
@@ -3572,7 +3572,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-492",
@@ -3658,7 +3658,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-587",
@@ -3715,7 +3715,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "eu-597",
@@ -3740,7 +3740,7 @@
     "last_verified": "2026-04-04",
     "confidence_tier": "reported",
     "notes": "1.5GW net-zero AI factory at NEOM Oxagon. 5B USD Phase 1 (300MW operational by 2028). Red Sea seawater cooling eliminates fresh water consumption. LG Electronics advanced cooling partnership. 100% renewable energy powered. Located on Red Sea coast in NEOM's industrial/innovation zone. Multiple computing density architectures. Region's first net-zero AI factory claim.",
-    "gpu": "Mixed (colocation)",
+    "gpu": "Mixed",
     "data_gaps": [
       "pue"
     ]
@@ -3800,7 +3800,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "facility_name": "KIO Networks MEX1 Santa Fe",

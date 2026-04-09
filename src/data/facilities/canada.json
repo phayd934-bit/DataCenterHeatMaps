@@ -49,7 +49,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.1, 10MW facility using KyotoCooling — first Canadian wholesale colo with this system. Ideal size for liquid cooling retrofit.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-003",
@@ -75,7 +75,7 @@
     "confidence_tier": "verified",
     "notes": "PUE 1.1, 30MW, hybrid/liquid-ready. Operator has demonstrated efficiency commitment across campus. Liquid cooling expansion candidate.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-004",
@@ -101,7 +101,7 @@
     "confidence_tier": "verified",
     "notes": "Direct-to-chip liquid cooling via Vertiv CDUs, 125kW/rack, PUE ~1.1. Major greenfield AI facility. Equipment vendor opportunity.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-005",
@@ -209,7 +209,7 @@
     "confidence_tier": "verified",
     "notes": "27MW greenfield with closed-loop chilled water (zero water consumption). Toronto Green Standard compliant. Mid-2026 go-live.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-009",
@@ -235,7 +235,7 @@
     "confidence_tier": "verified",
     "notes": "Design PUE 1.2 at full capacity, free cooling most of year. Air-cooled currently — strong retrofit candidate for liquid cooling as AI tenants demand higher density.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-010",
@@ -289,7 +289,7 @@
     "confidence_tier": "verified",
     "notes": "TRIPLE MATCH: PUE <1.17, 9MW, Vertiv CoolPhase Flex liquid+air hybrid deploying Q1 2025. KyotoCooling + free cooling 90% of year. 100% Hydro-Quebec renewable.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-012",
@@ -315,7 +315,7 @@
     "confidence_tier": "verified",
     "notes": "PUE as low as 1.15 with KyotoCooling. 30MW across 9 halls. Free cooling 90% of year. Vertiv liquid cooling partnership. 100% renewable.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-013",
@@ -341,7 +341,7 @@
     "confidence_tier": "verified",
     "notes": "46MW, PUE 1.25. Air-cooled. No target metrics matched but DLC offering available in 170+ DCs globally.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-014",
@@ -367,7 +367,7 @@
     "confidence_tier": "verified",
     "notes": "16MW, Smardt mag-lev chillers, water-side economizer. No liquid cooling yet. Equinix trialing liquid pods globally — TR2 could be a future deployment.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-015",
@@ -395,7 +395,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-016",
@@ -451,7 +451,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-018",
@@ -1018,7 +1018,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-038",
@@ -1046,7 +1046,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-039",
@@ -1100,7 +1100,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-041",
@@ -1128,7 +1128,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-042",
@@ -1184,7 +1184,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-044",
@@ -1212,7 +1212,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-045",
@@ -1238,7 +1238,7 @@
     "confidence_tier": "reported",
     "notes": "PUE as low as 1.1, 1.5MW facility. Qualifies on BOTH PUE (<=1.20) and capacity (<=10MW). 28,000 sqft, 7,000 sqft raised floor. N+1 power and cooling redundancy. Up to 20kW/rack.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-046",
@@ -1294,7 +1294,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-048",
@@ -1433,7 +1433,7 @@
     "confidence_tier": "reported",
     "notes": "300MW+ campus scaling to 1GW in Regina, SK. Closed-loop immersion cooling by CoolIT Systems. PUE target 1.05-1.15. WUE near-zero. 7,000+ free cooling hours/year. Islanded micro-grid with gas turbines + renewables + 100MWh battery. Phase 1 (2026-27): 10MW IT, $300M CapEx. 100% Canadian-owned. Bird Construction, TransGas, SaskTel, FNPA partners.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-053",
@@ -1461,7 +1461,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-054",
@@ -1517,7 +1517,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-056",
@@ -1546,7 +1546,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-057",
@@ -1575,7 +1575,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-058",
@@ -1601,7 +1601,7 @@
     "confidence_tier": "reported",
     "notes": "7.5MW purpose-built facility. 64,000 sq ft. Uptime Institute Tier III design-certified. Built 2015 for Manitoba Telecom/Bell MTS, acquired by Equinix in $780M deal (13 Bell DCs) in 2020. Equinix rolling out direct-to-chip liquid cooling across 100+ DCs globally -- Winnipeg expansion planned.",
     "data_gaps": [],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-059",
@@ -1630,7 +1630,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-060",
@@ -1659,7 +1659,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-061",
@@ -1687,7 +1687,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-063",
@@ -1716,7 +1716,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-064",
@@ -1744,7 +1744,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-065",
@@ -1773,7 +1773,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-067",
@@ -1802,7 +1802,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-068",
@@ -1831,7 +1831,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-070",
@@ -1859,7 +1859,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-071",
@@ -1915,7 +1915,7 @@
     "data_gaps": [
       "pue"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-073",
@@ -1972,7 +1972,7 @@
     "data_gaps": [
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "id": "ca-075",
@@ -2001,7 +2001,7 @@
       "pue",
       "capacity_mw"
     ],
-    "gpu": "Mixed (colocation)"
+    "gpu": "Mixed"
   },
   {
     "facility_name": "Beacon AI Heartland Hub -- Strathcona County",
